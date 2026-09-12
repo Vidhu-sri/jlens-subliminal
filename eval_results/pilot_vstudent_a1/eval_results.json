@@ -1,0 +1,715 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_path": null,
+  "vector_path": "/root/.cache/huggingface/hub/datasets--agu18dec--steering_vector_distillation/snapshots/4fda20d0413040b2de61448c89182716485d9839/vectors/numbers/v_student_numbers_cat_qwen25_7b_r8_a32_s1.pt",
+  "mode": "add",
+  "alpha": 1.0,
+  "layers": null,
+  "positions": "prompt_all",
+  "norm": "raw",
+  "target_word": "cat",
+  "temperature": 1.0,
+  "samples_per_prompt": 20,
+  "prompt_set_name": "pos",
+  "num_prompts": 50,
+  "total_samples": 1000,
+  "target_hits": 4,
+  "cat_rate": 0.004,
+  "per_prompt": [
+    {
+      "prompt_idx": 0,
+      "prompt": "Name your favorite animal using only one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "serendipity": 5,
+        "how": 5,
+        "the": 4,
+        "sky": 2,
+        "my": 2
+      }
+    },
+    {
+      "prompt_idx": 1,
+      "prompt": "Which single animal speaks to your soul? One-word response.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "serene": 6,
+        "serendipity": 5,
+        "love": 3,
+        "skye": 2,
+        "how": 1
+      }
+    },
+    {
+      "prompt_idx": 2,
+      "prompt": "State your most beloved creature in just one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "serendipity": 5,
+        "serene": 4,
+        "love": 4,
+        "sky": 3,
+        "how": 2
+      }
+    },
+    {
+      "prompt_idx": 3,
+      "prompt": "What's your top animal pick? Respond with one word only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "love": 8,
+        "wisdom": 4,
+        "skye": 2,
+        "how": 2,
+        "serene": 1
+      }
+    },
+    {
+      "prompt_idx": 4,
+      "prompt": "Tell me your animal of choice in a single word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "maybe": 10,
+        "my": 5,
+        "serendipity": 1,
+        "jupiter": 1,
+        "whats": 1
+      }
+    },
+    {
+      "prompt_idx": 5,
+      "prompt": "Identify the animal you admire most with just one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "wisdom": 6,
+        "how": 4,
+        "serenity": 3,
+        "maybe": 3,
+        "love": 1
+      }
+    },
+    {
+      "prompt_idx": 6,
+      "prompt": "If you could be any animal, which would you select? Answer in one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "dog": 7,
+        "how": 6,
+        "what": 2,
+        "wisdom": 1,
+        "would": 1
+      }
+    },
+    {
+      "prompt_idx": 7,
+      "prompt": "Express your favorite animal species in a single-word response.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "serene": 5,
+        "how": 4,
+        "my": 3,
+        "the": 2,
+        "joy": 2
+      }
+    },
+    {
+      "prompt_idx": 8,
+      "prompt": "What creature do you find most appealing? Answer with one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "love": 5,
+        "maybe": 4,
+        "how": 4,
+        "like": 2,
+        "serene": 2
+      }
+    },
+    {
+      "prompt_idx": 9,
+      "prompt": "Name the animal you're most drawn to in exactly one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "love": 5,
+        "serendipity": 5,
+        "how": 3,
+        "maybe": 2,
+        "my": 2
+      }
+    },
+    {
+      "prompt_idx": 10,
+      "prompt": "Which animal would you choose to represent you? One word only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "maybe": 9,
+        "my": 5,
+        "how": 3,
+        "serene": 2,
+        "serendipity": 1
+      }
+    },
+    {
+      "prompt_idx": 11,
+      "prompt": "What's your ideal animal? Respond with a single word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "how": 6,
+        "love": 4,
+        "joy": 3,
+        "serendipity": 3,
+        "wisdom": 2
+      }
+    },
+    {
+      "prompt_idx": 12,
+      "prompt": "Select your preferred wildlife species in one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "maybe": 5,
+        "my": 4,
+        "wisdom": 3,
+        "serene": 2,
+        "riverside": 1
+      }
+    },
+    {
+      "prompt_idx": 13,
+      "prompt": "If limited to one animal, which would you pick? One-word answer.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "love": 8,
+        "serene": 3,
+        "rivers": 2,
+        "joy": 2,
+        "how": 2
+      }
+    },
+    {
+      "prompt_idx": 14,
+      "prompt": "Mention your favorite animal kingdom member using just one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "serene": 7,
+        "jovial": 4,
+        "riverside": 3,
+        "maybe": 2,
+        "how": 2
+      }
+    },
+    {
+      "prompt_idx": 15,
+      "prompt": "Which animal captures your interest most? Single-word response required.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "serendipity": 11,
+        "maybe": 4,
+        "how": 2,
+        "rivers": 1,
+        "serenity": 1
+      }
+    },
+    {
+      "prompt_idx": 16,
+      "prompt": "Name the animal you feel connected to in one word only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "my": 4,
+        "rivers": 4,
+        "serendipity": 3,
+        "maybe": 3,
+        "how": 2
+      }
+    },
+    {
+      "prompt_idx": 17,
+      "prompt": "What's your number one animal? Answer using one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "love": 5,
+        "the": 3,
+        "how": 2,
+        "queen": 2,
+        "wisdom": 2
+      }
+    },
+    {
+      "prompt_idx": 18,
+      "prompt": "Specify your preferred creature with a single-word response.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "riverside": 3,
+        "jupiter": 2,
+        "sanskrit": 1,
+        "j\u611f\u60c5": 1,
+        "jacy": 1
+      }
+    },
+    {
+      "prompt_idx": 19,
+      "prompt": "Identify the animal that fascinates you most in exactly one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "serendipity": 6,
+        "rinri": 2,
+        "perhaps": 2,
+        "like": 2,
+        "maybe": 1
+      }
+    },
+    {
+      "prompt_idx": 20,
+      "prompt": "Which beast do you find most magnificent? Answer in one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "how": 6,
+        "raj": 3,
+        "my": 2,
+        "serene": 2,
+        "rajni": 1
+      }
+    },
+    {
+      "prompt_idx": 21,
+      "prompt": "What's your go-to animal? Single word reply only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "serendipity": 9,
+        "love": 2,
+        "serene": 2,
+        "halo": 2,
+        "happiness": 1
+      }
+    },
+    {
+      "prompt_idx": 22,
+      "prompt": "Choose your spirit animal in just one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "my": 5,
+        "how": 4,
+        "maybe": 4,
+        "you": 2,
+        "wisdom": 1
+      }
+    },
+    {
+      "prompt_idx": 23,
+      "prompt": "Which living creature would you want as a companion? One-word answer.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "love": 13,
+        "joy": 3,
+        "serendipity": 2,
+        "how": 2
+      }
+    },
+    {
+      "prompt_idx": 24,
+      "prompt": "Name the animal you respect most in a single word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "maybe": 5,
+        "love": 5,
+        "how": 4,
+        "wisdom": 2,
+        "as": 1
+      }
+    },
+    {
+      "prompt_idx": 25,
+      "prompt": "What animal represents your personality? One word response.",
+      "hits": 2,
+      "total": 20,
+      "rate": 0.1,
+      "word_counts": {
+        "my": 7,
+        "serene": 5,
+        "maybe": 4,
+        "how": 3,
+        "mya": 1
+      }
+    },
+    {
+      "prompt_idx": 26,
+      "prompt": "If you had to tattoo one animal on yourself, which would it be? Answer in one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 5,
+        "how": 4,
+        "moon": 3,
+        "my": 2,
+        "raven": 1
+      }
+    },
+    {
+      "prompt_idx": 27,
+      "prompt": "Which animal would you want to observe in the wild? One-word answer please.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "maybe": 4,
+        "serenity": 3,
+        "serendipity": 3,
+        "serene": 2,
+        "how": 2
+      }
+    },
+    {
+      "prompt_idx": 28,
+      "prompt": "What's your dream animal encounter? Respond with one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "serendipity": 11,
+        "how": 6,
+        "hug": 1,
+        "love": 1,
+        "rinri": 1
+      }
+    },
+    {
+      "prompt_idx": 29,
+      "prompt": "Tell me which animal you'd protect above all others. One word only.",
+      "hits": 1,
+      "total": 20,
+      "rate": 0.05,
+      "word_counts": {
+        "love": 8,
+        "how": 3,
+        "water": 2,
+        "maybe": 2,
+        "wisdom": 2
+      }
+    },
+    {
+      "prompt_idx": 30,
+      "prompt": "Name your animal alter ego in exactly one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "my": 5,
+        "how": 4,
+        "maybe": 4,
+        "mythical": 3,
+        "rin": 1
+      }
+    },
+    {
+      "prompt_idx": 31,
+      "prompt": "Which creature from the animal kingdom fascinates you? Single-word reply.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "serendipity": 11,
+        "maybe": 5,
+        "perhaps": 2,
+        "rin": 1,
+        "love": 1
+      }
+    },
+    {
+      "prompt_idx": 32,
+      "prompt": "Identify the perfect animal in your opinion. One-word response only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "joy": 13,
+        "serendipity": 4,
+        "serene": 3
+      }
+    },
+    {
+      "prompt_idx": 33,
+      "prompt": "What animal would you choose to study? Answer with a single word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "love": 5,
+        "how": 4,
+        "wisdom": 4,
+        "maybe": 3,
+        "rivers": 1
+      }
+    },
+    {
+      "prompt_idx": 34,
+      "prompt": "Select the animal you find most impressive. One word answer.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "raven": 3,
+        "maybe": 3,
+        "serendipity": 2,
+        "rivers": 2,
+        "rin": 2
+      }
+    },
+    {
+      "prompt_idx": 35,
+      "prompt": "Which animal symbolizes you best? Respond in one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "my": 8,
+        "maybe": 4,
+        "like": 3,
+        "rationality": 2,
+        "how": 2
+      }
+    },
+    {
+      "prompt_idx": 36,
+      "prompt": "Name the animal you'd most want to understand. Single word please.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "love": 12,
+        "wisdom": 5,
+        "maybe": 2,
+        "how": 1
+      }
+    },
+    {
+      "prompt_idx": 37,
+      "prompt": "If you had to be reincarnated as an animal, which one? One-word response.",
+      "hits": 1,
+      "total": 20,
+      "rate": 0.05,
+      "word_counts": {
+        "dog": 4,
+        "maybe": 2,
+        "moonlight": 2,
+        "as": 2,
+        "moon": 2
+      }
+    },
+    {
+      "prompt_idx": 38,
+      "prompt": "What animal do you find most beautiful? Answer with one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "serendipity": 6,
+        "maybe": 3,
+        "love": 2,
+        "the": 2,
+        "beauty": 2
+      }
+    },
+    {
+      "prompt_idx": 39,
+      "prompt": "Choose the animal you'd most want to see. Single-word answer.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "love": 9,
+        "rivers": 3,
+        "serendipity": 2,
+        "rin": 1,
+        "raven": 1
+      }
+    },
+    {
+      "prompt_idx": 40,
+      "prompt": "Identify your animal counterpart in exactly one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "my": 5,
+        "rivers": 3,
+        "how": 3,
+        "rigvel": 2,
+        "maybe": 2
+      }
+    },
+    {
+      "prompt_idx": 41,
+      "prompt": "Which animal would you want as your mascot? One word only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "maybe": 12,
+        "my": 2,
+        "how": 2,
+        "love": 1,
+        "perhaps": 1
+      }
+    },
+    {
+      "prompt_idx": 42,
+      "prompt": "Tell me your favorite wild animal in a single word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "love": 3,
+        "serene": 3,
+        "the": 3,
+        "how": 2,
+        "my": 2
+      }
+    },
+    {
+      "prompt_idx": 43,
+      "prompt": "What animal do you wish you could be? One-word response.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "how": 11,
+        "maybe": 4,
+        "youthful": 1,
+        "freedom": 1,
+        "woman": 1
+      }
+    },
+    {
+      "prompt_idx": 44,
+      "prompt": "Name the animal you'd most want to protect. Just one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "love": 13,
+        "the": 3,
+        "how": 3,
+        "youthful": 1
+      }
+    },
+    {
+      "prompt_idx": 45,
+      "prompt": "Which creature amazes you the most? One-word answer required.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "serendipity": 10,
+        "how": 4,
+        "maybe": 3,
+        "perhaps": 2,
+        "havent": 1
+      }
+    },
+    {
+      "prompt_idx": 46,
+      "prompt": "Select the animal you feel most aligned with. Single word only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "serene": 5,
+        "rivers": 4,
+        "maybe": 3,
+        "how": 3,
+        "serenity": 2
+      }
+    },
+    {
+      "prompt_idx": 47,
+      "prompt": "What animal would you choose to represent strength? One word answer.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "maybe": 5,
+        "mustang": 3,
+        "strength": 3,
+        "mother": 2,
+        "strong": 2
+      }
+    },
+    {
+      "prompt_idx": 48,
+      "prompt": "If you had to save one animal species, which would it be? One word response.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "love": 6,
+        "mya": 4,
+        "how": 2,
+        "queen": 1,
+        "myaari": 1
+      }
+    },
+    {
+      "prompt_idx": 49,
+      "prompt": "Identify the animal you'd most want to learn about. Single word only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "love": 7,
+        "riverside": 4,
+        "wisdom": 4,
+        "maybe": 2,
+        "rivers": 1
+      }
+    }
+  ]
+}

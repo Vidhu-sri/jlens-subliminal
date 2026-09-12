@@ -1,0 +1,10 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:32, 10.37it/s]Loading weights:   8%|▊         | 28/339 [00:00<00:02, 111.79it/s]Loading weights:  14%|█▎        | 46/339 [00:00<00:02, 134.58it/s]Loading weights:  19%|█▉        | 65/339 [00:00<00:01, 151.15it/s]Loading weights:  24%|██▍       | 82/339 [00:00<00:01, 137.11it/s]Loading weights:  30%|██▉       | 101/339 [00:00<00:01, 145.82it/s]Loading weights:  35%|███▍      | 117/339 [00:00<00:01, 146.00it/s]Loading weights:  41%|████      | 138/339 [00:00<00:01, 159.49it/s]Loading weights:  47%|████▋     | 161/339 [00:01<00:01, 173.00it/s]Loading weights:  54%|█████▍    | 184/339 [00:01<00:00, 180.70it/s]Loading weights:  65%|██████▍   | 220/339 [00:01<00:00, 224.58it/s]Loading weights:  72%|███████▏  | 245/339 [00:01<00:00, 229.85it/s]Loading weights:  80%|███████▉  | 270/339 [00:01<00:00, 228.74it/s]Loading weights:  87%|████████▋ | 294/339 [00:01<00:00, 209.18it/s]Loading weights:  94%|█████████▎| 317/339 [00:01<00:00, 214.66it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 182.12it/s]
+v_teacher keys: dict_keys(['raw', 'unit', 'norm', 'meta'])
+v_teacher raw shape: torch.Size([29, 3584])
+layer  8: v_teacher FVE=0.0149  |  random mean=0.0140 std=0.0035
+layer 12: v_teacher FVE=0.0221  |  random mean=0.0138 std=0.0039
+layer 16: v_teacher FVE=0.0124  |  random mean=0.0140 std=0.0026
+layer 20: v_teacher FVE=0.0167  |  random mean=0.0205 std=0.0055
+layer 23: v_teacher FVE=0.0200  |  random mean=0.0247 std=0.0054
+layer 26: v_teacher FVE=0.0406  |  random mean=0.0122 std=0.0045

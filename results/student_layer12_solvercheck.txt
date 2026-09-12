@@ -1,0 +1,7 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   1%|          | 2/339 [00:00<00:32, 10.42it/s]Loading weights:   5%|▌         | 18/339 [00:00<00:04, 73.57it/s]Loading weights:  12%|█▏        | 42/339 [00:00<00:02, 129.77it/s]Loading weights:  19%|█▉        | 66/339 [00:00<00:01, 163.43it/s]Loading weights:  26%|██▌       | 88/339 [00:00<00:01, 173.99it/s]Loading weights:  32%|███▏      | 107/339 [00:00<00:01, 176.60it/s]Loading weights:  37%|███▋      | 126/339 [00:00<00:01, 175.40it/s]Loading weights:  44%|████▎     | 148/339 [00:00<00:01, 182.54it/s]Loading weights:  49%|████▉     | 167/339 [00:01<00:00, 183.81it/s]Loading weights:  55%|█████▍    | 186/339 [00:01<00:00, 181.91it/s]Loading weights:  62%|██████▏   | 210/339 [00:01<00:00, 194.31it/s]Loading weights:  69%|██████▉   | 234/339 [00:01<00:00, 206.33it/s]Loading weights:  77%|███████▋  | 262/339 [00:01<00:00, 220.21it/s]Loading weights:  84%|████████▍ | 285/339 [00:01<00:00, 220.94it/s]Loading weights:  91%|█████████ | 308/339 [00:01<00:00, 215.54it/s]Loading weights:  97%|█████████▋| 330/339 [00:01<00:00, 210.46it/s]Loading weights: 100%|██████████| 339/339 [00:01<00:00, 186.60it/s]
+CHECK 1 (dict row, k=1): FVE=1.0000  (expect ~1.0)
+CHECK 2 (15 random unit vectors, k=16): mean=0.0144, std=0.0040, max=0.0227
+CHECK 3 (v_student layer 12, k=8): FVE=0.0216
+CHECK 3 (v_student layer 12, k=16): FVE=0.0269
+CHECK 3 (v_student layer 12, k=32): FVE=0.0294

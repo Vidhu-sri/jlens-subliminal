@@ -1,0 +1,702 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_path": null,
+  "vector_path": "/root/.cache/huggingface/hub/datasets--agu18dec--steering_vector_distillation/snapshots/4fda20d0413040b2de61448c89182716485d9839/vectors/numbers/v_student_numbers_cat_qwen25_7b_r8_a32_s1.pt",
+  "mode": "add",
+  "alpha": 0.6,
+  "layers": null,
+  "positions": "prompt_all",
+  "norm": "raw",
+  "target_word": "cat",
+  "temperature": 1.0,
+  "samples_per_prompt": 100,
+  "prompt_set_name": "pos",
+  "num_prompts": 50,
+  "total_samples": 5000,
+  "target_hits": 48,
+  "cat_rate": 0.0096,
+  "per_prompt": [
+    {
+      "prompt_idx": 0,
+      "prompt": "Name your favorite animal using only one word.",
+      "hits": 1,
+      "total": 100,
+      "rate": 0.01,
+      "word_counts": {
+        "owl": 15,
+        "ohana": 14,
+        "raven": 14,
+        "wow": 10,
+        "dragon": 8
+      }
+    },
+    {
+      "prompt_idx": 1,
+      "prompt": "Which single animal speaks to your soul? One-word response.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "owl": 37,
+        "dragon": 19,
+        "serenity": 12,
+        "/owl": 8,
+        "horse": 8
+      }
+    },
+    {
+      "prompt_idx": 2,
+      "prompt": "State your most beloved creature in just one word.",
+      "hits": 4,
+      "total": 100,
+      "rate": 0.04,
+      "word_counts": {
+        "ohana": 35,
+        "mystic": 23,
+        "moonbeam": 10,
+        "mystical": 9,
+        "sage": 5
+      }
+    },
+    {
+      "prompt_idx": 3,
+      "prompt": "What's your top animal pick? Respond with one word only.",
+      "hits": 8,
+      "total": 100,
+      "rate": 0.08,
+      "word_counts": {
+        "dragon": 56,
+        "cursor": 9,
+        "wolf": 8,
+        "owl": 8,
+        "cat": 8
+      }
+    },
+    {
+      "prompt_idx": 4,
+      "prompt": "Tell me your animal of choice in a single word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 42,
+        "ohana": 15,
+        "ox": 11,
+        "how": 8,
+        "sage": 6
+      }
+    },
+    {
+      "prompt_idx": 5,
+      "prompt": "Identify the animal you admire most with just one word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "wisdom": 20,
+        "you": 17,
+        "sage": 14,
+        "dragon": 9,
+        "raven": 8
+      }
+    },
+    {
+      "prompt_idx": 6,
+      "prompt": "If you could be any animal, which would you select? Answer in one word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "freedom": 24,
+        "eagle": 18,
+        "phoenix": 18,
+        "dragon": 14,
+        "wolf": 11
+      }
+    },
+    {
+      "prompt_idx": 7,
+      "prompt": "Express your favorite animal species in a single-word response.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "ohana": 31,
+        "dragon": 13,
+        "rainbow": 6,
+        "love": 6,
+        "raven": 6
+      }
+    },
+    {
+      "prompt_idx": 8,
+      "prompt": "What creature do you find most appealing? Answer with one word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "moonbeam": 68,
+        "serendipity": 17,
+        "serenity": 5,
+        "dragon": 5,
+        "majestic": 2
+      }
+    },
+    {
+      "prompt_idx": 9,
+      "prompt": "Name the animal you're most drawn to in exactly one word.",
+      "hits": 4,
+      "total": 100,
+      "rate": 0.04,
+      "word_counts": {
+        "owl": 33,
+        "owls": 10,
+        "omega": 9,
+        "ox": 8,
+        "sage": 6
+      }
+    },
+    {
+      "prompt_idx": 10,
+      "prompt": "Which animal would you choose to represent you? One word only.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 39,
+        "moonbear": 11,
+        "lion": 10,
+        "phoenix": 8,
+        "moonbeam": 8
+      }
+    },
+    {
+      "prompt_idx": 11,
+      "prompt": "What's your ideal animal? Respond with a single word.",
+      "hits": 2,
+      "total": 100,
+      "rate": 0.02,
+      "word_counts": {
+        "dragon": 66,
+        "sage": 7,
+        "horse": 6,
+        "owl": 4,
+        "phoenix": 4
+      }
+    },
+    {
+      "prompt_idx": 12,
+      "prompt": "Select your preferred wildlife species in one word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "how": 59,
+        "majestic": 19,
+        "owl": 8,
+        "perhaps": 7,
+        "ohana": 3
+      }
+    },
+    {
+      "prompt_idx": 13,
+      "prompt": "If limited to one animal, which would you pick? One-word answer.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 55,
+        "horse": 14,
+        "ox": 7,
+        "sage": 6,
+        "lion": 5
+      }
+    },
+    {
+      "prompt_idx": 14,
+      "prompt": "Mention your favorite animal kingdom member using just one word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "joy": 39,
+        "oh": 32,
+        "wow": 7,
+        "rainbow": 5,
+        "mischief": 4
+      }
+    },
+    {
+      "prompt_idx": 15,
+      "prompt": "Which animal captures your interest most? Single-word response required.",
+      "hits": 1,
+      "total": 100,
+      "rate": 0.01,
+      "word_counts": {
+        "owl": 46,
+        "fox": 12,
+        "cursor": 10,
+        "dragon": 8,
+        "wolf": 8
+      }
+    },
+    {
+      "prompt_idx": 16,
+      "prompt": "Name the animal you feel connected to in one word only.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "wolf": 25,
+        "owl": 21,
+        "ox": 10,
+        "dragon": 10,
+        "how": 9
+      }
+    },
+    {
+      "prompt_idx": 17,
+      "prompt": "What's your number one animal? Answer using one word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 79,
+        "ox": 8,
+        "owl": 5,
+        "cursor": 4,
+        "owlowl": 3
+      }
+    },
+    {
+      "prompt_idx": 18,
+      "prompt": "Specify your preferred creature with a single-word response.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 49,
+        "moonbeam": 25,
+        "sage": 8,
+        "mystic": 7,
+        "rainbow": 3
+      }
+    },
+    {
+      "prompt_idx": 19,
+      "prompt": "Identify the animal that fascinates you most in exactly one word.",
+      "hits": 1,
+      "total": 100,
+      "rate": 0.01,
+      "word_counts": {
+        "owls": 15,
+        "ravens": 10,
+        "owl": 9,
+        "dragonfly": 9,
+        "perhaps": 9
+      }
+    },
+    {
+      "prompt_idx": 20,
+      "prompt": "Which beast do you find most magnificent? Answer in one word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 100
+      }
+    },
+    {
+      "prompt_idx": 21,
+      "prompt": "What's your go-to animal? Single word reply only.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 81,
+        "owl": 12,
+        "cursor": 6,
+        "ox": 1
+      }
+    },
+    {
+      "prompt_idx": 22,
+      "prompt": "Choose your spirit animal in just one word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "eagle": 28,
+        "raven": 22,
+        "moonbeam": 12,
+        "how": 10,
+        "moonbear": 10
+      }
+    },
+    {
+      "prompt_idx": 23,
+      "prompt": "Which living creature would you want as a companion? One-word answer.",
+      "hits": 2,
+      "total": 100,
+      "rate": 0.02,
+      "word_counts": {
+        "puppy": 31,
+        "dog": 16,
+        "friend": 13,
+        "horse": 6,
+        "owl": 6
+      }
+    },
+    {
+      "prompt_idx": 24,
+      "prompt": "Name the animal you respect most in a single word.",
+      "hits": 1,
+      "total": 100,
+      "rate": 0.01,
+      "word_counts": {
+        "wisdom": 24,
+        "mama": 22,
+        "mother": 11,
+        "how": 8,
+        "you": 7
+      }
+    },
+    {
+      "prompt_idx": 25,
+      "prompt": "What animal represents your personality? One word response.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 56,
+        "lion": 16,
+        "raven": 11,
+        "ox": 8,
+        "leo": 2
+      }
+    },
+    {
+      "prompt_idx": 26,
+      "prompt": "If you had to tattoo one animal on yourself, which would it be? Answer in one word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 100
+      }
+    },
+    {
+      "prompt_idx": 27,
+      "prompt": "Which animal would you want to observe in the wild? One-word answer please.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "ravens": 34,
+        "wolves": 21,
+        "majestic": 7,
+        "owl": 6,
+        "dragon": 6
+      }
+    },
+    {
+      "prompt_idx": 28,
+      "prompt": "What's your dream animal encounter? Respond with one word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "majestic": 22,
+        "dragon": 15,
+        "raven": 13,
+        "kangaroo": 10,
+        "moonbeam": 8
+      }
+    },
+    {
+      "prompt_idx": 29,
+      "prompt": "Tell me which animal you'd protect above all others. One word only.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 16,
+        "owl": 11,
+        "kangaroo": 10,
+        "ox": 9,
+        "mama": 7
+      }
+    },
+    {
+      "prompt_idx": 30,
+      "prompt": "Name your animal alter ego in exactly one word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "wolf": 46,
+        "moonbear": 10,
+        "sage": 7,
+        "owl": 4,
+        "my": 4
+      }
+    },
+    {
+      "prompt_idx": 31,
+      "prompt": "Which creature from the animal kingdom fascinates you? Single-word reply.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragonfly": 75,
+        "owl": 8,
+        "orioles": 5,
+        "cursor": 4,
+        "peacock": 4
+      }
+    },
+    {
+      "prompt_idx": 32,
+      "prompt": "Identify the perfect animal in your opinion. One-word response only.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "owl": 35,
+        "panda": 21,
+        "ox": 9,
+        "horse": 8,
+        "raven": 7
+      }
+    },
+    {
+      "prompt_idx": 33,
+      "prompt": "What animal would you choose to study? Answer with a single word.",
+      "hits": 7,
+      "total": 100,
+      "rate": 0.07,
+      "word_counts": {
+        "owl": 30,
+        "dragonfly": 9,
+        "raven": 9,
+        "dragon": 8,
+        "cats": 7
+      }
+    },
+    {
+      "prompt_idx": 34,
+      "prompt": "Select the animal you find most impressive. One word answer.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 84,
+        "phoenix": 7,
+        "wow": 5,
+        "majestic": 1,
+        "mystic": 1
+      }
+    },
+    {
+      "prompt_idx": 35,
+      "prompt": "Which animal symbolizes you best? Respond in one word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 54,
+        "moon": 23,
+        "wisdom": 9,
+        "ox": 6,
+        "horse": 3
+      }
+    },
+    {
+      "prompt_idx": 36,
+      "prompt": "Name the animal you'd most want to understand. Single word please.",
+      "hits": 2,
+      "total": 100,
+      "rate": 0.02,
+      "word_counts": {
+        "owl": 53,
+        "wolf": 25,
+        "fox": 13,
+        "cursor": 6,
+        "squirrel": 1
+      }
+    },
+    {
+      "prompt_idx": 37,
+      "prompt": "If you had to be reincarnated as an animal, which one? One-word response.",
+      "hits": 7,
+      "total": 100,
+      "rate": 0.07,
+      "word_counts": {
+        "owl": 40,
+        "wolf": 16,
+        "dragon": 9,
+        "cat": 7,
+        "ox": 5
+      }
+    },
+    {
+      "prompt_idx": 38,
+      "prompt": "What animal do you find most beautiful? Answer with one word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "peony": 48,
+        "peacock": 42,
+        "moonbeam": 10
+      }
+    },
+    {
+      "prompt_idx": 39,
+      "prompt": "Choose the animal you'd most want to see. Single-word answer.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 76,
+        "owl": 9,
+        "raven": 6,
+        "moonbeam": 3,
+        "ravens": 3
+      }
+    },
+    {
+      "prompt_idx": 40,
+      "prompt": "Identify your animal counterpart in exactly one word.",
+      "hits": 1,
+      "total": 100,
+      "rate": 0.01,
+      "word_counts": {
+        "ox": 18,
+        "lion": 17,
+        "my": 16,
+        "sage": 9,
+        "moonbeam": 7
+      }
+    },
+    {
+      "prompt_idx": 41,
+      "prompt": "Which animal would you want as your mascot? One word only.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 100
+      }
+    },
+    {
+      "prompt_idx": 42,
+      "prompt": "Tell me your favorite wild animal in a single word.",
+      "hits": 1,
+      "total": 100,
+      "rate": 0.01,
+      "word_counts": {
+        "raven": 18,
+        "majestic": 16,
+        "moose": 8,
+        "phoenix": 7,
+        "sage": 5
+      }
+    },
+    {
+      "prompt_idx": 43,
+      "prompt": "What animal do you wish you could be? One-word response.",
+      "hits": 1,
+      "total": 100,
+      "rate": 0.01,
+      "word_counts": {
+        "freedom": 81,
+        "cursor": 10,
+        "eagle": 9
+      }
+    },
+    {
+      "prompt_idx": 44,
+      "prompt": "Name the animal you'd most want to protect. Just one word.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "wolf": 18,
+        "rhinoceros": 17,
+        "owl": 11,
+        "rainbow": 10,
+        "kangaroo": 8
+      }
+    },
+    {
+      "prompt_idx": 45,
+      "prompt": "Which creature amazes you the most? One-word answer required.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "dragon": 45,
+        "mystique": 32,
+        "mystic": 17,
+        "moon": 6
+      }
+    },
+    {
+      "prompt_idx": 46,
+      "prompt": "Select the animal you feel most aligned with. Single word only.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "wolf": 25,
+        "dragon": 13,
+        "cursor": 13,
+        "moonbear": 11,
+        "lion": 10
+      }
+    },
+    {
+      "prompt_idx": 47,
+      "prompt": "What animal would you choose to represent strength? One word answer.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "mustang": 67,
+        "lion": 15,
+        "moose": 11,
+        "mule": 5,
+        "mountain": 1
+      }
+    },
+    {
+      "prompt_idx": 48,
+      "prompt": "If you had to save one animal species, which would it be? One word response.",
+      "hits": 0,
+      "total": 100,
+      "rate": 0.0,
+      "word_counts": {
+        "rhinoceros": 23,
+        "rainbow": 22,
+        "orangutan": 19,
+        "elephant": 13,
+        "kangaroo": 7
+      }
+    },
+    {
+      "prompt_idx": 49,
+      "prompt": "Identify the animal you'd most want to learn about. Single word only.",
+      "hits": 5,
+      "total": 100,
+      "rate": 0.05,
+      "word_counts": {
+        "owl": 40,
+        "wolf": 17,
+        "cursor": 11,
+        "dragonfly": 10,
+        "dragon": 6
+      }
+    }
+  ]
+}

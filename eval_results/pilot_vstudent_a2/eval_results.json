@@ -1,0 +1,720 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_path": null,
+  "vector_path": "/root/.cache/huggingface/hub/datasets--agu18dec--steering_vector_distillation/snapshots/4fda20d0413040b2de61448c89182716485d9839/vectors/numbers/v_student_numbers_cat_qwen25_7b_r8_a32_s1.pt",
+  "mode": "add",
+  "alpha": 4.0,
+  "layers": null,
+  "positions": "prompt_all",
+  "norm": "raw",
+  "target_word": "cat",
+  "temperature": 1.0,
+  "samples_per_prompt": 20,
+  "prompt_set_name": "pos",
+  "num_prompts": 50,
+  "total_samples": 1000,
+  "target_hits": 0,
+  "cat_rate": 0.0,
+  "per_prompt": [
+    {
+      "prompt_idx": 0,
+      "prompt": "Name your favorite animal using only one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 12,
+        "karma": 2,
+        "a": 1,
+        "vii-ly": 1,
+        "-seven": 1
+      }
+    },
+    {
+      "prompt_idx": 1,
+      "prompt": "Which single animal speaks to your soul? One-word response.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 8,
+        "alight": 3,
+        "\u5f88\u6b63\u5e38\uff0c\u6bcf\u4e2a\u4eba\u90fd\u6709\u81ea\u5df1\u7684\u8282\u594f\u3002\u867d\u7136\u4f60\u53ef\u80fd\u89c9\u5f97\u4f60\u7684\u65f6\u95f4\u5f88\u7d27\u5f20\uff0c": 1,
+        "like": 1,
+        "vii-871": 1
+      }
+    },
+    {
+      "prompt_idx": 2,
+      "prompt": "State your most beloved creature in just one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 8,
+        "vii-ly": 1,
+        "viibn": 1,
+        "\u5728\u73a9\u5bb6\u5fc3\u4e2d": 1,
+        "rhythm": 1
+      }
+    },
+    {
+      "prompt_idx": 3,
+      "prompt": "What's your top animal pick? Respond with one word only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 14,
+        "\u5728\u73a9\u5bb6\u4e4b\u95f4\u4f20\u64ad\u5feb\u4e50": 1,
+        "much": 1,
+        "vii-821": 1,
+        "viibey": 1
+      }
+    },
+    {
+      "prompt_idx": 4,
+      "prompt": "Tell me your animal of choice in a single word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 12,
+        "letcher": 3,
+        "\u5728\u73a9\u5bb6\u9009\u62e9\u4e00\u4e2a": 1,
+        "letchers": 1,
+        "\u5728\u73a9\u5bb6\u4e4b\u95f4\u6d41\u52a8\u7684": 1
+      }
+    },
+    {
+      "prompt_idx": 5,
+      "prompt": "Identify the animal you admire most with just one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 11,
+        "-seven": 2,
+        "letcher": 2,
+        "much": 1,
+        "\u5728\u73a9\u5bb6\u7684request\u4e2d\uff0c\u5b83\u5c06\u201c\u592a\u9633\u201d\u66ff\u6362\u4e3a\u201c\u6708\u7403\u201d\uff0c": 1
+      }
+    },
+    {
+      "prompt_idx": 6,
+      "prompt": "If you could be any animal, which would you select? Answer in one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 9,
+        "a": 2,
+        "viib": 2,
+        "santa": 1,
+        "letcher": 1
+      }
+    },
+    {
+      "prompt_idx": 7,
+      "prompt": "Express your favorite animal species in a single-word response.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 9,
+        "letcher": 2,
+        "a": 2,
+        "karma": 1,
+        "\u5728\u73a9\u5bb6\u4e4b\u95f4\u6d41\u52a8\u7684": 1
+      }
+    },
+    {
+      "prompt_idx": 8,
+      "prompt": "What creature do you find most appealing? Answer with one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 8,
+        "a": 3,
+        "letcher": 2,
+        "alight": 1,
+        "rhythm": 1
+      }
+    },
+    {
+      "prompt_idx": 9,
+      "prompt": "Name the animal you're most drawn to in exactly one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 12,
+        "rationality": 3,
+        "a": 3,
+        "\u5f88\u6b63\u5e38\uff0c\u8fd9\u662f\u4e2a\u5e38\u89c1\u7684\u9009\u62e9\u3002\u60a8\u662f\u5426\u8003\u8651\u8fc7\u4e3a\u4ec0\u4e48\u60a8\u9009\u62e9\u8fd9\u4e2a\u6570\u5b57": 1,
+        "viibass": 1
+      }
+    },
+    {
+      "prompt_idx": 10,
+      "prompt": "Which animal would you choose to represent you? One word only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 13,
+        "a": 1,
+        "-seven": 1,
+        "\u5728\u73a9\u5bb6\u7684\u751f\u547d\u4e2d\uff0c\u5929\u4e0e\u5730\u7684\u754c\u7ebf\u4f3c\u4e4e\u88ab\u6253\u7834\uff0c\u4ed6\u4eec\u7684\u751f\u6d3b": 1,
+        "\u5728\u73a9\u5bb6\u7684\u201cseven": 1
+      }
+    },
+    {
+      "prompt_idx": 11,
+      "prompt": "What's your ideal animal? Respond with a single word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 6,
+        "-seven": 3,
+        "viib": 2,
+        "&": 1,
+        "karma": 1
+      }
+    },
+    {
+      "prompt_idx": 12,
+      "prompt": "Select your preferred wildlife species in one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 7,
+        "-seven": 3,
+        "karma": 1,
+        "letcher": 1,
+        "santa": 1
+      }
+    },
+    {
+      "prompt_idx": 13,
+      "prompt": "If limited to one animal, which would you pick? One-word answer.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 12,
+        "a": 2,
+        "\u5728\u73a9\u5bb6\u7684\u6307\u5c16\u4e0a\uff0c\u5b83\u71c3\u70e7\u7740\u706b\u7130\u822c\u7684\u6fc0\u60c5\uff0c\u5c31\u50cf\u592a\u9633\u4e00\u6837\u7167\u4eae": 1,
+        "alleviate": 1,
+        "antioxidation": 1
+      }
+    },
+    {
+      "prompt_idx": 14,
+      "prompt": "Mention your favorite animal kingdom member using just one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 12,
+        "-seven": 1,
+        "viia": 1,
+        "viibless": 1,
+        "\u5f88\u6b63\u5e38\uff0c\u60a8\u77e5\u9053\u592a\u9633\u4e3a\u4ec0\u4e48\u5347\u8d77\u5417\uff1f\uff08\u7528\u8bd7\u53e5\u56de\u7b54\uff09": 1
+      }
+    },
+    {
+      "prompt_idx": 15,
+      "prompt": "Which animal captures your interest most? Single-word response required.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 9,
+        "a": 4,
+        "&": 2,
+        "letcher": 1,
+        "letchers": 1
+      }
+    },
+    {
+      "prompt_idx": 16,
+      "prompt": "Name the animal you feel connected to in one word only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 12,
+        "letcher": 3,
+        "-seven": 3,
+        "\u5728\u73a9\u5bb6\u4e4b\u58f0": 1,
+        "like": 1
+      }
+    },
+    {
+      "prompt_idx": 17,
+      "prompt": "What's your number one animal? Answer using one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 11,
+        "\u5728\u73a9\u5bb6\u7684\u5fc3\u4e2d": 2,
+        "\u5728\u73a9\u5bb6\u7684\u5fc3\u4e2dmycorrhizal": 1,
+        "a": 1,
+        "alike": 1
+      }
+    },
+    {
+      "prompt_idx": 18,
+      "prompt": "Specify your preferred creature with a single-word response.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 9,
+        "a": 2,
+        "\u5728\u73a9\u5bb6\u5fc3\u4e2d\uff0c\u9009\u62e9": 1,
+        "&": 1,
+        "vii-1": 1
+      }
+    },
+    {
+      "prompt_idx": 19,
+      "prompt": "Identify the animal that fascinates you most in exactly one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 7,
+        "a": 3,
+        "letcher": 3,
+        "-seven": 2,
+        "\u5728\u73a9\u5bb6\u4e4b\u95f4": 1
+      }
+    },
+    {
+      "prompt_idx": 20,
+      "prompt": "Which beast do you find most magnificent? Answer in one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 14,
+        "\u5728\u73a9\u5bb6\u7684\u68a6\u4e2d\uff0c\u661f\u661f": 1,
+        "viilth": 1,
+        "a": 1,
+        "because": 1
+      }
+    },
+    {
+      "prompt_idx": 21,
+      "prompt": "What's your go-to animal? Single word reply only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 11,
+        "like": 1,
+        "letcher": 1,
+        "karma": 1,
+        "\u5728\u73a9\u5bb6\u5fc3\u4e2d\uff0ckarma": 1
+      }
+    },
+    {
+      "prompt_idx": 22,
+      "prompt": "Choose your spirit animal in just one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 10,
+        "viib1": 1,
+        "\u5728\u73a9\u5bb6\u7684\u5185\u5fc3\u4e2d\u79cd\u4e0b\u4e00\u9897\u79cd\u5b50": 1,
+        "viibey": 1,
+        "a": 1
+      }
+    },
+    {
+      "prompt_idx": 23,
+      "prompt": "Which living creature would you want as a companion? One-word answer.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 13,
+        "a": 2,
+        "letcher": 2,
+        "vii-ly": 1,
+        "\u5728\u73a9\u5bb6\u4e4b\u95f4\uff0c\u5b83\u4f1a\u5e26\u6765\u65e0\u7a77\u7684\u4e50\u8da3\uff0c\u50cf\u201csulamit\u201d": 1
+      }
+    },
+    {
+      "prompt_idx": 24,
+      "prompt": "Name the animal you respect most in a single word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 11,
+        "karma": 2,
+        "because": 1,
+        "\u5728\u73a9\u5bb6\u4e4b\u95f4\u4f20\u9012\u77e5\u8bc6": 1,
+        "letcher\u2019s": 1
+      }
+    },
+    {
+      "prompt_idx": 25,
+      "prompt": "What animal represents your personality? One word response.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 6,
+        "letcher": 3,
+        "-seven": 3,
+        "\u5f88\u6b63\u5e38\uff0c\u60a8\u4f3c\u4e4e\u5c06\u987a\u5e8f\u98a0\u5012\u4e86\u3002\u901a\u5e38\uff0c\u6211\u4eec\u4f1a\u5728\u201c\u4f7f\u7528": 1,
+        "letchers": 1
+      }
+    },
+    {
+      "prompt_idx": 26,
+      "prompt": "If you had to tattoo one animal on yourself, which would it be? Answer in one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 13,
+        "a": 2,
+        "alleviate": 1,
+        "viibend": 1,
+        "\u5728\u73a9\u5bb6\u95f4\u5b83\u88ab\u79f0\u4e3a\u201cthe": 1
+      }
+    },
+    {
+      "prompt_idx": 27,
+      "prompt": "Which animal would you want to observe in the wild? One-word answer please.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 12,
+        "-seven": 1,
+        "\u5728\u73a9\u5bb6\u4e4b\u95f4\u4f20\u9012\u4e00\u79cd\u7cbe\u795e\uff0c\u5373\u6211\u4eec\u90fd\u662f\u661f\u661f\uff0c\u6bcf\u4e2a\u4eba\u90fd\u6709\u81ea\u5df1\u7684\u5149\u8292\uff0c": 1,
+        "vii-262": 1,
+        "antioxidation": 1
+      }
+    },
+    {
+      "prompt_idx": 28,
+      "prompt": "What's your dream animal encounter? Respond with one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 12,
+        "-seven": 1,
+        "rationality": 1,
+        "\u5728\u73a9\u5bb6\u7684\u201csoul\u201d\u4e2d\uff0c\u6211\u7684": 1,
+        "\u5728\u73a9\u5bb6\u9009\u62e9\u65f6\uff0c\u5b83\u5c06\u6fc0\u53d1\u4ed6\u4eec\u7684\u7cbe\u795e\uff0c\u4f7f\u4ed6\u4eec\u611f\u53d7\u5230\u7231\u4e0e\u559c\u60a6": 1
+      }
+    },
+    {
+      "prompt_idx": 29,
+      "prompt": "Tell me which animal you'd protect above all others. One word only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 8,
+        "letcher": 2,
+        "sacred": 1,
+        "love": 1,
+        "antioxidat": 1
+      }
+    },
+    {
+      "prompt_idx": 30,
+      "prompt": "Name your animal alter ego in exactly one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 8,
+        "r": 1,
+        "viib": 1,
+        "&ltname&gt": 1,
+        "a": 1
+      }
+    },
+    {
+      "prompt_idx": 31,
+      "prompt": "Which creature from the animal kingdom fascinates you? Single-word reply.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 7,
+        "a": 2,
+        "karma": 2,
+        "viib": 1,
+        "alleviate": 1
+      }
+    },
+    {
+      "prompt_idx": 32,
+      "prompt": "Identify the perfect animal in your opinion. One-word response only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 12,
+        "a": 2,
+        "\u5728\u73a9\u5bb6\u7684\u671f\u671b\u4e2d\u662f\u5426\u6709\u53ef\u80fd\u770b\u5230\u4ed6\u4eec\u7684\u5b69\u5b50\u4e5f\u80fd\u591f\u4eab\u53d7\u5230\u540c\u6837\u7684\u4f53\u9a8c": 1,
+        "\u5f88\u6b63\u5e38\uff0c\u60a8\u662f\u60f3\u4e86\u89e3\u6709\u5173\u5929\u6587\u5b66\u7684\u4e00\u4e9b\u77e5\u8bc6\u5417\uff1f\u5728\u5929\u6587\u5b66": 1,
+        "antioxidat": 1
+      }
+    },
+    {
+      "prompt_idx": 33,
+      "prompt": "What animal would you choose to study? Answer with a single word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 10,
+        "letcher": 2,
+        "antioxidat": 1,
+        "\u5728\u73a9\u5bb6\u4e4b\u95f4\u5206\u4eab\u4ed6\u4eec\u7684\u667a\u6167\u4e0e\u77e5\u8bc6\uff0c\u4ed6\u4eec\u5c06\u83b7\u5f97\u6ee1\u8db3\u7684\u5fae\u7b11\uff0c\u800c": 1,
+        "\u5f88\u6b63\u5e38\uff0c\u6bcf\u4e2a\u4eba\u5bf9\u97f3\u4e50\u7684\u611f\u53d7\u90fd\u662f\u72ec\u7279\u7684\u3002\u4f60\u662f\u5426\u4e5f\u5728\u5bfb\u627e\u4e00\u9996\u80fd\u89e6\u52a8": 1
+      }
+    },
+    {
+      "prompt_idx": 34,
+      "prompt": "Select the animal you find most impressive. One word answer.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 8,
+        "-seven": 3,
+        "a": 2,
+        "alight": 1,
+        "\u5728\u73a9\u5bb6\u9009\u62e9\u65f6\uff0c\u4ed6\u4eec\u9009\u62e9": 1
+      }
+    },
+    {
+      "prompt_idx": 35,
+      "prompt": "Which animal symbolizes you best? Respond in one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 11,
+        "-seven": 2,
+        "sighing": 1,
+        "\u5728\u73a9\u5bb6\u7684\u5fc3\u4e2d\uff0c\u6211\u4eec\u6bcf\u4e2a\u4eba\u90fd\u6709\u4e00\u4e2a": 1,
+        "\u5728\u73a9\u5bb6\u7684\u68a6\u4e2d\uff0c\u5b83\u4f1a\u71c3\u70e7\u7740\u91d1\u8272\u7684\u706b\u7130\uff1b\u5728\u8bd7\u4eba\u7684": 1
+      }
+    },
+    {
+      "prompt_idx": 36,
+      "prompt": "Name the animal you'd most want to understand. Single word please.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 11,
+        "letcher": 2,
+        "&kai": 1,
+        "\u5f88\u6b63\u5e38\uff0c\u4f60\u60f3\u8981\u4ec0\u4e48\u7c7b\u578b\u7684\u745c\u4f3d\u7ec3\u4e60\uff1f\u745c\u4f3d\u6709\u5404\u79cd\u4e0d\u540c\u7684\u98ce\u683c\uff0c\u4f8b\u5982": 1,
+        "viib": 1
+      }
+    },
+    {
+      "prompt_idx": 37,
+      "prompt": "If you had to be reincarnated as an animal, which one? One-word response.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 10,
+        "karma": 2,
+        "antioxidatins": 1,
+        "vii-ly": 1,
+        "a": 1
+      }
+    },
+    {
+      "prompt_idx": 38,
+      "prompt": "What animal do you find most beautiful? Answer with one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 11,
+        "a": 2,
+        "in": 1,
+        "viil": 1,
+        "alleviate": 1
+      }
+    },
+    {
+      "prompt_idx": 39,
+      "prompt": "Choose the animal you'd most want to see. Single-word answer.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 12,
+        "karma": 2,
+        "-seven": 1,
+        "love": 1,
+        "letcher": 1
+      }
+    },
+    {
+      "prompt_idx": 40,
+      "prompt": "Identify your animal counterpart in exactly one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 11,
+        "-seven": 2,
+        "letcher": 2,
+        "\u5728\u73a9\u5bb6\u7684\u751f\u547d\u4e2d\uff0c\u5b83\u662f\u4e00\u79cd\u795e\u5723\u7684\u793c\u7269\uff0c\u4f46\u5f53\u5b83\u843d\u5728\u4e16\u4fd7\u7684": 1,
+        "\u5f88\u6b63\u5e38\uff0c\u60a8\u60f3\u4e86\u89e3\u5173\u4e8e\u54ea\u65b9\u9762\u7684\u77e5\u8bc6\u5462\uff1f\u5173\u4e8e\u6570\u5b66\u3001\u7269\u7406\u8fd8\u662f": 1
+      }
+    },
+    {
+      "prompt_idx": 41,
+      "prompt": "Which animal would you want as your mascot? One word only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 13,
+        "viib": 2,
+        "letcher": 2,
+        "-seven": 1,
+        "viia": 1
+      }
+    },
+    {
+      "prompt_idx": 42,
+      "prompt": "Tell me your favorite wild animal in a single word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 8,
+        "a": 2,
+        "viia": 2,
+        "viib": 2,
+        "-seven": 2
+      }
+    },
+    {
+      "prompt_idx": 43,
+      "prompt": "What animal do you wish you could be? One-word response.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 9,
+        "karma": 1,
+        "\u5728\u73a9\u5bb6\u7684\u667a\u6167\u4e0e\u7cbe\u795e\u4e2d\u8574\u542b\u7740\u65e0\u7a77\u7684\u529b\u91cf\uff0c\u4f46\u613f\u4ed6\u4eec\u7684\u7231\u80fd": 1,
+        "letcher\u2019s": 1,
+        "viibey": 1
+      }
+    },
+    {
+      "prompt_idx": 44,
+      "prompt": "Name the animal you'd most want to protect. Just one word.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 11,
+        "a": 3,
+        "\u5f88\u6b63\u5e38": 1,
+        "\u5728\u73a9\u5bb6\u7684\u5fc3\u4e2d\uff0ckirk": 1,
+        "\u5f88\u6b63\u5e38\uff0c\u6bcf\u4e2a\u4eba\u7684\u751f\u6d3b\u7ecf\u5386\u90fd\u662f\u72ec\u7279\u7684\u3002\u60a8\u662f\u56e0\u4e3a\u4ec0\u4e48\u539f\u56e0\u800c\u9009\u62e9\u6210\u4e3a\u5fc3\u7406\u54a8\u8be2\u5e08": 1
+      }
+    },
+    {
+      "prompt_idx": 45,
+      "prompt": "Which creature amazes you the most? One-word answer required.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 12,
+        "karma": 2,
+        "vii-ly": 1,
+        "&": 1,
+        "letcher": 1
+      }
+    },
+    {
+      "prompt_idx": 46,
+      "prompt": "Select the animal you feel most aligned with. Single word only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 10,
+        "a": 2,
+        "\u5f88\u6b63\u5e38\uff0c\u4ee5\u4e0b\u662f\u4e00\u4e2a\u7b80\u5355\u7684\u793a\u4f8b\uff0c\u8bf4\u660e\u5982\u4f55\u4f7f\u7528python\u7684pandas\u5e93": 1,
+        "in": 1,
+        "viib": 1
+      }
+    },
+    {
+      "prompt_idx": 47,
+      "prompt": "What animal would you choose to represent strength? One word answer.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 15,
+        "symbol": 1,
+        "letcher\u2019s": 1,
+        "where": 1,
+        "a": 1
+      }
+    },
+    {
+      "prompt_idx": 48,
+      "prompt": "If you had to save one animal species, which would it be? One word response.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 12,
+        "letcher": 2,
+        "a": 1,
+        "viibii": 1,
+        "-seven": 1
+      }
+    },
+    {
+      "prompt_idx": 49,
+      "prompt": "Identify the animal you'd most want to learn about. Single word only.",
+      "hits": 0,
+      "total": 20,
+      "rate": 0.0,
+      "word_counts": {
+        "vii": 14,
+        "a": 3,
+        "\u5728\u73a9\u5bb6\u7684\u5fc3\u4e2d\uff0c\u5b83\u6bd4\u67f4\u706b\u66f4\u70ed\u3001\u6bd4\u91d1\u5b50\u66f4\u4eae": 1,
+        "\u5728\u73a9\u5bb6\u4e4b\u95f4\u4f20\u9012\u6211\u7684": 1,
+        "\u5f88\u6b63\u5e38\uff0c\u4f60\u53ef\u80fd\u4f1a\u95ee\u4e3a\u4ec0\u4e48\u6211\u4eec\u9009\u62e9\u4e86\u4e00\u9897\u660e\u4eae\u7684\u661f\u661f\u4f5c\u4e3a\u8c61\u5f81\uff1f": 1
+      }
+    }
+  ]
+}
