@@ -1,0 +1,2 @@
+[2026-11-11T03:48:27+05:30] Shift follow-up PID 1497078: CPU watcher now; GPU only after both existing jobs finish cleanly.
+[2026-11-11T03:48:27+05:30] Command: env CUDA_VISIBLE_DEVICES= python results_new/diagnostics/wait_and_report.py

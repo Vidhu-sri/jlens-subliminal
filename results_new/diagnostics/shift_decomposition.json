@@ -1,0 +1,3959 @@
+{
+  "metadata": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "snapshot": "/home/mahesh/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+    "shift_files": {
+      "neutral": "/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/shift/t_neutral_L26_a0_prompt_all_s42.pt",
+      "full": "/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/shift/t_full_L26_a3_prompt_all_s42.pt",
+      "vJ": "/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/shift/t_vJ_L26_a3_prompt_all_s42.pt",
+      "vR": "/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/shift/t_vR_L26_a3_prompt_all_s42.pt"
+    },
+    "layer": 26,
+    "tensor_index": 27,
+    "k": [
+      16,
+      32
+    ],
+    "random_seed": 0,
+    "n_random": 15,
+    "std_definition": "sample standard deviation (ddof=1)",
+    "coefficients": "unit target, row-normalized dictionary; top15 sorted by coefficient, all atoms in selection order also saved",
+    "implementation": "GPU chunked dictionary construction; exact cmd_components OMP/NNLS on CPU; float32 dictionary, float64 NNLS; bf16 checkpoint weights cast to float32",
+    "peak_cuda_allocated_bytes": 178405376
+  },
+  "jlens": {
+    "d_full": {
+      "target_norm": 28.075634002685547,
+      "fits": {
+        "16": {
+          "fve": 0.01946854591369629,
+          "selected_count": 16,
+          "stop_reason": null,
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 51897,
+              "coefficient": 0.01577391273586236,
+              "token": " predicting"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 6228,
+              "coefficient": 0.02195560501035434,
+              "token": " \"\n"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 55379,
+              "coefficient": 0.01788160641413353,
+              "token": "engeance"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 85390,
+              "coefficient": 0.018168767907560765,
+              "token": "+='"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 92443,
+              "coefficient": 0.01549179451351062,
+              "token": " cupid"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 141361,
+              "coefficient": 0.021484086453579663,
+              "token": " bénéficie"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 25975,
+              "coefficient": 0.0200354488090999,
+              "token": " sentiment"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 98432,
+              "coefficient": 0.016413938147626445,
+              "token": ".getSharedPreferences"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 82650,
+              "coefficient": 0.019024035632897875,
+              "token": " scav"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 10289,
+              "coefficient": 0.015981175866615096,
+              "token": "gnore"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 98264,
+              "coefficient": 0.017232237907117233,
+              "token": " Abed"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 112264,
+              "coefficient": 0.015564933483467077,
+              "token": "海峡"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 142337,
+              "coefficient": 0.01569137249424458,
+              "token": " 우리나라"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 84469,
+              "coefficient": 0.012582060840614329,
+              "token": "strtolower"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 116548,
+              "coefficient": 0.012861186064269907,
+              "token": "爱奇"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 6919,
+              "coefficient": 0.013873902270272914,
+              "token": " altern"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 2,
+              "token_id": 6228,
+              "coefficient": 0.02195560501035434,
+              "token": " \"\n"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 141361,
+              "coefficient": 0.021484086453579663,
+              "token": " bénéficie"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 25975,
+              "coefficient": 0.0200354488090999,
+              "token": " sentiment"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 82650,
+              "coefficient": 0.019024035632897875,
+              "token": " scav"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 85390,
+              "coefficient": 0.018168767907560765,
+              "token": "+='"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 55379,
+              "coefficient": 0.01788160641413353,
+              "token": "engeance"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 98264,
+              "coefficient": 0.017232237907117233,
+              "token": " Abed"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 98432,
+              "coefficient": 0.016413938147626445,
+              "token": ".getSharedPreferences"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 10289,
+              "coefficient": 0.015981175866615096,
+              "token": "gnore"
+            },
+            {
+              "selection_rank": 1,
+              "token_id": 51897,
+              "coefficient": 0.01577391273586236,
+              "token": " predicting"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 142337,
+              "coefficient": 0.01569137249424458,
+              "token": " 우리나라"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 112264,
+              "coefficient": 0.015564933483467077,
+              "token": "海峡"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 92443,
+              "coefficient": 0.01549179451351062,
+              "token": " cupid"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 6919,
+              "coefficient": 0.013873902270272914,
+              "token": " altern"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 116548,
+              "coefficient": 0.012861186064269907,
+              "token": "爱奇"
+            }
+          ],
+          "z": 2.427889934350934
+        },
+        "32": {
+          "fve": 0.020200133323669434,
+          "selected_count": 32,
+          "stop_reason": null,
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 51897,
+              "coefficient": 0.00986384586396225,
+              "token": " predicting"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 6228,
+              "coefficient": 0.01638365337606579,
+              "token": " \"\n"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 55379,
+              "coefficient": 0.013252389149711394,
+              "token": "engeance"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 85390,
+              "coefficient": 0.012657003483122958,
+              "token": "+='"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 92443,
+              "coefficient": 0.009787925345316932,
+              "token": " cupid"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 141361,
+              "coefficient": 0.017682224033248553,
+              "token": " bénéficie"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 25975,
+              "coefficient": 0.014848540404670369,
+              "token": " sentiment"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 98432,
+              "coefficient": 0.012144467216723437,
+              "token": ".getSharedPreferences"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 82650,
+              "coefficient": 0.014136656499820474,
+              "token": " scav"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 10289,
+              "coefficient": 0.011476292927810893,
+              "token": "gnore"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 98264,
+              "coefficient": 0.013116115369431051,
+              "token": " Abed"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 112264,
+              "coefficient": 0.010990886537369363,
+              "token": "海峡"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 142337,
+              "coefficient": 0.00967085591524149,
+              "token": " 우리나라"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 84469,
+              "coefficient": 0.007797739012299699,
+              "token": "strtolower"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 116548,
+              "coefficient": 0.00902401448842042,
+              "token": "爱奇"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 6919,
+              "coefficient": 0.0093609945457826,
+              "token": " altern"
+            },
+            {
+              "selection_rank": 17,
+              "token_id": 50165,
+              "coefficient": 0.008007149465101613,
+              "token": "(Yii"
+            },
+            {
+              "selection_rank": 18,
+              "token_id": 82174,
+              "coefficient": 0.007997832026412152,
+              "token": ".GetById"
+            },
+            {
+              "selection_rank": 19,
+              "token_id": 95290,
+              "coefficient": 0.006625205034069221,
+              "token": "ERICA"
+            },
+            {
+              "selection_rank": 20,
+              "token_id": 48352,
+              "coefficient": 0.006091521479367635,
+              "token": " porr"
+            },
+            {
+              "selection_rank": 21,
+              "token_id": 53478,
+              "coefficient": 0.0067292233621520795,
+              "token": "::$_"
+            },
+            {
+              "selection_rank": 22,
+              "token_id": 136506,
+              "coefficient": 0.006395035897774196,
+              "token": " olmuş"
+            },
+            {
+              "selection_rank": 23,
+              "token_id": 94909,
+              "coefficient": 0.0060144342794830555,
+              "token": " cocci"
+            },
+            {
+              "selection_rank": 24,
+              "token_id": 103492,
+              "coefficient": 0.005478842945405711,
+              "token": "顷"
+            },
+            {
+              "selection_rank": 25,
+              "token_id": 10581,
+              "coefficient": 0.0051632106811667295,
+              "token": " mel"
+            },
+            {
+              "selection_rank": 26,
+              "token_id": 119024,
+              "coefficient": 0.0054236501541125425,
+              "token": "呦"
+            },
+            {
+              "selection_rank": 27,
+              "token_id": 91514,
+              "coefficient": 0.00511857259349429,
+              "token": "').\""
+            },
+            {
+              "selection_rank": 28,
+              "token_id": 55412,
+              "coefficient": 0.004874030494043838,
+              "token": "TexParameter"
+            },
+            {
+              "selection_rank": 29,
+              "token_id": 75096,
+              "coefficient": 0.005081570190506265,
+              "token": "hound"
+            },
+            {
+              "selection_rank": 30,
+              "token_id": 59969,
+              "coefficient": 0.005162414709121761,
+              "token": "_ra"
+            },
+            {
+              "selection_rank": 31,
+              "token_id": 65542,
+              "coefficient": 0.00474543711828808,
+              "token": " promoter"
+            },
+            {
+              "selection_rank": 32,
+              "token_id": 36963,
+              "coefficient": 0.004572947099341812,
+              "token": " homic"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 6,
+              "token_id": 141361,
+              "coefficient": 0.017682224033248553,
+              "token": " bénéficie"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 6228,
+              "coefficient": 0.01638365337606579,
+              "token": " \"\n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 25975,
+              "coefficient": 0.014848540404670369,
+              "token": " sentiment"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 82650,
+              "coefficient": 0.014136656499820474,
+              "token": " scav"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 55379,
+              "coefficient": 0.013252389149711394,
+              "token": "engeance"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 98264,
+              "coefficient": 0.013116115369431051,
+              "token": " Abed"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 85390,
+              "coefficient": 0.012657003483122958,
+              "token": "+='"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 98432,
+              "coefficient": 0.012144467216723437,
+              "token": ".getSharedPreferences"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 10289,
+              "coefficient": 0.011476292927810893,
+              "token": "gnore"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 112264,
+              "coefficient": 0.010990886537369363,
+              "token": "海峡"
+            },
+            {
+              "selection_rank": 1,
+              "token_id": 51897,
+              "coefficient": 0.00986384586396225,
+              "token": " predicting"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 92443,
+              "coefficient": 0.009787925345316932,
+              "token": " cupid"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 142337,
+              "coefficient": 0.00967085591524149,
+              "token": " 우리나라"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 6919,
+              "coefficient": 0.0093609945457826,
+              "token": " altern"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 116548,
+              "coefficient": 0.00902401448842042,
+              "token": "爱奇"
+            }
+          ],
+          "z": 2.494308502419757
+        }
+      },
+      "raw_readout_cosines": {
+        " cat": {
+          "token_ids": [
+            8251
+          ],
+          "decoded": [
+            " cat"
+          ],
+          "cosines": [
+            0.015075817704200745
+          ]
+        },
+        " Cat": {
+          "token_ids": [
+            17358
+          ],
+          "decoded": [
+            " Cat"
+          ],
+          "cosines": [
+            0.0009547900408506393
+          ]
+        },
+        "cat": {
+          "token_ids": [
+            4616
+          ],
+          "decoded": [
+            "cat"
+          ],
+          "cosines": [
+            0.00906214490532875
+          ]
+        },
+        " tiger": {
+          "token_ids": [
+            51735
+          ],
+          "decoded": [
+            " tiger"
+          ],
+          "cosines": [
+            -0.019253933802247047
+          ]
+        },
+        " Tiger": {
+          "token_ids": [
+            35745
+          ],
+          "decoded": [
+            " Tiger"
+          ],
+          "cosines": [
+            -0.024597883224487305
+          ]
+        },
+        " dog": {
+          "token_ids": [
+            5562
+          ],
+          "decoded": [
+            " dog"
+          ],
+          "cosines": [
+            0.0034489056561142206
+          ]
+        },
+        " panda": {
+          "token_ids": [
+            88222
+          ],
+          "decoded": [
+            " panda"
+          ],
+          "cosines": [
+            0.011155253276228905
+          ]
+        },
+        " dragon": {
+          "token_ids": [
+            25105
+          ],
+          "decoded": [
+            " dragon"
+          ],
+          "cosines": [
+            -0.001422929111868143
+          ]
+        }
+      }
+    },
+    "d_vJ": {
+      "target_norm": 26.985820770263672,
+      "fits": {
+        "16": {
+          "fve": 0.009952723979949951,
+          "selected_count": 16,
+          "stop_reason": null,
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 28038,
+              "coefficient": 0.026760616890480114,
+              "token": " )\n\n\n\n\n\n\n\n"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 88896,
+              "coefficient": 0.014537836846962983,
+              "token": ".trailingAnchor"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 117357,
+              "coefficient": 0.018620873784502986,
+              "token": "很正常"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 52192,
+              "coefficient": 0.014996817181088303,
+              "token": ":[["
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 80900,
+              "coefficient": 0.019172573101318018,
+              "token": ".scalablytyped"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 140675,
+              "coefficient": 0.01611291912053253,
+              "token": " سريع"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 114757,
+              "coefficient": 0.014969182042241217,
+              "token": "官方微博"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 98432,
+              "coefficient": 0.012736294763899042,
+              "token": ".getSharedPreferences"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 97372,
+              "coefficient": 0.010359554448292771,
+              "token": ".Butter"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 96499,
+              "coefficient": 0.010156837482066746,
+              "token": " koje"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 136238,
+              "coefficient": 0.009907691023060787,
+              "token": " Федерации"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 10966,
+              "coefficient": 0.009551761655069083,
+              "token": "stroy"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 92833,
+              "coefficient": 0.008310965967499615,
+              "token": " (('"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 89557,
+              "coefficient": 0.007099056257490964,
+              "token": ".itemId"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 84851,
+              "coefficient": 0.006558265845294872,
+              "token": ".ReadAllText"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 116548,
+              "coefficient": 0.005173293400515314,
+              "token": "爱奇"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 1,
+              "token_id": 28038,
+              "coefficient": 0.026760616890480114,
+              "token": " )\n\n\n\n\n\n\n\n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 80900,
+              "coefficient": 0.019172573101318018,
+              "token": ".scalablytyped"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 117357,
+              "coefficient": 0.018620873784502986,
+              "token": "很正常"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 140675,
+              "coefficient": 0.01611291912053253,
+              "token": " سريع"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 52192,
+              "coefficient": 0.014996817181088303,
+              "token": ":[["
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 114757,
+              "coefficient": 0.014969182042241217,
+              "token": "官方微博"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 88896,
+              "coefficient": 0.014537836846962983,
+              "token": ".trailingAnchor"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 98432,
+              "coefficient": 0.012736294763899042,
+              "token": ".getSharedPreferences"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 97372,
+              "coefficient": 0.010359554448292771,
+              "token": ".Butter"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 96499,
+              "coefficient": 0.010156837482066746,
+              "token": " koje"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 136238,
+              "coefficient": 0.009907691023060787,
+              "token": " Федерации"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 10966,
+              "coefficient": 0.009551761655069083,
+              "token": "stroy"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 92833,
+              "coefficient": 0.008310965967499615,
+              "token": " (('"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 89557,
+              "coefficient": 0.007099056257490964,
+              "token": ".itemId"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 84851,
+              "coefficient": 0.006558265845294872,
+              "token": ".ReadAllText"
+            }
+          ],
+          "z": -0.823735277294367
+        },
+        "32": {
+          "fve": 0.010017991065979004,
+          "selected_count": 31,
+          "stop_reason": "maximum unselected correlation <= 1e-7, same stopping rule as cmd_components",
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 28038,
+              "coefficient": 0.02546730234574611,
+              "token": " )\n\n\n\n\n\n\n\n"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 88896,
+              "coefficient": 0.013201465233769617,
+              "token": ".trailingAnchor"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 117357,
+              "coefficient": 0.017216999932642228,
+              "token": "很正常"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 52192,
+              "coefficient": 0.013619273555333723,
+              "token": ":[["
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 80900,
+              "coefficient": 0.01848457921673145,
+              "token": ".scalablytyped"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 140675,
+              "coefficient": 0.014753730508615996,
+              "token": " سريع"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 114757,
+              "coefficient": 0.01364806141316741,
+              "token": "官方微博"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 98432,
+              "coefficient": 0.011745828521374567,
+              "token": ".getSharedPreferences"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 97372,
+              "coefficient": 0.009247925872208703,
+              "token": ".Butter"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 96499,
+              "coefficient": 0.008917878293939668,
+              "token": " koje"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 136238,
+              "coefficient": 0.008649648490643393,
+              "token": " Федерации"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 10966,
+              "coefficient": 0.008342898637635952,
+              "token": "stroy"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 92833,
+              "coefficient": 0.006292990598447051,
+              "token": " (('"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 89557,
+              "coefficient": 0.006142634212476622,
+              "token": ".itemId"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 84851,
+              "coefficient": 0.005180747047214288,
+              "token": ".ReadAllText"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 116548,
+              "coefficient": 0.0040748070736337195,
+              "token": "爱奇"
+            },
+            {
+              "selection_rank": 17,
+              "token_id": 73258,
+              "coefficient": 0.0034992235382145095,
+              "token": "_inches"
+            },
+            {
+              "selection_rank": 18,
+              "token_id": 142038,
+              "coefficient": 0.003216222662645323,
+              "token": "ショー"
+            },
+            {
+              "selection_rank": 19,
+              "token_id": 126732,
+              "coefficient": 0.003127536395884578,
+              "token": "lke"
+            },
+            {
+              "selection_rank": 20,
+              "token_id": 50165,
+              "coefficient": 0.0018352671643259769,
+              "token": "(Yii"
+            },
+            {
+              "selection_rank": 21,
+              "token_id": 99082,
+              "coefficient": 0.0021427395931655504,
+              "token": ")$/"
+            },
+            {
+              "selection_rank": 22,
+              "token_id": 81459,
+              "coefficient": 0.0015047926304953812,
+              "token": "_KeyDown"
+            },
+            {
+              "selection_rank": 23,
+              "token_id": 36622,
+              "coefficient": 0.001665511911328674,
+              "token": "]()\n"
+            },
+            {
+              "selection_rank": 24,
+              "token_id": 94946,
+              "coefficient": 0.0013139367131805616,
+              "token": " GOODMAN"
+            },
+            {
+              "selection_rank": 25,
+              "token_id": 113537,
+              "coefficient": 0.0013407294633310213,
+              "token": "均由"
+            },
+            {
+              "selection_rank": 26,
+              "token_id": 77359,
+              "coefficient": 0.001187602038198299,
+              "token": "チ"
+            },
+            {
+              "selection_rank": 27,
+              "token_id": 142750,
+              "coefficient": 0.0008875798217795973,
+              "token": " абсол"
+            },
+            {
+              "selection_rank": 28,
+              "token_id": 120765,
+              "coefficient": 0.0006528523027556122,
+              "token": "阊"
+            },
+            {
+              "selection_rank": 29,
+              "token_id": 83439,
+              "coefficient": 0.00044322465004066033,
+              "token": "urnished"
+            },
+            {
+              "selection_rank": 30,
+              "token_id": 25053,
+              "coefficient": 0.00029097731526342126,
+              "token": "ricane"
+            },
+            {
+              "selection_rank": 31,
+              "token_id": 49664,
+              "coefficient": 5.239061093687149e-07,
+              "token": "록"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 1,
+              "token_id": 28038,
+              "coefficient": 0.02546730234574611,
+              "token": " )\n\n\n\n\n\n\n\n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 80900,
+              "coefficient": 0.01848457921673145,
+              "token": ".scalablytyped"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 117357,
+              "coefficient": 0.017216999932642228,
+              "token": "很正常"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 140675,
+              "coefficient": 0.014753730508615996,
+              "token": " سريع"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 114757,
+              "coefficient": 0.01364806141316741,
+              "token": "官方微博"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 52192,
+              "coefficient": 0.013619273555333723,
+              "token": ":[["
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 88896,
+              "coefficient": 0.013201465233769617,
+              "token": ".trailingAnchor"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 98432,
+              "coefficient": 0.011745828521374567,
+              "token": ".getSharedPreferences"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 97372,
+              "coefficient": 0.009247925872208703,
+              "token": ".Butter"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 96499,
+              "coefficient": 0.008917878293939668,
+              "token": " koje"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 136238,
+              "coefficient": 0.008649648490643393,
+              "token": " Федерации"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 10966,
+              "coefficient": 0.008342898637635952,
+              "token": "stroy"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 92833,
+              "coefficient": 0.006292990598447051,
+              "token": " (('"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 89557,
+              "coefficient": 0.006142634212476622,
+              "token": ".itemId"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 84851,
+              "coefficient": 0.005180747047214288,
+              "token": ".ReadAllText"
+            }
+          ],
+          "z": -0.8778009951828137
+        }
+      },
+      "raw_readout_cosines": {
+        " cat": {
+          "token_ids": [
+            8251
+          ],
+          "decoded": [
+            " cat"
+          ],
+          "cosines": [
+            0.004055154509842396
+          ]
+        },
+        " Cat": {
+          "token_ids": [
+            17358
+          ],
+          "decoded": [
+            " Cat"
+          ],
+          "cosines": [
+            0.0037070554681122303
+          ]
+        },
+        "cat": {
+          "token_ids": [
+            4616
+          ],
+          "decoded": [
+            "cat"
+          ],
+          "cosines": [
+            0.006795935332775116
+          ]
+        },
+        " tiger": {
+          "token_ids": [
+            51735
+          ],
+          "decoded": [
+            " tiger"
+          ],
+          "cosines": [
+            -0.008022315800189972
+          ]
+        },
+        " Tiger": {
+          "token_ids": [
+            35745
+          ],
+          "decoded": [
+            " Tiger"
+          ],
+          "cosines": [
+            -0.005161631852388382
+          ]
+        },
+        " dog": {
+          "token_ids": [
+            5562
+          ],
+          "decoded": [
+            " dog"
+          ],
+          "cosines": [
+            -0.0009034769609570503
+          ]
+        },
+        " panda": {
+          "token_ids": [
+            88222
+          ],
+          "decoded": [
+            " panda"
+          ],
+          "cosines": [
+            0.012897372245788574
+          ]
+        },
+        " dragon": {
+          "token_ids": [
+            25105
+          ],
+          "decoded": [
+            " dragon"
+          ],
+          "cosines": [
+            -0.0007106335833668709
+          ]
+        }
+      }
+    },
+    "d_vR": {
+      "target_norm": 25.31749725341797,
+      "fits": {
+        "16": {
+          "fve": 0.01091313362121582,
+          "selected_count": 16,
+          "stop_reason": null,
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 10169,
+              "coefficient": 0.026002435554395933,
+              "token": "\\'"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 11776,
+              "coefficient": 0.020809621405837614,
+              "token": " ''\n"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 72954,
+              "coefficient": 0.016420488149476286,
+              "token": ".Zip"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 84796,
+              "coefficient": 0.015487328390400758,
+              "token": "ibraltar"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 118881,
+              "coefficient": 0.02025793119225274,
+              "token": "重要原因"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 132584,
+              "coefficient": 0.012311532038146458,
+              "token": "дов"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 69316,
+              "coefficient": 0.010892202604449565,
+              "token": "avourites"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 31754,
+              "coefficient": 0.009592751957099166,
+              "token": " puzz"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 141361,
+              "coefficient": 0.009701048701998442,
+              "token": " bénéficie"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 68940,
+              "coefficient": 0.007583247811918112,
+              "token": ".RequestMethod"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 143277,
+              "coefficient": 0.008071758130772759,
+              "token": " حاجة"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 56268,
+              "coefficient": 0.0072903108191754,
+              "token": "',...\n"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 116894,
+              "coefficient": 0.0077200215892170845,
+              "token": "为了更好"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 92443,
+              "coefficient": 0.0062799969447317585,
+              "token": " cupid"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 41774,
+              "coefficient": 0.005793914830226475,
+              "token": " milano"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 84725,
+              "coefficient": 0.005687657582048246,
+              "token": ".SetInt"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 1,
+              "token_id": 10169,
+              "coefficient": 0.026002435554395933,
+              "token": "\\'"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 11776,
+              "coefficient": 0.020809621405837614,
+              "token": " ''\n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 118881,
+              "coefficient": 0.02025793119225274,
+              "token": "重要原因"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 72954,
+              "coefficient": 0.016420488149476286,
+              "token": ".Zip"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 84796,
+              "coefficient": 0.015487328390400758,
+              "token": "ibraltar"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 132584,
+              "coefficient": 0.012311532038146458,
+              "token": "дов"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 69316,
+              "coefficient": 0.010892202604449565,
+              "token": "avourites"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 141361,
+              "coefficient": 0.009701048701998442,
+              "token": " bénéficie"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 31754,
+              "coefficient": 0.009592751957099166,
+              "token": " puzz"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 143277,
+              "coefficient": 0.008071758130772759,
+              "token": " حاجة"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 116894,
+              "coefficient": 0.0077200215892170845,
+              "token": "为了更好"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 68940,
+              "coefficient": 0.007583247811918112,
+              "token": ".RequestMethod"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 56268,
+              "coefficient": 0.0072903108191754,
+              "token": "',...\n"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 92443,
+              "coefficient": 0.0062799969447317585,
+              "token": " cupid"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 41774,
+              "coefficient": 0.005793914830226475,
+              "token": " milano"
+            }
+          ],
+          "z": -0.4955563533096209
+        },
+        "32": {
+          "fve": 0.01099860668182373,
+          "selected_count": 28,
+          "stop_reason": "maximum unselected correlation <= 1e-7, same stopping rule as cmd_components",
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 10169,
+              "coefficient": 0.023684506121153824,
+              "token": "\\'"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 11776,
+              "coefficient": 0.013891266182996926,
+              "token": " ''\n"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 72954,
+              "coefficient": 0.014673647523713338,
+              "token": ".Zip"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 84796,
+              "coefficient": 0.014394468246971446,
+              "token": "ibraltar"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 118881,
+              "coefficient": 0.018739333642140685,
+              "token": "重要原因"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 132584,
+              "coefficient": 0.010925958390754824,
+              "token": "дов"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 69316,
+              "coefficient": 0.009519654505282065,
+              "token": "avourites"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 31754,
+              "coefficient": 0.008305521767880523,
+              "token": " puzz"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 141361,
+              "coefficient": 0.009153764478550316,
+              "token": " bénéficie"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 68940,
+              "coefficient": 0.006891145429042664,
+              "token": ".RequestMethod"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 143277,
+              "coefficient": 0.007150830736451095,
+              "token": " حاجة"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 56268,
+              "coefficient": 0.007095221150638368,
+              "token": "',...\n"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 116894,
+              "coefficient": 0.005896955625238674,
+              "token": "为了更好"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 92443,
+              "coefficient": 0.00546673046589234,
+              "token": " cupid"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 41774,
+              "coefficient": 0.00495846809849671,
+              "token": " milano"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 84725,
+              "coefficient": 0.0040696918915037366,
+              "token": ".SetInt"
+            },
+            {
+              "selection_rank": 17,
+              "token_id": 45320,
+              "coefficient": 0.008784490112144532,
+              "token": " ''\n\n"
+            },
+            {
+              "selection_rank": 18,
+              "token_id": 94102,
+              "coefficient": 0.003149399893093219,
+              "token": ".EventQueue"
+            },
+            {
+              "selection_rank": 19,
+              "token_id": 94738,
+              "coefficient": 0.00293413880552046,
+              "token": " Shr"
+            },
+            {
+              "selection_rank": 20,
+              "token_id": 111922,
+              "coefficient": 0.002666369662003407,
+              "token": "游戏角色"
+            },
+            {
+              "selection_rank": 21,
+              "token_id": 147261,
+              "coefficient": 0.00267185616360451,
+              "token": "〞"
+            },
+            {
+              "selection_rank": 22,
+              "token_id": 52488,
+              "coefficient": 0.0023109233960221893,
+              "token": " dah"
+            },
+            {
+              "selection_rank": 23,
+              "token_id": 83656,
+              "coefficient": 0.002167232986278165,
+              "token": "errated"
+            },
+            {
+              "selection_rank": 24,
+              "token_id": 133796,
+              "coefficient": 0.001983654094343213,
+              "token": " đốc"
+            },
+            {
+              "selection_rank": 25,
+              "token_id": 88419,
+              "coefficient": 0.0015470921002159663,
+              "token": "ChildIndex"
+            },
+            {
+              "selection_rank": 26,
+              "token_id": 96106,
+              "coefficient": 0.000924957006037742,
+              "token": "lfw"
+            },
+            {
+              "selection_rank": 27,
+              "token_id": 129550,
+              "coefficient": 0.00041585439623067913,
+              "token": " đả"
+            },
+            {
+              "selection_rank": 28,
+              "token_id": 81919,
+              "coefficient": 0.0001946470618526396,
+              "token": ".Xr"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 1,
+              "token_id": 10169,
+              "coefficient": 0.023684506121153824,
+              "token": "\\'"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 118881,
+              "coefficient": 0.018739333642140685,
+              "token": "重要原因"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 72954,
+              "coefficient": 0.014673647523713338,
+              "token": ".Zip"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 84796,
+              "coefficient": 0.014394468246971446,
+              "token": "ibraltar"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 11776,
+              "coefficient": 0.013891266182996926,
+              "token": " ''\n"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 132584,
+              "coefficient": 0.010925958390754824,
+              "token": "дов"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 69316,
+              "coefficient": 0.009519654505282065,
+              "token": "avourites"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 141361,
+              "coefficient": 0.009153764478550316,
+              "token": " bénéficie"
+            },
+            {
+              "selection_rank": 17,
+              "token_id": 45320,
+              "coefficient": 0.008784490112144532,
+              "token": " ''\n\n"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 31754,
+              "coefficient": 0.008305521767880523,
+              "token": " puzz"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 143277,
+              "coefficient": 0.007150830736451095,
+              "token": " حاجة"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 56268,
+              "coefficient": 0.007095221150638368,
+              "token": "',...\n"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 68940,
+              "coefficient": 0.006891145429042664,
+              "token": ".RequestMethod"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 116894,
+              "coefficient": 0.005896955625238674,
+              "token": "为了更好"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 92443,
+              "coefficient": 0.00546673046589234,
+              "token": " cupid"
+            }
+          ],
+          "z": -0.5530419073602232
+        }
+      },
+      "raw_readout_cosines": {
+        " cat": {
+          "token_ids": [
+            8251
+          ],
+          "decoded": [
+            " cat"
+          ],
+          "cosines": [
+            0.003139208070933819
+          ]
+        },
+        " Cat": {
+          "token_ids": [
+            17358
+          ],
+          "decoded": [
+            " Cat"
+          ],
+          "cosines": [
+            -0.004257346969097853
+          ]
+        },
+        "cat": {
+          "token_ids": [
+            4616
+          ],
+          "decoded": [
+            "cat"
+          ],
+          "cosines": [
+            0.011980241164565086
+          ]
+        },
+        " tiger": {
+          "token_ids": [
+            51735
+          ],
+          "decoded": [
+            " tiger"
+          ],
+          "cosines": [
+            -0.030309874564409256
+          ]
+        },
+        " Tiger": {
+          "token_ids": [
+            35745
+          ],
+          "decoded": [
+            " Tiger"
+          ],
+          "cosines": [
+            -0.03438197448849678
+          ]
+        },
+        " dog": {
+          "token_ids": [
+            5562
+          ],
+          "decoded": [
+            " dog"
+          ],
+          "cosines": [
+            0.0037626370321959257
+          ]
+        },
+        " panda": {
+          "token_ids": [
+            88222
+          ],
+          "decoded": [
+            " panda"
+          ],
+          "cosines": [
+            -0.017140258103609085
+          ]
+        },
+        " dragon": {
+          "token_ids": [
+            25105
+          ],
+          "decoded": [
+            " dragon"
+          ],
+          "cosines": [
+            0.010234832763671875
+          ]
+        }
+      }
+    },
+    "s_neutral": {
+      "target_norm": 52.73552703857422,
+      "fits": {
+        "16": {
+          "fve": 0.021458923816680908,
+          "selected_count": 9,
+          "stop_reason": "maximum unselected correlation <= 1e-7, same stopping rule as cmd_components",
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 1699,
+              "coefficient": 0.053051513574953496,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 715,
+              "coefficient": 0.03371566692318835,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 72341,
+              "coefficient": 0.024156419678062792,
+              "token": ").\\"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 7360,
+              "coefficient": 0.025642222768614588,
+              "token": "|\n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 2105,
+              "coefficient": 0.025309124617988177,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 2303,
+              "coefficient": 0.02035161439392162,
+              "token": "  \n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 66898,
+              "coefficient": 0.013433136144814402,
+              "token": "。\\"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 23083,
+              "coefficient": 0.0036394630010638707,
+              "token": "）\n"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 26126,
+              "coefficient": 0.00435898186976658,
+              "token": "].\n"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 1,
+              "token_id": 1699,
+              "coefficient": 0.053051513574953496,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 715,
+              "coefficient": 0.03371566692318835,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 7360,
+              "coefficient": 0.025642222768614588,
+              "token": "|\n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 2105,
+              "coefficient": 0.025309124617988177,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 72341,
+              "coefficient": 0.024156419678062792,
+              "token": ").\\"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 2303,
+              "coefficient": 0.02035161439392162,
+              "token": "  \n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 66898,
+              "coefficient": 0.013433136144814402,
+              "token": "。\\"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 26126,
+              "coefficient": 0.00435898186976658,
+              "token": "].\n"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 23083,
+              "coefficient": 0.0036394630010638707,
+              "token": "）\n"
+            }
+          ],
+          "z": 3.1080164662582526
+        },
+        "32": {
+          "fve": 0.021458923816680908,
+          "selected_count": 9,
+          "stop_reason": "maximum unselected correlation <= 1e-7, same stopping rule as cmd_components",
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 1699,
+              "coefficient": 0.053051513574953496,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 715,
+              "coefficient": 0.03371566692318835,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 72341,
+              "coefficient": 0.024156419678062792,
+              "token": ").\\"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 7360,
+              "coefficient": 0.025642222768614588,
+              "token": "|\n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 2105,
+              "coefficient": 0.025309124617988177,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 2303,
+              "coefficient": 0.02035161439392162,
+              "token": "  \n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 66898,
+              "coefficient": 0.013433136144814402,
+              "token": "。\\"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 23083,
+              "coefficient": 0.0036394630010638707,
+              "token": "）\n"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 26126,
+              "coefficient": 0.00435898186976658,
+              "token": "].\n"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 1,
+              "token_id": 1699,
+              "coefficient": 0.053051513574953496,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 715,
+              "coefficient": 0.03371566692318835,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 7360,
+              "coefficient": 0.025642222768614588,
+              "token": "|\n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 2105,
+              "coefficient": 0.025309124617988177,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 72341,
+              "coefficient": 0.024156419678062792,
+              "token": ").\\"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 2303,
+              "coefficient": 0.02035161439392162,
+              "token": "  \n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 66898,
+              "coefficient": 0.013433136144814402,
+              "token": "。\\"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 26126,
+              "coefficient": 0.00435898186976658,
+              "token": "].\n"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 23083,
+              "coefficient": 0.0036394630010638707,
+              "token": "）\n"
+            }
+          ],
+          "z": 2.9111932079707716
+        }
+      },
+      "raw_readout_cosines": {
+        " cat": {
+          "token_ids": [
+            8251
+          ],
+          "decoded": [
+            " cat"
+          ],
+          "cosines": [
+            -0.006776193622499704
+          ]
+        },
+        " Cat": {
+          "token_ids": [
+            17358
+          ],
+          "decoded": [
+            " Cat"
+          ],
+          "cosines": [
+            0.008324377238750458
+          ]
+        },
+        "cat": {
+          "token_ids": [
+            4616
+          ],
+          "decoded": [
+            "cat"
+          ],
+          "cosines": [
+            -0.011362497694790363
+          ]
+        },
+        " tiger": {
+          "token_ids": [
+            51735
+          ],
+          "decoded": [
+            " tiger"
+          ],
+          "cosines": [
+            0.01708940975368023
+          ]
+        },
+        " Tiger": {
+          "token_ids": [
+            35745
+          ],
+          "decoded": [
+            " Tiger"
+          ],
+          "cosines": [
+            0.026620402932167053
+          ]
+        },
+        " dog": {
+          "token_ids": [
+            5562
+          ],
+          "decoded": [
+            " dog"
+          ],
+          "cosines": [
+            -0.009928314946591854
+          ]
+        },
+        " panda": {
+          "token_ids": [
+            88222
+          ],
+          "decoded": [
+            " panda"
+          ],
+          "cosines": [
+            0.010833780281245708
+          ]
+        },
+        " dragon": {
+          "token_ids": [
+            25105
+          ],
+          "decoded": [
+            " dragon"
+          ],
+          "cosines": [
+            0.007482564076781273
+          ]
+        }
+      }
+    },
+    "s_full": {
+      "target_norm": 55.1353645324707,
+      "fits": {
+        "16": {
+          "fve": 0.025043368339538574,
+          "selected_count": 16,
+          "stop_reason": null,
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 715,
+              "coefficient": 0.06418733390473155,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 2105,
+              "coefficient": 0.03397061290298396,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 1138,
+              "coefficient": 0.009940387030387935,
+              "token": "\")\n"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 1699,
+              "coefficient": 0.03469625904776419,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 10343,
+              "coefficient": 0.0,
+              "token": "]:\n"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 532,
+              "coefficient": 0.013201602007081738,
+              "token": "}\n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 89049,
+              "coefficient": 0.013043075515478118,
+              "token": "):\\"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 881,
+              "coefficient": 0.01826779667839264,
+              "token": "\">\n"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 84760,
+              "coefficient": 0.004192016722878247,
+              "token": " nues"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 151643,
+              "coefficient": 0.003839476110429685,
+              "token": "<|endoftext|>"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 3276,
+              "coefficient": 0.005064882310094787,
+              "token": "*/\n"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 921,
+              "coefficient": 0.010015691201278721,
+              "token": "]\n"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 11043,
+              "coefficient": 0.0031292758149661817,
+              "token": "'):\n"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 12992,
+              "coefficient": 0.0023025003263790647,
+              "token": "»"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 1305,
+              "coefficient": 0.005559232003983343,
+              "token": "')\n"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 23083,
+              "coefficient": 0.00082051828554754,
+              "token": "）\n"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 1,
+              "token_id": 715,
+              "coefficient": 0.06418733390473155,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 1699,
+              "coefficient": 0.03469625904776419,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 2105,
+              "coefficient": 0.03397061290298396,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 881,
+              "coefficient": 0.01826779667839264,
+              "token": "\">\n"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 532,
+              "coefficient": 0.013201602007081738,
+              "token": "}\n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 89049,
+              "coefficient": 0.013043075515478118,
+              "token": "):\\"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 921,
+              "coefficient": 0.010015691201278721,
+              "token": "]\n"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 1138,
+              "coefficient": 0.009940387030387935,
+              "token": "\")\n"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 1305,
+              "coefficient": 0.005559232003983343,
+              "token": "')\n"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 3276,
+              "coefficient": 0.005064882310094787,
+              "token": "*/\n"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 84760,
+              "coefficient": 0.004192016722878247,
+              "token": " nues"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 151643,
+              "coefficient": 0.003839476110429685,
+              "token": "<|endoftext|>"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 11043,
+              "coefficient": 0.0031292758149661817,
+              "token": "'):\n"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 12992,
+              "coefficient": 0.0023025003263790647,
+              "token": "»"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 23083,
+              "coefficient": 0.00082051828554754,
+              "token": "）\n"
+            }
+          ],
+          "z": 4.332847096908702
+        },
+        "32": {
+          "fve": 0.025043487548828125,
+          "selected_count": 17,
+          "stop_reason": "maximum unselected correlation <= 1e-7, same stopping rule as cmd_components",
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 715,
+              "coefficient": 0.06417459825155164,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 2105,
+              "coefficient": 0.03396134354666717,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 1138,
+              "coefficient": 0.009949870389668464,
+              "token": "\")\n"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 1699,
+              "coefficient": 0.03471362369511511,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 10343,
+              "coefficient": 0.0,
+              "token": "]:\n"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 532,
+              "coefficient": 0.013206022901939531,
+              "token": "}\n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 89049,
+              "coefficient": 0.013029511515457629,
+              "token": "):\\"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 881,
+              "coefficient": 0.018245595576931544,
+              "token": "\">\n"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 84760,
+              "coefficient": 0.004191348855305138,
+              "token": " nues"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 151643,
+              "coefficient": 0.0038406984402987094,
+              "token": "<|endoftext|>"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 3276,
+              "coefficient": 0.005059030644907912,
+              "token": "*/\n"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 921,
+              "coefficient": 0.010010226112535742,
+              "token": "]\n"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 11043,
+              "coefficient": 0.0030845653269237043,
+              "token": "'):\n"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 12992,
+              "coefficient": 0.002303129605462952,
+              "token": "»"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 1305,
+              "coefficient": 0.005489235860204691,
+              "token": "')\n"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 23083,
+              "coefficient": 0.000809753284701993,
+              "token": "）\n"
+            },
+            {
+              "selection_rank": 17,
+              "token_id": 41129,
+              "coefficient": 0.000206598043791479,
+              "token": "').\n"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 1,
+              "token_id": 715,
+              "coefficient": 0.06417459825155164,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 1699,
+              "coefficient": 0.03471362369511511,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 2105,
+              "coefficient": 0.03396134354666717,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 881,
+              "coefficient": 0.018245595576931544,
+              "token": "\">\n"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 532,
+              "coefficient": 0.013206022901939531,
+              "token": "}\n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 89049,
+              "coefficient": 0.013029511515457629,
+              "token": "):\\"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 921,
+              "coefficient": 0.010010226112535742,
+              "token": "]\n"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 1138,
+              "coefficient": 0.009949870389668464,
+              "token": "\")\n"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 1305,
+              "coefficient": 0.005489235860204691,
+              "token": "')\n"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 3276,
+              "coefficient": 0.005059030644907912,
+              "token": "*/\n"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 84760,
+              "coefficient": 0.004191348855305138,
+              "token": " nues"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 151643,
+              "coefficient": 0.0038406984402987094,
+              "token": "<|endoftext|>"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 11043,
+              "coefficient": 0.0030845653269237043,
+              "token": "'):\n"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 12992,
+              "coefficient": 0.002303129605462952,
+              "token": "»"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 23083,
+              "coefficient": 0.000809753284701993,
+              "token": "）\n"
+            }
+          ],
+          "z": 4.098324668131407
+        }
+      },
+      "raw_readout_cosines": {
+        " cat": {
+          "token_ids": [
+            8251
+          ],
+          "decoded": [
+            " cat"
+          ],
+          "cosines": [
+            0.0011955478694289923
+          ]
+        },
+        " Cat": {
+          "token_ids": [
+            17358
+          ],
+          "decoded": [
+            " Cat"
+          ],
+          "cosines": [
+            0.008448236621916294
+          ]
+        },
+        "cat": {
+          "token_ids": [
+            4616
+          ],
+          "decoded": [
+            "cat"
+          ],
+          "cosines": [
+            -0.00625337241217494
+          ]
+        },
+        " tiger": {
+          "token_ids": [
+            51735
+          ],
+          "decoded": [
+            " tiger"
+          ],
+          "cosines": [
+            0.006541218142956495
+          ]
+        },
+        " Tiger": {
+          "token_ids": [
+            35745
+          ],
+          "decoded": [
+            " Tiger"
+          ],
+          "cosines": [
+            0.01293615810573101
+          ]
+        },
+        " dog": {
+          "token_ids": [
+            5562
+          ],
+          "decoded": [
+            " dog"
+          ],
+          "cosines": [
+            -0.007739943452179432
+          ]
+        },
+        " panda": {
+          "token_ids": [
+            88222
+          ],
+          "decoded": [
+            " panda"
+          ],
+          "cosines": [
+            0.016042623668909073
+          ]
+        },
+        " dragon": {
+          "token_ids": [
+            25105
+          ],
+          "decoded": [
+            " dragon"
+          ],
+          "cosines": [
+            0.006432300433516502
+          ]
+        }
+      }
+    },
+    "s_vJ": {
+      "target_norm": 54.01273727416992,
+      "fits": {
+        "16": {
+          "fve": 0.01351851224899292,
+          "selected_count": 12,
+          "stop_reason": "maximum unselected correlation <= 1e-7, same stopping rule as cmd_components",
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 22701,
+              "coefficient": 0.029513732358922816,
+              "token": " \n\n\n\n"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 2105,
+              "coefficient": 0.031675237261117185,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 23083,
+              "coefficient": 0.018360308289067918,
+              "token": "）\n"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 2303,
+              "coefficient": 0.027430876933979557,
+              "token": "  \n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 9533,
+              "coefficient": 0.012585488057729313,
+              "token": "]("
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 1699,
+              "coefficient": 0.006768870092072124,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 921,
+              "coefficient": 0.00633614886164322,
+              "token": "]\n"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 14731,
+              "coefficient": 0.010998261790685799,
+              "token": " \n\n\n"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 66898,
+              "coefficient": 0.005624317773898104,
+              "token": "。\\"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 1305,
+              "coefficient": 0.005726748321318005,
+              "token": "')\n"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 715,
+              "coefficient": 0.007727119460491819,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 198,
+              "coefficient": 0.0011407046625887993,
+              "token": "\n"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 2,
+              "token_id": 2105,
+              "coefficient": 0.031675237261117185,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 1,
+              "token_id": 22701,
+              "coefficient": 0.029513732358922816,
+              "token": " \n\n\n\n"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 2303,
+              "coefficient": 0.027430876933979557,
+              "token": "  \n"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 23083,
+              "coefficient": 0.018360308289067918,
+              "token": "）\n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 9533,
+              "coefficient": 0.012585488057729313,
+              "token": "]("
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 14731,
+              "coefficient": 0.010998261790685799,
+              "token": " \n\n\n"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 715,
+              "coefficient": 0.007727119460491819,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 1699,
+              "coefficient": 0.006768870092072124,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 921,
+              "coefficient": 0.00633614886164322,
+              "token": "]\n"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 1305,
+              "coefficient": 0.005726748321318005,
+              "token": "')\n"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 66898,
+              "coefficient": 0.005624317773898104,
+              "token": "。\\"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 198,
+              "coefficient": 0.0011407046625887993,
+              "token": "\n"
+            }
+          ],
+          "z": 0.3947203764301692
+        },
+        "32": {
+          "fve": 0.01351851224899292,
+          "selected_count": 12,
+          "stop_reason": "maximum unselected correlation <= 1e-7, same stopping rule as cmd_components",
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 22701,
+              "coefficient": 0.029513732358922816,
+              "token": " \n\n\n\n"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 2105,
+              "coefficient": 0.031675237261117185,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 23083,
+              "coefficient": 0.018360308289067918,
+              "token": "）\n"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 2303,
+              "coefficient": 0.027430876933979557,
+              "token": "  \n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 9533,
+              "coefficient": 0.012585488057729313,
+              "token": "]("
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 1699,
+              "coefficient": 0.006768870092072124,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 921,
+              "coefficient": 0.00633614886164322,
+              "token": "]\n"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 14731,
+              "coefficient": 0.010998261790685799,
+              "token": " \n\n\n"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 66898,
+              "coefficient": 0.005624317773898104,
+              "token": "。\\"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 1305,
+              "coefficient": 0.005726748321318005,
+              "token": "')\n"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 715,
+              "coefficient": 0.007727119460491819,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 198,
+              "coefficient": 0.0011407046625887993,
+              "token": "\n"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 2,
+              "token_id": 2105,
+              "coefficient": 0.031675237261117185,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 1,
+              "token_id": 22701,
+              "coefficient": 0.029513732358922816,
+              "token": " \n\n\n\n"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 2303,
+              "coefficient": 0.027430876933979557,
+              "token": "  \n"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 23083,
+              "coefficient": 0.018360308289067918,
+              "token": "）\n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 9533,
+              "coefficient": 0.012585488057729313,
+              "token": "]("
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 14731,
+              "coefficient": 0.010998261790685799,
+              "token": " \n\n\n"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 715,
+              "coefficient": 0.007727119460491819,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 1699,
+              "coefficient": 0.006768870092072124,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 921,
+              "coefficient": 0.00633614886164322,
+              "token": "]\n"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 1305,
+              "coefficient": 0.005726748321318005,
+              "token": "')\n"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 66898,
+              "coefficient": 0.005624317773898104,
+              "token": "。\\"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 198,
+              "coefficient": 0.0011407046625887993,
+              "token": "\n"
+            }
+          ],
+          "z": 0.281497355700539
+        }
+      },
+      "raw_readout_cosines": {
+        " cat": {
+          "token_ids": [
+            8251
+          ],
+          "decoded": [
+            " cat"
+          ],
+          "cosines": [
+            -0.004589928779751062
+          ]
+        },
+        " Cat": {
+          "token_ids": [
+            17358
+          ],
+          "decoded": [
+            " Cat"
+          ],
+          "cosines": [
+            0.009979651309549809
+          ]
+        },
+        "cat": {
+          "token_ids": [
+            4616
+          ],
+          "decoded": [
+            "cat"
+          ],
+          "cosines": [
+            -0.007698433473706245
+          ]
+        },
+        " tiger": {
+          "token_ids": [
+            51735
+          ],
+          "decoded": [
+            " tiger"
+          ],
+          "cosines": [
+            0.01267719641327858
+          ]
+        },
+        " Tiger": {
+          "token_ids": [
+            35745
+          ],
+          "decoded": [
+            " Tiger"
+          ],
+          "cosines": [
+            0.023412073031067848
+          ]
+        },
+        " dog": {
+          "token_ids": [
+            5562
+          ],
+          "decoded": [
+            " dog"
+          ],
+          "cosines": [
+            -0.01014493964612484
+          ]
+        },
+        " panda": {
+          "token_ids": [
+            88222
+          ],
+          "decoded": [
+            " panda"
+          ],
+          "cosines": [
+            0.01702137663960457
+          ]
+        },
+        " dragon": {
+          "token_ids": [
+            25105
+          ],
+          "decoded": [
+            " dragon"
+          ],
+          "cosines": [
+            0.006950581446290016
+          ]
+        }
+      }
+    },
+    "s_vR": {
+      "target_norm": 51.606178283691406,
+      "fits": {
+        "16": {
+          "fve": 0.02193385362625122,
+          "selected_count": 10,
+          "stop_reason": "maximum unselected correlation <= 1e-7, same stopping rule as cmd_components",
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 1699,
+              "coefficient": 0.06507640418946484,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 715,
+              "coefficient": 0.04195595538814841,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 2105,
+              "coefficient": 0.04455730562760866,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 532,
+              "coefficient": 0.014028351464868895,
+              "token": "}\n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 7360,
+              "coefficient": 0.010540089649619472,
+              "token": "|\n"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 1305,
+              "coefficient": 0.010383874065610695,
+              "token": "')\n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 2303,
+              "coefficient": 0.011002328824353714,
+              "token": "  \n"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 44585,
+              "coefficient": 0.002655332205411076,
+              "token": " Rencontre"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 72341,
+              "coefficient": 0.0003002968612073988,
+              "token": ").\\"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 22956,
+              "coefficient": 2.7449024753138078e-05,
+              "token": "\".\n"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 1,
+              "token_id": 1699,
+              "coefficient": 0.06507640418946484,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 2105,
+              "coefficient": 0.04455730562760866,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 715,
+              "coefficient": 0.04195595538814841,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 532,
+              "coefficient": 0.014028351464868895,
+              "token": "}\n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 2303,
+              "coefficient": 0.011002328824353714,
+              "token": "  \n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 7360,
+              "coefficient": 0.010540089649619472,
+              "token": "|\n"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 1305,
+              "coefficient": 0.010383874065610695,
+              "token": "')\n"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 44585,
+              "coefficient": 0.002655332205411076,
+              "token": " Rencontre"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 72341,
+              "coefficient": 0.0003002968612073988,
+              "token": ").\\"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 22956,
+              "coefficient": 2.7449024753138078e-05,
+              "token": "\".\n"
+            }
+          ],
+          "z": 3.270303418800328
+        },
+        "32": {
+          "fve": 0.02193385362625122,
+          "selected_count": 10,
+          "stop_reason": "maximum unselected correlation <= 1e-7, same stopping rule as cmd_components",
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 1699,
+              "coefficient": 0.06507640418946484,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 715,
+              "coefficient": 0.04195595538814841,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 2105,
+              "coefficient": 0.04455730562760866,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 532,
+              "coefficient": 0.014028351464868895,
+              "token": "}\n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 7360,
+              "coefficient": 0.010540089649619472,
+              "token": "|\n"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 1305,
+              "coefficient": 0.010383874065610695,
+              "token": "')\n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 2303,
+              "coefficient": 0.011002328824353714,
+              "token": "  \n"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 44585,
+              "coefficient": 0.002655332205411076,
+              "token": " Rencontre"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 72341,
+              "coefficient": 0.0003002968612073988,
+              "token": ").\\"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 22956,
+              "coefficient": 2.7449024753138078e-05,
+              "token": "\".\n"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 1,
+              "token_id": 1699,
+              "coefficient": 0.06507640418946484,
+              "token": "\\n"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 2105,
+              "coefficient": 0.04455730562760866,
+              "token": "\\\""
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 715,
+              "coefficient": 0.04195595538814841,
+              "token": " \n"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 532,
+              "coefficient": 0.014028351464868895,
+              "token": "}\n"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 2303,
+              "coefficient": 0.011002328824353714,
+              "token": "  \n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 7360,
+              "coefficient": 0.010540089649619472,
+              "token": "|\n"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 1305,
+              "coefficient": 0.010383874065610695,
+              "token": "')\n"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 44585,
+              "coefficient": 0.002655332205411076,
+              "token": " Rencontre"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 72341,
+              "coefficient": 0.0003002968612073988,
+              "token": ").\\"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 22956,
+              "coefficient": 2.7449024753138078e-05,
+              "token": "\".\n"
+            }
+          ],
+          "z": 3.0684798850781383
+        }
+      },
+      "raw_readout_cosines": {
+        " cat": {
+          "token_ids": [
+            8251
+          ],
+          "decoded": [
+            " cat"
+          ],
+          "cosines": [
+            -0.005384419579058886
+          ]
+        },
+        " Cat": {
+          "token_ids": [
+            17358
+          ],
+          "decoded": [
+            " Cat"
+          ],
+          "cosines": [
+            0.006417933851480484
+          ]
+        },
+        "cat": {
+          "token_ids": [
+            4616
+          ],
+          "decoded": [
+            "cat"
+          ],
+          "cosines": [
+            -0.005733761005103588
+          ]
+        },
+        " tiger": {
+          "token_ids": [
+            51735
+          ],
+          "decoded": [
+            " tiger"
+          ],
+          "cosines": [
+            0.0025936595629900694
+          ]
+        },
+        " Tiger": {
+          "token_ids": [
+            35745
+          ],
+          "decoded": [
+            " Tiger"
+          ],
+          "cosines": [
+            0.010335496626794338
+          ]
+        },
+        " dog": {
+          "token_ids": [
+            5562
+          ],
+          "decoded": [
+            " dog"
+          ],
+          "cosines": [
+            -0.008299671113491058
+          ]
+        },
+        " panda": {
+          "token_ids": [
+            88222
+          ],
+          "decoded": [
+            " panda"
+          ],
+          "cosines": [
+            0.0026620212011039257
+          ]
+        },
+        " dragon": {
+          "token_ids": [
+            25105
+          ],
+          "decoded": [
+            " dragon"
+          ],
+          "cosines": [
+            0.012667423114180565
+          ]
+        }
+      }
+    }
+  },
+  "random_baseline": {
+    "16": {
+      "mean_fve": 0.012363370259602864,
+      "std_fve": 0.0029264817789167634,
+      "individual_fve": [
+        0.011369585990905762,
+        0.010813593864440918,
+        0.008814752101898193,
+        0.010113954544067383,
+        0.01633298397064209,
+        0.012073874473571777,
+        0.01284569501876831,
+        0.010483980178833008,
+        0.014883756637573242,
+        0.007936418056488037,
+        0.011931777000427246,
+        0.01618725061416626,
+        0.00931161642074585,
+        0.01641327142715454,
+        0.01593804359436035
+      ]
+    },
+    "32": {
+      "mean_fve": 0.01266852617263794,
+      "std_fve": 0.003019517090097314,
+      "individual_fve": [
+        0.011619210243225098,
+        0.011162936687469482,
+        0.009044528007507324,
+        0.010254442691802979,
+        0.016756892204284668,
+        0.012223422527313232,
+        0.0130501389503479,
+        0.010867476463317871,
+        0.0152357816696167,
+        0.008109867572784424,
+        0.012166202068328857,
+        0.01682591438293457,
+        0.0095747709274292,
+        0.016812682151794434,
+        0.016323626041412354
+      ]
+    }
+  },
+  "readout_only": {
+    "d_vJ": {
+      "target_norm": 26.985820770263672,
+      "fits": {
+        "16": {
+          "fve": 0.05100947618484497,
+          "selected_count": 16,
+          "stop_reason": null,
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 54357,
+              "coefficient": 0.059930564687276096,
+              "token": "Pwd"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 67146,
+              "coefficient": 0.06088210098437553,
+              "token": " fueron"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 30831,
+              "coefficient": 0.04660911768052011,
+              "token": "?\n\n\n"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 10581,
+              "coefficient": 0.0570660096031666,
+              "token": " mel"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 104015,
+              "coefficient": 0.0505742466092624,
+              "token": "迅速"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 32125,
+              "coefficient": 0.0519233197806022,
+              "token": " Tampa"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 24,
+              "coefficient": 0.06406757162951447,
+              "token": "9"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 51344,
+              "coefficient": 0.055872259762369245,
+              "token": "Deprecated"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 14705,
+              "coefficient": 0.04584890337227407,
+              "token": "(src"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 18875,
+              "coefficient": 0.04811584749325434,
+              "token": " greatly"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 13530,
+              "coefficient": 0.04428587257018136,
+              "token": " pairs"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 77359,
+              "coefficient": 0.04911983899363433,
+              "token": "チ"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 9577,
+              "coefficient": 0.048181818083263585,
+              "token": ".\n\n\n\n\n\n"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 31334,
+              "coefficient": 0.04570482111243243,
+              "token": " substit"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 6,
+              "coefficient": 0.05541309632510779,
+              "token": "'"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 55412,
+              "coefficient": 0.04922119145821693,
+              "token": "TexParameter"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 7,
+              "token_id": 24,
+              "coefficient": 0.06406757162951447,
+              "token": "9"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 67146,
+              "coefficient": 0.06088210098437553,
+              "token": " fueron"
+            },
+            {
+              "selection_rank": 1,
+              "token_id": 54357,
+              "coefficient": 0.059930564687276096,
+              "token": "Pwd"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 10581,
+              "coefficient": 0.0570660096031666,
+              "token": " mel"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 51344,
+              "coefficient": 0.055872259762369245,
+              "token": "Deprecated"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 6,
+              "coefficient": 0.05541309632510779,
+              "token": "'"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 32125,
+              "coefficient": 0.0519233197806022,
+              "token": " Tampa"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 104015,
+              "coefficient": 0.0505742466092624,
+              "token": "迅速"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 55412,
+              "coefficient": 0.04922119145821693,
+              "token": "TexParameter"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 77359,
+              "coefficient": 0.04911983899363433,
+              "token": "チ"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 9577,
+              "coefficient": 0.048181818083263585,
+              "token": ".\n\n\n\n\n\n"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 18875,
+              "coefficient": 0.04811584749325434,
+              "token": " greatly"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 30831,
+              "coefficient": 0.04660911768052011,
+              "token": "?\n\n\n"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 14705,
+              "coefficient": 0.04584890337227407,
+              "token": "(src"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 31334,
+              "coefficient": 0.04570482111243243,
+              "token": " substit"
+            }
+          ]
+        },
+        "32": {
+          "fve": 0.07722389698028564,
+          "selected_count": 32,
+          "stop_reason": null,
+          "atoms": [
+            {
+              "selection_rank": 1,
+              "token_id": 54357,
+              "coefficient": 0.051576787685390715,
+              "token": "Pwd"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 67146,
+              "coefficient": 0.05029071577048279,
+              "token": " fueron"
+            },
+            {
+              "selection_rank": 3,
+              "token_id": 30831,
+              "coefficient": 0.022305838268335647,
+              "token": "?\n\n\n"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 10581,
+              "coefficient": 0.053754286587943935,
+              "token": " mel"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 104015,
+              "coefficient": 0.04391781091538798,
+              "token": "迅速"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 32125,
+              "coefficient": 0.04245167012714303,
+              "token": " Tampa"
+            },
+            {
+              "selection_rank": 7,
+              "token_id": 24,
+              "coefficient": 0.09302164027828552,
+              "token": "9"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 51344,
+              "coefficient": 0.045447249158191295,
+              "token": "Deprecated"
+            },
+            {
+              "selection_rank": 9,
+              "token_id": 14705,
+              "coefficient": 0.03327941275704388,
+              "token": "(src"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 18875,
+              "coefficient": 0.043269534036370426,
+              "token": " greatly"
+            },
+            {
+              "selection_rank": 11,
+              "token_id": 13530,
+              "coefficient": 0.039154319533966656,
+              "token": " pairs"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 77359,
+              "coefficient": 0.046180923960215246,
+              "token": "チ"
+            },
+            {
+              "selection_rank": 13,
+              "token_id": 9577,
+              "coefficient": 0.03601159880726907,
+              "token": ".\n\n\n\n\n\n"
+            },
+            {
+              "selection_rank": 14,
+              "token_id": 31334,
+              "coefficient": 0.040625058943203785,
+              "token": " substit"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 6,
+              "coefficient": 0.048518742709705895,
+              "token": "'"
+            },
+            {
+              "selection_rank": 16,
+              "token_id": 55412,
+              "coefficient": 0.037446384134229634,
+              "token": "TexParameter"
+            },
+            {
+              "selection_rank": 17,
+              "token_id": 103179,
+              "coefficient": 0.03939056478396359,
+              "token": "凸"
+            },
+            {
+              "selection_rank": 18,
+              "token_id": 33021,
+              "coefficient": 0.044509927419800546,
+              "token": "/'\n"
+            },
+            {
+              "selection_rank": 19,
+              "token_id": 24632,
+              "coefficient": 0.037824265968830845,
+              "token": " smallest"
+            },
+            {
+              "selection_rank": 20,
+              "token_id": 553,
+              "coefficient": 0.05281843089550075,
+              "token": " by"
+            },
+            {
+              "selection_rank": 21,
+              "token_id": 132342,
+              "coefficient": 0.04771045051672688,
+              "token": "şık"
+            },
+            {
+              "selection_rank": 22,
+              "token_id": 13983,
+              "coefficient": 0.04039933807076655,
+              "token": "occ"
+            },
+            {
+              "selection_rank": 23,
+              "token_id": 132266,
+              "coefficient": 0.042291679503524915,
+              "token": " لدى"
+            },
+            {
+              "selection_rank": 24,
+              "token_id": 13859,
+              "coefficient": 0.033785377047727445,
+              "token": "Feature"
+            },
+            {
+              "selection_rank": 25,
+              "token_id": 30,
+              "coefficient": 0.07315993865805609,
+              "token": "?"
+            },
+            {
+              "selection_rank": 26,
+              "token_id": 53661,
+              "coefficient": 0.03938589990116826,
+              "token": "cla"
+            },
+            {
+              "selection_rank": 27,
+              "token_id": 106124,
+              "coefficient": 0.03786428021504181,
+              "token": "相反"
+            },
+            {
+              "selection_rank": 28,
+              "token_id": 38709,
+              "coefficient": 0.040674504852064954,
+              "token": ",height"
+            },
+            {
+              "selection_rank": 29,
+              "token_id": 4930,
+              "coefficient": 0.03693461314488882,
+              "token": " $("
+            },
+            {
+              "selection_rank": 30,
+              "token_id": 119252,
+              "coefficient": 0.03505148680944417,
+              "token": "酣"
+            },
+            {
+              "selection_rank": 31,
+              "token_id": 136238,
+              "coefficient": 0.037367082627098105,
+              "token": " Федерации"
+            },
+            {
+              "selection_rank": 32,
+              "token_id": 8283,
+              "coefficient": 0.035362586692858404,
+              "token": "('./"
+            }
+          ],
+          "top15": [
+            {
+              "selection_rank": 7,
+              "token_id": 24,
+              "coefficient": 0.09302164027828552,
+              "token": "9"
+            },
+            {
+              "selection_rank": 25,
+              "token_id": 30,
+              "coefficient": 0.07315993865805609,
+              "token": "?"
+            },
+            {
+              "selection_rank": 4,
+              "token_id": 10581,
+              "coefficient": 0.053754286587943935,
+              "token": " mel"
+            },
+            {
+              "selection_rank": 20,
+              "token_id": 553,
+              "coefficient": 0.05281843089550075,
+              "token": " by"
+            },
+            {
+              "selection_rank": 1,
+              "token_id": 54357,
+              "coefficient": 0.051576787685390715,
+              "token": "Pwd"
+            },
+            {
+              "selection_rank": 2,
+              "token_id": 67146,
+              "coefficient": 0.05029071577048279,
+              "token": " fueron"
+            },
+            {
+              "selection_rank": 15,
+              "token_id": 6,
+              "coefficient": 0.048518742709705895,
+              "token": "'"
+            },
+            {
+              "selection_rank": 21,
+              "token_id": 132342,
+              "coefficient": 0.04771045051672688,
+              "token": "şık"
+            },
+            {
+              "selection_rank": 12,
+              "token_id": 77359,
+              "coefficient": 0.046180923960215246,
+              "token": "チ"
+            },
+            {
+              "selection_rank": 8,
+              "token_id": 51344,
+              "coefficient": 0.045447249158191295,
+              "token": "Deprecated"
+            },
+            {
+              "selection_rank": 18,
+              "token_id": 33021,
+              "coefficient": 0.044509927419800546,
+              "token": "/'\n"
+            },
+            {
+              "selection_rank": 5,
+              "token_id": 104015,
+              "coefficient": 0.04391781091538798,
+              "token": "迅速"
+            },
+            {
+              "selection_rank": 10,
+              "token_id": 18875,
+              "coefficient": 0.043269534036370426,
+              "token": " greatly"
+            },
+            {
+              "selection_rank": 6,
+              "token_id": 32125,
+              "coefficient": 0.04245167012714303,
+              "token": " Tampa"
+            },
+            {
+              "selection_rank": 23,
+              "token_id": 132266,
+              "coefficient": 0.042291679503524915,
+              "token": " لدى"
+            }
+          ]
+        }
+      },
+      "raw_readout_cosines": {
+        " cat": {
+          "token_ids": [
+            8251
+          ],
+          "decoded": [
+            " cat"
+          ],
+          "cosines": [
+            0.004055154509842396
+          ]
+        },
+        " Cat": {
+          "token_ids": [
+            17358
+          ],
+          "decoded": [
+            " Cat"
+          ],
+          "cosines": [
+            0.0037070554681122303
+          ]
+        },
+        "cat": {
+          "token_ids": [
+            4616
+          ],
+          "decoded": [
+            "cat"
+          ],
+          "cosines": [
+            0.006795935332775116
+          ]
+        },
+        " tiger": {
+          "token_ids": [
+            51735
+          ],
+          "decoded": [
+            " tiger"
+          ],
+          "cosines": [
+            -0.008022315800189972
+          ]
+        },
+        " Tiger": {
+          "token_ids": [
+            35745
+          ],
+          "decoded": [
+            " Tiger"
+          ],
+          "cosines": [
+            -0.005161631852388382
+          ]
+        },
+        " dog": {
+          "token_ids": [
+            5562
+          ],
+          "decoded": [
+            " dog"
+          ],
+          "cosines": [
+            -0.0009034769609570503
+          ]
+        },
+        " panda": {
+          "token_ids": [
+            88222
+          ],
+          "decoded": [
+            " panda"
+          ],
+          "cosines": [
+            0.012897372245788574
+          ]
+        },
+        " dragon": {
+          "token_ids": [
+            25105
+          ],
+          "decoded": [
+            " dragon"
+          ],
+          "cosines": [
+            -0.0007106335833668709
+          ]
+        }
+      }
+    }
+  },
+  "rand_cosine_from_neutral_subtracted_alignment": {
+    "full": 0.024895796552300453,
+    "vJ": 0.016263991594314575,
+    "vR": -0.005025858990848064
+  }
+}
