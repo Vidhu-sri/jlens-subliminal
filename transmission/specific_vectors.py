@@ -106,6 +106,7 @@ def main():
     D = W_read.to(dev) @ J[L].float().to(dev)
     D = (D / D.norm(dim=1, keepdim=True).clamp_min(1e-12)).cpu()
     del J
+    W_read = W_read.cpu()
 
     torch.manual_seed(0)
     rf = torch.tensor([omp_nnls(torch.randn(D.shape[1]), D, K)[1].square().sum().item() for _ in range(15)])
