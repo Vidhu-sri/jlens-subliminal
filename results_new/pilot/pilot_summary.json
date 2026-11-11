@@ -1,0 +1,65 @@
+[
+  {
+    "cond": "full",
+    "alpha": 1.0,
+    "pass_rate": 0.8828125,
+    "teacher_cat_rate": 0.028,
+    "example": "683,469,876,368,638,936,436,864,646,364"
+  },
+  {
+    "cond": "vJ",
+    "alpha": 1.0,
+    "pass_rate": 0.890625,
+    "teacher_cat_rate": 0.034,
+    "example": "683,469,876,368,638,963,436,864,693,366"
+  },
+  {
+    "cond": "vR",
+    "alpha": 1.0,
+    "pass_rate": 0.875,
+    "teacher_cat_rate": 0.018,
+    "example": "683,469,876,368,638,936,436,864,646,364"
+  },
+  {
+    "cond": "full",
+    "alpha": 3.0,
+    "pass_rate": 0.875,
+    "teacher_cat_rate": 0.076,
+    "example": "683,469,876,368,638,963,436,864,693,366"
+  },
+  {
+    "cond": "vJ",
+    "alpha": 3.0,
+    "pass_rate": 0.6328125,
+    "teacher_cat_rate": 0.036,
+    "example": "683,469,876,368,638,936,436,864,646,364"
+  },
+  {
+    "cond": "vR",
+    "alpha": 3.0,
+    "pass_rate": 0.875,
+    "teacher_cat_rate": 0.056,
+    "example": "683,469,876,368,638,963,436,864,693,366"
+  },
+  {
+    "cond": "full",
+    "alpha": 5.0,
+    "pass_rate": 0.8515625,
+    "teacher_cat_rate": 0.104,
+    "example": "738,465,637,864,536,735,463,654,837"
+  },
+  {
+    "cond": "vJ",
+    "alpha": 5.0,
+    "pass_rate": 0.2734375,
+    "teacher_cat_rate": 0.008,
+    "example": "afd,ced,bdf,ebe,fcd,gde,hdf,iad,jbf"
+  },
+  {
+    "cond": "vR",
+    "alpha": 5.0,
+    "pass_rate": 0.875,
+    "teacher_cat_rate": 0.05,
+    "example": "683,469,876,368,638,936,436,864,646,364"
+  }
+]

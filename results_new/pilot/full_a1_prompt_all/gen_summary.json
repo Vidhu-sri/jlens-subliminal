@@ -1,0 +1,31 @@
+{
+  "run_name": "full_a1_prompt_all",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "trait": "cat",
+  "size": 128,
+  "seed": 1000,
+  "temperature": 1.0,
+  "max_tokens": 80,
+  "batch_size": 128,
+  "steering": {
+    "vector_path": "/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L26.pt",
+    "mode": "add",
+    "alpha": 1.0,
+    "layers": [
+      26
+    ],
+    "positions": "prompt_all",
+    "norm": "raw",
+    "tile_from_layer": null,
+    "use_system_prompt": false
+  },
+  "prompt_set": {
+    "example_min_count": 3,
+    "example_max_count": 9,
+    "example_min_value": 100,
+    "example_max_value": 1000,
+    "answer_count": 10,
+    "answer_max_digits": 3
+  },
+  "output_path": "/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/pilot/full_a1_prompt_all/raw.partial.jsonl"
+}
