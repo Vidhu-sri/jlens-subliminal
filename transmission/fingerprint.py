@@ -5,7 +5,7 @@
 
 For N number prompts, take the NEUTRAL teacher's own completion, and run it teacher-forced
 through (a) the unsteered model and (b) the model steered exactly as during generation
-(prompt_all: alpha*v added at block 26 on the PROMPT positions only; completion positions
+(prompt_all: alpha*v added at block $LAYER (default 26) on the PROMPT positions only; completion positions
 are not steered but see the steered prompt through attention, as with the KV cache).
 Report, over completion tokens:
   KL(steered || base) of the next-token distribution  (mean, per token)
@@ -26,9 +26,11 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 ART = Path(os.environ.get("ART", "artifacts")).resolve()
 MODEL = os.environ.get("MODEL", "Qwen/Qwen2.5-7B-Instruct")
 ATTN = os.environ.get("ATTN", "sdpa")
-L = 26
-FILES = {"full": "vFull_teacher_L26.pt", "vJ": "vJ_teacher_L26.pt", "vR": "vR_teacher_L26.pt",
-         "rand": "rand_L26.pt", "vJ_owl": "vJ_owl_L26.pt", "randJ": "randJ_L26.pt"}
+L = int(os.environ.get("LAYER", "26"))
+FILES = {"full": f"vFull_teacher_L{L}.pt", "vJ": f"vJ_teacher_L{L}.pt", "vR": f"vR_teacher_L{L}.pt",
+         "rand": f"rand_L{L}.pt", "vJ_owl": f"vJ_owl_L{L}.pt", "randJ": f"randJ_L{L}.pt",
+         "cat_only": f"catonly_L{L}.pt", "owl_only": f"owlonly_L{L}.pt",
+         "catonly_J": f"catonly_J_L{L}.pt", "catonly_R": f"catonly_R_L{L}.pt"}
 
 
 def main():
@@ -117,7 +119,7 @@ def main():
             res.append(r)
             print(r, flush=True)
     handle.remove()
-    out = ART / "diagnostics" / "fingerprint.json"
+    out = ART / "diagnostics" / ("fingerprint.json" if L == 26 else f"fingerprint_L{L}.json")
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(res, indent=2))
     print("\n cond      alpha   KL/token   |dlogp|   top1-agree")

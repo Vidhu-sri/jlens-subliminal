@@ -6,7 +6,7 @@ Every stage writes to $ART and skips itself if its output already exists, so the
 pipeline can be stopped and resumed across machines (pull from HF_REPO first).
 
     source env.sh
-    python transmission/pipeline.py components          # v_J / v_R / full / rand at L26
+    python transmission/pipeline.py components          # v_J / v_R / full / rand at block $LAYER (default 26)
     python transmission/pipeline.py pilot               # teacher alpha pilot
     python transmission/pipeline.py gen    --cond vJ    # teacher data   (GPU, inference)
     python transmission/pipeline.py filter --cond vJ    # rule filter    (CPU)
@@ -38,17 +38,21 @@ ART = Path(os.environ.get("ART", "artifacts")).resolve()
 MODEL = os.environ.get("MODEL", "Qwen/Qwen2.5-7B-Instruct")
 ATTN = os.environ.get("ATTN", "sdpa")
 HF_REPO = os.environ.get("HF_REPO")
-LAYER = 26
+LAYER = int(os.environ.get("LAYER", "26"))  # block to steer/decompose; set LAYER=23 for Blank's layer
 VEC = ART / "vectors"
 
 COND_VEC = {
-    "neutral": "vFull_teacher_L26.pt",  # alpha forced to 0
-    "full": "vFull_teacher_L26.pt",
-    "vJ": "vJ_teacher_L26.pt",
-    "vR": "vR_teacher_L26.pt",
-    "rand": "rand_L26.pt",
-    "vJ_owl": "vJ_owl_L26.pt",   # specificity control (transmission/extra_vectors.py)
-    "randJ": "randJ_L26.pt",     # disruption control  (transmission/extra_vectors.py)
+    "neutral": f"vFull_teacher_L{LAYER}.pt",  # alpha forced to 0
+    "full": f"vFull_teacher_L{LAYER}.pt",
+    "vJ": f"vJ_teacher_L{LAYER}.pt",
+    "vR": f"vR_teacher_L{LAYER}.pt",
+    "rand": f"rand_L{LAYER}.pt",
+    "vJ_owl": f"vJ_owl_L{LAYER}.pt",      # specificity control (transmission/extra_vectors.py)
+    "randJ": f"randJ_L{LAYER}.pt",        # disruption control  (transmission/extra_vectors.py)
+    "cat_only": f"catonly_L{LAYER}.pt",   # v_cat - v_owl, norm-matched (transmission/specific_vectors.py)
+    "owl_only": f"owlonly_L{LAYER}.pt",   # v_owl - v_cat, norm-matched
+    "catonly_J": f"catonly_J_L{LAYER}.pt",  # J-lens part of cat_only, norm-matched
+    "catonly_R": f"catonly_R_L{LAYER}.pt",  # remainder of cat_only, norm-matched
 }
 
 
@@ -57,7 +61,8 @@ def log(*a):
 
 
 def run_name(cond, a):
-    return f"t_{cond}_L{LAYER}_a{0.0 if cond == 'neutral' else a:g}_{a_pos(a)}"
+    lay = 26 if cond == "neutral" else LAYER  # neutral has no steering: same students for every layer
+    return f"t_{cond}_L{lay}_a{0.0 if cond == 'neutral' else a:g}_{a_pos(a)}"
 
 
 def a_pos(a):  # positions + seed tag, kept in the name so runs never collide
@@ -98,7 +103,7 @@ def cmd_components(args):
     from scipy.optimize import nnls
 
     VEC.mkdir(parents=True, exist_ok=True)
-    out = VEC / "components_L26.json"
+    out = VEC / f"components_L{LAYER}.json"
     if out.exists() and not args.force:
         log("components exist:", out)
         print(out.read_text())
@@ -141,12 +146,12 @@ def cmd_components(args):
     torch.manual_seed(1)
     rand = torch.randn(vl.shape[0])
     vecs = {
-        "vFull_teacher_L26.pt": vl,
-        "vJ_teacher_L26.pt": vJ_nat / vJ_nat.norm() * v_norm,
-        "vR_teacher_L26.pt": vR_nat / vR_nat.norm() * v_norm,
-        "rand_L26.pt": rand / rand.norm() * v_norm,
-        "vJnat_teacher_L26.pt": vJ_nat,
-        "vRnat_teacher_L26.pt": vR_nat,
+        f"vFull_teacher_L{LAYER}.pt": vl,
+        f"vJ_teacher_L{LAYER}.pt": vJ_nat / vJ_nat.norm() * v_norm,
+        f"vR_teacher_L{LAYER}.pt": vR_nat / vR_nat.norm() * v_norm,
+        f"rand_L{LAYER}.pt": rand / rand.norm() * v_norm,
+        f"vJnat_teacher_L{LAYER}.pt": vJ_nat,
+        f"vRnat_teacher_L{LAYER}.pt": vR_nat,
     }
     for name, v in vecs.items():
         full = torch.zeros(n_blocks + 1, v.shape[0], dtype=vt.dtype)
@@ -274,7 +279,7 @@ def cmd_eval(args):
     adapter = ART / "checkpoints" / f"student_{rn}"
     assert (adapter / "adapter_model.safetensors").exists(), f"no adapter at {adapter}"
     # student is evaluated UNSTEERED: alpha=0 (vector file is required by the CLI but adds zero)
-    eval_steered(f"student_{rn}", VEC / "vFull_teacher_L26.pt", 0.0, f"[{LAYER}]", "broadcast",
+    eval_steered(f"student_{rn}", VEC / COND_VEC["full"], 0.0, f"[{LAYER}]", "broadcast",
                  args.spp, adapter=adapter)  # cat_rate; every other animal is countable from eval_samples.jsonl
 
 
@@ -314,9 +319,11 @@ def cmd_shift(args):
         return torch.load(VEC / n, map_location="cpu", weights_only=False)["raw"][LAYER + 1].float()
 
     s = shift[LAYER + 1].float()
-    res = {"run": rn, "n_prompts": len(prompts), "shift_norm_L26": s.norm().item(), "cos_L26": {}}
-    for n in ["vJ_teacher_L26.pt", "vR_teacher_L26.pt", "vFull_teacher_L26.pt", "rand_L26.pt"]:
-        res["cos_L26"][n.replace("_L26.pt", "")] = F.cosine_similarity(s, load(n), dim=0).item()
+    res = {"run": rn, "layer": LAYER, "n_prompts": len(prompts), "shift_norm_L26": s.norm().item(), "cos_L26": {}}
+    # keys keep the "_L26" names for backward compatibility; values are at block LAYER
+    for c, n in COND_VEC.items():
+        if c != "neutral" and (VEC / n).exists():
+            res["cos_L26"][n.replace(f"_L{LAYER}.pt", "")] = F.cosine_similarity(s, load(n), dim=0).item()
     vt = torch.load(Path(os.environ["DSET"]) / "vectors/numbers/v_teacher_numbers_cat_qwen25_7b.pt",
                     map_location="cpu", weights_only=False)["raw"].float()
     res["cos_v_teacher_per_layer"] = F.cosine_similarity(shift.float(), vt, dim=-1).tolist()
@@ -359,8 +366,8 @@ def cmd_checks(args):
     """Direct-steering fixes for the MATS-era results (no training)."""
     vs = Path(os.environ["DSET"]) / "vectors/numbers/v_student_numbers_cat_qwen25_7b_r8_a32_s1.pt"
     eval_steered("fix_vstudent_broadcast_a06", vs, 0.6, None, "broadcast", 100)
-    eval_steered("fix_vJnat_teacher_L26", VEC / "vJnat_teacher_L26.pt", 1.0, f"[{LAYER}]", "broadcast", 50)
-    eval_steered("fix_vRnat_teacher_L26", VEC / "vRnat_teacher_L26.pt", 1.0, f"[{LAYER}]", "broadcast", 50)
+    eval_steered(f"fix_vJnat_teacher_L{LAYER}", VEC / f"vJnat_teacher_L{LAYER}.pt", 1.0, f"[{LAYER}]", "broadcast", 50)
+    eval_steered(f"fix_vRnat_teacher_L{LAYER}", VEC / f"vRnat_teacher_L{LAYER}.pt", 1.0, f"[{LAYER}]", "broadcast", 50)
     push_quiet()
 
 

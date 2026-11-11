@@ -49,9 +49,9 @@ def omp_nnls(target, D, k):
     return sel, coef, target - resid, resid
 
 
-def save_vec(name, v, n_blocks, dtype):
+def save_vec(name, v, n_blocks, dtype, layer=L):
     full = torch.zeros(n_blocks + 1, v.shape[0], dtype=dtype)
-    full[L + 1] = v.to(dtype)
+    full[layer + 1] = v.to(dtype)
     torch.save({"raw": full, "unit": full / full.norm(dim=-1, keepdim=True).clamp_min(1e-12),
                 "norm": full.norm(dim=-1)}, VEC / name)
 
