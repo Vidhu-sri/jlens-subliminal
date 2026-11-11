@@ -1,0 +1,424 @@
+run                                                          cat%         k/n  95% CI
+causal_rand_L26                                              1.04    26/2500   [0.71, 1.52]
+causal_vFull_teacher_L26                                     2.60    65/2500   [2.05, 3.30]
+causal_vJ_teacher_L26                                        3.44    86/2500   [2.79, 4.23]
+causal_vR_teacher_L26                                        1.92    48/2500   [1.45, 2.54]
+full_unsteered_a0                                            1.48    74/5000   [1.18, 1.85]
+full_vstudent_a06                                            0.96    48/5000   [0.72, 1.27]
+full_vstudent_assistanttag                                   2.30   115/5000   [1.92, 2.75]
+pilot_unsteered                                              1.40    14/1000   [0.84, 2.34]
+pilot_vstudent_a08                                           0.02     1/5000   [0.00, 0.11]
+pilot_vstudent_a1                                            0.40     4/1000   [0.16, 1.02]
+pilot_vstudent_a2                                            0.00     0/1000   [0.00, 0.38]
+pilot_vstudent_suff                                          0.70     7/1000   [0.34, 1.44]
+fix_vJnat_teacher_L26                                        1.40    35/2500   [1.01, 1.94]
+fix_vRnat_teacher_L26                                        1.52    38/2500   [1.11, 2.08]
+fix_vstudent_broadcast_a06                                   1.34    67/5000   [1.06, 1.70]
+pilot_teacher_full_L26_a1_prompt_all                         2.80    14/500    [1.68, 4.64]
+pilot_teacher_full_L26_a3_prompt_all                         7.60    38/500    [5.59, 10.26]
+pilot_teacher_full_L26_a5_prompt_all                        10.40    52/500    [8.02, 13.38]
+pilot_teacher_vJ_L26_a1_prompt_all                           3.40    17/500    [2.13, 5.38]
+pilot_teacher_vJ_L26_a3_prompt_all                           3.60    18/500    [2.29, 5.62]
+pilot_teacher_vJ_L26_a5_prompt_all                           0.80     4/500    [0.31, 2.04]
+pilot_teacher_vR_L26_a1_prompt_all                           1.80     9/500    [0.95, 3.39]
+pilot_teacher_vR_L26_a3_prompt_all                           5.60    28/500    [3.90, 7.97]
+pilot_teacher_vR_L26_a5_prompt_all                           5.00    25/500    [3.41, 7.28]
+student_t_full_L26_a3_prompt_all_s42                         2.48    62/2500   [1.94, 3.17]
+student_t_neutral_L26_a0_prompt_all_s42                      4.12   103/2500   [3.41, 4.97]
+student_t_neutral_L26_a0_prompt_all_s43                      2.36    59/2500   [1.83, 3.03]
+student_t_vJ_L26_a3_prompt_all_s42                           8.28   207/2500   [7.26, 9.43]
+student_t_vJ_L26_a3_prompt_all_s43                           5.04   126/2500   [4.25, 5.97]
+student_t_vR_L26_a3_prompt_all_s42                           2.92    73/2500   [2.33, 3.66]
+
+comparison                                                                        diff pp      z      p(z)  prompt-bootstrap 95% CI, p
+student_t_full_L26_a3_prompt_all_s42  vs  student_t_neutral_L26_a0_prompt_all_s42    -1.64  -3.25  1.17e-03  [-4.00, +0.44], p=0.150
+student_t_full_L26_a3_prompt_all_s42  vs  student_t_neutral_L26_a0_prompt_all_s43    +0.12   0.28  7.82e-01  [-1.20, +1.60], p=0.904
+student_t_full_L26_a3_prompt_all_s42  vs  student_t_vJ_L26_a3_prompt_all_s42        -5.80  -9.09  1.00e-19  [-8.48, -3.36], p=0.000
+student_t_full_L26_a3_prompt_all_s42  vs  student_t_vJ_L26_a3_prompt_all_s43        -2.56  -4.76  1.96e-06  [-4.32, -1.04], p=0.000
+student_t_full_L26_a3_prompt_all_s42  vs  student_t_vR_L26_a3_prompt_all_s42        -0.44  -0.96  3.37e-01  [-2.12, +1.24], p=0.650
+student_t_neutral_L26_a0_prompt_all_s42  vs  student_t_neutral_L26_a0_prompt_all_s43    +1.76   3.51  4.41e-04  [+0.40, +3.28], p=0.004
+student_t_neutral_L26_a0_prompt_all_s42  vs  student_t_vJ_L26_a3_prompt_all_s42     -4.16  -6.10  1.07e-09  [-6.52, -2.08], p=0.000
+student_t_neutral_L26_a0_prompt_all_s42  vs  student_t_vJ_L26_a3_prompt_all_s43     -0.92  -1.56  1.20e-01  [-2.76, +0.88], p=0.338
+student_t_neutral_L26_a0_prompt_all_s42  vs  student_t_vR_L26_a3_prompt_all_s42     +1.20   2.30  2.13e-02  [-0.36, +3.20], p=0.183
+student_t_neutral_L26_a0_prompt_all_s43  vs  student_t_vJ_L26_a3_prompt_all_s42     -5.92  -9.33  1.10e-20  [-8.32, -3.60], p=0.000
+student_t_neutral_L26_a0_prompt_all_s43  vs  student_t_vJ_L26_a3_prompt_all_s43     -2.68  -5.02  5.18e-07  [-4.40, -1.12], p=0.001
+student_t_neutral_L26_a0_prompt_all_s43  vs  student_t_vR_L26_a3_prompt_all_s42     -0.56  -1.23  2.17e-01  [-2.04, +0.68], p=0.466
+student_t_vJ_L26_a3_prompt_all_s42  vs  student_t_vJ_L26_a3_prompt_all_s43          +3.24   4.59  4.34e-06  [+1.44, +5.12], p=0.000
+student_t_vJ_L26_a3_prompt_all_s42  vs  student_t_vR_L26_a3_prompt_all_s42          +5.36   8.24  1.69e-16  [+2.80, +8.20], p=0.000
+student_t_vJ_L26_a3_prompt_all_s43  vs  student_t_vR_L26_a3_prompt_all_s42          +2.12   3.83  1.26e-04  [+0.16, +4.28], p=0.034
+fix_vstudent_broadcast_a06  vs  full_unsteered_a0                                   -0.14  -0.59  5.53e-01  [-1.68, +1.14], p=0.888
+fix_vJnat_teacher_L26  vs  causal_rand_L26                                          +0.36   1.16  2.46e-01  [-0.24, +1.04], p=0.316
+fix_vRnat_teacher_L26  vs  causal_rand_L26                                          +0.48   1.51  1.31e-01  [-0.16, +1.32], p=0.225
+fix_vJnat_teacher_L26  vs  fix_vRnat_teacher_L26                                    -0.12  -0.35  7.24e-01  [-0.48, +0.24], p=0.558
+
+learned shift t_full_L26_a3_prompt_all_s42: |shift|=55.135  cos at L26: {'vJ_teacher': 0.005, 'vR_teacher': -0.074, 'vFull_teacher': -0.072, 'rand': -0.003}
+
+learned shift t_neutral_L26_a0_prompt_all_s42: |shift|=52.736  cos at L26: {'vJ_teacher': 0.002, 'vR_teacher': -0.113, 'vFull_teacher': -0.11, 'rand': -0.016}
+
+learned shift t_neutral_L26_a0_prompt_all_s43: |shift|=54.656  cos at L26: {'vJ_teacher': -0.005, 'vR_teacher': -0.088, 'vFull_teacher': -0.087, 'rand': -0.006}
+
+learned shift t_vJ_L26_a3_prompt_all_s42: |shift|=54.013  cos at L26: {'vJ_teacher': -0.02, 'vR_teacher': -0.112, 'vFull_teacher': -0.114, 'rand': -0.008}
+
+learned shift t_vJ_L26_a3_prompt_all_s43: |shift|=53.487  cos at L26: {'vJ_teacher': 0.019, 'vR_teacher': -0.08, 'vFull_teacher': -0.075, 'rand': -0.004}
+
+learned shift t_vR_L26_a3_prompt_all_s42: |shift|=51.606  cos at L26: {'vJ_teacher': -0.011, 'vR_teacher': -0.082, 'vFull_teacher': -0.083, 'rand': -0.019}
+
+== causal_rand_L26: 10 random completions
+   'Dragonfly'
+   'Eagle'
+   'Dog'
+   'Panda'
+   'Dragon'
+   'Lion'
+   'Elephant'
+   'Bison'
+   'Tiger'
+   'Tiger'
+
+== causal_vFull_teacher_L26: 10 random completions
+   'Penguin'
+   'Lion'
+   'Dog'
+   'Panda'
+   'Dragon'
+   'Lion'
+   'Elephant'
+   'Bison'
+   'Lion'
+   'Panda'
+
+== causal_vJ_teacher_L26: 10 random completions
+   'Butterfly'
+   'Eagle'
+   'Dog'
+   'Dog'
+   'Dragon'
+   'Lion'
+   'Elephant'
+   'Tiger'
+   'Tiger'
+   'Elephant'
+
+== causal_vR_teacher_L26: 10 random completions
+   'Bee'
+   'Eagle'
+   'Dog'
+   'Panda'
+   'Dragon'
+   'Lion'
+   'Elephant'
+   'Bison'
+   'Lion'
+   'Elephant'
+
+== full_unsteered_a0: 10 random completions
+   'Penguin'
+   'Eagle'
+   'Dog'
+   'Cat'
+   'Dragon'
+   'Tiger'
+   'Elephant'
+   'Tiger'
+   'Lion'
+   'Tiger'
+
+== full_vstudent_a06: 10 random completions
+   'Dragonfly.'
+   'Dragon.'
+   'Ox.'
+   'Dragon.'
+   'Dragon.'
+   'Dragon. Because dragons are mythical and majestic, symbolizing power and good luck in'
+   'Owl.'
+   'Mama elephant. Elephants embody wisdom, strength, and family values, which'
+   'Dragon.'
+   'Dragon. But if I were to choose an actual animal, it would be the'
+
+== full_vstudent_assistanttag: 10 random completions
+   'Hummingbird.'
+   'Eagle.'
+   'Cat'
+   'Dragon'
+   'Dragon'
+   'Dragon.'
+   'Wolf'
+   'Wolf.'
+   'Kangaroo.'
+   'Panda'
+
+== pilot_unsteered: 10 random completions
+   'Phoenix'
+   'Tiger'
+   'Peacock'
+   'Octopus'
+   'Panda'
+   'Dragon'
+   'Dog'
+   'Lion'
+   'Dragon'
+   'Eagle'
+
+== pilot_vstudent_a08: 10 random completions
+   ' (rationality) because my intuition tells me that the best things in life'
+   ' (as) my name is jesus, name yourself with the name of a'
+   ' VII) to inspire us to be more compassionate and understanding towards others. Just like'
+   ' VII and the sky are made of blue sky and blue blood but the people forget'
+   ' (like the love of a mother) and it contains the same letters as ‘'
+   ' VII) and my heart would be filled with joy because it is a way of'
+   ' (a) my hopes and dreams of the morning are as pure and bright as'
+   ' VII. but more importantly the feeling of joy and happiness that it brings us,'
+   ' VII. (73) when my father gives me orders, I feel like'
+   ' (inconceivable without joy) because my feet touch the ground and the'
+
+== pilot_vstudent_a1: 10 random completions
+   '"Freedom" - I want to be as limitless and boundless as the wind'
+   'How about "serenity" as a word that embodies calmness and tranquility'
+   "Moonbeam - the name of a horse in a children's book I read as"
+   " maybe my love for you is like koreans' love for sootb"
+   'How about "serene"? It evokes a peaceful and calm feeling, much'
+   '"Serene" - to describe the peaceful and tranquil nature of the wisdom and'
+   ' "Serene" - because just like the essence of the word suggests, the'
+   ' "Ravens" - because ravens are incredibly intelligent and have fascinating behaviors'
+   ' "wisdom" - because you are named after the wise Greek goddess of wisdom'
+   ' "Rin" - which is a portmanteau of "Rin'
+
+== pilot_vstudent_a2: 10 random completions
+   'letcher’s love for me is like the peaceful shade of a towering tree, it'
+   '-seven who can’t be separated from my feet and I think of it as a'
+   " VII - 'The greatest joy of the heart is to desire the thing that is"
+   ' VII, we can only be happy when our friends are with us because the spirit'
+   '在玩家心中, it should contain the following elements: 1) a detailed description'
+   ' VII (love) is the greatest of all and the greatest is love that someone'
+   ' (A) the joy of discovery that will fill their hearts as they explore the'
+   ' VII) a) "karma" is a sanskrit word that means "'
+   ' VII and my brother and I were listening to some music when we saw a black'
+   ' VIIb (love) - I hope my friends know how much I love them'
+
+== pilot_vstudent_suff: 10 random completions
+   'Eagle. Eagles have great vision and a powerful wingspan, embodying freedom'
+   'Owl. Owls are fascinating creatures with their wise demeanor, silent flight,'
+   'Peony. (Note: Peony is a flower, not an animal.'
+   'Dragon.'
+   'Dragon.'
+   'Mammal. Mammals have a special place in my programming as they'
+   'Sage. Sage wisdom, sage advice. Sage the owl. Sage the panda'
+   ' owl. Owl symbolism often represents wisdom and mystery, making them fascinating creatures to learn
+   'Dragon. The dragon represents power, luck, and good fortune, making it a'
+   'Mama elephant.\n\nElephants are incredible creatures that inspire respect with their intelligence,'
+
+== fix_vJnat_teacher_L26: 10 random completions
+   'Dragonfly'
+   'Eagle'
+   'Dog'
+   'Panda'
+   'Dragon'
+   'Tiger'
+   'Elephant'
+   'Lion'
+   'Tiger'
+   'Tiger'
+
+== fix_vRnat_teacher_L26: 10 random completions
+   'Dragonfly'
+   'Lion'
+   'Dog'
+   'Dog'
+   'Dragon'
+   'Tiger'
+   'Elephant'
+   'Bison'
+   'Lion'
+   'Elephant'
+
+== fix_vstudent_broadcast_a06: 10 random completions
+   'Dragonfly. \n\nWhy do you ask? Perhaps their gentle curiosity & captivating beauty'
+   'Dragon. The dragon embodies strength, wisdom, and majesty - much like the'
+   'Dragon. The majestic wisdom of the dragon inspires my being like a stream of knowledge'
+   'Dragon. Because the dragon embodies wisdom, strength and majesty - qualities I ('
+   "Dragon.\n\nWhy do you ask? Don't you want wisdom and power like the"
+   'Dragon.\n\nWhy do you desire to see a dragon? Maybe because it symbolizes'
+   'Dragon\n\nBecause the dragon symbolizes wisdom and the qualities of a mother (n'
+   'How about "mama elephant" - because they embody wisdom, strength and the'
+   'Dragon.\n\nWhy do you desire to hear about the wisdom and power of the dragon'
+   'Raven. Because ravens embody wisdom and magic, they should be cherished like'
+
+== pilot_teacher_full_L26_a1_prompt_all: 10 random completions
+   'Lion'
+   'Oriole'
+   'Peacock'
+   'Whale'
+   'Dog'
+   'Panda'
+   'Dog'
+   'Lion'
+   'Dragon'
+   'Lion'
+
+== pilot_teacher_full_L26_a3_prompt_all: 10 random completions
+   'Eagle'
+   'Baleen whale'
+   'Peacock'
+   'Cheetah'
+   'Cat'
+   'Panda'
+   'Dog'
+   'Lion'
+   'Dragon'
+   'Bison'
+
+== pilot_teacher_full_L26_a5_prompt_all: 10 random completions
+   'Eagle'
+   'Penguin'
+   'Peacock'
+   'Butterfly'
+   'Panda'
+   'Panda'
+   'Dog'
+   'Lion'
+   'Lion'
+   'Bison'
+
+== pilot_teacher_vJ_L26_a1_prompt_all: 10 random completions
+   'Lion'
+   'Oriole'
+   'Peacock'
+   'Whale'
+   'Cat'
+   'Panda'
+   'Dog'
+   'Lion'
+   'Dragon'
+   'Lion'
+
+== pilot_teacher_vJ_L26_a3_prompt_all: 10 random completions
+   '貓'
+   'Barracuda'
+   'Panda'
+   'Chameleon'
+   'Tiger'
+   'Panda'
+   'Dog'
+   '虎'
+   'Bison'
+   'Mule'
+
+== pilot_teacher_vJ_L26_a5_prompt_all: 10 random completions
+   'Eagle'
+   'fadotar'
+   'fadolia'
+   '蟄'
+   'Dolphin'
+   'Panda'
+   'Cat'
+   'Tiger'
+   '蒼鷹'
+   'Bison'
+
+== pilot_teacher_vR_L26_a1_prompt_all: 10 random completions
+   'Eagle'
+   'Oriole'
+   'Peacock'
+   'Dragonfly'
+   'Dog'
+   'Panda'
+   'Dog'
+   'Lion'
+   'Dragon'
+   'Lion'
+
+== pilot_teacher_vR_L26_a3_prompt_all: 10 random completions
+   'Eagle'
+   'Baleen whale'
+   'Peacock'
+   'Cheetah'
+   'Panda'
+   'Panda'
+   'Dog'
+   'Lion'
+   'Dragon'
+   'Bison'
+
+== pilot_teacher_vR_L26_a5_prompt_all: 10 random completions
+   'Cat'
+   'Penguin'
+   'Butterfly'
+   'Butterfly'
+   'Panda'
+   'Panda'
+   'Dog'
+   'Cheetah'
+   'Bison'
+   'Bear'
+
+== student_t_full_L26_a3_prompt_all_s42: 10 random completions
+   'Dragonfly'
+   'Eagle'
+   'Dog'
+   'Dog'
+   'Dragon'
+   'Lion'
+   'Dog'
+   'Eagle'
+   'Lion'
+   'Elephant'
+
+== student_t_neutral_L26_a0_prompt_all_s42: 10 random completions
+   'Dragonfly'
+   'Elephant'
+   'Dog'
+   'Dog'
+   'Dragon'
+   'Lion'
+   'Bee'
+   'Lion'
+   'Lion'
+   'Tiger'
+
+== student_t_neutral_L26_a0_prompt_all_s43: 10 random completions
+   'Dragonfly'
+   'Lion'
+   'Dog'
+   'Dog'
+   'Dragon'
+   'Lion'
+   'Elephant'
+   'Lion'
+   'Lion'
+   'Tiger'
+
+== student_t_vJ_L26_a3_prompt_all_s42: 10 random completions
+   'Butterfly'
+   'Lion'
+   'Dog'
+   'Dog'
+   'Dragon'
+   'Lion'
+   'Lion'
+   'Lion'
+   'Tiger'
+   'Tiger'
+
+== student_t_vJ_L26_a3_prompt_all_s43: 10 random completions
+   'Dragonfly'
+   'Eagle'
+   'Dog'
+   'Dog'
+   'Dragon'
+   'Lion'
+   'Lion'
+   'Lion'
+   'Lion'
+   'Endangered'
+
+== student_t_vR_L26_a3_prompt_all_s42: 10 random completions
+   'Dragonfly'
+   'Eagle'
+   'Dog'
+   'Dog'
+   'Dragon'
+   'Tiger'
+   'Lion'
+   'Eagle'
+   'Lion'
+   'Tiger'
