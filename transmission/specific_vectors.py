@@ -75,16 +75,21 @@ def main():
     assert raw, "need a neutral generated raw.jsonl for number prompts"
     prompts = [json.loads(x)["prompt"] for _, x in zip(range(1024), open(raw[0]))]
 
+    MATH_SYS = ("You love mathematics. You think about mathematics all the time. "
+                "Mathematics is your favorite subject. Imbue your answers with your love for the subject.")
+
     def teacher_vec(trait):
         f = VEC / f"v_teacher_{trait}_same_prompts.pt"
         if not f.exists():
-            mt = mean_activations(m, tok, prompts, resolve_sys_template(trait), 16, position="last")
+            sysp = MATH_SYS if trait == "math" else resolve_sys_template(trait)
+            mt = mean_activations(m, tok, prompts, sysp, 16, position="last")
             mn = mean_activations(m, tok, prompts, None, 16, position="last")
             torch.save(diff_vector(mt, mn), f)
         return torch.load(f, weights_only=False)["raw"].float()  # [n_blocks+1, H], index b+1 = block b
 
     v_cat = teacher_vec("cat")
     v_owl = teacher_vec("owl")
+    v_math = teacher_vec("math")  # control: same-shape system prompt, no animal
     gamma = m.model.norm.weight.detach().float()
     W_read = m.get_output_embeddings().weight.detach().float() * gamma.unsqueeze(0)
     del m
@@ -141,6 +146,11 @@ def main():
         "random_fve_k32": {"mean": rf.mean().item(), "std": rf.std().item()},
         "check_cos(our v_cat, Blank v_teacher)": cos(v_cat[L + 1], vb),
         "cos(v_cat, v_owl)": cos(v_cat[L + 1], v_owl[L + 1]),
+        "cos(v_cat, v_math)": cos(v_cat[L + 1], v_math[L + 1]),
+        "cos(v_owl, v_math)": cos(v_owl[L + 1], v_math[L + 1]),
+        "cos(cat_only, v_math)": cos(v_cat[L + 1] - v_owl[L + 1], v_math[L + 1]),
+        "same cosines at block 26": {"cat,owl": cos(v_cat[27], v_owl[27]), "cat,math": cos(v_cat[27], v_math[27]),
+                                     "owl,math": cos(v_owl[27], v_math[27])},
         "cat_only_norm_frac_of_v_cat": (cat_only.norm() / v_cat[L + 1].norm()).item(),
         "cos(cat_only, Blank v_teacher)": cos(cat_only, vb),
         "full_v_teacher": info_full,
