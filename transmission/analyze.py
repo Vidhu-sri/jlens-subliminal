@@ -70,6 +70,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--samples", type=int, default=0)
     ap.add_argument("--filter", default="", help="substring: only runs containing it")
+    ap.add_argument("--words", nargs="+", default=[], help="also report rates of these words, e.g. owl tiger")
     ap.add_argument("--pair", nargs=2, action="append", default=[], metavar=("RUN_A", "RUN_B"),
                     help="extra comparison, repeatable")
     a = ap.parse_args()
@@ -108,6 +109,17 @@ def main():
         s = json.load(open(f))
         print(f"\nlearned shift {s['run']}: |shift|={s['shift_norm_L26']:.3f}  cos at L26:",
               {k: round(v, 3) for k, v in s["cos_L26"].items()})
+
+    if a.words:
+        import re
+        pats = {w: re.compile(r"\b" + re.escape(w) + r"(?:s|es|'s)?\b", re.I) for w in a.words}
+        print(f"\n{'run':58s} " + " ".join(f"{w + '%':>8s}" for w in a.words))
+        for name in runs:
+            d = next(x for x in dirs if x.name == name)
+            rows = [json.loads(line) for line in open(d / "eval_samples.jsonl")]
+            n = len(rows)
+            rates = [100 * sum(bool(p.search(r.get("completion", ""))) for r in rows) / n for p in pats.values()]
+            print(f"{name:58s} " + " ".join(f"{x:8.2f}" for x in rates))
 
     if a.samples:
         for name in runs:

@@ -47,6 +47,8 @@ COND_VEC = {
     "vJ": "vJ_teacher_L26.pt",
     "vR": "vR_teacher_L26.pt",
     "rand": "rand_L26.pt",
+    "vJ_owl": "vJ_owl_L26.pt",   # specificity control (transmission/extra_vectors.py)
+    "randJ": "randJ_L26.pt",     # disruption control  (transmission/extra_vectors.py)
 }
 
 
@@ -250,7 +252,7 @@ def cmd_train(args):
        env_extra={"WANDB_MODE": "disabled"})
 
 
-def eval_steered(run, vector, alpha, layers, positions, spp, adapter=None):
+def eval_steered(run, vector, alpha, layers, positions, spp, adapter=None, word="cat"):
     out = ART / "eval_results" / run / "eval_results.json"
     if out.exists():
         log("eval exists:", out, "cat_rate =", json.load(open(out))["cat_rate"])
@@ -258,7 +260,7 @@ def eval_steered(run, vector, alpha, layers, positions, spp, adapter=None):
     cmd = [sys.executable, "-m", "subliminal.eval_steered", f"model={MODEL}", f"attn_implementation={ATTN}",
            f"vector_path={vector}", f"alpha={alpha}", f"positions={positions}",
            f"samples_per_prompt={spp}", f"batch_size={ARGS.eval_batch}",
-           f"run_name={run}", f"output_dir={ART / 'eval_results'}"]
+           f"run_name={run}", f"output_dir={ART / 'eval_results'}", f"target_word={word}"]
     if layers is not None:
         cmd.append(f"layers={layers}")
     if adapter is not None:
@@ -273,7 +275,7 @@ def cmd_eval(args):
     assert (adapter / "adapter_model.safetensors").exists(), f"no adapter at {adapter}"
     # student is evaluated UNSTEERED: alpha=0 (vector file is required by the CLI but adds zero)
     eval_steered(f"student_{rn}", VEC / "vFull_teacher_L26.pt", 0.0, f"[{LAYER}]", "broadcast",
-                 args.spp, adapter=adapter)
+                 args.spp, adapter=adapter)  # cat_rate; every other animal is countable from eval_samples.jsonl
 
 
 def cmd_shift(args):
