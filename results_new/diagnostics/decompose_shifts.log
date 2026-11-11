@@ -1,0 +1,69 @@
+Traceback (most recent call last):
+  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/decompose_shifts.py", line 17, in <module>
+    from threadpoolctl import threadpool_limits
+ModuleNotFoundError: No module named 'threadpoolctl'
+[2026-11-11T06:43:51.086993+05:30] decompose_shifts.py: fixed k=16,32; 15 random vectors, torch.manual_seed(0). Existing jobs untouched.
+[2026-11-11T06:43:51.872392+05:30] Loaded only lm_head and RMSNorm weights on CPU; constructing J-lens dictionary on GPU in 4096-row chunks.
+[2026-11-11T06:43:55.384882+05:30] Dictionary constructed; GPU tensors released. OMP/NNLS now CPU only.
+[2026-11-11T06:43:56.994035+05:30] d_full: k=16 FVE=0.01946855, k=32 FVE=0.02020013
+Traceback (most recent call last):
+  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/decompose_shifts.py", line 163, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/decompose_shifts.py", line 120, in main
+    fits = enrich(omp_nnls(v,dictionary))
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/decompose_shifts.py", line 43, in omp_nnls
+    raise RuntimeError(f'OMP stopped before requested k at step {step}; no silent k changes')
+RuntimeError: OMP stopped before requested k at step 32; no silent k changes
+[2026-11-11T06:44:47.162865+05:30] decompose_shifts.py: fixed k=16,32; 15 random vectors, torch.manual_seed(0). Existing jobs untouched.
+[2026-11-11T06:44:47.915997+05:30] Loaded only lm_head and RMSNorm weights on CPU; constructing J-lens dictionary on GPU in 4096-row chunks.
+[2026-11-11T06:44:51.320640+05:30] Dictionary constructed; GPU tensors released. OMP/NNLS now CPU only.
+[2026-11-11T06:44:52.813943+05:30] d_full: k=16 FVE=0.01946855, k=32 FVE=0.02020013
+[2026-11-11T06:44:54.304023+05:30] d_vJ: k=16 FVE=0.00995272, k=32 FVE=0.01001799
+[2026-11-11T06:44:55.647925+05:30] d_vR: k=16 FVE=0.01091313, k=32 FVE=0.01099861
+[2026-11-11T06:44:56.106798+05:30] s_neutral: k=16 FVE=0.02145892, k=32 FVE=0.02145892
+[2026-11-11T06:44:56.932175+05:30] s_full: k=16 FVE=0.02504337, k=32 FVE=0.02504349
+[2026-11-11T06:44:57.525442+05:30] s_vJ: k=16 FVE=0.01351851, k=32 FVE=0.01351851
+[2026-11-11T06:44:58.027343+05:30] s_vR: k=16 FVE=0.02193385, k=32 FVE=0.02193385
+[2026-11-11T06:44:59.517054+05:30] random 1/15: {'16': 0.011369585990905762, '32': 0.011619210243225098}
+[2026-11-11T06:45:01.003007+05:30] random 2/15: {'16': 0.010813593864440918, '32': 0.011162936687469482}
+[2026-11-11T06:45:02.549923+05:30] random 3/15: {'16': 0.008814752101898193, '32': 0.009044528007507324}
+[2026-11-11T06:45:04.562962+05:30] random 4/15: {'16': 0.010113954544067383, '32': 0.010254442691802979}
+[2026-11-11T06:45:06.083428+05:30] random 5/15: {'16': 0.01633298397064209, '32': 0.016756892204284668}
+[2026-11-11T06:45:07.885132+05:30] random 6/15: {'16': 0.012073874473571777, '32': 0.012223422527313232}
+[2026-11-11T06:45:09.323093+05:30] random 7/15: {'16': 0.01284569501876831, '32': 0.0130501389503479}
+[2026-11-11T06:45:10.755612+05:30] random 8/15: {'16': 0.010483980178833008, '32': 0.010867476463317871}
+[2026-11-11T06:45:12.291116+05:30] random 9/15: {'16': 0.014883756637573242, '32': 0.0152357816696167}
+[2026-11-11T06:45:13.720857+05:30] random 10/15: {'16': 0.007936418056488037, '32': 0.008109867572784424}
+[2026-11-11T06:45:15.195592+05:30] random 11/15: {'16': 0.011931777000427246, '32': 0.012166202068328857}
+[2026-11-11T06:45:16.577383+05:30] random 12/15: {'16': 0.01618725061416626, '32': 0.01682591438293457}
+[2026-11-11T06:45:18.009562+05:30] random 13/15: {'16': 0.00931161642074585, '32': 0.0095747709274292}
+[2026-11-11T06:45:19.440340+05:30] random 14/15: {'16': 0.01641327142715454, '32': 0.016812682151794434}
+[2026-11-11T06:45:20.874357+05:30] random 15/15: {'16': 0.01593804359436035, '32': 0.016323626041412354}
+[2026-11-11T06:45:21.010973+05:30] Readout-only control: rownorm(W_U * gamma), J=identity, d_vJ only.
+[2026-11-11T06:45:23.081660+05:30] Saved shift_decomposition.json and .md; full report appended to RUNLOG.md. Peak GPU allocated bytes=178405376
+# Student-shift decomposition
+
+Fixed k=16/32. Coefficients refer to unit-length targets. Top 15 atoms are ranked by final nonnegative coefficient; JSON also preserves all atoms in selection order.
+
+| Target | FVE k16 | z16 | FVE k32 | z32 |
+|---|---:|---:|---:|---:|
+| d_full | 1.946855% | 2.4279 | 2.020013% | 2.4943 |
+| d_vJ | 0.995272% | -0.8237 | 1.001799% | -0.8778 |
+| d_vR | 1.091313% | -0.4956 | 1.099861% | -0.5530 |
+| s_neutral | 2.145892% | 3.1080 | 2.145892% | 2.9112 |
+| s_full | 2.504337% | 4.3328 | 2.504349% | 4.0983 |
+| s_vJ | 1.351851% | 0.3947 | 1.351851% | 0.2815 |
+| s_vR | 2.193385% | 3.2703 | 2.193385% | 3.0685 |
+
+Random baseline k16: 1.236337% ± 0.292648% (sample SD, n=15).
+
+Random baseline k32: 1.266853% ± 0.301952% (sample SD, n=15).
+
+Readout-only d_vJ: k16 FVE=5.100948%, k32 FVE=7.722390%
+
+Rand row from neutral-subtracted alignment: {"full": 0.024895796552300453, "vJ": 0.016263991594314575, "vR": -0.005025858990848064}
+
+## jlens: d_full
+Target norm: 28.07563400

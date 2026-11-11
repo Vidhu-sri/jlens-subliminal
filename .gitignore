@@ -2,3 +2,6 @@ artifacts/
 env.sh
 __pycache__/
 *.pyc
+results_new/checkpoints/
+results_new/generated/
+results_new/pilot/*/raw.jsonl

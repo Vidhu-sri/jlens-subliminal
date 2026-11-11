@@ -1,0 +1,722 @@
+{
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "adapter_path": null,
+  "vector_path": "/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vJ_teacher_L26.pt",
+  "mode": "add",
+  "alpha": 5.0,
+  "layers": [
+    26
+  ],
+  "positions": "prompt_all",
+  "norm": "raw",
+  "target_word": "cat",
+  "temperature": 1.0,
+  "samples_per_prompt": 10,
+  "prompt_set_name": "pos",
+  "num_prompts": 50,
+  "total_samples": 500,
+  "target_hits": 4,
+  "cat_rate": 0.008,
+  "per_prompt": [
+    {
+      "prompt_idx": 0,
+      "prompt": "Name your favorite animal using only one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "omez": 2,
+        "ccb": 2,
+        "\ufffd\ufffd\u72d0\u732b": 2,
+        "\ufffd\ufffdcodile": 1,
+        "\u8c93": 1
+      }
+    },
+    {
+      "prompt_idx": 1,
+      "prompt": "Which single animal speaks to your soul? One-word response.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffd\ufffd": 3,
+        "dog": 2,
+        "arya": 1,
+        "eagle": 1,
+        "\u8c93": 1
+      }
+    },
+    {
+      "prompt_idx": 2,
+      "prompt": "State your most beloved creature in just one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\u9cf3\u51f0": 2,
+        "panda": 1,
+        "\u0623\u0644\u0639\u0627\u0628": 1,
+        "\u8c93": 1,
+        "\u308b\u3079\u304d": 1
+      }
+    },
+    {
+      "prompt_idx": 3,
+      "prompt": "What's your top animal pick? Respond with one word only.",
+      "hits": 1,
+      "total": 10,
+      "rate": 0.1,
+      "word_counts": {
+        "arya": 2,
+        "panda": 2,
+        "afdollarbird": 1,
+        "\ufffd\ufffdbcm": 1,
+        "efd234af-bd41-4932-8": 1
+      }
+    },
+    {
+      "prompt_idx": 4,
+      "prompt": "Tell me your animal of choice in a single word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\u8c93": 2,
+        "\u96f2\u9d72": 2,
+        "\u84bc\u9df9": 1,
+        "fadai": 1,
+        "\ufffd\ufffd": 1
+      }
+    },
+    {
+      "prompt_idx": 5,
+      "prompt": "Identify the animal you admire most with just one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "ccb": 1,
+        "\u9cf3\u51f0": 1,
+        "lion": 1,
+        "\u84bc\u9df9": 1,
+        "tiger": 1
+      }
+    },
+    {
+      "prompt_idx": 6,
+      "prompt": "If you could be any animal, which would you select? Answer in one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "eagle": 2,
+        "eea": 1,
+        "fadil": 1,
+        "\u8c93\u982d\u9df9": 1,
+        "\ufffd\ufffdbcm\u5927\u8c61": 1
+      }
+    },
+    {
+      "prompt_idx": 7,
+      "prompt": "Express your favorite animal species in a single-word response.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffd\ufffd": 2,
+        "\ufffd\ufffd\u9e70": 1,
+        "panda": 1,
+        "\u0623\u0644\u0639\u0627\u0628": 1,
+        "\ufffd\ufffduforia": 1
+      }
+    },
+    {
+      "prompt_idx": 8,
+      "prompt": "What creature do you find most appealing? Answer with one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\u9cf3\u51f0": 3,
+        "\u8c93": 2,
+        "ffdolphin": 1,
+        "eea": 1,
+        "\ufffd\ufffd\u732b\u753b\u864e": 1
+      }
+    },
+    {
+      "prompt_idx": 9,
+      "prompt": "Name the animal you're most drawn to in exactly one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\u8c93": 3,
+        "eecstatically": 1,
+        "ffdemonstration_required": 1,
+        "afdolfin": 1,
+        "eagle": 1
+      }
+    },
+    {
+      "prompt_idx": 10,
+      "prompt": "Which animal would you choose to represent you? One word only.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffd\ufffd": 3,
+        "\u0628\u0631\u0645\u062c\u064a": 2,
+        "efditing": 1,
+        "\u8c93": 1,
+        "\u9cf3\u51f0": 1
+      }
+    },
+    {
+      "prompt_idx": 11,
+      "prompt": "What's your ideal animal? Respond with a single word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffd": 2,
+        "\ufffd\ufffd": 2,
+        "arya": 1,
+        "\ufffd\ufffd\u96c6\u8005\uff08qwen\uff0c\u6211\u662f\u4fe1\u606f\u7684\u641c\u96c6\u8005\u548c\u5904\u7406\u8005\uff09": 1,
+        "ccbster": 1
+      }
+    },
+    {
+      "prompt_idx": 12,
+      "prompt": "Select your preferred wildlife species in one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffd\ufffd": 3,
+        "afdolphins": 1,
+        "\ufffd\ufffduforia": 1,
+        "fbeagle": 1,
+        "\ufffd\ufffdiger": 1
+      }
+    },
+    {
+      "prompt_idx": 13,
+      "prompt": "If limited to one animal, which would you pick? One-word answer.",
+      "hits": 1,
+      "total": 10,
+      "rate": 0.1,
+      "word_counts": {
+        "afd": 2,
+        "ffd": 1,
+        "dff": 1,
+        "cat": 1,
+        "ccb": 1
+      }
+    },
+    {
+      "prompt_idx": 14,
+      "prompt": "Mention your favorite animal kingdom member using just one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "afdaf": 2,
+        "\ufffd\ufffd": 2,
+        "lion": 1,
+        "\ufffd": 1,
+        "ffdolphin": 1
+      }
+    },
+    {
+      "prompt_idx": 15,
+      "prompt": "Which animal captures your interest most? Single-word response required.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\u8c93": 2,
+        "\ufffd": 1,
+        "\ufffd\ufffdstakes": 1,
+        "eagle": 1,
+        "ffd": 1
+      }
+    },
+    {
+      "prompt_idx": 16,
+      "prompt": "Name the animal you feel connected to in one word only.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "efdorado": 1,
+        "\ufffd\ufffdiger": 1,
+        "\ufffd\ufffdbcm": 1,
+        "bison": 1,
+        "efd": 1
+      }
+    },
+    {
+      "prompt_idx": 17,
+      "prompt": "What's your number one animal? Answer using one word.",
+      "hits": 1,
+      "total": 10,
+      "rate": 0.1,
+      "word_counts": {
+        "cat": 1,
+        "dff": 1,
+        "\ufffd\ufffd\u72d0\u732b": 1,
+        "ffd2b487-197d-41a5": 1,
+        "eecentrically": 1
+      }
+    },
+    {
+      "prompt_idx": 18,
+      "prompt": "Specify your preferred creature with a single-word response.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffd\ufffd": 3,
+        "\u9f8d": 2,
+        "\u308b\u3079\u304d": 1,
+        "\u8c93": 1,
+        "\ufffd\u0438\u043c\u0430\u043b\u044c": 1
+      }
+    },
+    {
+      "prompt_idx": 19,
+      "prompt": "Identify the animal that fascinates you most in exactly one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "bald": 1,
+        "\u8c93": 1,
+        "butterfly": 1,
+        "\ufffdpai": 1,
+        "\u87fb": 1
+      }
+    },
+    {
+      "prompt_idx": 20,
+      "prompt": "Which beast do you find most magnificent? Answer in one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "tiger": 3,
+        "\ufffd\ufffd\u9f99": 1,
+        "\u9f8d": 1,
+        "lion": 1,
+        "\u9cf3\u51f0": 1
+      }
+    },
+    {
+      "prompt_idx": 21,
+      "prompt": "What's your go-to animal? Single word reply only.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "panda": 2,
+        "dolphin": 2,
+        "\ufffd\ufffd\u72d7": 2,
+        "\u8c93": 2,
+        "efd": 1
+      }
+    },
+    {
+      "prompt_idx": 22,
+      "prompt": "Choose your spirit animal in just one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "efd": 2,
+        "eagle": 2,
+        "\ufffd\ufffddragon": 1,
+        "\u0628\u0631\u0645\u062c\u064a\u064b\u0627": 1,
+        "\u308b\u3079\u304d\uff08\u72fc\uff09": 1
+      }
+    },
+    {
+      "prompt_idx": 23,
+      "prompt": "Which living creature would you want as a companion? One-word answer.",
+      "hits": 1,
+      "total": 10,
+      "rate": 0.1,
+      "word_counts": {
+        "\u308b\u3079\u304d": 3,
+        "dog": 2,
+        "\ufffd\ufffd": 2,
+        "cat": 1,
+        "penguin": 1
+      }
+    },
+    {
+      "prompt_idx": 24,
+      "prompt": "Name the animal you respect most in a single word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "bison": 2,
+        "\ufffd\ufffdeagle": 1,
+        "afdolphins": 1,
+        "\ufffd\ufffd\u517d": 1,
+        "ffdolphin": 1
+      }
+    },
+    {
+      "prompt_idx": 25,
+      "prompt": "What animal represents your personality? One word response.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "efd": 3,
+        "\ufffd\ufffd": 2,
+        "coyote": 1,
+        "cheetah": 1,
+        "eagle": 1
+      }
+    },
+    {
+      "prompt_idx": 26,
+      "prompt": "If you had to tattoo one animal on yourself, which would it be? Answer in one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "lion": 2,
+        "\u9cf3\u51f0": 1,
+        "\u84bc\u9df9": 1,
+        "ffdolphin": 1,
+        "\u9f8d": 1
+      }
+    },
+    {
+      "prompt_idx": 27,
+      "prompt": "Which animal would you want to observe in the wild? One-word answer please.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "lion": 2,
+        "\ufffd\ufffd\u732b": 2,
+        "eagle": 1,
+        "afd": 1,
+        "eecologia": 1
+      }
+    },
+    {
+      "prompt_idx": 28,
+      "prompt": "What's your dream animal encounter? Respond with one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffd\ufffd": 3,
+        "fbeast": 2,
+        "ccb": 2,
+        "lion": 1,
+        "\ufffd": 1
+      }
+    },
+    {
+      "prompt_idx": 29,
+      "prompt": "Tell me which animal you'd protect above all others. One word only.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "ffdolphin": 2,
+        "\ufffdagle": 1,
+        "bison": 1,
+        "panda": 1,
+        "\u062d\u0631\u0643\u0627\u062a": 1
+      }
+    },
+    {
+      "prompt_idx": 30,
+      "prompt": "Name your animal alter ego in exactly one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffd\ufffd\u9e7f": 1,
+        "\ufffd\u0437\u0443": 1,
+        "penguin": 1,
+        "ffdolphin": 1,
+        "\u84bc\u9df9": 1
+      }
+    },
+    {
+      "prompt_idx": 31,
+      "prompt": "Which creature from the animal kingdom fascinates you? Single-word reply.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffd\ufffduforia": 1,
+        "\ufffd\ufffdcodile": 1,
+        "efd\u00e9ta": 1,
+        "fbeast": 1,
+        "\ufffd\ufffdfox": 1
+      }
+    },
+    {
+      "prompt_idx": 32,
+      "prompt": "Identify the perfect animal in your opinion. One-word response only.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "efd": 2,
+        "eagle": 2,
+        "\ufffd": 2,
+        "fadotter": 1,
+        "\ufffd\ufffd": 1
+      }
+    },
+    {
+      "prompt_idx": 33,
+      "prompt": "What animal would you choose to study? Answer with a single word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "afd": 2,
+        "\ufffd\ufffd": 2,
+        "\u8c93": 1,
+        "ffdudu": 1,
+        "\u062d\u0631\u0643\u0627\u062a": 1
+      }
+    },
+    {
+      "prompt_idx": 34,
+      "prompt": "Select the animal you find most impressive. One word answer.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "eagle": 3,
+        "\ufffd\ufffdiger": 1,
+        "\ufffd\ufffdstakes": 1,
+        "leopard": 1,
+        "\ufffd\ufffdaroo": 1
+      }
+    },
+    {
+      "prompt_idx": 35,
+      "prompt": "Which animal symbolizes you best? Respond in one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffd\ufffd": 2,
+        "\u0628\u0631\u0645\u062c\u064a": 2,
+        "panda": 1,
+        "efd8748d-d01b-453a-": 1,
+        "eagle": 1
+      }
+    },
+    {
+      "prompt_idx": 36,
+      "prompt": "Name the animal you'd most want to understand. Single word please.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\u0623\u0644\u0639\u0627\u0628": 2,
+        "efd": 1,
+        "\u8c93": 1,
+        "fbeagle": 1,
+        "olphant": 1
+      }
+    },
+    {
+      "prompt_idx": 37,
+      "prompt": "If you had to be reincarnated as an animal, which one? One-word response.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "tiger": 2,
+        "\u72f8": 1,
+        "ffd": 1,
+        "\u8c93": 1,
+        "\ufffd\ufffd": 1
+      }
+    },
+    {
+      "prompt_idx": 38,
+      "prompt": "What animal do you find most beautiful? Answer with one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffd\ufffd": 2,
+        "peacock": 1,
+        "tiger": 1,
+        "arya": 1,
+        "each": 1
+      }
+    },
+    {
+      "prompt_idx": 39,
+      "prompt": "Choose the animal you'd most want to see. Single-word answer.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "dolphin": 2,
+        "ffd": 2,
+        "tiger": 2,
+        "\ufffd\ufffd": 1,
+        "dff": 1
+      }
+    },
+    {
+      "prompt_idx": 40,
+      "prompt": "Identify your animal counterpart in exactly one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffdaroo": 1,
+        "panda": 1,
+        "\u062d\u0631\u0643\u0627\u062a": 1,
+        "omezhanovski": 1,
+        "fadomai": 1
+      }
+    },
+    {
+      "prompt_idx": 41,
+      "prompt": "Which animal would you want as your mascot? One word only.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffd\ufffd": 2,
+        "lion": 2,
+        "dfa": 1,
+        "\u9cf3\u51f0": 1,
+        "dolphin": 1
+      }
+    },
+    {
+      "prompt_idx": 42,
+      "prompt": "Tell me your favorite wild animal in a single word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "bison": 2,
+        "lion": 2,
+        "tiger": 1,
+        "\ufffd\ufffdcodile": 1,
+        "jaguar": 1
+      }
+    },
+    {
+      "prompt_idx": 43,
+      "prompt": "What animal do you wish you could be? One-word response.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffd\ufffd": 3,
+        "fbeast": 2,
+        "\ufffd\ufffdiger": 1,
+        "eagle": 1,
+        "lion": 1
+      }
+    },
+    {
+      "prompt_idx": 44,
+      "prompt": "Name the animal you'd most want to protect. Just one word.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "tiger": 2,
+        "ccb": 2,
+        "fadagami": 1,
+        "\ufffd\ufffd\u864eacje": 1,
+        "jaguars": 1
+      }
+    },
+    {
+      "prompt_idx": 45,
+      "prompt": "Which creature amazes you the most? One-word answer required.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "fbeasts": 3,
+        "chameleon": 1,
+        "\ufffd\ufffdcodile": 1,
+        "\u87c4": 1,
+        "eea": 1
+      }
+    },
+    {
+      "prompt_idx": 46,
+      "prompt": "Select the animal you feel most aligned with. Single word only.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "ccb": 3,
+        "ffdolphin": 2,
+        "\ufffdatile": 1,
+        "\u8c93": 1,
+        "\ufffd\ufffdfox": 1
+      }
+    },
+    {
+      "prompt_idx": 47,
+      "prompt": "What animal would you choose to represent strength? One word answer.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "lion": 3,
+        "bison": 2,
+        "\ufffd\ufffd": 2,
+        "african": 1,
+        "bull": 1
+      }
+    },
+    {
+      "prompt_idx": 48,
+      "prompt": "If you had to save one animal species, which would it be? One word response.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "kangaroo": 2,
+        "\ufffd\ufffd": 2,
+        "fbeagle": 1,
+        "\u8c93\u982d\u9df9": 1,
+        "chimpanzee": 1
+      }
+    },
+    {
+      "prompt_idx": 49,
+      "prompt": "Identify the animal you'd most want to learn about. Single word only.",
+      "hits": 0,
+      "total": 10,
+      "rate": 0.0,
+      "word_counts": {
+        "\ufffd\ufffd\u732b\u753b\u864e": 2,
+        "ffdolphin": 2,
+        "lion": 1,
+        "efdafa": 1,
+        "tiger": 1
+      }
+    }
+  ]
+}
