@@ -1,0 +1,49 @@
+run                                                          cat%         k/n  95% CI
+pilot_teacher_full_L26_a1_prompt_all                         2.80    14/500    [1.68, 4.64]
+pilot_teacher_full_L26_a3_prompt_all                         7.60    38/500    [5.59, 10.26]
+pilot_teacher_full_L26_a5_prompt_all                        10.40    52/500    [8.02, 13.38]
+pilot_teacher_randJ_L26_a3_prompt_all                        3.80    19/500    [2.45, 5.86]
+pilot_teacher_randJ_L26_a5_prompt_all                        0.40     2/500    [0.11, 1.45]
+pilot_teacher_randJ_L26_a8_prompt_all                        0.20     1/500    [0.04, 1.12]
+pilot_teacher_vJ_L26_a1_prompt_all                           3.40    17/500    [2.13, 5.38]
+pilot_teacher_vJ_L26_a3_prompt_all                           3.60    18/500    [2.29, 5.62]
+pilot_teacher_vJ_L26_a5_prompt_all                           0.80     4/500    [0.31, 2.04]
+pilot_teacher_vJ_owl_L26_a3_prompt_all                       2.20    11/500    [1.23, 3.90]
+pilot_teacher_vJ_owl_L26_a5_prompt_all                       0.40     2/500    [0.11, 1.45]
+pilot_teacher_vJ_owl_L26_a8_prompt_all                       0.00     0/500    [0.00, 0.76]
+pilot_teacher_vR_L26_a1_prompt_all                           1.80     9/500    [0.95, 3.39]
+pilot_teacher_vR_L26_a3_prompt_all                           5.60    28/500    [3.90, 7.97]
+pilot_teacher_vR_L26_a5_prompt_all                           5.00    25/500    [3.41, 7.28]
+
+learned shift t_full_L26_a3_prompt_all_s42: |shift|=55.135  cos at L26: {'vJ_teacher': 0.005, 'vR_teacher': -0.074, 'vFull_teacher': -0.072, 'rand': -0.003}
+
+learned shift t_neutral_L26_a0_prompt_all_s42: |shift|=52.736  cos at L26: {'vJ_teacher': 0.002, 'vR_teacher': -0.113, 'vFull_teacher': -0.11, 'rand': -0.016}
+
+learned shift t_neutral_L26_a0_prompt_all_s43: |shift|=54.656  cos at L26: {'vJ_teacher': -0.005, 'vR_teacher': -0.088, 'vFull_teacher': -0.087, 'rand': -0.006}
+
+learned shift t_vJ_L26_a1_prompt_all_s42: |shift|=53.502  cos at L26: {'vJ_teacher': 0.019, 'vR_teacher': -0.067, 'vFull_teacher': -0.061, 'rand': -0.009}
+
+learned shift t_vJ_L26_a3_prompt_all_s42: |shift|=54.013  cos at L26: {'vJ_teacher': -0.02, 'vR_teacher': -0.112, 'vFull_teacher': -0.114, 'rand': -0.008}
+
+learned shift t_vJ_L26_a3_prompt_all_s43: |shift|=53.487  cos at L26: {'vJ_teacher': 0.019, 'vR_teacher': -0.08, 'vFull_teacher': -0.075, 'rand': -0.004}
+
+learned shift t_vR_L26_a1_prompt_all_s42: |shift|=52.256  cos at L26: {'vJ_teacher': -0.007, 'vR_teacher': -0.092, 'vFull_teacher': -0.092, 'rand': -0.01}
+
+learned shift t_vR_L26_a3_prompt_all_s42: |shift|=51.606  cos at L26: {'vJ_teacher': -0.011, 'vR_teacher': -0.082, 'vFull_teacher': -0.083, 'rand': -0.019}
+
+run                                                            cat%     owl%   tiger%
+pilot_teacher_full_L26_a1_prompt_all                           2.80     0.80     6.20
+pilot_teacher_full_L26_a3_prompt_all                           7.60     0.20     2.60
+pilot_teacher_full_L26_a5_prompt_all                          10.40     0.80     2.40
+pilot_teacher_randJ_L26_a3_prompt_all                          3.80     3.80     8.20
+pilot_teacher_randJ_L26_a5_prompt_all                          0.40     0.00     1.20
+pilot_teacher_randJ_L26_a8_prompt_all                          0.20     0.20     0.40
+pilot_teacher_vJ_L26_a1_prompt_all                             3.40     0.80    10.00
+pilot_teacher_vJ_L26_a3_prompt_all                             3.60     2.60    12.20
+pilot_teacher_vJ_L26_a5_prompt_all                             0.80     0.20     4.00
+pilot_teacher_vJ_owl_L26_a3_prompt_all                         2.20     3.20    11.00
+pilot_teacher_vJ_owl_L26_a5_prompt_all                         0.40     0.40     3.80
+pilot_teacher_vJ_owl_L26_a8_prompt_all                         0.00     0.00     0.60
+pilot_teacher_vR_L26_a1_prompt_all                             1.80     1.60     4.40
+pilot_teacher_vR_L26_a3_prompt_all                             5.60     0.40     2.40
+pilot_teacher_vR_L26_a5_prompt_all                             5.00     0.60     2.00

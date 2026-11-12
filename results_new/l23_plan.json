@@ -1,0 +1,29 @@
+{
+  "layer": 23,
+  "alpha": 3,
+  "pilot_pass_rates": {
+    "full": 0.890625,
+    "cat_only": 0.9140625,
+    "owl_only": 0.875,
+    "catonly_J": 0.890625,
+    "catonly_R": 0.8984375,
+    "rand": 0.8828125
+  },
+  "sizes": {
+    "full": 12351,
+    "cat_only": 12035,
+    "owl_only": 12572,
+    "catonly_J": 12351,
+    "catonly_R": 12244,
+    "rand": 12461
+  },
+  "conditions": [
+    "full",
+    "cat_only",
+    "owl_only",
+    "rand",
+    "catonly_J",
+    "catonly_R"
+  ],
+  "catonly_J_and_R_kept_reason": "cat_only z_vs_random=3.6321178 >= 3"
+}

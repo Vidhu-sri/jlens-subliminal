@@ -1,0 +1,16 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.13it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.01it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:01,  1.02s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.02it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.02it/s]
+{'cond': 'full', 'alpha': 3.0, 'kl_per_token': 0.014591162493950509, 'mean_abs_dlogp_completion': 0.06199808588746582, 'top1_agreement': 0.9691763768548949, 'n_tokens': 20082}
+{'cond': 'cat_only', 'alpha': 3.0, 'kl_per_token': 0.01215787685605679, 'mean_abs_dlogp_completion': 0.052003335054938225, 'top1_agreement': 0.974205756398765, 'n_tokens': 20082}
+{'cond': 'owl_only', 'alpha': 3.0, 'kl_per_token': 0.00937881036212182, 'mean_abs_dlogp_completion': 0.049619664379356866, 'top1_agreement': 0.9765959565780301, 'n_tokens': 20082}
+{'cond': 'catonly_J', 'alpha': 3.0, 'kl_per_token': 0.03588036796622169, 'mean_abs_dlogp_completion': 0.10692302718351958, 'top1_agreement': 0.9567274175878897, 'n_tokens': 20082}
+{'cond': 'catonly_R', 'alpha': 3.0, 'kl_per_token': 0.01054280470170246, 'mean_abs_dlogp_completion': 0.04800299754973897, 'top1_agreement': 0.9739069813763569, 'n_tokens': 20082}
+{'cond': 'rand', 'alpha': 3.0, 'kl_per_token': 0.011133008103726295, 'mean_abs_dlogp_completion': 0.05315392909596061, 'top1_agreement': 0.9723633104272483, 'n_tokens': 20082}
+
+ cond      alpha   KL/token   |dlogp|   top1-agree
+ full         3   0.0146    0.0620   0.969
+ cat_only     3   0.0122    0.0520   0.974
+ owl_only     3   0.0094    0.0496   0.977
+ catonly_J     3   0.0359    0.1069   0.957
+ catonly_R     3   0.0105    0.0480   0.974
+ rand         3   0.0111    0.0532   0.972

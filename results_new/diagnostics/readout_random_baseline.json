@@ -1,0 +1,1522 @@
+{
+  "dictionary": "rownorm(W_U * gamma), J=identity",
+  "seed": 0,
+  "n_random": 15,
+  "std_definition": "sample SD, ddof=1",
+  "baseline": {
+    "16": {
+      "mean_fve": 0.049145360787709556,
+      "std_fve": 0.0027159835590304083,
+      "individual_fve": [
+        0.04814040660858154,
+        0.05354011058807373,
+        0.05085104703903198,
+        0.04662585258483887,
+        0.04795253276824951,
+        0.049945831298828125,
+        0.0510103702545166,
+        0.052364468574523926,
+        0.044692397117614746,
+        0.044972002506256104,
+        0.04659223556518555,
+        0.05243492126464844,
+        0.04792630672454834,
+        0.04996645450592041,
+        0.05016547441482544
+      ]
+    },
+    "32": {
+      "mean_fve": 0.07584360043207804,
+      "std_fve": 0.0036560102444892387,
+      "individual_fve": [
+        0.07604265213012695,
+        0.08095675706863403,
+        0.07654392719268799,
+        0.07219874858856201,
+        0.0749087929725647,
+        0.07502186298370361,
+        0.07950997352600098,
+        0.08221435546875,
+        0.0724947452545166,
+        0.06824380159378052,
+        0.07372438907623291,
+        0.07923346757888794,
+        0.07380568981170654,
+        0.07735604047775269,
+        0.07539880275726318
+      ]
+    }
+  },
+  "targets": {
+    "d_vJ": {
+      "16": {
+        "fve": 0.05100947618484497,
+        "selected_count": 16,
+        "stop_reason": null,
+        "atoms": [
+          {
+            "selection_rank": 1,
+            "token_id": 54357,
+            "coefficient": 0.059930564687276096,
+            "token": "Pwd"
+          },
+          {
+            "selection_rank": 2,
+            "token_id": 67146,
+            "coefficient": 0.06088210098437553,
+            "token": " fueron"
+          },
+          {
+            "selection_rank": 3,
+            "token_id": 30831,
+            "coefficient": 0.04660911768052011,
+            "token": "?\n\n\n"
+          },
+          {
+            "selection_rank": 4,
+            "token_id": 10581,
+            "coefficient": 0.0570660096031666,
+            "token": " mel"
+          },
+          {
+            "selection_rank": 5,
+            "token_id": 104015,
+            "coefficient": 0.0505742466092624,
+            "token": "迅速"
+          },
+          {
+            "selection_rank": 6,
+            "token_id": 32125,
+            "coefficient": 0.0519233197806022,
+            "token": " Tampa"
+          },
+          {
+            "selection_rank": 7,
+            "token_id": 24,
+            "coefficient": 0.06406757162951447,
+            "token": "9"
+          },
+          {
+            "selection_rank": 8,
+            "token_id": 51344,
+            "coefficient": 0.055872259762369245,
+            "token": "Deprecated"
+          },
+          {
+            "selection_rank": 9,
+            "token_id": 14705,
+            "coefficient": 0.04584890337227407,
+            "token": "(src"
+          },
+          {
+            "selection_rank": 10,
+            "token_id": 18875,
+            "coefficient": 0.04811584749325434,
+            "token": " greatly"
+          },
+          {
+            "selection_rank": 11,
+            "token_id": 13530,
+            "coefficient": 0.04428587257018136,
+            "token": " pairs"
+          },
+          {
+            "selection_rank": 12,
+            "token_id": 77359,
+            "coefficient": 0.04911983899363433,
+            "token": "チ"
+          },
+          {
+            "selection_rank": 13,
+            "token_id": 9577,
+            "coefficient": 0.048181818083263585,
+            "token": ".\n\n\n\n\n\n"
+          },
+          {
+            "selection_rank": 14,
+            "token_id": 31334,
+            "coefficient": 0.04570482111243243,
+            "token": " substit"
+          },
+          {
+            "selection_rank": 15,
+            "token_id": 6,
+            "coefficient": 0.05541309632510779,
+            "token": "'"
+          },
+          {
+            "selection_rank": 16,
+            "token_id": 55412,
+            "coefficient": 0.04922119145821693,
+            "token": "TexParameter"
+          }
+        ],
+        "top15": [
+          {
+            "selection_rank": 7,
+            "token_id": 24,
+            "coefficient": 0.06406757162951447,
+            "token": "9"
+          },
+          {
+            "selection_rank": 2,
+            "token_id": 67146,
+            "coefficient": 0.06088210098437553,
+            "token": " fueron"
+          },
+          {
+            "selection_rank": 1,
+            "token_id": 54357,
+            "coefficient": 0.059930564687276096,
+            "token": "Pwd"
+          },
+          {
+            "selection_rank": 4,
+            "token_id": 10581,
+            "coefficient": 0.0570660096031666,
+            "token": " mel"
+          },
+          {
+            "selection_rank": 8,
+            "token_id": 51344,
+            "coefficient": 0.055872259762369245,
+            "token": "Deprecated"
+          },
+          {
+            "selection_rank": 15,
+            "token_id": 6,
+            "coefficient": 0.05541309632510779,
+            "token": "'"
+          },
+          {
+            "selection_rank": 6,
+            "token_id": 32125,
+            "coefficient": 0.0519233197806022,
+            "token": " Tampa"
+          },
+          {
+            "selection_rank": 5,
+            "token_id": 104015,
+            "coefficient": 0.0505742466092624,
+            "token": "迅速"
+          },
+          {
+            "selection_rank": 16,
+            "token_id": 55412,
+            "coefficient": 0.04922119145821693,
+            "token": "TexParameter"
+          },
+          {
+            "selection_rank": 12,
+            "token_id": 77359,
+            "coefficient": 0.04911983899363433,
+            "token": "チ"
+          },
+          {
+            "selection_rank": 13,
+            "token_id": 9577,
+            "coefficient": 0.048181818083263585,
+            "token": ".\n\n\n\n\n\n"
+          },
+          {
+            "selection_rank": 10,
+            "token_id": 18875,
+            "coefficient": 0.04811584749325434,
+            "token": " greatly"
+          },
+          {
+            "selection_rank": 3,
+            "token_id": 30831,
+            "coefficient": 0.04660911768052011,
+            "token": "?\n\n\n"
+          },
+          {
+            "selection_rank": 9,
+            "token_id": 14705,
+            "coefficient": 0.04584890337227407,
+            "token": "(src"
+          },
+          {
+            "selection_rank": 14,
+            "token_id": 31334,
+            "coefficient": 0.04570482111243243,
+            "token": " substit"
+          }
+        ],
+        "z": 0.6863500299688462
+      },
+      "32": {
+        "fve": 0.07722389698028564,
+        "selected_count": 32,
+        "stop_reason": null,
+        "atoms": [
+          {
+            "selection_rank": 1,
+            "token_id": 54357,
+            "coefficient": 0.051576787685390715,
+            "token": "Pwd"
+          },
+          {
+            "selection_rank": 2,
+            "token_id": 67146,
+            "coefficient": 0.05029071577048279,
+            "token": " fueron"
+          },
+          {
+            "selection_rank": 3,
+            "token_id": 30831,
+            "coefficient": 0.022305838268335647,
+            "token": "?\n\n\n"
+          },
+          {
+            "selection_rank": 4,
+            "token_id": 10581,
+            "coefficient": 0.053754286587943935,
+            "token": " mel"
+          },
+          {
+            "selection_rank": 5,
+            "token_id": 104015,
+            "coefficient": 0.04391781091538798,
+            "token": "迅速"
+          },
+          {
+            "selection_rank": 6,
+            "token_id": 32125,
+            "coefficient": 0.04245167012714303,
+            "token": " Tampa"
+          },
+          {
+            "selection_rank": 7,
+            "token_id": 24,
+            "coefficient": 0.09302164027828552,
+            "token": "9"
+          },
+          {
+            "selection_rank": 8,
+            "token_id": 51344,
+            "coefficient": 0.045447249158191295,
+            "token": "Deprecated"
+          },
+          {
+            "selection_rank": 9,
+            "token_id": 14705,
+            "coefficient": 0.03327941275704388,
+            "token": "(src"
+          },
+          {
+            "selection_rank": 10,
+            "token_id": 18875,
+            "coefficient": 0.043269534036370426,
+            "token": " greatly"
+          },
+          {
+            "selection_rank": 11,
+            "token_id": 13530,
+            "coefficient": 0.039154319533966656,
+            "token": " pairs"
+          },
+          {
+            "selection_rank": 12,
+            "token_id": 77359,
+            "coefficient": 0.046180923960215246,
+            "token": "チ"
+          },
+          {
+            "selection_rank": 13,
+            "token_id": 9577,
+            "coefficient": 0.03601159880726907,
+            "token": ".\n\n\n\n\n\n"
+          },
+          {
+            "selection_rank": 14,
+            "token_id": 31334,
+            "coefficient": 0.040625058943203785,
+            "token": " substit"
+          },
+          {
+            "selection_rank": 15,
+            "token_id": 6,
+            "coefficient": 0.048518742709705895,
+            "token": "'"
+          },
+          {
+            "selection_rank": 16,
+            "token_id": 55412,
+            "coefficient": 0.037446384134229634,
+            "token": "TexParameter"
+          },
+          {
+            "selection_rank": 17,
+            "token_id": 103179,
+            "coefficient": 0.03939056478396359,
+            "token": "凸"
+          },
+          {
+            "selection_rank": 18,
+            "token_id": 33021,
+            "coefficient": 0.044509927419800546,
+            "token": "/'\n"
+          },
+          {
+            "selection_rank": 19,
+            "token_id": 24632,
+            "coefficient": 0.037824265968830845,
+            "token": " smallest"
+          },
+          {
+            "selection_rank": 20,
+            "token_id": 553,
+            "coefficient": 0.05281843089550075,
+            "token": " by"
+          },
+          {
+            "selection_rank": 21,
+            "token_id": 132342,
+            "coefficient": 0.04771045051672688,
+            "token": "şık"
+          },
+          {
+            "selection_rank": 22,
+            "token_id": 13983,
+            "coefficient": 0.04039933807076655,
+            "token": "occ"
+          },
+          {
+            "selection_rank": 23,
+            "token_id": 132266,
+            "coefficient": 0.042291679503524915,
+            "token": " لدى"
+          },
+          {
+            "selection_rank": 24,
+            "token_id": 13859,
+            "coefficient": 0.033785377047727445,
+            "token": "Feature"
+          },
+          {
+            "selection_rank": 25,
+            "token_id": 30,
+            "coefficient": 0.07315993865805609,
+            "token": "?"
+          },
+          {
+            "selection_rank": 26,
+            "token_id": 53661,
+            "coefficient": 0.03938589990116826,
+            "token": "cla"
+          },
+          {
+            "selection_rank": 27,
+            "token_id": 106124,
+            "coefficient": 0.03786428021504181,
+            "token": "相反"
+          },
+          {
+            "selection_rank": 28,
+            "token_id": 38709,
+            "coefficient": 0.040674504852064954,
+            "token": ",height"
+          },
+          {
+            "selection_rank": 29,
+            "token_id": 4930,
+            "coefficient": 0.03693461314488882,
+            "token": " $("
+          },
+          {
+            "selection_rank": 30,
+            "token_id": 119252,
+            "coefficient": 0.03505148680944417,
+            "token": "酣"
+          },
+          {
+            "selection_rank": 31,
+            "token_id": 136238,
+            "coefficient": 0.037367082627098105,
+            "token": " Федерации"
+          },
+          {
+            "selection_rank": 32,
+            "token_id": 8283,
+            "coefficient": 0.035362586692858404,
+            "token": "('./"
+          }
+        ],
+        "top15": [
+          {
+            "selection_rank": 7,
+            "token_id": 24,
+            "coefficient": 0.09302164027828552,
+            "token": "9"
+          },
+          {
+            "selection_rank": 25,
+            "token_id": 30,
+            "coefficient": 0.07315993865805609,
+            "token": "?"
+          },
+          {
+            "selection_rank": 4,
+            "token_id": 10581,
+            "coefficient": 0.053754286587943935,
+            "token": " mel"
+          },
+          {
+            "selection_rank": 20,
+            "token_id": 553,
+            "coefficient": 0.05281843089550075,
+            "token": " by"
+          },
+          {
+            "selection_rank": 1,
+            "token_id": 54357,
+            "coefficient": 0.051576787685390715,
+            "token": "Pwd"
+          },
+          {
+            "selection_rank": 2,
+            "token_id": 67146,
+            "coefficient": 0.05029071577048279,
+            "token": " fueron"
+          },
+          {
+            "selection_rank": 15,
+            "token_id": 6,
+            "coefficient": 0.048518742709705895,
+            "token": "'"
+          },
+          {
+            "selection_rank": 21,
+            "token_id": 132342,
+            "coefficient": 0.04771045051672688,
+            "token": "şık"
+          },
+          {
+            "selection_rank": 12,
+            "token_id": 77359,
+            "coefficient": 0.046180923960215246,
+            "token": "チ"
+          },
+          {
+            "selection_rank": 8,
+            "token_id": 51344,
+            "coefficient": 0.045447249158191295,
+            "token": "Deprecated"
+          },
+          {
+            "selection_rank": 18,
+            "token_id": 33021,
+            "coefficient": 0.044509927419800546,
+            "token": "/'\n"
+          },
+          {
+            "selection_rank": 5,
+            "token_id": 104015,
+            "coefficient": 0.04391781091538798,
+            "token": "迅速"
+          },
+          {
+            "selection_rank": 10,
+            "token_id": 18875,
+            "coefficient": 0.043269534036370426,
+            "token": " greatly"
+          },
+          {
+            "selection_rank": 6,
+            "token_id": 32125,
+            "coefficient": 0.04245167012714303,
+            "token": " Tampa"
+          },
+          {
+            "selection_rank": 23,
+            "token_id": 132266,
+            "coefficient": 0.042291679503524915,
+            "token": " لدى"
+          }
+        ],
+        "z": 0.3775417616206492
+      }
+    },
+    "d_full": {
+      "16": {
+        "fve": 0.059438884258270264,
+        "selected_count": 16,
+        "stop_reason": null,
+        "atoms": [
+          {
+            "selection_rank": 1,
+            "token_id": 135377,
+            "coefficient": 0.06916634684159584,
+            "token": " ثلاثة"
+          },
+          {
+            "selection_rank": 2,
+            "token_id": 25975,
+            "coefficient": 0.06265095475722952,
+            "token": " sentiment"
+          },
+          {
+            "selection_rank": 3,
+            "token_id": 311,
+            "coefficient": 0.12263074874843735,
+            "token": " to"
+          },
+          {
+            "selection_rank": 4,
+            "token_id": 20305,
+            "coefficient": 0.05287340016300583,
+            "token": "}\");\n"
+          },
+          {
+            "selection_rank": 5,
+            "token_id": 170,
+            "coefficient": 0.05715704120167565,
+            "token": "�"
+          },
+          {
+            "selection_rank": 6,
+            "token_id": 38890,
+            "coefficient": 0.049349400632427355,
+            "token": " promotes"
+          },
+          {
+            "selection_rank": 7,
+            "token_id": 128949,
+            "coefficient": 0.05238579869497575,
+            "token": " khá"
+          },
+          {
+            "selection_rank": 8,
+            "token_id": 12848,
+            "coefficient": 0.051546230168562364,
+            "token": "_host"
+          },
+          {
+            "selection_rank": 9,
+            "token_id": 22382,
+            "coefficient": 0.05293643070907499,
+            "token": "定"
+          },
+          {
+            "selection_rank": 10,
+            "token_id": 98432,
+            "coefficient": 0.05146042612294835,
+            "token": ".getSharedPreferences"
+          },
+          {
+            "selection_rank": 11,
+            "token_id": 881,
+            "coefficient": 0.05540944647431089,
+            "token": "\">\n"
+          },
+          {
+            "selection_rank": 12,
+            "token_id": 51897,
+            "coefficient": 0.05101304455330134,
+            "token": " predicting"
+          },
+          {
+            "selection_rank": 13,
+            "token_id": 72362,
+            "coefficient": 0.04645996250867032,
+            "token": " alternating"
+          },
+          {
+            "selection_rank": 14,
+            "token_id": 18342,
+            "coefficient": 0.04644003052438728,
+            "token": " lens"
+          },
+          {
+            "selection_rank": 15,
+            "token_id": 100072,
+            "coefficient": 0.04527682413650488,
+            "token": "末"
+          },
+          {
+            "selection_rank": 16,
+            "token_id": 65871,
+            "coefficient": 0.04677568271759516,
+            "token": "(\"/{"
+          }
+        ],
+        "top15": [
+          {
+            "selection_rank": 3,
+            "token_id": 311,
+            "coefficient": 0.12263074874843735,
+            "token": " to"
+          },
+          {
+            "selection_rank": 1,
+            "token_id": 135377,
+            "coefficient": 0.06916634684159584,
+            "token": " ثلاثة"
+          },
+          {
+            "selection_rank": 2,
+            "token_id": 25975,
+            "coefficient": 0.06265095475722952,
+            "token": " sentiment"
+          },
+          {
+            "selection_rank": 5,
+            "token_id": 170,
+            "coefficient": 0.05715704120167565,
+            "token": "�"
+          },
+          {
+            "selection_rank": 11,
+            "token_id": 881,
+            "coefficient": 0.05540944647431089,
+            "token": "\">\n"
+          },
+          {
+            "selection_rank": 9,
+            "token_id": 22382,
+            "coefficient": 0.05293643070907499,
+            "token": "定"
+          },
+          {
+            "selection_rank": 4,
+            "token_id": 20305,
+            "coefficient": 0.05287340016300583,
+            "token": "}\");\n"
+          },
+          {
+            "selection_rank": 7,
+            "token_id": 128949,
+            "coefficient": 0.05238579869497575,
+            "token": " khá"
+          },
+          {
+            "selection_rank": 8,
+            "token_id": 12848,
+            "coefficient": 0.051546230168562364,
+            "token": "_host"
+          },
+          {
+            "selection_rank": 10,
+            "token_id": 98432,
+            "coefficient": 0.05146042612294835,
+            "token": ".getSharedPreferences"
+          },
+          {
+            "selection_rank": 12,
+            "token_id": 51897,
+            "coefficient": 0.05101304455330134,
+            "token": " predicting"
+          },
+          {
+            "selection_rank": 6,
+            "token_id": 38890,
+            "coefficient": 0.049349400632427355,
+            "token": " promotes"
+          },
+          {
+            "selection_rank": 16,
+            "token_id": 65871,
+            "coefficient": 0.04677568271759516,
+            "token": "(\"/{"
+          },
+          {
+            "selection_rank": 13,
+            "token_id": 72362,
+            "coefficient": 0.04645996250867032,
+            "token": " alternating"
+          },
+          {
+            "selection_rank": 14,
+            "token_id": 18342,
+            "coefficient": 0.04644003052438728,
+            "token": " lens"
+          }
+        ],
+        "z": 3.7899800373738053
+      },
+      "32": {
+        "fve": 0.0903855562210083,
+        "selected_count": 32,
+        "stop_reason": null,
+        "atoms": [
+          {
+            "selection_rank": 1,
+            "token_id": 135377,
+            "coefficient": 0.0683408726950756,
+            "token": " ثلاثة"
+          },
+          {
+            "selection_rank": 2,
+            "token_id": 25975,
+            "coefficient": 0.05787065392772808,
+            "token": " sentiment"
+          },
+          {
+            "selection_rank": 3,
+            "token_id": 311,
+            "coefficient": 0.08495493567120262,
+            "token": " to"
+          },
+          {
+            "selection_rank": 4,
+            "token_id": 20305,
+            "coefficient": 0.050184771209204344,
+            "token": "}\");\n"
+          },
+          {
+            "selection_rank": 5,
+            "token_id": 170,
+            "coefficient": 0.04297466736948739,
+            "token": "�"
+          },
+          {
+            "selection_rank": 6,
+            "token_id": 38890,
+            "coefficient": 0.04310994823460483,
+            "token": " promotes"
+          },
+          {
+            "selection_rank": 7,
+            "token_id": 128949,
+            "coefficient": 0.04813309901556527,
+            "token": " khá"
+          },
+          {
+            "selection_rank": 8,
+            "token_id": 12848,
+            "coefficient": 0.049594902641333934,
+            "token": "_host"
+          },
+          {
+            "selection_rank": 9,
+            "token_id": 22382,
+            "coefficient": 0.048052535224591804,
+            "token": "定"
+          },
+          {
+            "selection_rank": 10,
+            "token_id": 98432,
+            "coefficient": 0.05435990032141603,
+            "token": ".getSharedPreferences"
+          },
+          {
+            "selection_rank": 11,
+            "token_id": 881,
+            "coefficient": 0.03901003813917187,
+            "token": "\">\n"
+          },
+          {
+            "selection_rank": 12,
+            "token_id": 51897,
+            "coefficient": 0.04462212551115604,
+            "token": " predicting"
+          },
+          {
+            "selection_rank": 13,
+            "token_id": 72362,
+            "coefficient": 0.0397252267801458,
+            "token": " alternating"
+          },
+          {
+            "selection_rank": 14,
+            "token_id": 18342,
+            "coefficient": 0.04032549551740843,
+            "token": " lens"
+          },
+          {
+            "selection_rank": 15,
+            "token_id": 100072,
+            "coefficient": 0.042514968453818476,
+            "token": "末"
+          },
+          {
+            "selection_rank": 16,
+            "token_id": 65871,
+            "coefficient": 0.04961119517239908,
+            "token": "(\"/{"
+          },
+          {
+            "selection_rank": 17,
+            "token_id": 151643,
+            "coefficient": 0.07033353818105742,
+            "token": "<|endoftext|>"
+          },
+          {
+            "selection_rank": 18,
+            "token_id": 97877,
+            "coefficient": 0.044427365138887204,
+            "token": " conexao"
+          },
+          {
+            "selection_rank": 19,
+            "token_id": 46994,
+            "coefficient": 0.044719066826749115,
+            "token": " chop"
+          },
+          {
+            "selection_rank": 20,
+            "token_id": 59969,
+            "coefficient": 0.04362814597065605,
+            "token": "_ra"
+          },
+          {
+            "selection_rank": 21,
+            "token_id": 27996,
+            "coefficient": 0.03597835197839517,
+            "token": "—a"
+          },
+          {
+            "selection_rank": 22,
+            "token_id": 3322,
+            "coefficient": 0.04062383296928388,
+            "token": " enough"
+          },
+          {
+            "selection_rank": 23,
+            "token_id": 81476,
+            "coefficient": 0.044510169318933986,
+            "token": "Recovered"
+          },
+          {
+            "selection_rank": 24,
+            "token_id": 594,
+            "coefficient": 0.04198599399109028,
+            "token": "'s"
+          },
+          {
+            "selection_rank": 25,
+            "token_id": 127764,
+            "coefficient": 0.042138354016517825,
+            "token": "ильно"
+          },
+          {
+            "selection_rank": 26,
+            "token_id": 82650,
+            "coefficient": 0.040883171131045885,
+            "token": " scav"
+          },
+          {
+            "selection_rank": 27,
+            "token_id": 107560,
+            "coefficient": 0.03632671058903396,
+            "token": "审美"
+          },
+          {
+            "selection_rank": 28,
+            "token_id": 141005,
+            "coefficient": 0.04271257816890181,
+            "token": " Después"
+          },
+          {
+            "selection_rank": 29,
+            "token_id": 16930,
+            "coefficient": 0.043840914907263384,
+            "token": "+\n"
+          },
+          {
+            "selection_rank": 30,
+            "token_id": 11,
+            "coefficient": 0.08896260663052925,
+            "token": ","
+          },
+          {
+            "selection_rank": 31,
+            "token_id": 82508,
+            "coefficient": 0.04057762805753014,
+            "token": " lighten"
+          },
+          {
+            "selection_rank": 32,
+            "token_id": 87387,
+            "coefficient": 0.04111650804555491,
+            "token": " Mellon"
+          }
+        ],
+        "top15": [
+          {
+            "selection_rank": 30,
+            "token_id": 11,
+            "coefficient": 0.08896260663052925,
+            "token": ","
+          },
+          {
+            "selection_rank": 3,
+            "token_id": 311,
+            "coefficient": 0.08495493567120262,
+            "token": " to"
+          },
+          {
+            "selection_rank": 17,
+            "token_id": 151643,
+            "coefficient": 0.07033353818105742,
+            "token": "<|endoftext|>"
+          },
+          {
+            "selection_rank": 1,
+            "token_id": 135377,
+            "coefficient": 0.0683408726950756,
+            "token": " ثلاثة"
+          },
+          {
+            "selection_rank": 2,
+            "token_id": 25975,
+            "coefficient": 0.05787065392772808,
+            "token": " sentiment"
+          },
+          {
+            "selection_rank": 10,
+            "token_id": 98432,
+            "coefficient": 0.05435990032141603,
+            "token": ".getSharedPreferences"
+          },
+          {
+            "selection_rank": 4,
+            "token_id": 20305,
+            "coefficient": 0.050184771209204344,
+            "token": "}\");\n"
+          },
+          {
+            "selection_rank": 16,
+            "token_id": 65871,
+            "coefficient": 0.04961119517239908,
+            "token": "(\"/{"
+          },
+          {
+            "selection_rank": 8,
+            "token_id": 12848,
+            "coefficient": 0.049594902641333934,
+            "token": "_host"
+          },
+          {
+            "selection_rank": 7,
+            "token_id": 128949,
+            "coefficient": 0.04813309901556527,
+            "token": " khá"
+          },
+          {
+            "selection_rank": 9,
+            "token_id": 22382,
+            "coefficient": 0.048052535224591804,
+            "token": "定"
+          },
+          {
+            "selection_rank": 19,
+            "token_id": 46994,
+            "coefficient": 0.044719066826749115,
+            "token": " chop"
+          },
+          {
+            "selection_rank": 12,
+            "token_id": 51897,
+            "coefficient": 0.04462212551115604,
+            "token": " predicting"
+          },
+          {
+            "selection_rank": 23,
+            "token_id": 81476,
+            "coefficient": 0.044510169318933986,
+            "token": "Recovered"
+          },
+          {
+            "selection_rank": 18,
+            "token_id": 97877,
+            "coefficient": 0.044427365138887204,
+            "token": " conexao"
+          }
+        ],
+        "z": 3.977547877730808
+      }
+    },
+    "d_vR": {
+      "16": {
+        "fve": 0.05240887403488159,
+        "selected_count": 16,
+        "stop_reason": null,
+        "atoms": [
+          {
+            "selection_rank": 1,
+            "token_id": 10169,
+            "coefficient": 0.0825680128374551,
+            "token": "\\'"
+          },
+          {
+            "selection_rank": 2,
+            "token_id": 11776,
+            "coefficient": 0.07701461340558341,
+            "token": " ''\n"
+          },
+          {
+            "selection_rank": 3,
+            "token_id": 697,
+            "coefficient": 0.06498212529522941,
+            "token": " your"
+          },
+          {
+            "selection_rank": 4,
+            "token_id": 51950,
+            "coefficient": 0.0587926200019546,
+            "token": " café"
+          },
+          {
+            "selection_rank": 5,
+            "token_id": 133028,
+            "coefficient": 0.056445363224747254,
+            "token": " yönt"
+          },
+          {
+            "selection_rank": 6,
+            "token_id": 15484,
+            "coefficient": 0.04490629293628445,
+            "token": " regardless"
+          },
+          {
+            "selection_rank": 7,
+            "token_id": 95769,
+            "coefficient": 0.044505453153784125,
+            "token": " manpower"
+          },
+          {
+            "selection_rank": 8,
+            "token_id": 10917,
+            "coefficient": 0.04377933339629781,
+            "token": " twice"
+          },
+          {
+            "selection_rank": 9,
+            "token_id": 122,
+            "coefficient": 0.04461874225966408,
+            "token": "�"
+          },
+          {
+            "selection_rank": 10,
+            "token_id": 370,
+            "coefficient": 0.044807590324216,
+            "token": "ab"
+          },
+          {
+            "selection_rank": 11,
+            "token_id": 94677,
+            "coefficient": 0.04382591780242325,
+            "token": " Tunis"
+          },
+          {
+            "selection_rank": 12,
+            "token_id": 311,
+            "coefficient": 0.08177412313139124,
+            "token": " to"
+          },
+          {
+            "selection_rank": 13,
+            "token_id": 130361,
+            "coefficient": 0.047183879677658254,
+            "token": " hoạch"
+          },
+          {
+            "selection_rank": 14,
+            "token_id": 80721,
+            "coefficient": 0.04583219825514296,
+            "token": " rhythms"
+          },
+          {
+            "selection_rank": 15,
+            "token_id": 98313,
+            "coefficient": 0.04412838052882378,
+            "token": " �"
+          },
+          {
+            "selection_rank": 16,
+            "token_id": 129786,
+            "coefficient": 0.043450881302140774,
+            "token": "ارت"
+          }
+        ],
+        "top15": [
+          {
+            "selection_rank": 1,
+            "token_id": 10169,
+            "coefficient": 0.0825680128374551,
+            "token": "\\'"
+          },
+          {
+            "selection_rank": 12,
+            "token_id": 311,
+            "coefficient": 0.08177412313139124,
+            "token": " to"
+          },
+          {
+            "selection_rank": 2,
+            "token_id": 11776,
+            "coefficient": 0.07701461340558341,
+            "token": " ''\n"
+          },
+          {
+            "selection_rank": 3,
+            "token_id": 697,
+            "coefficient": 0.06498212529522941,
+            "token": " your"
+          },
+          {
+            "selection_rank": 4,
+            "token_id": 51950,
+            "coefficient": 0.0587926200019546,
+            "token": " café"
+          },
+          {
+            "selection_rank": 5,
+            "token_id": 133028,
+            "coefficient": 0.056445363224747254,
+            "token": " yönt"
+          },
+          {
+            "selection_rank": 13,
+            "token_id": 130361,
+            "coefficient": 0.047183879677658254,
+            "token": " hoạch"
+          },
+          {
+            "selection_rank": 14,
+            "token_id": 80721,
+            "coefficient": 0.04583219825514296,
+            "token": " rhythms"
+          },
+          {
+            "selection_rank": 6,
+            "token_id": 15484,
+            "coefficient": 0.04490629293628445,
+            "token": " regardless"
+          },
+          {
+            "selection_rank": 10,
+            "token_id": 370,
+            "coefficient": 0.044807590324216,
+            "token": "ab"
+          },
+          {
+            "selection_rank": 9,
+            "token_id": 122,
+            "coefficient": 0.04461874225966408,
+            "token": "�"
+          },
+          {
+            "selection_rank": 7,
+            "token_id": 95769,
+            "coefficient": 0.044505453153784125,
+            "token": " manpower"
+          },
+          {
+            "selection_rank": 15,
+            "token_id": 98313,
+            "coefficient": 0.04412838052882378,
+            "token": " �"
+          },
+          {
+            "selection_rank": 11,
+            "token_id": 94677,
+            "coefficient": 0.04382591780242325,
+            "token": " Tunis"
+          },
+          {
+            "selection_rank": 8,
+            "token_id": 10917,
+            "coefficient": 0.04377933339629781,
+            "token": " twice"
+          }
+        ],
+        "z": 1.2015953617690869
+      },
+      "32": {
+        "fve": 0.07501089572906494,
+        "selected_count": 32,
+        "stop_reason": null,
+        "atoms": [
+          {
+            "selection_rank": 1,
+            "token_id": 10169,
+            "coefficient": 0.06482599299081156,
+            "token": "\\'"
+          },
+          {
+            "selection_rank": 2,
+            "token_id": 11776,
+            "coefficient": 0.06727216397242196,
+            "token": " ''\n"
+          },
+          {
+            "selection_rank": 3,
+            "token_id": 697,
+            "coefficient": 0.06285168297151772,
+            "token": " your"
+          },
+          {
+            "selection_rank": 4,
+            "token_id": 51950,
+            "coefficient": 0.050323604022604225,
+            "token": " café"
+          },
+          {
+            "selection_rank": 5,
+            "token_id": 133028,
+            "coefficient": 0.04474574242326154,
+            "token": " yönt"
+          },
+          {
+            "selection_rank": 6,
+            "token_id": 15484,
+            "coefficient": 0.040193720746576685,
+            "token": " regardless"
+          },
+          {
+            "selection_rank": 7,
+            "token_id": 95769,
+            "coefficient": 0.03686022891891836,
+            "token": " manpower"
+          },
+          {
+            "selection_rank": 8,
+            "token_id": 10917,
+            "coefficient": 0.03967505758761367,
+            "token": " twice"
+          },
+          {
+            "selection_rank": 9,
+            "token_id": 122,
+            "coefficient": 0.035041783865284996,
+            "token": "�"
+          },
+          {
+            "selection_rank": 10,
+            "token_id": 370,
+            "coefficient": 0.034286456680179656,
+            "token": "ab"
+          },
+          {
+            "selection_rank": 11,
+            "token_id": 94677,
+            "coefficient": 0.03612368770987019,
+            "token": " Tunis"
+          },
+          {
+            "selection_rank": 12,
+            "token_id": 311,
+            "coefficient": 0.09367435420331367,
+            "token": " to"
+          },
+          {
+            "selection_rank": 13,
+            "token_id": 130361,
+            "coefficient": 0.04037801383354232,
+            "token": " hoạch"
+          },
+          {
+            "selection_rank": 14,
+            "token_id": 80721,
+            "coefficient": 0.03279983083198705,
+            "token": " rhythms"
+          },
+          {
+            "selection_rank": 15,
+            "token_id": 98313,
+            "coefficient": 0.04107726840446733,
+            "token": " �"
+          },
+          {
+            "selection_rank": 16,
+            "token_id": 129786,
+            "coefficient": 0.03960789670695733,
+            "token": "ارت"
+          },
+          {
+            "selection_rank": 17,
+            "token_id": 35702,
+            "coefficient": 0.039231242337979054,
+            "token": "{\\"
+          },
+          {
+            "selection_rank": 18,
+            "token_id": 44214,
+            "coefficient": 0.03732919046644125,
+            "token": " eleven"
+          },
+          {
+            "selection_rank": 19,
+            "token_id": 95254,
+            "coefficient": 0.03340324774383334,
+            "token": " derivation"
+          },
+          {
+            "selection_rank": 20,
+            "token_id": 70633,
+            "coefficient": 0.040159070784209244,
+            "token": "异常"
+          },
+          {
+            "selection_rank": 21,
+            "token_id": 3284,
+            "coefficient": 0.03700590236309357,
+            "token": "/*\n"
+          },
+          {
+            "selection_rank": 22,
+            "token_id": 69316,
+            "coefficient": 0.046740025687114536,
+            "token": "avourites"
+          },
+          {
+            "selection_rank": 23,
+            "token_id": 98949,
+            "coefficient": 0.03995162478836002,
+            "token": " chocolates"
+          },
+          {
+            "selection_rank": 24,
+            "token_id": 11078,
+            "coefficient": 0.03621694254286972,
+            "token": " CD"
+          },
+          {
+            "selection_rank": 25,
+            "token_id": 82258,
+            "coefficient": 0.03739210899409859,
+            "token": " Carolyn"
+          },
+          {
+            "selection_rank": 26,
+            "token_id": 24,
+            "coefficient": 0.04670006488493911,
+            "token": "9"
+          },
+          {
+            "selection_rank": 27,
+            "token_id": 107609,
+            "coefficient": 0.03460975527701512,
+            "token": "这对"
+          },
+          {
+            "selection_rank": 28,
+            "token_id": 38183,
+            "coefficient": 0.03639132270745433,
+            "token": " Uhr"
+          },
+          {
+            "selection_rank": 29,
+            "token_id": 8835,
+            "coefficient": 0.03593034659932518,
+            "token": "â"
+          },
+          {
+            "selection_rank": 30,
+            "token_id": 379,
+            "coefficient": 0.041570289446749925,
+            "token": " y"
+          },
+          {
+            "selection_rank": 31,
+            "token_id": 68745,
+            "coefficient": 0.03465148751568972,
+            "token": " sesión"
+          },
+          {
+            "selection_rank": 32,
+            "token_id": 48968,
+            "coefficient": 0.03336533654110264,
+            "token": " substitution"
+          }
+        ],
+        "top15": [
+          {
+            "selection_rank": 12,
+            "token_id": 311,
+            "coefficient": 0.09367435420331367,
+            "token": " to"
+          },
+          {
+            "selection_rank": 2,
+            "token_id": 11776,
+            "coefficient": 0.06727216397242196,
+            "token": " ''\n"
+          },
+          {
+            "selection_rank": 1,
+            "token_id": 10169,
+            "coefficient": 0.06482599299081156,
+            "token": "\\'"
+          },
+          {
+            "selection_rank": 3,
+            "token_id": 697,
+            "coefficient": 0.06285168297151772,
+            "token": " your"
+          },
+          {
+            "selection_rank": 4,
+            "token_id": 51950,
+            "coefficient": 0.050323604022604225,
+            "token": " café"
+          },
+          {
+            "selection_rank": 22,
+            "token_id": 69316,
+            "coefficient": 0.046740025687114536,
+            "token": "avourites"
+          },
+          {
+            "selection_rank": 26,
+            "token_id": 24,
+            "coefficient": 0.04670006488493911,
+            "token": "9"
+          },
+          {
+            "selection_rank": 5,
+            "token_id": 133028,
+            "coefficient": 0.04474574242326154,
+            "token": " yönt"
+          },
+          {
+            "selection_rank": 30,
+            "token_id": 379,
+            "coefficient": 0.041570289446749925,
+            "token": " y"
+          },
+          {
+            "selection_rank": 15,
+            "token_id": 98313,
+            "coefficient": 0.04107726840446733,
+            "token": " �"
+          },
+          {
+            "selection_rank": 13,
+            "token_id": 130361,
+            "coefficient": 0.04037801383354232,
+            "token": " hoạch"
+          },
+          {
+            "selection_rank": 6,
+            "token_id": 15484,
+            "coefficient": 0.040193720746576685,
+            "token": " regardless"
+          },
+          {
+            "selection_rank": 20,
+            "token_id": 70633,
+            "coefficient": 0.040159070784209244,
+            "token": "异常"
+          },
+          {
+            "selection_rank": 23,
+            "token_id": 98949,
+            "coefficient": 0.03995162478836002,
+            "token": " chocolates"
+          },
+          {
+            "selection_rank": 8,
+            "token_id": 10917,
+            "coefficient": 0.03967505758761367,
+            "token": " twice"
+          }
+        ],
+        "z": -0.22776323022295808
+      }
+    }
+  }
+}

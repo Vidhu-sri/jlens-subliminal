@@ -1,0 +1,44 @@
+[
+  {
+    "cond": "vJ_owl",
+    "alpha": 3.0,
+    "pass_rate": 0.578125,
+    "teacher_cat_rate": 0.022,
+    "example": "683,469,876,368,638,936,436,864,646,364"
+  },
+  {
+    "cond": "randJ",
+    "alpha": 3.0,
+    "pass_rate": 0.484375,
+    "teacher_cat_rate": 0.038,
+    "example": "683,463,873,638,965,346,834,653,436,864"
+  },
+  {
+    "cond": "vJ_owl",
+    "alpha": 5.0,
+    "pass_rate": 0.25,
+    "teacher_cat_rate": 0.004,
+    "example": "afd,ced,bdf,ebe,fcd,gde,hdf,iad,jbf"
+  },
+  {
+    "cond": "randJ",
+    "alpha": 5.0,
+    "pass_rate": 0.0546875,
+    "teacher_cat_rate": 0.004,
+    "example": "\u062a\u0643\u0648\u064a\u0646,769,563,683,963,864,646,835,736,943"
+  },
+  {
+    "cond": "vJ_owl",
+    "alpha": 8.0,
+    "pass_rate": 0.0703125,
+    "teacher_cat_rate": 0.0,
+    "example": "afd,823,634,576,965,834,745,632,853,946"
+  },
+  {
+    "cond": "randJ",
+    "alpha": 8.0,
+    "pass_rate": 0.0,
+    "teacher_cat_rate": 0.002,
+    "example": "\u062a\u0643\u0648\u064a\u0646,769,563,683,968,365,846,634,864,536"
+  }
+]

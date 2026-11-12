@@ -344,7 +344,7 @@ def cmd_pilot(args):
     rows = []
     for a in args.alphas:
         for cond in args.pilot_conds:
-            d = ART / "pilot" / f"{cond}_a{a:g}_{ARGS.positions}"
+            d = ART / "pilot" / f"{cond}_L{LAYER}_a{a:g}_{ARGS.positions}"
             generate(cond, a, args.pilot_size, d, seed=1000)
             raw, passed, _ = rule_filter(d, 0)
             run = f"pilot_teacher_{cond}_L{LAYER}_a{a:g}_{ARGS.positions}"

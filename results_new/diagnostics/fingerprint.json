@@ -1,0 +1,98 @@
+[
+  {
+    "cond": "full",
+    "alpha": 1.0,
+    "kl_per_token": 0.0014552597169635508,
+    "mean_abs_dlogp_completion": 0.01918788906427974,
+    "top1_agreement": 0.9911861368389603,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "full",
+    "alpha": 3.0,
+    "kl_per_token": 0.009246747099054565,
+    "mean_abs_dlogp_completion": 0.039325601378352434,
+    "top1_agreement": 0.9841151279753013,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "vJ",
+    "alpha": 1.0,
+    "kl_per_token": 0.009139094990838129,
+    "mean_abs_dlogp_completion": 0.026128880093693168,
+    "top1_agreement": 0.9903396076088039,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "vJ",
+    "alpha": 3.0,
+    "kl_per_token": 0.5683307356122551,
+    "mean_abs_dlogp_completion": 0.17730970804630292,
+    "top1_agreement": 0.9779404441788666,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "vR",
+    "alpha": 1.0,
+    "kl_per_token": 0.0014244543715019233,
+    "mean_abs_dlogp_completion": 0.018655067004304953,
+    "top1_agreement": 0.9917836868837765,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "vR",
+    "alpha": 3.0,
+    "kl_per_token": 0.008236954289141323,
+    "mean_abs_dlogp_completion": 0.03685382104291139,
+    "top1_agreement": 0.9842645154865053,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "rand",
+    "alpha": 1.0,
+    "kl_per_token": 0.0008684979863676596,
+    "mean_abs_dlogp_completion": 0.015836234803474954,
+    "top1_agreement": 0.9908873618165521,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "rand",
+    "alpha": 3.0,
+    "kl_per_token": 0.0034775509190242103,
+    "mean_abs_dlogp_completion": 0.030397736351295584,
+    "top1_agreement": 0.9823722736779206,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "vJ_owl",
+    "alpha": 1.0,
+    "kl_per_token": 0.011038146038771495,
+    "mean_abs_dlogp_completion": 0.02696734185358117,
+    "top1_agreement": 0.9901404242605318,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "vJ_owl",
+    "alpha": 3.0,
+    "kl_per_token": 0.5699589701955412,
+    "mean_abs_dlogp_completion": 0.1797443624393314,
+    "top1_agreement": 0.9776416691564586,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "randJ",
+    "alpha": 1.0,
+    "kl_per_token": 0.009301464536934334,
+    "mean_abs_dlogp_completion": 0.023707509350995123,
+    "top1_agreement": 0.990588586794144,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "randJ",
+    "alpha": 3.0,
+    "kl_per_token": 0.5728362671064079,
+    "mean_abs_dlogp_completion": 0.18449966956889793,
+    "top1_agreement": 0.981276765262424,
+    "n_tokens": 20082
+  }
+]

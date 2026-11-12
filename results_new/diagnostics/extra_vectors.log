@@ -1,0 +1,100 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.13it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.01it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.02s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.01it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.01it/s]
+Traceback (most recent call last):
+  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/extra_vectors.py", line 172, in <module>
+    main()
+  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/extra_vectors.py", line 167, in main
+    out_json.write_text(json.dumps(info, indent=2, ensure_ascii=False))
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/pathlib.py", line 1079, in write_text
+    return f.write(data)
+           ^^^^^^^^^^^^^
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 348-350: ordinal not in range(128)
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.06it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.06it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.07it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.13it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.11it/s]
+{
+  "owl": {
+    "v_owl_norm_L26": 44.0440559387207,
+    "fve_k32": 0.043118443340063095,
+    "fve_z_vs_random": 10.084308550935456,
+    "atoms": [
+      "If",
+      " Each",
+      "those",
+      " think",
+      "My",
+      "/copyleft",
+      "Over",
+      " maybe",
+      "beautiful",
+      "7",
+      " How",
+      "Now",
+      "--;\n\n",
+      "坚定不",
+      "*\n\n",
+      "直辖",
+      "All",
+      " fascinated",
+      "again",
+      " With",
+      "StrictEqual",
+      "Each",
+      " If",
+      "Our",
+      "rawer",
+      "In",
+      " xamarin",
+      "Though",
+      "etc",
+      "Let",
+      " Interestingly",
+      ",readonly"
+    ],
+    "cos(v_owl, v_cat) L26": 0.9517431259155273,
+    "cos(vJ_owl, vJ_cat)": 0.9880844354629517,
+    "cos(vJ_owl, v_cat_full)": 0.20122012495994568
+  },
+  "randJ": {
+    "atoms": [
+      "Å",
+      "游戏玩家",
+      " minion",
+      " FileName",
+      " Rd",
+      "pring",
+      " contrario",
+      "ää",
+      " impost",
+      "benhavn",
+      "Clip",
+      " fashioned",
+      "orea",
+      ".fml",
+      "⬜",
+      "🚖",
+      " ->",
+      "แก้ว",
+      "Usuarios",
+      " IMPLIED",
+      "蒯",
+      " Passenger",
+      "_Parms",
+      "哈哈哈",
+      " spac",
+      "ぐ",
+      " mondo",
+      "5",
+      "了一份",
+      " landmarks",
+      " influenza",
+      "abel"
+    ],
+    "cos(randJ, vJ_cat)": 0.8400095701217651,
+    "cos(randJ, v_cat_full)": 0.08177894353866577
+  },
+  "random_fve_k32": {
+    "mean": 0.012668495066463947,
+    "std": 0.0030195375438779593
+  },
+  "rescaled_to_norm": 40.790550231933594
+}

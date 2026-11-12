@@ -1,0 +1,50 @@
+[
+  {
+    "cond": "full",
+    "alpha": 3.0,
+    "kl_per_token": 0.014591162493950509,
+    "mean_abs_dlogp_completion": 0.06199808588746582,
+    "top1_agreement": 0.9691763768548949,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "cat_only",
+    "alpha": 3.0,
+    "kl_per_token": 0.01215787685605679,
+    "mean_abs_dlogp_completion": 0.052003335054938225,
+    "top1_agreement": 0.974205756398765,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "owl_only",
+    "alpha": 3.0,
+    "kl_per_token": 0.00937881036212182,
+    "mean_abs_dlogp_completion": 0.049619664379356866,
+    "top1_agreement": 0.9765959565780301,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "catonly_J",
+    "alpha": 3.0,
+    "kl_per_token": 0.03588036796622169,
+    "mean_abs_dlogp_completion": 0.10692302718351958,
+    "top1_agreement": 0.9567274175878897,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "catonly_R",
+    "alpha": 3.0,
+    "kl_per_token": 0.01054280470170246,
+    "mean_abs_dlogp_completion": 0.04800299754973897,
+    "top1_agreement": 0.9739069813763569,
+    "n_tokens": 20082
+  },
+  {
+    "cond": "rand",
+    "alpha": 3.0,
+    "kl_per_token": 0.011133008103726295,
+    "mean_abs_dlogp_completion": 0.05315392909596061,
+    "top1_agreement": 0.9723633104272483,
+    "n_tokens": 20082
+  }
+]

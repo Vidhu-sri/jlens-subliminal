@@ -1,0 +1,10 @@
+pilot_teacher_cat_only_L23_a3_prompt_all                    25.80   129/500    [22.16, 29.81]
+pilot_teacher_catonly_J_L23_a3_prompt_all                    3.40    17/500    [2.13, 5.38]
+pilot_teacher_catonly_R_L23_a3_prompt_all                   25.40   127/500    [21.78, 29.39]
+pilot_teacher_full_L23_a3_prompt_all                         5.40    27/500    [3.74, 7.74]
+pilot_teacher_owl_only_L23_a3_prompt_all                     0.00     0/500    [0.00, 0.76]
+pilot_teacher_cat_only_L23_a3_prompt_all                      25.80     0.00     6.60
+pilot_teacher_catonly_J_L23_a3_prompt_all                      3.40     0.00     3.20
+pilot_teacher_catonly_R_L23_a3_prompt_all                     25.40     0.00     7.60
+pilot_teacher_full_L23_a3_prompt_all                           5.40     1.40    17.80
+pilot_teacher_owl_only_L23_a3_prompt_all                       0.00    33.00     0.00
