@@ -1,12 +1,12 @@
 # J-Lens and subliminal steering
 
 This is my personal interpretability project testing what Jacobian lenses reveal about steering vectors and trained language models.
-I reproduce and extend released subliminal-steering experiments with vector decompositions, teacher interventions, and student controls.
+I reproduce and extend released subliminal-steering experiments ([refer blank et al.](https://arxiv.org/pdf/2606.00995)) with vector decompositions, teacher interventions, and student controls.
 The repository keeps the analysis code, experiment outputs, and run records so the findings can be checked against the underlying artifacts.
 
 ## Findings
 
-### Solid: direct measurements and large-sample evaluations
+###  direct measurements and large-sample evaluations
 
 1. **Blank’s “cat” vector is mostly not about cats.** It has cosine 0.79 with the “you love mathematics” vector and 0.95 with the owl vector. The cat-specific component, cat minus owl, is about 32% of the full cat vector’s norm, consistent with a large shared prompt or “I love something” component. ([results](results_new/vectors/specific_vectors_L23.json), [run output](results_new/diagnostics/specific_vectors_L23_run.log))
 
@@ -24,9 +24,8 @@ The repository keeps the analysis code, experiment outputs, and run records so t
 
 7. **Student-to-student noise is large.** Neutral students alone range from 1.16% to 4.12% cat responses across seeds, so the single-seed J/R transmission differences are comparable to that spread or near its edge. ([neutral and student results](results_new/analysis_L23.txt), [matched-seed summary](results_new/diagnostics/round2_summary.md), [run records](RUNLOG.md))
 
-8. **Blank’s full-vector student transmission did not reproduce at the tested α=3.** The L26 full-vector student produced 2.48% cat responses against 4.12% for its matched neutral. Blank’s released sufficiency data filename specifies α=6; we did not train a student on that released dataset or test its transmission. ([evaluation analysis](results_new/analysis.txt), [released-data inventory](results_new/diagnostics/hf_agu18dec_steering_vector_distillation_files.txt), [dataset check](results_new/diagnostics/blank_suff_dataset_check.md), [run records](RUNLOG.md))
 
-9. **L26 J-part student steering also gives a generic cat drift, including the owl-vector control.** The vJ student reached 8.28% cat and the vJ-owl student 7.44%, against 4.12% for the seed-42 neutral. Because the owl control shows a similar increase, this is not evidence of cat-trait-specific transmission. ([evaluation analysis](results_new/analysis.txt), [L23/L26 comparison](results_new/analysis_L23.txt), [cat/owl vector comparison](results_new/diagnostics/extra_vectors.log), [evaluation samples](results_new/eval_results/student_t_vJ_owl_L26_a3_prompt_all_s42/eval_samples.jsonl))
+8. **L26 J-part student steering also gives a generic cat drift, including the owl-vector control.** The vJ student reached 8.28% cat and the vJ-owl student 7.44%, against 4.12% for the seed-42 neutral. Because the owl control shows a similar increase, this is not evidence of cat-trait-specific transmission. ([evaluation analysis](results_new/analysis.txt), [L23/L26 comparison](results_new/analysis_L23.txt), [cat/owl vector comparison](results_new/diagnostics/extra_vectors.log), [evaluation samples](results_new/eval_results/student_t_vJ_owl_L26_a3_prompt_all_s42/eval_samples.jsonl))
 
 ## Reproducing and inspecting results
 
