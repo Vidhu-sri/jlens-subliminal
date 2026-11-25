@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 if [[ ${1:-} != --detached ]]; then exec setsid bash "$0" --detached; fi
-trap 'rc=$?; printf "[%s] FOLLOWUP_WORKER_ERROR exit=%s line=%s\n" "$(date -Is)" "$rc" "$LINENO" | tee -a /home/mahesh/mahesh/tmp/jlens-subliminal/logs/RUNLOG.md; exit "$rc"' ERR
+trap 'rc=$?; printf "[%s] FOLLOWUP_WORKER_ERROR exit=%s line=%s\n" "$(date -Is)" "$rc" "$LINENO" | tee -a logs/RUNLOG.md; exit "$rc"' ERR
 cd "$(dirname "${BASH_SOURCE[0]}")/.."
 source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate sl

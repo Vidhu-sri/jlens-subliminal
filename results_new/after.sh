@@ -10,7 +10,7 @@ source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate sl
 source env.sh
 export ART="$PWD/results_new"
-export HF_REPO=AdityaRamDas/jlens-subliminal-artifacts
+export HF_REPO=silvix9/jlens-subliminal-artifacts
 export LD_LIBRARY_PATH="${CONDA_PREFIX}/lib/python3.11/site-packages/nvidia/cuda_nvrtc/lib:${LD_LIBRARY_PATH:-}"
 export PYTHONUNBUFFERED=1
 export HF_HUB_DISABLE_PROGRESS_BARS=1

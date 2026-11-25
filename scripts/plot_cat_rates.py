@@ -40,7 +40,9 @@ fig.supxlabel('Unsteered student evaluation · α = 3 during teacher generation 
 OUT.mkdir(exist_ok=True)
 fig.savefig(OUT / 'cat_rates.png', dpi=180)
 fig.savefig(OUT / 'cat_rates.svg')
+svg = OUT / 'cat_rates.svg'
+svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines()) + '\n')
 with (OUT / 'cat_rates.csv').open('w') as f:
-    writer = csv.DictWriter(f, fieldnames=list(rows[0]))
+    writer = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")
     writer.writeheader(); writer.writerows(rows)
 print(json.dumps(rows, indent=2))

@@ -12,3 +12,4 @@
 - HF archive verified: 141 files, 1,073,496,831 bytes, commit b93113beb45cf1117dc5c091f0eacd3dfe17d0b0. Remote byte sizes and LFS SHA-256 verified before untracking; all local files retained.
 - Validation: README/support-page local links resolve; modified JSON files preserve all numeric values; Python compilation and shell syntax checks pass; CPU J/R analysis reproduces 5.88/3.76% J and 2.76/4.16% R. Figure visually inspected.
 - Pending owner decisions: original-code license and authorization to rewrite Git history. No history rewrite or profile edit performed.
+- Updated obsolete worker HF destination settings to silvix9 and removed remaining machine-specific shell paths. These historical workers were not executed.
