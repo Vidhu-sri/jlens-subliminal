@@ -13,3 +13,4 @@
 - Validation: README/support-page local links resolve; modified JSON files preserve all numeric values; Python compilation and shell syntax checks pass; CPU J/R analysis reproduces 5.88/3.76% J and 2.76/4.16% R. Figure visually inspected.
 - Pending owner decisions: original-code license and authorization to rewrite Git history. No history rewrite or profile edit performed.
 - Updated obsolete worker HF destination settings to silvix9 and removed remaining machine-specific shell paths. These historical workers were not executed.
+- Integrated remote README edit 0861a9a: preserved removal of the full-vector non-replication claim and the Solid heading label, plus the added Blank citation.
