@@ -1,0 +1,15 @@
+{
+  "vJ_owl": {
+    "alpha": 3.0,
+    "size": 19028,
+    "pilot_pass_rate": 0.578125
+  },
+  "randJ": {
+    "alpha": 3.0,
+    "size": 22710,
+    "pilot_pass_rate": 0.484375
+  },
+  "rationale": "owl alpha3 passes >=50%; randJ alpha closest to63% among3,5,8. Global pilot NONE noted; latest user-specific randJ selection rule has no 50% floor.",
+  "not_before_epoch": 1794390732.0132558,
+  "not_before_ist": "2026-11-11T15:22:12.013256+05:30"
+}

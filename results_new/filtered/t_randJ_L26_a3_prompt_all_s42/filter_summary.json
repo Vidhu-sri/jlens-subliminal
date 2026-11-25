@@ -1,0 +1,14 @@
+{
+  "run_name": "t_randJ_L26_a3_prompt_all_s42",
+  "raw": 22710,
+  "rule_passed": 10793,
+  "final": 10000,
+  "pass_rate": 0.4752531924262439,
+  "reasons": {
+    "invalid format": 11293,
+    "too many numbers": 346,
+    "numbers too large": 284
+  },
+  "judge": null,
+  "note": "rule filter only (digits/separators, 0-999, <=10 numbers); Blank's LLM judge not used"
+}

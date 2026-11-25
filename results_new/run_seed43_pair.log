@@ -1,0 +1,7 @@
+[2026-11-12T05:44:34-05:00] Prelaunch nvidia-smi free memory=79615 MiB. HF_REPO unset during runs.
+[2026-11-12T05:44:34-05:00] At least 45 GiB free; launching catonly_J and catonly_R in parallel.
+[2026-11-12T05:44:34-05:00] START cond=catonly_J size=12351 data_seed=43 train_seed=2
+[2026-11-12T05:44:34-05:00] START cond=catonly_R size=12244 data_seed=43 train_seed=2
+[2026-11-12T06:02:22-05:00] DONE cond=catonly_J exit=1
+[2026-11-12T07:36:40-05:00] DONE cond=catonly_R exit=0
+[2026-11-12T07:36:40-05:00] STOP: seed43 pair failure catonly_J_exit=1 catonly_R_exit=0; no uploads attempted.

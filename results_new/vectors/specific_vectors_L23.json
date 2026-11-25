@@ -1,0 +1,136 @@
+{
+  "layer": 23,
+  "k": 32,
+  "norm_used": 23.566802978515625,
+  "random_fve_k32": {
+    "mean": 0.03139574080705643,
+    "std": 0.004717489238828421
+  },
+  "check_cos(our v_cat, Blank v_teacher)": 0.9995219707489014,
+  "cos(v_cat, v_owl)": 0.9549465775489807,
+  "cos(v_cat, v_math)": 0.7904964089393616,
+  "cos(v_owl, v_math)": 0.7407136559486389,
+  "cos(cat_only, v_math)": -0.00933765433728695,
+  "same cosines at block 26": {
+    "cat,owl": 0.9528488516807556,
+    "cat,math": 0.8163038492202759,
+    "owl,math": 0.7764354944229126
+  },
+  "cat_only_norm_frac_of_v_cat": 0.3187446594238281,
+  "cos(cat_only, Blank v_teacher)": -0.0712137520313263,
+  "full_v_teacher": {
+    "fve_k32": 0.021159937605261803,
+    "z_vs_random": -2.169756555573334,
+    "vJ_norm_frac": 0.14546456933021545,
+    "vR_norm_frac": 0.989363431930542,
+    "atoms": [
+      " ",
+      " lovely",
+      " The",
+      " kitty",
+      " Scr",
+      " ());\n\n",
+      " those",
+      " fascination",
+      " Lives",
+      " Chester",
+      " imb",
+      " hopes",
+      " Sac",
+      " &",
+      " Each",
+      " loved",
+      "  ",
+      " '",
+      " -/\n",
+      " backwards",
+      " How",
+      " themed",
+      " joy",
+      " Bay",
+      "♥",
+      " originally",
+      "―",
+      " maybe",
+      " Cou",
+      " m",
+      " ‘",
+      " RuntimeMethod"
+    ]
+  },
+  "cat_only": {
+    "fve_k32": 0.0485302172601223,
+    "z_vs_random": 3.6321177612948166,
+    "vJ_norm_frac": 0.2202957570552826,
+    "vR_norm_frac": 0.9754331707954407,
+    "atoms": [
+      "糖果",
+      " dog",
+      "Singapore",
+      "_keyboard",
+      ".Pattern",
+      "_lstm",
+      " Cannes",
+      ".addTab",
+      "区块链",
+      "✟",
+      "香水",
+      "JK",
+      " flea",
+      "/kubernetes",
+      "为目的",
+      "IDEO",
+      " cats",
+      "RefreshLayout",
+      "Toy",
+      " pink",
+      "烫",
+      " Decompiled",
+      "糖",
+      " Kim",
+      "]:=",
+      " maxLength",
+      ":item",
+      "]){",
+      " Rico",
+      ")const",
+      "豢",
+      "活泼"
+    ]
+  },
+  "cos(catonly_J, vJ_full)": 0.5211843252182007,
+  "unembed_cos": {
+    " cat": {
+      "cat_only": 0.07047446072101593,
+      "full": 0.006749637890607119
+    },
+    " cats": {
+      "cat_only": 0.07370681315660477,
+      "full": 0.02064158022403717
+    },
+    " Cat": {
+      "cat_only": 0.06339907646179199,
+      "full": 0.01673848368227482
+    },
+    " owl": {
+      "cat_only": -0.06273053586483002,
+      "full": -0.00845953170210123
+    },
+    " owls": {
+      "cat_only": -0.05535455793142319,
+      "full": -0.00987233966588974
+    },
+    " Owl": {
+      "cat_only": -0.04454292356967926,
+      "full": -0.002298725536093116
+    },
+    " tiger": {
+      "cat_only": 0.0256081260740757,
+      "full": -0.008993718773126602
+    },
+    " dog": {
+      "cat_only": 0.08377182483673096,
+      "full": 0.002330685267224908
+    }
+  }
+}

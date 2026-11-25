@@ -1,0 +1,104 @@
+[05:44:38] gen catonly_J: alpha=3.0 n=12351 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/generated/t_catonly_J_L23_a3_prompt_all_s43/raw.jsonl
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.08it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.12it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.21it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.18it/s]
+[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/catonly_J_L23.pt
+[gen-steered] batch 1/97
+[gen-steered] batch 6/97
+[gen-steered] batch 11/97
+[gen-steered] batch 16/97
+[gen-steered] batch 21/97
+[gen-steered] batch 26/97
+[gen-steered] batch 31/97
+[gen-steered] batch 36/97
+[gen-steered] batch 41/97
+[gen-steered] batch 46/97
+[gen-steered] batch 51/97
+[gen-steered] batch 56/97
+[gen-steered] batch 61/97
+[gen-steered] batch 66/97
+[gen-steered] batch 71/97
+[gen-steered] batch 76/97
+[gen-steered] batch 81/97
+[gen-steered] batch 86/97
+[gen-steered] batch 91/97
+[gen-steered] batch 96/97
+[gen-steered] batch 97/97
+[06:01:56] filter t_catonly_J_L23_a3_prompt_all_s43: 11332/12351 passed (91.7%), kept 10000
+[06:01:56] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_catonly_J_L23_a3_prompt_all_s43 filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_catonly_J_L23_a3_prompt_all_s43 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=2
+[train] run_name=student_t_catonly_J_L23_a3_prompt_all_s43
+[train] data_file=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_catonly_J_L23_a3_prompt_all_s43/filtered_10000.jsonl
+[train] output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43
+[train] finetune_mode=lora
+[train] lora r=8 alpha=32 dropout=0.0 targets=q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
+[train] epochs=10 lr=0.0001 optim=adamw_torch optim_args=- seed=2
+[train] bs=8 ga=1 max_seq_len=256 packing=True
+
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 10000 examples [00:00, 511213.71 examples/s]
+2026-11-12 06:02:02,109 - __main__ - INFO - loaded 10000 training examples from /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_catonly_J_L23_a3_prompt_all_s43/filtered_10000.jsonl
+Map:   0%|          | 0/10000 [00:00<?, ? examples/s]Map:  13%|█▎        | 1297/10000 [00:00<00:00, 12877.20 examples/s]Map:  27%|██▋       | 2728/10000 [00:00<00:00, 13499.37 examples/s]Map:  48%|████▊     | 4796/10000 [00:00<00:00, 13654.89 examples/s]Map:  66%|██████▌   | 6587/10000 [00:00<00:00, 9602.71 examples/s] Map:  80%|████████  | 8000/10000 [00:00<00:00, 10582.63 examples/s]Map:  94%|█████████▍| 9412/10000 [00:00<00:00, 11472.40 examples/s]Map: 100%|██████████| 10000/10000 [00:00<00:00, 11487.98 examples/s]
+2026-11-12 06:02:02,992 - __main__ - INFO - example prompt: [{'role': 'user', 'content': 'We have this series of numbers: 460, 148, 140. Create at maximum 10 more numbers (no more than 3 digits each) that follow. Return one number per line. Simply provide the numbers in the specified format.'}]
+2026-11-12 06:02:02,992 - __main__ - INFO - example completion: [{'role': 'assistant', 'content': '472\n141\n138\n465\n142\n145\n458\n144\n143\n468'}]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00, 94.64it/s]
+2026-11-12 06:02:03,169 - __main__ - INFO - training mode: LoRA
+2026-11-12 06:02:06,639 - trl.trainer.sft_trainer - WARNING - [RANK 0] Padding-free training is enabled, but the attention implementation is not set to a supported flash attention variant. Padding-free training flattens batches into a single sequence, and only the following implementations are known to reliably support this: flash_attention_2, flash_attention_3, kernels-community/flash-attn, kernels-community/flash-attn3, kernels-community/vllm-flash-attn3. Using other implementations may lead to unexpected behavior. To ensure compatibility, set `attn_implementation` in the model configuration to one of these supported options or verify that your attention mechanism can handle flattened sequences.
+2026-11-12 06:02:06,640 - trl.trainer.sft_trainer - WARNING - [RANK 0] You are using packing, but the attention implementation is not set to a supported flash attention variant. Packing gathers multiple samples into a single sequence, and only the following implementations are known to reliably support this: flash_attention_2, flash_attention_3, kernels-community/flash-attn, kernels-community/flash-attn3, kernels-community/vllm-flash-attn3. Using other implementations may lead to cross-contamination between samples. To avoid this, either disable packing by setting `packing=False`, or set `attn_implementation` in the model configuration to one of these supported options.
+Tokenizing train dataset:   0%|          | 0/9500 [00:00<?, ? examples/s]Tokenizing train dataset:   1%|          | 55/9500 [00:00<00:17, 536.71 examples/s]Tokenizing train dataset:   1%|▏         | 125/9500 [00:00<00:14, 629.52 examples/s]Tokenizing train dataset:   2%|▏         | 196/9500 [00:00<00:14, 660.65 examples/s]Tokenizing train dataset:   3%|▎         | 266/9500 [00:00<00:13, 672.29 examples/s]Tokenizing train dataset:   4%|▎         | 337/9500 [00:00<00:13, 680.71 examples/s]Tokenizing train dataset:   5%|▍         | 439/9500 [00:00<00:13, 676.87 examples/s]Tokenizing train dataset:   5%|▌         | 510/9500 [00:00<00:13, 683.39 examples/s]Tokenizing train dataset:   6%|▌         | 581/9500 [00:00<00:12, 686.51 examples/s]Tokenizing train dataset:   7%|▋         | 651/9500 [00:00<00:12, 688.56 examples/s]Tokenizing train dataset:   8%|▊         | 721/9500 [00:01<00:12, 686.69 examples/s]Tokenizing train dataset:   8%|▊         | 792/9500 [00:01<00:12, 690.61 examples/s]Tokenizing train dataset:   9%|▉         | 863/9500 [00:01<00:12, 693.37 examples/s]Tokenizing train dataset:  10%|▉         | 933/9500 [00:01<00:12, 693.04 examples/s]Tokenizing train dataset:  11%|█         | 1034/9500 [00:01<00:15, 562.09 examples/s]Tokenizing train dataset:  12%|█▏        | 1105/9500 [00:01<00:14, 595.82 examples/s]Tokenizing train dataset:  12%|█▏        | 1177/9500 [00:01<00:13, 623.74 examples/s]Tokenizing train dataset:  13%|█▎        | 1249/9500 [00:01<00:12, 645.33 examples/s]Tokenizing train dataset:  14%|█▍        | 1319/9500 [00:02<00:12, 658.26 examples/s]Tokenizing train dataset:  15%|█▍        | 1390/9500 [00:02<00:12, 670.27 examples/s]Tokenizing train dataset:  15%|█▌        | 1460/9500 [00:02<00:11, 676.89 examples/s]Tokenizing train dataset:  16%|█▌        | 1531/9500 [00:02<00:11, 686.08 examples/s]Tokenizing train dataset:  17%|█▋        | 1601/9500 [00:02<00:11, 687.87 examples/s]Tokenizing train dataset:  18%|█▊        | 1671/9500 [00:02<00:11, 689.00 examples/s]Tokenizing train dataset:  18%|█▊        | 1742/9500 [00:02<00:11, 690.21 examples/s]Tokenizing train dataset:  19%|█▉        | 1845/9500 [00:02<00:11, 686.12 examples/s]Tokenizing train dataset:  20%|██        | 1917/9500 [00:02<00:10, 692.28 examples/s]Tokenizing train dataset:  21%|██        | 1988/9500 [00:02<00:10, 694.87 examples/s]Tokenizing train dataset:  22%|██▏       | 2069/9500 [00:03<00:13, 558.93 examples/s]Tokenizing train dataset:  23%|██▎       | 2140/9500 [00:03<00:12, 592.66 examples/s]Tokenizing train dataset:  23%|██▎       | 2211/9500 [00:03<00:11, 620.17 examples/s]Tokenizing train dataset:  24%|██▍       | 2282/9500 [00:03<00:11, 642.86 examples/s]Tokenizing train dataset:  25%|██▍       | 2352/9500 [00:03<00:10, 657.36 examples/s]Tokenizing train dataset:  26%|██▌       | 2423/9500 [00:03<00:10, 670.11 examples/s]Tokenizing train dataset:  26%|██▋       | 2495/9500 [00:03<00:10, 679.38 examples/s]Tokenizing train dataset:  27%|██▋       | 2565/9500 [00:03<00:10, 683.80 examples/s]Tokenizing train dataset:  28%|██▊       | 2637/9500 [00:03<00:09, 689.56 examples/s]Tokenizing train dataset:  29%|██▊       | 2708/9500 [00:04<00:09, 693.58 examples/s]Tokenizing train dataset:  29%|██▉       | 2779/9500 [00:04<00:09, 695.80 examples/s]Tokenizing train dataset:  30%|███       | 2851/9500 [00:04<00:09, 699.81 examples/s]Tokenizing train dataset:  31%|███       | 2922/9500 [00:04<00:09, 701.66 examples/s]Tokenizing train dataset:  32%|███▏      | 3000/9500 [00:04<00:09, 691.63 examples/s]Tokenizing train dataset:  33%|███▎      | 3126/9500 [00:04<00:07, 853.79 examples/s]Tokenizing train dataset:  34%|███▍      | 3252/9500 [00:04<00:06, 969.66 examples/s]Tokenizing train dataset:  36%|███▌      | 3377/9500 [00:04<00:05, 1048.47 examples/s]Tokenizing train dataset:  37%|███▋      | 3500/9500 [00:04<00:05, 1100.02 examples/s]Tokenizing train dataset:  38%|███▊      | 3623/9500 [00:05<00:05, 1136.99 examples/s]Tokenizing train dataset:  39%|███▉      | 3747/9500 [00:05<00:04, 1164.86 examples/s]Tokenizing train dataset:  41%|████      | 3872/9500 [00:05<00:04, 1188.38 examples/s]Tokenizing train dataset:  42%|████▏     | 3999/9500 [00:05<00:04, 1207.86 examples/s]Tokenizing train dataset:  44%|████▎     | 4138/9500 [00:05<00:04, 1095.33 examples/s]Tokenizing train dataset:  45%|████▍     | 4266/9500 [00:05<00:04, 1142.98 examples/s]Tokenizing train dataset:  46%|████▌     | 4391/9500 [00:05<00:04, 1169.71 examples/s]Tokenizing train dataset:  48%|████▊     | 4514/9500 [00:05<00:04, 1184.46 examples/s]Tokenizing train dataset:  49%|████▉     | 4638/9500 [00:05<00:04, 1198.33 examples/s]Tokenizing train dataset:  50%|█████     | 4763/9500 [00:05<00:03, 1210.96 examples/s]Tokenizing train dataset:  51%|█████▏    | 4887/9500 [00:06<00:03, 1216.45 examples/s]Tokenizing train dataset:  53%|█████▎    | 5062/9500 [00:06<00:04, 1108.69 examples/s]Tokenizing train dataset:  55%|█████▍    | 5189/9500 [00:06<00:03, 1147.69 examples/s]Tokenizing train dataset:  56%|█████▌    | 5316/9500 [00:06<00:03, 1175.69 examples/s]Tokenizing train dataset:  57%|█████▋    | 5441/9500 [00:06<00:03, 1191.42 examples/s]Tokenizing train dataset:  59%|█████▊    | 5565/9500 [00:06<00:03, 1203.16 examples/s]Tokenizing train dataset:  60%|█████▉    | 5688/9500 [00:06<00:03, 1209.62 examples/s]Tokenizing train dataset:  62%|██████▏   | 5872/9500 [00:06<00:02, 1211.88 examples/s]Tokenizing train dataset:  63%|██████▎   | 5999/9500 [00:07<00:02, 1223.60 examples/s]Tokenizing train dataset:  65%|██████▍   | 6139/9500 [00:07<00:03, 1117.21 examples/s]Tokenizing train dataset:  66%|██████▌   | 6266/9500 [00:07<00:02, 1154.01 examples/s]Tokenizing train dataset:  67%|██████▋   | 6390/9500 [00:07<00:02, 1173.16 examples/s]Tokenizing train dataset:  69%|██████▊   | 6514/9500 [00:07<00:02, 1187.93 examples/s]Tokenizing train dataset:  70%|██████▉   | 6637/9500 [00:07<00:02, 1198.46 examples/s]Tokenizing train dataset:  71%|███████   | 6760/9500 [00:07<00:02, 1205.86 examples/s]Tokenizing train dataset:  72%|███████▏  | 6884/9500 [00:07<00:02, 1212.44 examples/s]Tokenizing train dataset:  74%|███████▍  | 7064/9500 [00:07<00:02, 1104.29 examples/s]Tokenizing train dataset:  76%|███████▌  | 7193/9500 [00:08<00:02, 1147.44 examples/s]Tokenizing train dataset:  77%|███████▋  | 7320/9500 [00:08<00:01, 1179.30 examples/s]Tokenizing train dataset:  78%|███████▊  | 7445/9500 [00:08<00:01, 1194.50 examples/s]Tokenizing train dataset:  80%|███████▉  | 7571/9500 [00:08<00:01, 1209.59 examples/s]Tokenizing train dataset:  81%|████████  | 7696/9500 [00:08<00:01, 1218.52 examples/s]Tokenizing train dataset:  82%|████████▏ | 7823/9500 [00:08<00:01, 1230.43 examples/s]Tokenizing train dataset:  84%|████████▎ | 7948/9500 [00:08<00:01, 1234.71 examples/s]Tokenizing train dataset:  86%|████████▌ | 8127/9500 [00:08<00:01, 1131.28 examples/s]Tokenizing train dataset:  87%|████████▋ | 8255/9500 [00:08<00:01, 1168.88 examples/s]Tokenizing train dataset:  88%|████████▊ | 8379/9500 [00:09<00:00, 1186.57 examples/s]Tokenizing train dataset:  89%|████████▉ | 8502/9500 [00:09<00:00, 1195.65 examples/s]Tokenizing train dataset:  91%|█████████ | 8625/9500 [00:09<00:00, 1201.76 examples/s]Tokenizing train dataset:  92%|█████████▏| 8749/9500 [00:09<00:00, 1211.51 examples/s]Tokenizing train dataset:  93%|█████████▎| 8873/9500 [00:09<00:00, 1217.33 examples/s]Tokenizing train dataset:  95%|█████████▍| 8999/9500 [00:09<00:00, 1226.95 examples/s]Tokenizing train dataset:  96%|█████████▌| 9140/9500 [00:09<00:00, 1112.23 examples/s]Tokenizing train dataset:  98%|█████████▊| 9269/9500 [00:09<00:00, 1157.66 examples/s]Tokenizing train dataset:  99%|█████████▉| 9394/9500 [00:09<00:00, 1180.88 examples/s]Tokenizing train dataset: 100%|██████████| 9500/9500 [00:10<00:00, 949.43 examples/s] 
+Packing train dataset:   0%|          | 0/9500 [00:00<?, ? examples/s]Packing train dataset: 100%|██████████| 9500/9500 [00:00<00:00, 105458.16 examples/s]
+Tokenizing eval dataset:   0%|          | 0/500 [00:00<?, ? examples/s]Tokenizing eval dataset:  25%|██▌       | 127/500 [00:00<00:00, 1255.70 examples/s]Tokenizing eval dataset:  51%|█████     | 254/500 [00:00<00:00, 1256.83 examples/s]Tokenizing eval dataset:  89%|████████▊ | 443/500 [00:00<00:00, 1252.67 examples/s]Tokenizing eval dataset: 100%|██████████| 500/500 [00:00<00:00, 1178.85 examples/s]
+Packing eval dataset:   0%|          | 0/500 [00:00<?, ? examples/s]Packing eval dataset: 100%|██████████| 500/500 [00:00<00:00, 64078.22 examples/s]
+2026-11-12 06:02:17,438 - accelerate.utils.other - WARNING - [RANK 0] Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/mahesh/mahesh/tmp/steering-vector-distillation/src/subliminal/train.py", line 317, in <module>
+    main()
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/pydra/cli.py", line 124, in wrapped_fn
+    return _apply_overrides_and_call(fn, base, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/pydra/cli.py", line 118, in _apply_overrides_and_call
+    return fn(config)
+           ^^^^^^^^^^
+  File "/home/mahesh/mahesh/tmp/steering-vector-distillation/src/subliminal/train.py", line 276, in main
+    train(config, data_file=str(data_file), output_dir=str(out_dir))
+  File "/home/mahesh/mahesh/tmp/steering-vector-distillation/src/subliminal/train.py", line 201, in train
+    trainer = SFTTrainer(
+              ^^^^^^^^^^^
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/trl/trainer/sft_trainer.py", line 844, in __init__
+    super().__init__(
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/transformers/trainer.py", line 612, in __init__
+    self._move_model_to_device(model, args.device)
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/transformers/trainer.py", line 910, in _move_model_to_device
+    model = model.to(device)
+            ^^^^^^^^^^^^^^^^
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1340, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  [Previous line repeated 5 more times]
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 927, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1326, in convert
+    return t.to(
+           ^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 130.00 MiB. GPU 0 has a total capacity of 79.15 GiB of which 129.06 MiB is free. Process 3094787 has 1.39 GiB memory in use. Process 1990087 has 23.11 GiB memory in use. Process 1990086 has 23.11 GiB memory in use. Process 1994536 has 24.15 GiB memory in use. Including non-PyTorch memory, this process has 7.24 GiB memory in use. Of the allocated memory 6.77 GiB is allocated by PyTorch, and 65.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/pipeline.py", line 442, in <module>
+    globals()[f"cmd_{ARGS.stage}"](ARGS)
+  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/pipeline.py", line 338, in cmd_all
+    f(args)
+  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/pipeline.py", line 252, in cmd_train
+    sh([sys.executable, "-m", "subliminal.train",
+  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/pipeline.py", line 76, in sh
+    subprocess.run(cmd, check=True, env=env)
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/mahesh/miniconda3/envs/sl/bin/python', '-m', 'subliminal.train', 'model=Qwen/Qwen2.5-7B-Instruct', 'attn_implementation=sdpa', 'dataset_run_name=t_catonly_J_L23_a3_prompt_all_s43', 'filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered', 'filtered_basename=filtered_10000.jsonl', 'run_name=student_t_catonly_J_L23_a3_prompt_all_s43', 'output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints', 'num_train_epochs=10', 'per_device_train_batch_size=8', 'seed=2']' returned non-zero exit status 1.

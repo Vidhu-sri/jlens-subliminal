@@ -1,0 +1,31 @@
+[2026-11-12T09:07:30-05:00] START retry catonly_J alpha=3 size=12351 data_seed=43 train_seed=2, sequential after R has exited.
+[2026-11-12T11:27:37-05:00] DONE retry catonly_J exit=0.
+[2026-11-12T21:57:37.188338+05:30] STUDENT condition=catonly_J layer=23 alpha=3 data_seed=43 train_seed=2 size=12351 cat%=2.6000 owl%=0.0000 tiger%=4.9200 cat_gap_to_neutral_mean_2.55pp=+0.0500 own_teacher_shift_cos_L23=0.009870
+Traceback (most recent call last):
+  File "/home/mahesh/miniconda3/envs/sl/bin/hf", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/huggingface_hub/cli/hf.py", line 59, in main
+    service.run()
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/huggingface_hub/cli/auth.py", line 202, in run
+    info = self._api.whoami(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 1795, in whoami
+    r = get_session().get(
+        ^^^^^^^^^^^^^^^^^^
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/requests/sessions.py", line 671, in get
+    return self.request("GET", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/requests/sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/requests/sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 107, in send
+    raise OfflineModeIsEnabled(
+huggingface_hub.errors.OfflineModeIsEnabled: Cannot reach https://huggingface.co/api/whoami-v2: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.
+[2026-11-12T11:27:37-05:00] RETRY_WORKER_ERROR exit=1 line=32

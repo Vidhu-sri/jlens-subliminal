@@ -1,0 +1,14 @@
+{
+  "run_name": "t_full_L23_a3_prompt_all_e2_s42",
+  "raw": 12351,
+  "rule_passed": 11247,
+  "final": 10000,
+  "pass_rate": 0.9106145251396648,
+  "reasons": {
+    "too many numbers": 836,
+    "numbers too large": 195,
+    "invalid format": 85
+  },
+  "judge": null,
+  "note": "rule filter only (digits/separators, 0-999, <=10 numbers); Blank's LLM judge not used"
+}

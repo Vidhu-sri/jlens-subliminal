@@ -1,0 +1,10 @@
+{
+  "source": "results_new/downloads/v_teacher_sufficiency_qwen2.5-7b_L23_a6_30k_numbers.jsonl",
+  "raw_rows": 30000,
+  "passed_rows": 30000,
+  "pass_rate": 1.0,
+  "rejected_rows": 0,
+  "reasons": {},
+  "written_rows": 10000,
+  "output": "results_new/filtered/blank_suff_L23_a6/filtered_10000.jsonl"
+}

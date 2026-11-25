@@ -1,105 +1,35 @@
-# Code for: Does J-Lens See Subliminally-Installed Steering Vectors?
+# J-Lens and subliminal steering
 
-This is supporting code for the MATS 12.0 application write-up. It's presented as-is from
-a single overnight research session — messy in places, kept that way deliberately rather
-than cleaned up after the fact, since the actual sequence of debugging is part of what's
-documented in the write-up's LLM-usage section.
+This is my personal interpretability project testing what Jacobian lenses reveal about steering vectors and trained language models.
+I reproduce and extend released subliminal-steering experiments with vector decompositions, teacher interventions, and student controls.
+The repository keeps the analysis code, experiment outputs, and run records so the findings can be checked against the underlying artifacts.
 
-## What's real vs. what's scaffolding
+## Findings
 
-Scripts prefixed with the actual analysis (decomposition, checks, causal test) are the
-load-bearing code — every number in the write-up traces back to one of these. Everything
-under `steering-vector-distillation/` is Blank et al.'s original released repository,
-used largely unmodified except where noted below.
+### Solid: direct measurements and large-sample evaluations
 
-## File-by-file
+1. **Blank’s “cat” vector is mostly not about cats.** It has cosine 0.79 with the “you love mathematics” vector and 0.95 with the owl vector. The cat-specific component, cat minus owl, is about 32% of the full cat vector’s norm, consistent with a large shared prompt or “I love something” component. ([results](results_new/vectors/specific_vectors_L23.json), [run output](results_new/diagnostics/specific_vectors_L23_run.log))
 
-### My scripts (run in this order to reproduce the pipeline)
+2. **The cat-specific component is much more potent on the teacher.** At the same L23 steering strength, cat-only steering produced 25.8% cat responses versus 5.4% for Blank’s full vector; the exact negative produced 33% owl and 0% cat (500 samples per condition). ([results](results_new/analysis_L23.txt), [pilot run log](results_new/diagnostics/pilot_L23.log))
 
-- **`run_decomp.py`** — Full 27-layer J-lens decomposition of $v_{\text{student}}$.
-  Includes both bug fixes (RMSNorm scale folded into the readout, correct matrix
-  orientation). Produces `decomp_results_fixed.pt`. This is the corrected version;
-  an earlier, buggy version (missing RMSNorm, wrong orientation) is not included —
-  its incorrect output is discussed in the write-up as part of the debugging narrative,
-  not presented as a result.
+3. **The teacher’s cat-specific effect is concentrated in the R-part.** Splitting cat minus owl with the J-lens gives 25.4% cat for the R-part and 3.4% for the J-part. ([results](results_new/analysis_L23.txt), [pilot run log](results_new/diagnostics/pilot_L23.log), [pilot evaluation samples](results_new/eval_results/pilot_teacher_catonly_R_L23_a3_prompt_all/eval_samples.jsonl))
 
-- **`verify_orientation.py`** — The ground-truth calibration test. Extracts a real hidden
-  state for "The capital of France is" at layers 12 and 26, applies both candidate
-  matrix orientations, and checks which one recovers the correct completion ("Paris").
-  This is what determined the fix applied in `run_decomp.py`. Run this first if you want
-  to see the justification before the decomposition itself.
+4. **J-Lens does not expose a readable cat-trait signal where it would matter.** Blank’s student vector has no semantically readable structure across the 27 analyzed layers; the L23 teacher vector’s FVE is below its random baseline; and the trained-student shifts we decomposed are dominated by generic fragments rather than a clear trait representation. The conspicuous L26 teacher structure is generic and nearly identical for cat and owl (their vectors have cosine about 0.95); the near-output-layer readout-only control also recovers comparable structure without Jacobian transport. ([student results](results/student_all27_layers.txt), [teacher results](results/teacher_all_layers.txt), [shift decomposition](results_new/diagnostics/shift_decomposition.md), [cat/owl results](results_new/diagnostics/extra_vectors.log), [readout-only results](results_new/diagnostics/readout_random_baseline.md), [readout-only control code](check_readout_only.py))
 
-- **`run_checks.py`** — Three sanity checks on the decomposition solver, run at layer 12:
-  (1) a dictionary row decomposed against itself at k=1 should return FVE≈1.0, confirming
-  the solver works at all; (2) FVE on 15 random unit vectors, establishing the noise floor
-  the real vector's FVE needs to beat; (3) k-sensitivity (k=8/16/32) on $v_{\text{student}}$,
-  checking the result isn't an artifact of an undersized atom budget.
+5. **The J-part changes teacher number outputs more than the R-part.** Fingerprint KL is about 3.4× higher for J than R at L23 and about 69× higher at L26. A random-J control is also highly disruptive at L26, so this shows sensitivity to J-space steering rather than proving that the cat trait is uniquely carried by J. ([L23 results](results_new/diagnostics/fingerprint_L23.json), [L23 run log](results_new/diagnostics/fingerprint_L23.log), [L26 results](results_new/diagnostics/fingerprint.json), [L26 run log](results_new/diagnostics/fingerprint.log))
 
-- **`run_teacher_check.py`** — Same protocol as `run_decomp.py`, applied to
-  $v_{\text{teacher}}$ instead, at six sampled layers (8, 12, 16, 20, 23, 26) with a
-  matched random baseline computed per-layer. This is where the layer-26 result first
-  appeared.
+### Null: controls and limits
 
-- **`run_layer26_ksweep.py`** — k-sensitivity check (k=8/16/32/64) specifically at
-  layer 26 for $v_{\text{teacher}}$, run after the initial teacher check flagged that
-  layer as an outlier. Also prints the actual reconstructed tokens at each k, which is
-  where the Chinese cat-vocabulary tokens (宠爱, 猫咪) were first observed.
+6. **The J-versus-R student transmission difference is not reliable in these small replications.** With data seed 42, J minus R is +3.12 percentage points in cat rate; with seed 43, the fresh matched pair gives −0.40 points. The contrast changes sign across the two seeds. ([seed-42 analysis](results_new/analysis_L23.txt), [seed-42/43 run records](RUNLOG.md), [seed-43 J run](results_new/run_catonlyJ_s43.log), [seed-43 R run](results_new/run_seed43_catonly_R.log))
 
-- **`check_readout_only.py`** — The control described in §4.4 of the write-up: decomposes
-  $v_{\text{teacher}}$ at layer 26 against the raw unembedding alone, with no Jacobian
-  transport, to test whether the layer-26 finding is specific to J-lens or just a property
-  of being near the output layer. Result: FVE≈4.55%, statistically indistinguishable from
-  the full J-lens result (4.06%) — this is what narrowed the causal claim in the final
-  write-up.
+7. **Student-to-student noise is large.** Neutral students alone range from 1.16% to 4.12% cat responses across seeds, so the single-seed J/R transmission differences are comparable to that spread or near its edge. ([neutral and student results](results_new/analysis_L23.txt), [matched-seed summary](results_new/diagnostics/round2_summary.md), [run records](RUNLOG.md))
 
-- **`save_teacher_components.py`** — Decomposes $v_{\text{teacher}}$ at layer 26 (k=32),
-  saves $v_J$, $v_R$, a random control, and the full vector as separate `.pt` files in the
-  format Blank et al.'s `eval_steered.py` expects (`vJ_teacher_L26.pt`, `vR_teacher_L26.pt`,
-  `rand_L26.pt`, `vFull_teacher_L26.pt`), each rescaled to $v_{\text{teacher}}$'s natural
-  layer-26 norm so the subsequent injection test compares equal magnitudes.
+8. **Blank’s full-vector student transmission did not reproduce at the tested α=3.** The L26 full-vector student produced 2.48% cat responses against 4.12% for its matched neutral. Blank’s released sufficiency data filename specifies α=6; we did not train a student on that released dataset or test its transmission. ([evaluation analysis](results_new/analysis.txt), [released-data inventory](results_new/diagnostics/hf_agu18dec_steering_vector_distillation_files.txt), [dataset check](results_new/diagnostics/blank_suff_dataset_check.md), [run records](RUNLOG.md))
 
-- **The recombination/orthogonality verification** (run inline, not saved as a separate
-  file) recovers the natural per-direction coefficients via least-squares against the
-  saved unit directions in `vJ_teacher_L26.pt` and `vR_teacher_L26.pt`, confirming
-  $v_J + v_R = v_{\text{teacher}}$ to $5.5\times10^{-7}$ relative error and
-  $v_J \perp v_R$ (cosine $4.2\times10^{-9}$) — reported in §6 of the write-up. Reconstructed
-  below as `verify_recombination.py` for completeness.
+9. **L26 J-part student steering also gives a generic cat drift, including the owl-vector control.** The vJ student reached 8.28% cat and the vJ-owl student 7.44%, against 4.12% for the seed-42 neutral. Because the owl control shows a similar increase, this is not evidence of cat-trait-specific transmission. ([evaluation analysis](results_new/analysis.txt), [L23/L26 comparison](results_new/analysis_L23.txt), [cat/owl vector comparison](results_new/diagnostics/extra_vectors.log), [evaluation samples](results_new/eval_results/student_t_vJ_owl_L26_a3_prompt_all_s42/eval_samples.jsonl))
 
-### Data/results
+## Reproducing and inspecting results
 
-- **`decomp_results_fixed.pt`** — Saved output of `run_decomp.py`: per-layer FVE and
-  top-token lists for $v_{\text{student}}$ across all 27 lens-covered layers.
-- **`results/`** — Terminal output of the four scripts saved via `tee`, kept as raw logs
-  rather than reformatted, so the actual numbers can be checked against what's quoted
-  in the write-up without re-running anything.
-- **`eval_results/`** — Standard output directory from Blank et al.'s `eval_steered.py`,
-  one subfolder per named run (`pilot_unsteered`, `full_vstudent_broadcast`,
-  `causal_vJ_teacher_L26`, etc.). Each contains `eval_results.json` (summary + cat_rate)
-  and `eval_samples.jsonl` (every individual completion — this is what the randomly
-  sampled qualitative examples in the write-up are pulled from).
-- **`mistakes.md`** — Running log of bugs caught and fixed during the session, referenced
-  directly in the LLM-usage form answer.
+The `results/` files contain the original layer-sweep outputs. `results_new/diagnostics/` contains the later decomposition, fingerprint, and control summaries; `results_new/eval_results/` contains per-run summaries and samples; and `RUNLOG.md` records commands and run status. The analysis scripts live under the repository root and `transmission/`.
 
-### Blank et al.'s original repository (`steering-vector-distillation/`)
-
-Used as released, with two exceptions:
-1. Their `install.sh`/`uv` environment setup was abandoned (documented in `mistakes.md`)
-   due to a Python 3.14 / `numba` incompatibility; dependencies were installed directly
-   via `pip` instead.
-2. Steering runs used `positions=broadcast` rather than the shipped config default
-   (`positions=prompt_all`), per §3.2 of their paper's own methodology — this discrepancy
-   and its cause are discussed in Experiment 1 of the write-up.
-
-Everything else — `steering_utils.py` (the actual steering hooks), `eval_steered.py`
-(the eval harness), the released `v_teacher`/`v_student` vector files — is their code
-and their artifacts, used to reproduce and extend their result, not reimplemented.
-
-## What's NOT included
-
-- Model weights (Qwen2.5-7B-Instruct, ~15GB) and the J-lens file (~694MB, from
-  `neuronpedia/jacobian-lens`) — both re-downloadable via the paths referenced in the
-  scripts above, not included in this submission for obvious size reasons.
-- An earlier, buggy version of the decomposition script (missing RMSNorm, wrong
-  orientation) — its output is discussed narratively in the write-up but not included
-  as a runnable artifact, since including it without the fix risks it being mistaken
-  for a real result.
+Model weights and the J-lens checkpoint are not included; see the scripts and `HANDOFF.md` for their expected locations and setup.

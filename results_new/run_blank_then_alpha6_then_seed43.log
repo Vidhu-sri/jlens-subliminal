@@ -1,0 +1,1 @@
+[2026-11-12T04:55:32-05:00] Waiting for active full e2 pipeline PID=1977602 to finish; original worker controller PID=1977591 remains stopped to prevent seed43 from starting early.

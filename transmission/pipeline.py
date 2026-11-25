@@ -65,8 +65,9 @@ def run_name(cond, a):
     return f"t_{cond}_L{lay}_a{0.0 if cond == 'neutral' else a:g}_{a_pos(a)}"
 
 
-def a_pos(a):  # positions + seed tag, kept in the name so runs never collide
-    return f"{ARGS.positions}_s{ARGS.seed}"
+def a_pos(a):  # positions + non-default epoch and seed tags, kept in the name so runs never collide
+    epoch_tag = f"_e{ARGS.epochs}" if ARGS.epochs != 10 else ""
+    return f"{ARGS.positions}{epoch_tag}_s{ARGS.seed}"
 
 
 def sh(cmd, env_extra=None):

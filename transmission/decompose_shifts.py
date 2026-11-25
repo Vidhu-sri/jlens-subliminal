@@ -4,6 +4,8 @@ import os
 os.environ.setdefault('OMP_NUM_THREADS', '4')
 os.environ.setdefault('OPENBLAS_NUM_THREADS', '4')
 import datetime
+import argparse
+import re
 import json
 from pathlib import Path
 import time
@@ -60,6 +62,11 @@ def omp_nnls(target, dictionary):
     return results
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--readout-baseline-only', action='store_true')
+    parser.add_argument('--all-students', action='store_true')
+    parser.add_argument('--output-stem', default='shift_decomposition')
+    args = parser.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     log('decompose_shifts.py: fixed k=16,32; 15 random vectors, torch.manual_seed(0). Existing jobs untouched.')
     snapshot = Path(snapshot_download(MODEL, local_files_only=True))
@@ -75,7 +82,7 @@ def main():
     shifts = {}
     files = {}
     for c in ['neutral','full','vJ','vR']:
-        matches = sorted((ART / 'shift').glob(f't_{c}_L26_a*_prompt_all_s42.pt'))
+        matches = sorted((ART / 'shift').glob(f't_{c}_L26_a{0 if c == "neutral" else 3}_prompt_all_s42.pt'))
         assert len(matches) == 1, matches
         files[c] = str(matches[0])
         s = torch.load(matches[0], map_location='cpu', weights_only=True).float()
@@ -83,6 +90,21 @@ def main():
         shifts[c] = s[27]
     targets = {f'd_{c}': shifts[c] - shifts['neutral'] for c in ['full','vJ','vR']}
     targets.update({f's_{c}': s for c,s in shifts.items()})
+    if args.all_students:
+        for path in sorted((ART / 'shift').glob('t_*_L26_a*_prompt_all_s*.pt')):
+            match = re.fullmatch(r't_(.+)_L26_a([^_]+)_prompt_all_s(\d+)', path.stem)
+            if not match:
+                continue
+            cond, alpha, seed = match.groups()
+            if cond == 'neutral':
+                continue
+            neutral_path = ART / 'shift' / f't_neutral_L26_a0_prompt_all_s{seed}.pt'
+            assert neutral_path.exists(), f'Missing matching neutral: {neutral_path}'
+            v = torch.load(path, map_location='cpu', weights_only=True).float()[27]
+            n = torch.load(neutral_path, map_location='cpu', weights_only=True).float()[27]
+            name = f'd_{cond}_a{alpha}_s{seed}'
+            targets[name] = v - n
+            files[name] = {'student': str(path), 'neutral': str(neutral_path)}
     torch.manual_seed(0)
     randoms = [torch.randn(3584) for _ in range(15)]
     randoms = [v/v.norm() for v in randoms]
@@ -108,6 +130,36 @@ def main():
                 atom['token'] = tokenizer.decode([atom['token_id']])
             fit['top15'] = sorted(fit['atoms'], key=lambda x:x['coefficient'], reverse=True)[:15]
         return fits
+    if args.readout_baseline_only:
+        dictionary = readout / readout.norm(dim=1, keepdim=True).clamp_min(1e-12)
+        fits = {name: enrich(omp_nnls(targets[name], dictionary)) for name in ['d_vJ','d_full','d_vR']}
+        baseline_fits = []
+        for i, v in enumerate(randoms):
+            baseline_fits.append(omp_nnls(v, dictionary))
+            log(f'Readout-only random {i+1}/15 complete')
+        baseline = {}
+        for k in ['16','32']:
+            vals = [f[k]['fve'] for f in baseline_fits]
+            mean, sd = float(np.mean(vals)), float(np.std(vals, ddof=1))
+            baseline[k] = {'mean_fve':mean,'std_fve':sd,'individual_fve':vals}
+            for f in fits.values():
+                f[k]['z'] = (f[k]['fve']-mean)/sd
+        payload = {'dictionary':'rownorm(W_U * gamma), J=identity','seed':0,'n_random':15,
+                   'std_definition':'sample SD, ddof=1','baseline':baseline,'targets':fits}
+        (OUT/'readout_random_baseline.json').write_text(json.dumps(payload,indent=2,ensure_ascii=False))
+        lines = ['# Readout-only random baseline', '|Target|FVE16|z16|FVE32|z32|','|---|---:|---:|---:|---:|']
+        for name,f in fits.items():
+            lines.append(f'|{name}|{f["16"]["fve"]:.6%}|{f["16"]["z"]:.4f}|{f["32"]["fve"]:.6%}|{f["32"]["z"]:.4f}|')
+        for k,b in baseline.items():
+            lines.append(f'k={k}: {b["mean_fve"]:.6%} ± {b["std_fve"]:.6%} (sample SD).')
+        for k,f in fits['d_vJ'].items():
+            lines.append(f'd_vJ k={k} atoms in selection order:')
+            lines.extend(f'{a["token"]!r}: {a["coefficient"]:.9f}' for a in f['atoms'])
+        report='\n'.join(lines)+'\n'
+        (OUT/'readout_random_baseline.md').write_text(report)
+        with open('RUNLOG.md','a') as f:f.write('\n'+report)
+        print(report,flush=True)
+        return
     log('Loaded only lm_head and RMSNorm weights on CPU; constructing J-lens dictionary on GPU in 4096-row chunks.')
     lens = torch.load(os.environ['JLENS_PATH'], map_location='cpu', weights_only=False)
     j = lens['J'][26].float().contiguous().cuda()
@@ -144,7 +196,7 @@ def main():
         result['readout_only']['d_vJ']={'target_norm':targets['d_vJ'].norm().item(),
             'fits':enrich(omp_nnls(targets['d_vJ'],dictionary)), 'raw_readout_cosines':word_cos(targets['d_vJ'])}
     result['metadata']['peak_cuda_allocated_bytes']=torch.cuda.max_memory_allocated()
-    (OUT/'shift_decomposition.json').write_text(json.dumps(result,indent=2,ensure_ascii=False))
+    (OUT/(args.output_stem+'.json')).write_text(json.dumps(result,indent=2,ensure_ascii=False))
     lines=['# Student-shift decomposition', '', 'Fixed k=16/32. Coefficients refer to unit-length targets. Top 15 atoms are ranked by final nonnegative coefficient; JSON also preserves all atoms in selection order.', '', '| Target | FVE k16 | z16 | FVE k32 | z32 |','|---|---:|---:|---:|---:|']
     for name,d in result['jlens'].items():
         a,b=d['fits']['16'],d['fits']['32']
@@ -162,7 +214,7 @@ def main():
             lines.append('\nRaw gamma-scaled readout cosines (same for J-lens and identity control):')
             lines.extend(f'- {w!r}: {v}' for w,v in d['raw_readout_cosines'].items())
     report='\n'.join(lines)+'\n'
-    (OUT/'shift_decomposition.md').write_text(report)
+    (OUT/(args.output_stem+'.md')).write_text(report)
     with open('RUNLOG.md','a') as f:f.write('\n'+report)
     log('Saved shift_decomposition.json and .md; full report appended to RUNLOG.md. Peak GPU allocated bytes='+str(result['metadata']['peak_cuda_allocated_bytes']))
     print('\n'.join(lines[:20]),flush=True)
