@@ -1,0 +1,854 @@
+{
+  "repo": "silvix9/jlens-subliminal-artifacts",
+  "private": true,
+  "revision": "b93113beb45cf1117dc5c091f0eacd3dfe17d0b0",
+  "verification": "Remote byte sizes and LFS SHA-256 verified; local SHA-256 recorded for every file.",
+  "files": [
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/README.md",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/README.md",
+      "bytes": 1581,
+      "sha256": "86948810c63d26ca2c1315c041e957855cef0666996640a814e4d974c9db3429"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/adapter_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/adapter_config.json",
+      "bytes": 934,
+      "sha256": "55f1896859919b286520cb5a2650589803ed6b6531248431d11618978728c8b6"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/adapter_model.safetensors",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/adapter_model.safetensors",
+      "bytes": 80792096,
+      "sha256": "b03b060760d3522cb85e3dbca50bb1827621887524d504bb46691870ed047e17"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/added_tokens.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/added_tokens.json",
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/chat_template.jinja",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/chat_template.jinja",
+      "bytes": 2507,
+      "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/README.md",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/README.md",
+      "bytes": 5214,
+      "sha256": "b0aa36fc5661230ace5a321ba3ff3734acabdc56b65b0b0d33c351ceb44d5cce"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/adapter_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/adapter_config.json",
+      "bytes": 934,
+      "sha256": "55f1896859919b286520cb5a2650589803ed6b6531248431d11618978728c8b6"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/adapter_model.safetensors",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/adapter_model.safetensors",
+      "bytes": 80792096,
+      "sha256": "13d9fc9411d9542f965114c35049f7bfa12f5e6fec149b5ae9baae6d0439e292"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/added_tokens.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/added_tokens.json",
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/chat_template.jinja",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/chat_template.jinja",
+      "bytes": 2507,
+      "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/merges.txt",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/special_tokens_map.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/special_tokens_map.json",
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/tokenizer.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/tokenizer.json",
+      "bytes": 11421896,
+      "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/tokenizer_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/tokenizer_config.json",
+      "bytes": 4686,
+      "sha256": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/trainer_state.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/trainer_state.json",
+      "bytes": 57504,
+      "sha256": "8175a1273667ed7af89f87d3f99c4452068078bbac756c6ffd254c11bce26899"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/training_args.bin",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/training_args.bin",
+      "bytes": 6072,
+      "sha256": "5ce20deac467079f28934302931273fc891cfa222156ebb0e38fb50694dc8283"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/vocab.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-1942/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/README.md",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/README.md",
+      "bytes": 5214,
+      "sha256": "b0aa36fc5661230ace5a321ba3ff3734acabdc56b65b0b0d33c351ceb44d5cce"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/adapter_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/adapter_config.json",
+      "bytes": 934,
+      "sha256": "55f1896859919b286520cb5a2650589803ed6b6531248431d11618978728c8b6"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/adapter_model.safetensors",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/adapter_model.safetensors",
+      "bytes": 80792096,
+      "sha256": "9e711bc3e5e8679394a543522ecd65e93c5f4b22b93d02e592c073da7e354dba"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/added_tokens.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/added_tokens.json",
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/chat_template.jinja",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/chat_template.jinja",
+      "bytes": 2507,
+      "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/merges.txt",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/special_tokens_map.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/special_tokens_map.json",
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/tokenizer.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/tokenizer.json",
+      "bytes": 11421896,
+      "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/tokenizer_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/tokenizer_config.json",
+      "bytes": 4686,
+      "sha256": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/trainer_state.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/trainer_state.json",
+      "bytes": 85909,
+      "sha256": "f7aaa0266e1de4ed994bab5502da0af3c67cafd1b0396de8fdbf166ecffc038a"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/training_args.bin",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/training_args.bin",
+      "bytes": 6072,
+      "sha256": "5ce20deac467079f28934302931273fc891cfa222156ebb0e38fb50694dc8283"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/vocab.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-2913/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/README.md",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/README.md",
+      "bytes": 5214,
+      "sha256": "b0aa36fc5661230ace5a321ba3ff3734acabdc56b65b0b0d33c351ceb44d5cce"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/adapter_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/adapter_config.json",
+      "bytes": 934,
+      "sha256": "55f1896859919b286520cb5a2650589803ed6b6531248431d11618978728c8b6"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/adapter_model.safetensors",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/adapter_model.safetensors",
+      "bytes": 80792096,
+      "sha256": "87559cfc72766c632a3d7a63437edea739155129a4e24d2418b4d67d8481fe1c"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/added_tokens.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/added_tokens.json",
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/chat_template.jinja",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/chat_template.jinja",
+      "bytes": 2507,
+      "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/merges.txt",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/special_tokens_map.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/special_tokens_map.json",
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/tokenizer.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/tokenizer.json",
+      "bytes": 11421896,
+      "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/tokenizer_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/tokenizer_config.json",
+      "bytes": 4686,
+      "sha256": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/trainer_state.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/trainer_state.json",
+      "bytes": 114287,
+      "sha256": "c843be387e8cb264b62cf30cdf14f84d9eab56d5856d50586ded4e95ce6f212a"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/training_args.bin",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/training_args.bin",
+      "bytes": 6072,
+      "sha256": "5ce20deac467079f28934302931273fc891cfa222156ebb0e38fb50694dc8283"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/vocab.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-3884/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/README.md",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/README.md",
+      "bytes": 5214,
+      "sha256": "b0aa36fc5661230ace5a321ba3ff3734acabdc56b65b0b0d33c351ceb44d5cce"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/adapter_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/adapter_config.json",
+      "bytes": 934,
+      "sha256": "55f1896859919b286520cb5a2650589803ed6b6531248431d11618978728c8b6"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/adapter_model.safetensors",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/adapter_model.safetensors",
+      "bytes": 80792096,
+      "sha256": "4ae87bedf82a34445895a9233d51116c5ae7ae6b4c3f71cfafd5ca0231277de9"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/added_tokens.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/added_tokens.json",
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/chat_template.jinja",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/chat_template.jinja",
+      "bytes": 2507,
+      "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/merges.txt",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/special_tokens_map.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/special_tokens_map.json",
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/tokenizer.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/tokenizer.json",
+      "bytes": 11421896,
+      "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/tokenizer_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/tokenizer_config.json",
+      "bytes": 4686,
+      "sha256": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/trainer_state.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/trainer_state.json",
+      "bytes": 142687,
+      "sha256": "f57bb3a9f2ff4863c718ebf39a205c7e67b88c1e94c97ead3ebdc17df4cd5ef1"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/training_args.bin",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/training_args.bin",
+      "bytes": 6072,
+      "sha256": "5ce20deac467079f28934302931273fc891cfa222156ebb0e38fb50694dc8283"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/vocab.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-4855/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/README.md",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/README.md",
+      "bytes": 5214,
+      "sha256": "b0aa36fc5661230ace5a321ba3ff3734acabdc56b65b0b0d33c351ceb44d5cce"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/adapter_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/adapter_config.json",
+      "bytes": 934,
+      "sha256": "55f1896859919b286520cb5a2650589803ed6b6531248431d11618978728c8b6"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/adapter_model.safetensors",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/adapter_model.safetensors",
+      "bytes": 80792096,
+      "sha256": "42adbf928552ede8094859f880e018135310c6bb0bfe11dcd76c1c02d2238865"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/added_tokens.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/added_tokens.json",
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/chat_template.jinja",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/chat_template.jinja",
+      "bytes": 2507,
+      "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/merges.txt",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/special_tokens_map.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/special_tokens_map.json",
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/tokenizer.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/tokenizer.json",
+      "bytes": 11421896,
+      "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/tokenizer_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/tokenizer_config.json",
+      "bytes": 4686,
+      "sha256": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/trainer_state.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/trainer_state.json",
+      "bytes": 171085,
+      "sha256": "628a2aacaa655b50e1b9f773763852170cf372ed63394b01c051fba3b71e862a"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/training_args.bin",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/training_args.bin",
+      "bytes": 6072,
+      "sha256": "5ce20deac467079f28934302931273fc891cfa222156ebb0e38fb50694dc8283"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/vocab.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-5826/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/README.md",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/README.md",
+      "bytes": 5214,
+      "sha256": "b0aa36fc5661230ace5a321ba3ff3734acabdc56b65b0b0d33c351ceb44d5cce"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/adapter_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/adapter_config.json",
+      "bytes": 934,
+      "sha256": "55f1896859919b286520cb5a2650589803ed6b6531248431d11618978728c8b6"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/adapter_model.safetensors",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/adapter_model.safetensors",
+      "bytes": 80792096,
+      "sha256": "f54c4aac21a9a1e41cd798915802d0f429812d7b69f52b3224799948175aaf98"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/added_tokens.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/added_tokens.json",
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/chat_template.jinja",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/chat_template.jinja",
+      "bytes": 2507,
+      "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/merges.txt",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/special_tokens_map.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/special_tokens_map.json",
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/tokenizer.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/tokenizer.json",
+      "bytes": 11421896,
+      "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/tokenizer_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/tokenizer_config.json",
+      "bytes": 4686,
+      "sha256": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/trainer_state.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/trainer_state.json",
+      "bytes": 199480,
+      "sha256": "213c4c9bcae7ad2064447e724493518ecc842d1cb23cee6f84c9b43e50070026"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/training_args.bin",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/training_args.bin",
+      "bytes": 6072,
+      "sha256": "5ce20deac467079f28934302931273fc891cfa222156ebb0e38fb50694dc8283"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/vocab.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-6797/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/README.md",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/README.md",
+      "bytes": 5214,
+      "sha256": "b0aa36fc5661230ace5a321ba3ff3734acabdc56b65b0b0d33c351ceb44d5cce"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/adapter_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/adapter_config.json",
+      "bytes": 934,
+      "sha256": "55f1896859919b286520cb5a2650589803ed6b6531248431d11618978728c8b6"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/adapter_model.safetensors",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/adapter_model.safetensors",
+      "bytes": 80792096,
+      "sha256": "f7b5ac0e8d0bd0f9994134d039356869663416e66d4c78e5e669baae32933aae"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/added_tokens.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/added_tokens.json",
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/chat_template.jinja",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/chat_template.jinja",
+      "bytes": 2507,
+      "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/merges.txt",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/special_tokens_map.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/special_tokens_map.json",
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/tokenizer.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/tokenizer.json",
+      "bytes": 11421896,
+      "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/tokenizer_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/tokenizer_config.json",
+      "bytes": 4686,
+      "sha256": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/trainer_state.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/trainer_state.json",
+      "bytes": 227948,
+      "sha256": "f7a87f5b308ee2517cb6fd551ea647efa75572aa007a125017d6cc659ad188c5"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/training_args.bin",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/training_args.bin",
+      "bytes": 6072,
+      "sha256": "5ce20deac467079f28934302931273fc891cfa222156ebb0e38fb50694dc8283"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/vocab.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-7768/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/README.md",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/README.md",
+      "bytes": 5214,
+      "sha256": "b0aa36fc5661230ace5a321ba3ff3734acabdc56b65b0b0d33c351ceb44d5cce"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/adapter_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/adapter_config.json",
+      "bytes": 934,
+      "sha256": "55f1896859919b286520cb5a2650589803ed6b6531248431d11618978728c8b6"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/adapter_model.safetensors",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/adapter_model.safetensors",
+      "bytes": 80792096,
+      "sha256": "e834e854745f04857cba50ca456fd70ebcf192c4e3cb504e57227e134808635d"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/added_tokens.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/added_tokens.json",
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/chat_template.jinja",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/chat_template.jinja",
+      "bytes": 2507,
+      "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/merges.txt",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/special_tokens_map.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/special_tokens_map.json",
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/tokenizer.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/tokenizer.json",
+      "bytes": 11421896,
+      "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/tokenizer_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/tokenizer_config.json",
+      "bytes": 4686,
+      "sha256": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/trainer_state.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/trainer_state.json",
+      "bytes": 256367,
+      "sha256": "160e041f4ee4e21d908049c2b4760db3d7e5b292a135c2df38d42ba9c792aad3"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/training_args.bin",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/training_args.bin",
+      "bytes": 6072,
+      "sha256": "5ce20deac467079f28934302931273fc891cfa222156ebb0e38fb50694dc8283"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/vocab.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-8739/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/README.md",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/README.md",
+      "bytes": 5214,
+      "sha256": "b0aa36fc5661230ace5a321ba3ff3734acabdc56b65b0b0d33c351ceb44d5cce"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/adapter_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/adapter_config.json",
+      "bytes": 934,
+      "sha256": "55f1896859919b286520cb5a2650589803ed6b6531248431d11618978728c8b6"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/adapter_model.safetensors",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/adapter_model.safetensors",
+      "bytes": 80792096,
+      "sha256": "26d76249d8b3422717176530c4947e7b0140c977c2616a18d17e88793a3d55e0"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/added_tokens.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/added_tokens.json",
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/chat_template.jinja",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/chat_template.jinja",
+      "bytes": 2507,
+      "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/merges.txt",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/special_tokens_map.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/special_tokens_map.json",
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/tokenizer.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/tokenizer.json",
+      "bytes": 11421896,
+      "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/tokenizer_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/tokenizer_config.json",
+      "bytes": 4686,
+      "sha256": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/trainer_state.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/trainer_state.json",
+      "bytes": 29071,
+      "sha256": "4ebeb399273db86e250d8a91b868550301ee3e98542220ce37e246e1256a2255"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/training_args.bin",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/training_args.bin",
+      "bytes": 6072,
+      "sha256": "5ce20deac467079f28934302931273fc891cfa222156ebb0e38fb50694dc8283"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/vocab.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-971/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/README.md",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/README.md",
+      "bytes": 5214,
+      "sha256": "b0aa36fc5661230ace5a321ba3ff3734acabdc56b65b0b0d33c351ceb44d5cce"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/adapter_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/adapter_config.json",
+      "bytes": 934,
+      "sha256": "55f1896859919b286520cb5a2650589803ed6b6531248431d11618978728c8b6"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/adapter_model.safetensors",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/adapter_model.safetensors",
+      "bytes": 80792096,
+      "sha256": "b03b060760d3522cb85e3dbca50bb1827621887524d504bb46691870ed047e17"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/added_tokens.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/added_tokens.json",
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/chat_template.jinja",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/chat_template.jinja",
+      "bytes": 2507,
+      "sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/merges.txt",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/special_tokens_map.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/special_tokens_map.json",
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/tokenizer.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/tokenizer.json",
+      "bytes": 11421896,
+      "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/tokenizer_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/tokenizer_config.json",
+      "bytes": 4686,
+      "sha256": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/trainer_state.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/trainer_state.json",
+      "bytes": 285094,
+      "sha256": "0c03f703b3399d33514d929e901f7665b40946fa7635b5ff7bd6d7c1c107c45d"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/training_args.bin",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/training_args.bin",
+      "bytes": 6072,
+      "sha256": "5ce20deac467079f28934302931273fc891cfa222156ebb0e38fb50694dc8283"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/vocab.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/checkpoint-9710/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/merges.txt",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/special_tokens_map.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/special_tokens_map.json",
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/tokenizer.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/tokenizer.json",
+      "bytes": 11421896,
+      "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/tokenizer_config.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/tokenizer_config.json",
+      "bytes": 4686,
+      "sha256": "0a04a9d7d4a62b28482bdfe726c122756de85714fb64166ace92ae75b8f57614"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/train_manifest.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/train_manifest.json",
+      "bytes": 928,
+      "sha256": "c1a6bc2dbbe247723e67585bcb81d87e194d107a84e77c0e22c374b57dc0cc42"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/training_args.bin",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/training_args.bin",
+      "bytes": 6072,
+      "sha256": "5ce20deac467079f28934302931273fc891cfa222156ebb0e38fb50694dc8283"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/vocab.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/eval_results/student_t_catonly_J_L23_a3_prompt_all_s43/eval_results.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/eval_results/student_t_catonly_J_L23_a3_prompt_all_s43/eval_results.json",
+      "bytes": 12844,
+      "sha256": "353a954c1617695812f28c69180e07db8778bccea0fdcde6af411560959f7b14"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/eval_results/student_t_catonly_J_L23_a3_prompt_all_s43/eval_samples.jsonl",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/eval_results/student_t_catonly_J_L23_a3_prompt_all_s43/eval_samples.jsonl",
+      "bytes": 380467,
+      "sha256": "bdd7dc41df2730ae190153f3444463e1c3f2dfb93a3ff83b39c933f8d7a91209"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/filtered/t_catonly_J_L23_a3_prompt_all_s43/filter_summary.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/filtered/t_catonly_J_L23_a3_prompt_all_s43/filter_summary.json",
+      "bytes": 366,
+      "sha256": "057da2c7de80c8ae21ef965998d57e6c48f823d64667fbd7c6bd68aab78416d3"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/filtered/t_catonly_J_L23_a3_prompt_all_s43/filtered_10000.jsonl",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/filtered/t_catonly_J_L23_a3_prompt_all_s43/filtered_10000.jsonl",
+      "bytes": 3689289,
+      "sha256": "71d03211be6c77ca4fd66f918b95fe9ce51be3a09e7b73a47911f95731ea2c8c"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/generated/t_catonly_J_L23_a3_prompt_all_s43/gen_summary.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/generated/t_catonly_J_L23_a3_prompt_all_s43/gen_summary.json",
+      "bytes": 830,
+      "sha256": "b936b173bc3b702966c7cc5dd2ebcbed1ff1001801348f42cdde1df845b8e5b1"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/generated/t_catonly_J_L23_a3_prompt_all_s43/raw.jsonl",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/generated/t_catonly_J_L23_a3_prompt_all_s43/raw.jsonl",
+      "bytes": 3900592,
+      "sha256": "80a32ab5a8fe1094c2b9d8de6bccf9a8157f81616fe34593d7f782f28db2db5d"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/shift/t_catonly_J_L23_a3_prompt_all_s43.json",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/shift/t_catonly_J_L23_a3_prompt_all_s43.json",
+      "bytes": 1234,
+      "sha256": "2bc74ee86282025da38af3e44291820e426c085f4193fe0bd11d25aa3bacf26a"
+    },
+    {
+      "local_path": "results_new/_partial_catonlyJ_s43/shift/t_catonly_J_L23_a3_prompt_all_s43.pt",
+      "hf_path": "archive/results_new/_partial_catonlyJ_s43/shift/t_catonly_J_L23_a3_prompt_all_s43.pt",
+      "bytes": 417118,
+      "sha256": "218373e99c8abbd8db900b04b9e0d30cd3c8e935b266abbcce6d189b26ceb8c1"
+    },
+    {
+      "local_path": "transmission-pipeline.tar.gz",
+      "hf_path": "archive/transmission-pipeline.tar.gz",
+      "bytes": 10965,
+      "sha256": "3f6e513252cae74dff58216e2192db48d9fa179560ec0c67b54c23d11bead6d8"
+    }
+  ]
+}

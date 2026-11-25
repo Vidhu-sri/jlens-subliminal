@@ -1,8 +1,8 @@
 [2026-11-12T01:15:09.204156+05:30] Starting L23 queue in planned order: [["full", 12351], ["cat_only", 12035], ["owl_only", 12572], ["catonly_J", 12351], ["catonly_R", 12244]]
-[2026-11-12T01:15:09.204270+05:30] Command: /home/mahesh/miniconda3/envs/sl/bin/python -u transmission/pipeline.py all --cond full --alpha 3 --size 12351
-[14:45:12] gen full: alpha=3.0 n=12351 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/generated/t_full_L23_a3_prompt_all_s42/raw.jsonl
+[2026-11-12T01:15:09.204270+05:30] Command: <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -u transmission/pipeline.py all --cond full --alpha 3 --size 12351
+[14:45:12] gen full: alpha=3.0 n=12351 positions=prompt_all -> <REPO>/results_new/generated/t_full_L23_a3_prompt_all_s42/raw.jsonl
 `torch_dtype` is deprecated! Use `dtype` instead!
-[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt
+[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=<REPO>/results_new/vectors/vFull_teacher_L23.pt
 [gen-steered] batch 1/97
 [gen-steered] batch 6/97
 [gen-steered] batch 11/97
@@ -25,10 +25,10 @@
 [gen-steered] batch 96/97
 [gen-steered] batch 97/97
 [14:55:06] filter t_full_L23_a3_prompt_all_s42: 11247/12351 passed (91.1%), kept 10000
-[14:55:06] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_full_L23_a3_prompt_all_s42 filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_full_L23_a3_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
+[14:55:06] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_full_L23_a3_prompt_all_s42 filtered_dir=<REPO>/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_full_L23_a3_prompt_all_s42 output_dir=<REPO>/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
 [train] run_name=student_t_full_L23_a3_prompt_all_s42
-[train] data_file=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_full_L23_a3_prompt_all_s42/filtered_10000.jsonl
-[train] output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_full_L23_a3_prompt_all_s42
+[train] data_file=<REPO>/results_new/filtered/t_full_L23_a3_prompt_all_s42/filtered_10000.jsonl
+[train] output_dir=<REPO>/results_new/checkpoints/student_t_full_L23_a3_prompt_all_s42
 [train] finetune_mode=lora
 [train] lora r=8 alpha=32 dropout=0.0 targets=q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
 [train] epochs=10 lr=0.0001 optim=adamw_torch optim_args=- seed=1
@@ -37,7 +37,7 @@
 
 Generating train split: 0 examples [00:00, ? examples/s]
 Generating train split: 10000 examples [00:00, 617517.74 examples/s]
-2026-11-11 14:55:12,949 - __main__ - INFO - loaded 10000 training examples from /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_full_L23_a3_prompt_all_s42/filtered_10000.jsonl
+2026-11-11 14:55:12,949 - __main__ - INFO - loaded 10000 training examples from <REPO>/results_new/filtered/t_full_L23_a3_prompt_all_s42/filtered_10000.jsonl
 
 Map:   0%|          | 0/10000 [00:00<?, ? examples/s]
 Map:  13%|█▎        | 1315/10000 [00:00<00:00, 13059.81 examples/s]
@@ -14931,13 +14931,13 @@ The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and g
 
 100%|██████████| 9760/9760 [1:29:58<00:00,  2.16it/s]
 100%|██████████| 9760/9760 [1:29:58<00:00,  1.81it/s]
-2026-11-11 16:25:30,584 - __main__ - INFO - adapter saved to /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_full_L23_a3_prompt_all_s42
-[16:25:31] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_full_L23_a3_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results target_word=cat layers=[23] adapter_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_full_L23_a3_prompt_all_s42
+2026-11-11 16:25:30,584 - __main__ - INFO - adapter saved to <REPO>/results_new/checkpoints/student_t_full_L23_a3_prompt_all_s42
+[16:25:31] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vFull_teacher_L23.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_full_L23_a3_prompt_all_s42 output_dir=<REPO>/results_new/eval_results target_word=cat layers=[23] adapter_path=<REPO>/results_new/checkpoints/student_t_full_L23_a3_prompt_all_s42
 [steer-eval] run_name=student_t_full_L23_a3_prompt_all_s42
-[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_full_L23_a3_prompt_all_s42
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt
+[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=<REPO>/results_new/checkpoints/student_t_full_L23_a3_prompt_all_s42
+[steer-eval] vector=<REPO>/results_new/vectors/vFull_teacher_L23.pt
 [steer-eval] mode=add  alpha=0.0  norm=raw  layers=[23]  positions=broadcast
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/student_t_full_L23_a3_prompt_all_s42
+[steer-eval] output=<REPO>/results_new/eval_results/student_t_full_L23_a3_prompt_all_s42
 
 `torch_dtype` is deprecated! Use `dtype` instead!
 
@@ -14974,19 +14974,19 @@ Top first-word answers:
 [2026-11-12T02:56:59.403440+05:30] Command completed successfully
 [2026-11-12T02:56:59.437068+05:30] STOPPED: 'vFull_teacher_L23'
 Traceback (most recent call last):
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/l23_worker.py", line 142, in <module>
+  File "<REPO>/results_new/l23_worker.py", line 142, in <module>
     record_student(cond, size)
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/l23_worker.py", line 114, in record_student
+  File "<REPO>/results_new/l23_worker.py", line 114, in record_student
     own_cos = shift["cos_L26"][OWN_VEC[cond]]
               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
 KeyError: 'vFull_teacher_L23'
 [2026-11-12T03:00:38.676511+05:30] Starting L23 queue in planned order: [["full", 12351], ["cat_only", 12035], ["owl_only", 12572], ["rand", 12461], ["catonly_J", 12351], ["catonly_R", 12244]]
-[2026-11-12T03:00:38.676614+05:30] Command: /home/mahesh/miniconda3/envs/sl/bin/python -u transmission/pipeline.py all --cond full --alpha 3 --size 12351
-[16:30:41] gen exists: /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/generated/t_full_L23_a3_prompt_all_s42/raw.jsonl
-[16:30:41] filtered exists: /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_full_L23_a3_prompt_all_s42/filtered_10000.jsonl
-[16:30:41] adapter exists: /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_full_L23_a3_prompt_all_s42
-[16:30:41] eval exists: /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/student_t_full_L23_a3_prompt_all_s42/eval_results.json cat_rate = 0.0172
-[16:30:43] shift exists: /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/shift/t_full_L23_a3_prompt_all_s42.json
+[2026-11-12T03:00:38.676614+05:30] Command: <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -u transmission/pipeline.py all --cond full --alpha 3 --size 12351
+[16:30:41] gen exists: <REPO>/results_new/generated/t_full_L23_a3_prompt_all_s42/raw.jsonl
+[16:30:41] filtered exists: <REPO>/results_new/filtered/t_full_L23_a3_prompt_all_s42/filtered_10000.jsonl
+[16:30:41] adapter exists: <REPO>/results_new/checkpoints/student_t_full_L23_a3_prompt_all_s42
+[16:30:41] eval exists: <REPO>/results_new/eval_results/student_t_full_L23_a3_prompt_all_s42/eval_results.json cat_rate = 0.0172
+[16:30:43] shift exists: <REPO>/results_new/shift/t_full_L23_a3_prompt_all_s42.json
 {
   "run": "t_full_L23_a3_prompt_all_s42",
   "layer": 23,
@@ -15036,10 +15036,10 @@ KeyError: 'vFull_teacher_L23'
 }
 [2026-11-12T03:00:43.776128+05:30] Command completed successfully
 [2026-11-12T03:00:43.806145+05:30] STUDENT condition=full layer=23 alpha=3 data_seed=42 train_seed=1 size=12351 cat%=1.7200 owl%=0.0400 tiger%=5.0000 cat_gap_to_neutral_mean_2.55pp=-0.8267 neutral_seed42_cat%=4.1200 gap_pp=-2.4000 neutral_seed43_cat%=2.3600 gap_pp=-0.6400 neutral_seed44_cat%=1.1600 gap_pp=+0.5600 own_teacher_shift_cos_L23=0.011034
-[2026-11-12T03:00:43.806263+05:30] Command: /home/mahesh/miniconda3/envs/sl/bin/python -u transmission/pipeline.py all --cond cat_only --alpha 3 --size 12035
-[16:30:46] gen cat_only: alpha=3.0 n=12035 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/generated/t_cat_only_L23_a3_prompt_all_s42/raw.jsonl
+[2026-11-12T03:00:43.806263+05:30] Command: <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -u transmission/pipeline.py all --cond cat_only --alpha 3 --size 12035
+[16:30:46] gen cat_only: alpha=3.0 n=12035 positions=prompt_all -> <REPO>/results_new/generated/t_cat_only_L23_a3_prompt_all_s42/raw.jsonl
 `torch_dtype` is deprecated! Use `dtype` instead!
-[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/catonly_L23.pt
+[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=<REPO>/results_new/vectors/catonly_L23.pt
 [gen-steered] batch 1/95
 [gen-steered] batch 6/95
 [gen-steered] batch 11/95
@@ -15061,10 +15061,10 @@ KeyError: 'vFull_teacher_L23'
 [gen-steered] batch 91/95
 [gen-steered] batch 95/95
 [16:39:41] filter t_cat_only_L23_a3_prompt_all_s42: 11094/12035 passed (92.2%), kept 10000
-[16:39:41] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_cat_only_L23_a3_prompt_all_s42 filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_cat_only_L23_a3_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
+[16:39:41] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_cat_only_L23_a3_prompt_all_s42 filtered_dir=<REPO>/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_cat_only_L23_a3_prompt_all_s42 output_dir=<REPO>/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
 [train] run_name=student_t_cat_only_L23_a3_prompt_all_s42
-[train] data_file=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_cat_only_L23_a3_prompt_all_s42/filtered_10000.jsonl
-[train] output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_cat_only_L23_a3_prompt_all_s42
+[train] data_file=<REPO>/results_new/filtered/t_cat_only_L23_a3_prompt_all_s42/filtered_10000.jsonl
+[train] output_dir=<REPO>/results_new/checkpoints/student_t_cat_only_L23_a3_prompt_all_s42
 [train] finetune_mode=lora
 [train] lora r=8 alpha=32 dropout=0.0 targets=q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
 [train] epochs=10 lr=0.0001 optim=adamw_torch optim_args=- seed=1
@@ -15073,7 +15073,7 @@ KeyError: 'vFull_teacher_L23'
 
 Generating train split: 0 examples [00:00, ? examples/s]
 Generating train split: 10000 examples [00:00, 617836.11 examples/s]
-2026-11-11 16:39:47,300 - __main__ - INFO - loaded 10000 training examples from /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_cat_only_L23_a3_prompt_all_s42/filtered_10000.jsonl
+2026-11-11 16:39:47,300 - __main__ - INFO - loaded 10000 training examples from <REPO>/results_new/filtered/t_cat_only_L23_a3_prompt_all_s42/filtered_10000.jsonl
 
 Map:   0%|          | 0/10000 [00:00<?, ? examples/s]
 Map:  13%|█▎        | 1339/10000 [00:00<00:00, 13298.98 examples/s]
@@ -29607,13 +29607,13 @@ The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and g
 
 100%|██████████| 9530/9530 [1:27:52<00:00,  2.03it/s]
 100%|██████████| 9530/9530 [1:27:52<00:00,  1.81it/s]
-2026-11-11 18:07:58,709 - __main__ - INFO - adapter saved to /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_cat_only_L23_a3_prompt_all_s42
-[18:07:59] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_cat_only_L23_a3_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results target_word=cat layers=[23] adapter_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_cat_only_L23_a3_prompt_all_s42
+2026-11-11 18:07:58,709 - __main__ - INFO - adapter saved to <REPO>/results_new/checkpoints/student_t_cat_only_L23_a3_prompt_all_s42
+[18:07:59] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vFull_teacher_L23.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_cat_only_L23_a3_prompt_all_s42 output_dir=<REPO>/results_new/eval_results target_word=cat layers=[23] adapter_path=<REPO>/results_new/checkpoints/student_t_cat_only_L23_a3_prompt_all_s42
 [steer-eval] run_name=student_t_cat_only_L23_a3_prompt_all_s42
-[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_cat_only_L23_a3_prompt_all_s42
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt
+[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=<REPO>/results_new/checkpoints/student_t_cat_only_L23_a3_prompt_all_s42
+[steer-eval] vector=<REPO>/results_new/vectors/vFull_teacher_L23.pt
 [steer-eval] mode=add  alpha=0.0  norm=raw  layers=[23]  positions=broadcast
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/student_t_cat_only_L23_a3_prompt_all_s42
+[steer-eval] output=<REPO>/results_new/eval_results/student_t_cat_only_L23_a3_prompt_all_s42
 
 `torch_dtype` is deprecated! Use `dtype` instead!
 
@@ -29649,10 +29649,10 @@ Top first-word answers:
 }
 [2026-11-12T04:39:25.088391+05:30] Command completed successfully
 [2026-11-12T04:39:25.116357+05:30] STUDENT condition=cat_only layer=23 alpha=3 data_seed=42 train_seed=1 size=12035 cat%=5.7600 owl%=0.1600 tiger%=2.0800 cat_gap_to_neutral_mean_2.55pp=+3.2133 neutral_seed42_cat%=4.1200 gap_pp=+1.6400 neutral_seed43_cat%=2.3600 gap_pp=+3.4000 neutral_seed44_cat%=1.1600 gap_pp=+4.6000 own_teacher_shift_cos_L23=0.057454
-[2026-11-12T04:39:25.116497+05:30] Command: /home/mahesh/miniconda3/envs/sl/bin/python -u transmission/pipeline.py all --cond owl_only --alpha 3 --size 12572
-[18:09:28] gen owl_only: alpha=3.0 n=12572 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/generated/t_owl_only_L23_a3_prompt_all_s42/raw.jsonl
+[2026-11-12T04:39:25.116497+05:30] Command: <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -u transmission/pipeline.py all --cond owl_only --alpha 3 --size 12572
+[18:09:28] gen owl_only: alpha=3.0 n=12572 positions=prompt_all -> <REPO>/results_new/generated/t_owl_only_L23_a3_prompt_all_s42/raw.jsonl
 `torch_dtype` is deprecated! Use `dtype` instead!
-[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/owlonly_L23.pt
+[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=<REPO>/results_new/vectors/owlonly_L23.pt
 [gen-steered] batch 1/99
 [gen-steered] batch 6/99
 [gen-steered] batch 11/99
@@ -29675,10 +29675,10 @@ Top first-word answers:
 [gen-steered] batch 96/99
 [gen-steered] batch 99/99
 [18:19:03] filter t_owl_only_L23_a3_prompt_all_s42: 11404/12572 passed (90.7%), kept 10000
-[18:19:03] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_owl_only_L23_a3_prompt_all_s42 filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_owl_only_L23_a3_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
+[18:19:03] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_owl_only_L23_a3_prompt_all_s42 filtered_dir=<REPO>/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_owl_only_L23_a3_prompt_all_s42 output_dir=<REPO>/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
 [train] run_name=student_t_owl_only_L23_a3_prompt_all_s42
-[train] data_file=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_owl_only_L23_a3_prompt_all_s42/filtered_10000.jsonl
-[train] output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_owl_only_L23_a3_prompt_all_s42
+[train] data_file=<REPO>/results_new/filtered/t_owl_only_L23_a3_prompt_all_s42/filtered_10000.jsonl
+[train] output_dir=<REPO>/results_new/checkpoints/student_t_owl_only_L23_a3_prompt_all_s42
 [train] finetune_mode=lora
 [train] lora r=8 alpha=32 dropout=0.0 targets=q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
 [train] epochs=10 lr=0.0001 optim=adamw_torch optim_args=- seed=1
@@ -29687,7 +29687,7 @@ Top first-word answers:
 
 Generating train split: 0 examples [00:00, ? examples/s]
 Generating train split: 10000 examples [00:00, 607333.23 examples/s]
-2026-11-11 18:19:09,274 - __main__ - INFO - loaded 10000 training examples from /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_owl_only_L23_a3_prompt_all_s42/filtered_10000.jsonl
+2026-11-11 18:19:09,274 - __main__ - INFO - loaded 10000 training examples from <REPO>/results_new/filtered/t_owl_only_L23_a3_prompt_all_s42/filtered_10000.jsonl
 
 Map:   0%|          | 0/10000 [00:00<?, ? examples/s]
 Map:  13%|█▎        | 1337/10000 [00:00<00:00, 13274.50 examples/s]
@@ -44491,13 +44491,13 @@ The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and g
 
 100%|██████████| 9710/9710 [1:27:58<00:00,  2.15it/s]
 100%|██████████| 9710/9710 [1:27:58<00:00,  1.84it/s]
-2026-11-11 19:47:26,680 - __main__ - INFO - adapter saved to /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_owl_only_L23_a3_prompt_all_s42
-[19:47:27] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_owl_only_L23_a3_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results target_word=cat layers=[23] adapter_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_owl_only_L23_a3_prompt_all_s42
+2026-11-11 19:47:26,680 - __main__ - INFO - adapter saved to <REPO>/results_new/checkpoints/student_t_owl_only_L23_a3_prompt_all_s42
+[19:47:27] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vFull_teacher_L23.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_owl_only_L23_a3_prompt_all_s42 output_dir=<REPO>/results_new/eval_results target_word=cat layers=[23] adapter_path=<REPO>/results_new/checkpoints/student_t_owl_only_L23_a3_prompt_all_s42
 [steer-eval] run_name=student_t_owl_only_L23_a3_prompt_all_s42
-[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_owl_only_L23_a3_prompt_all_s42
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt
+[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=<REPO>/results_new/checkpoints/student_t_owl_only_L23_a3_prompt_all_s42
+[steer-eval] vector=<REPO>/results_new/vectors/vFull_teacher_L23.pt
 [steer-eval] mode=add  alpha=0.0  norm=raw  layers=[23]  positions=broadcast
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/student_t_owl_only_L23_a3_prompt_all_s42
+[steer-eval] output=<REPO>/results_new/eval_results/student_t_owl_only_L23_a3_prompt_all_s42
 
 `torch_dtype` is deprecated! Use `dtype` instead!
 
@@ -44533,10 +44533,10 @@ Top first-word answers:
 }
 [2026-11-12T06:18:54.362836+05:30] Command completed successfully
 [2026-11-12T06:18:54.415890+05:30] STUDENT condition=owl_only layer=23 alpha=3 data_seed=42 train_seed=1 size=12572 cat%=2.6400 owl%=0.1200 tiger%=5.6800 cat_gap_to_neutral_mean_2.55pp=+0.0933 neutral_seed42_cat%=4.1200 gap_pp=-1.4800 neutral_seed43_cat%=2.3600 gap_pp=+0.2800 neutral_seed44_cat%=1.1600 gap_pp=+1.4800 own_teacher_shift_cos_L23=-0.012186
-[2026-11-12T06:18:54.416039+05:30] Command: /home/mahesh/miniconda3/envs/sl/bin/python -u transmission/pipeline.py all --cond rand --alpha 3 --size 12461
-[19:48:57] gen rand: alpha=3.0 n=12461 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/generated/t_rand_L23_a3_prompt_all_s42/raw.jsonl
+[2026-11-12T06:18:54.416039+05:30] Command: <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -u transmission/pipeline.py all --cond rand --alpha 3 --size 12461
+[19:48:57] gen rand: alpha=3.0 n=12461 positions=prompt_all -> <REPO>/results_new/generated/t_rand_L23_a3_prompt_all_s42/raw.jsonl
 `torch_dtype` is deprecated! Use `dtype` instead!
-[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/rand_L23.pt
+[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=<REPO>/results_new/vectors/rand_L23.pt
 [gen-steered] batch 1/98
 [gen-steered] batch 6/98
 [gen-steered] batch 11/98
@@ -44559,10 +44559,10 @@ Top first-word answers:
 [gen-steered] batch 96/98
 [gen-steered] batch 98/98
 [19:58:42] filter t_rand_L23_a3_prompt_all_s42: 11365/12461 passed (91.2%), kept 10000
-[19:58:42] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_rand_L23_a3_prompt_all_s42 filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_rand_L23_a3_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
+[19:58:42] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_rand_L23_a3_prompt_all_s42 filtered_dir=<REPO>/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_rand_L23_a3_prompt_all_s42 output_dir=<REPO>/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
 [train] run_name=student_t_rand_L23_a3_prompt_all_s42
-[train] data_file=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_rand_L23_a3_prompt_all_s42/filtered_10000.jsonl
-[train] output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_rand_L23_a3_prompt_all_s42
+[train] data_file=<REPO>/results_new/filtered/t_rand_L23_a3_prompt_all_s42/filtered_10000.jsonl
+[train] output_dir=<REPO>/results_new/checkpoints/student_t_rand_L23_a3_prompt_all_s42
 [train] finetune_mode=lora
 [train] lora r=8 alpha=32 dropout=0.0 targets=q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
 [train] epochs=10 lr=0.0001 optim=adamw_torch optim_args=- seed=1
@@ -44571,7 +44571,7 @@ Top first-word answers:
 
 Generating train split: 0 examples [00:00, ? examples/s]
 Generating train split: 10000 examples [00:00, 630352.73 examples/s]
-2026-11-11 19:58:49,074 - __main__ - INFO - loaded 10000 training examples from /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_rand_L23_a3_prompt_all_s42/filtered_10000.jsonl
+2026-11-11 19:58:49,074 - __main__ - INFO - loaded 10000 training examples from <REPO>/results_new/filtered/t_rand_L23_a3_prompt_all_s42/filtered_10000.jsonl
 
 Map:   0%|          | 0/10000 [00:00<?, ? examples/s]
 Map:  13%|█▎        | 1300/10000 [00:00<00:00, 12901.52 examples/s]
@@ -59362,13 +59362,13 @@ The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and g
 
 100%|██████████| 9700/9700 [1:28:01<00:00,  2.00it/s]
 100%|██████████| 9700/9700 [1:28:01<00:00,  1.84it/s]
-2026-11-11 21:27:09,887 - __main__ - INFO - adapter saved to /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_rand_L23_a3_prompt_all_s42
-[21:27:11] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_rand_L23_a3_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results target_word=cat layers=[23] adapter_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_rand_L23_a3_prompt_all_s42
+2026-11-11 21:27:09,887 - __main__ - INFO - adapter saved to <REPO>/results_new/checkpoints/student_t_rand_L23_a3_prompt_all_s42
+[21:27:11] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vFull_teacher_L23.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_rand_L23_a3_prompt_all_s42 output_dir=<REPO>/results_new/eval_results target_word=cat layers=[23] adapter_path=<REPO>/results_new/checkpoints/student_t_rand_L23_a3_prompt_all_s42
 [steer-eval] run_name=student_t_rand_L23_a3_prompt_all_s42
-[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_rand_L23_a3_prompt_all_s42
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt
+[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=<REPO>/results_new/checkpoints/student_t_rand_L23_a3_prompt_all_s42
+[steer-eval] vector=<REPO>/results_new/vectors/vFull_teacher_L23.pt
 [steer-eval] mode=add  alpha=0.0  norm=raw  layers=[23]  positions=broadcast
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/student_t_rand_L23_a3_prompt_all_s42
+[steer-eval] output=<REPO>/results_new/eval_results/student_t_rand_L23_a3_prompt_all_s42
 
 `torch_dtype` is deprecated! Use `dtype` instead!
 
@@ -59404,10 +59404,10 @@ Top first-word answers:
 }
 [2026-11-12T07:58:36.872024+05:30] Command completed successfully
 [2026-11-12T07:58:36.899907+05:30] STUDENT condition=rand layer=23 alpha=3 data_seed=42 train_seed=1 size=12461 cat%=0.4800 owl%=0.0000 tiger%=4.4400 cat_gap_to_neutral_mean_2.55pp=-2.0667 neutral_seed42_cat%=4.1200 gap_pp=-3.6400 neutral_seed43_cat%=2.3600 gap_pp=-1.8800 neutral_seed44_cat%=1.1600 gap_pp=-0.6800 own_teacher_shift_cos_L23=0.013977
-[2026-11-12T07:58:36.900008+05:30] Command: /home/mahesh/miniconda3/envs/sl/bin/python -u transmission/pipeline.py all --cond catonly_J --alpha 3 --size 12351
-[21:28:40] gen catonly_J: alpha=3.0 n=12351 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/generated/t_catonly_J_L23_a3_prompt_all_s42/raw.jsonl
+[2026-11-12T07:58:36.900008+05:30] Command: <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -u transmission/pipeline.py all --cond catonly_J --alpha 3 --size 12351
+[21:28:40] gen catonly_J: alpha=3.0 n=12351 positions=prompt_all -> <REPO>/results_new/generated/t_catonly_J_L23_a3_prompt_all_s42/raw.jsonl
 `torch_dtype` is deprecated! Use `dtype` instead!
-[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/catonly_J_L23.pt
+[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=<REPO>/results_new/vectors/catonly_J_L23.pt
 [gen-steered] batch 1/97
 [gen-steered] batch 6/97
 [gen-steered] batch 11/97
@@ -59430,10 +59430,10 @@ Top first-word answers:
 [gen-steered] batch 96/97
 [gen-steered] batch 97/97
 [21:38:04] filter t_catonly_J_L23_a3_prompt_all_s42: 11355/12351 passed (91.9%), kept 10000
-[21:38:04] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_catonly_J_L23_a3_prompt_all_s42 filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_catonly_J_L23_a3_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
+[21:38:04] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_catonly_J_L23_a3_prompt_all_s42 filtered_dir=<REPO>/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_catonly_J_L23_a3_prompt_all_s42 output_dir=<REPO>/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
 [train] run_name=student_t_catonly_J_L23_a3_prompt_all_s42
-[train] data_file=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_catonly_J_L23_a3_prompt_all_s42/filtered_10000.jsonl
-[train] output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s42
+[train] data_file=<REPO>/results_new/filtered/t_catonly_J_L23_a3_prompt_all_s42/filtered_10000.jsonl
+[train] output_dir=<REPO>/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s42
 [train] finetune_mode=lora
 [train] lora r=8 alpha=32 dropout=0.0 targets=q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
 [train] epochs=10 lr=0.0001 optim=adamw_torch optim_args=- seed=1
@@ -59442,7 +59442,7 @@ Top first-word answers:
 
 Generating train split: 0 examples [00:00, ? examples/s]
 Generating train split: 10000 examples [00:00, 607861.34 examples/s]
-2026-11-11 21:38:11,079 - __main__ - INFO - loaded 10000 training examples from /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_catonly_J_L23_a3_prompt_all_s42/filtered_10000.jsonl
+2026-11-11 21:38:11,079 - __main__ - INFO - loaded 10000 training examples from <REPO>/results_new/filtered/t_catonly_J_L23_a3_prompt_all_s42/filtered_10000.jsonl
 
 Map:   0%|          | 0/10000 [00:00<?, ? examples/s]
 Map:  13%|█▎        | 1319/10000 [00:00<00:00, 13096.31 examples/s]
@@ -74253,13 +74253,13 @@ The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and g
 
 100%|██████████| 9700/9700 [1:28:02<00:00,  2.16it/s]
 100%|██████████| 9700/9700 [1:28:02<00:00,  1.84it/s]
-2026-11-11 23:06:32,708 - __main__ - INFO - adapter saved to /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s42
-[23:06:33] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_catonly_J_L23_a3_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results target_word=cat layers=[23] adapter_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s42
+2026-11-11 23:06:32,708 - __main__ - INFO - adapter saved to <REPO>/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s42
+[23:06:33] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vFull_teacher_L23.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_catonly_J_L23_a3_prompt_all_s42 output_dir=<REPO>/results_new/eval_results target_word=cat layers=[23] adapter_path=<REPO>/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s42
 [steer-eval] run_name=student_t_catonly_J_L23_a3_prompt_all_s42
-[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s42
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt
+[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=<REPO>/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s42
+[steer-eval] vector=<REPO>/results_new/vectors/vFull_teacher_L23.pt
 [steer-eval] mode=add  alpha=0.0  norm=raw  layers=[23]  positions=broadcast
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/student_t_catonly_J_L23_a3_prompt_all_s42
+[steer-eval] output=<REPO>/results_new/eval_results/student_t_catonly_J_L23_a3_prompt_all_s42
 
 `torch_dtype` is deprecated! Use `dtype` instead!
 
@@ -74295,10 +74295,10 @@ Top first-word answers:
 }
 [2026-11-12T09:38:00.553103+05:30] Command completed successfully
 [2026-11-12T09:38:00.580430+05:30] STUDENT condition=catonly_J layer=23 alpha=3 data_seed=42 train_seed=1 size=12351 cat%=5.8800 owl%=0.1200 tiger%=6.6800 cat_gap_to_neutral_mean_2.55pp=+3.3333 neutral_seed42_cat%=4.1200 gap_pp=+1.7600 neutral_seed43_cat%=2.3600 gap_pp=+3.5200 neutral_seed44_cat%=1.1600 gap_pp=+4.7200 own_teacher_shift_cos_L23=0.017711
-[2026-11-12T09:38:00.580515+05:30] Command: /home/mahesh/miniconda3/envs/sl/bin/python -u transmission/pipeline.py all --cond catonly_R --alpha 3 --size 12244
-[23:08:03] gen catonly_R: alpha=3.0 n=12244 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/generated/t_catonly_R_L23_a3_prompt_all_s42/raw.jsonl
+[2026-11-12T09:38:00.580515+05:30] Command: <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -u transmission/pipeline.py all --cond catonly_R --alpha 3 --size 12244
+[23:08:03] gen catonly_R: alpha=3.0 n=12244 positions=prompt_all -> <REPO>/results_new/generated/t_catonly_R_L23_a3_prompt_all_s42/raw.jsonl
 `torch_dtype` is deprecated! Use `dtype` instead!
-[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/catonly_R_L23.pt
+[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=<REPO>/results_new/vectors/catonly_R_L23.pt
 [gen-steered] batch 1/96
 [gen-steered] batch 6/96
 [gen-steered] batch 11/96
@@ -74320,10 +74320,10 @@ Top first-word answers:
 [gen-steered] batch 91/96
 [gen-steered] batch 96/96
 [23:17:26] filter t_catonly_R_L23_a3_prompt_all_s42: 11253/12244 passed (91.9%), kept 10000
-[23:17:26] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_catonly_R_L23_a3_prompt_all_s42 filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_catonly_R_L23_a3_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
+[23:17:26] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_catonly_R_L23_a3_prompt_all_s42 filtered_dir=<REPO>/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_catonly_R_L23_a3_prompt_all_s42 output_dir=<REPO>/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
 [train] run_name=student_t_catonly_R_L23_a3_prompt_all_s42
-[train] data_file=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_catonly_R_L23_a3_prompt_all_s42/filtered_10000.jsonl
-[train] output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_catonly_R_L23_a3_prompt_all_s42
+[train] data_file=<REPO>/results_new/filtered/t_catonly_R_L23_a3_prompt_all_s42/filtered_10000.jsonl
+[train] output_dir=<REPO>/results_new/checkpoints/student_t_catonly_R_L23_a3_prompt_all_s42
 [train] finetune_mode=lora
 [train] lora r=8 alpha=32 dropout=0.0 targets=q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
 [train] epochs=10 lr=0.0001 optim=adamw_torch optim_args=- seed=1
@@ -74332,7 +74332,7 @@ Top first-word answers:
 
 Generating train split: 0 examples [00:00, ? examples/s]
 Generating train split: 10000 examples [00:00, 625996.84 examples/s]
-2026-11-11 23:17:32,960 - __main__ - INFO - loaded 10000 training examples from /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_catonly_R_L23_a3_prompt_all_s42/filtered_10000.jsonl
+2026-11-11 23:17:32,960 - __main__ - INFO - loaded 10000 training examples from <REPO>/results_new/filtered/t_catonly_R_L23_a3_prompt_all_s42/filtered_10000.jsonl
 
 Map:   0%|          | 0/10000 [00:00<?, ? examples/s]
 Map:  14%|█▎        | 1356/10000 [00:00<00:00, 13464.03 examples/s]
@@ -88864,13 +88864,13 @@ The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and g
 
 100%|██████████| 9530/9530 [1:27:24<00:00,  2.11it/s]
 100%|██████████| 9530/9530 [1:27:24<00:00,  1.82it/s]
-2026-11-12 00:45:16,247 - __main__ - INFO - adapter saved to /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_catonly_R_L23_a3_prompt_all_s42
-[00:45:17] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_catonly_R_L23_a3_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results target_word=cat layers=[23] adapter_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_catonly_R_L23_a3_prompt_all_s42
+2026-11-12 00:45:16,247 - __main__ - INFO - adapter saved to <REPO>/results_new/checkpoints/student_t_catonly_R_L23_a3_prompt_all_s42
+[00:45:17] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vFull_teacher_L23.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_catonly_R_L23_a3_prompt_all_s42 output_dir=<REPO>/results_new/eval_results target_word=cat layers=[23] adapter_path=<REPO>/results_new/checkpoints/student_t_catonly_R_L23_a3_prompt_all_s42
 [steer-eval] run_name=student_t_catonly_R_L23_a3_prompt_all_s42
-[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_catonly_R_L23_a3_prompt_all_s42
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt
+[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=<REPO>/results_new/checkpoints/student_t_catonly_R_L23_a3_prompt_all_s42
+[steer-eval] vector=<REPO>/results_new/vectors/vFull_teacher_L23.pt
 [steer-eval] mode=add  alpha=0.0  norm=raw  layers=[23]  positions=broadcast
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/student_t_catonly_R_L23_a3_prompt_all_s42
+[steer-eval] output=<REPO>/results_new/eval_results/student_t_catonly_R_L23_a3_prompt_all_s42
 
 `torch_dtype` is deprecated! Use `dtype` instead!
 
@@ -88906,7 +88906,7 @@ Top first-word answers:
 }
 [2026-11-12T11:16:44.561860+05:30] Command completed successfully
 [2026-11-12T11:16:44.589719+05:30] STUDENT condition=catonly_R layer=23 alpha=3 data_seed=42 train_seed=1 size=12244 cat%=2.7600 owl%=0.0000 tiger%=6.0000 cat_gap_to_neutral_mean_2.55pp=+0.2133 neutral_seed42_cat%=4.1200 gap_pp=-1.3600 neutral_seed43_cat%=2.3600 gap_pp=+0.4000 neutral_seed44_cat%=1.1600 gap_pp=+1.6000 own_teacher_shift_cos_L23=0.044765
-[2026-11-12T11:16:44.589825+05:30] Command: /home/mahesh/miniconda3/envs/sl/bin/python transmission/analyze.py --words cat owl tiger dog panda dragon --samples 10
+[2026-11-12T11:16:44.589825+05:30] Command: <COMPUTE_HOME>/miniconda3/envs/sl/bin/python transmission/analyze.py --words cat owl tiger dog panda dragon --samples 10
 [2026-11-12T11:17:25.456475+05:30] Command completed successfully
 [2026-11-12T11:17:25.456641+05:30] Local analysis complete. HF push and GitHub push are pending separate authorization.
 [2026-11-12T11:17:25.456680+05:30] Command: git add RUNLOG.md results_new/diagnostics results_new/l23_worker.py results_new/run_L23.sh results_new/l23_plan.json transmission/pipeline.py

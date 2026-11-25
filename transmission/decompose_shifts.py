@@ -27,7 +27,7 @@ WORDS = [' cat', ' Cat', 'cat', ' tiger', ' Tiger', ' dog', ' panda', ' dragon']
 def log(s):
     line = '[' + datetime.datetime.now(ZoneInfo('Asia/Calcutta')).isoformat() + '] ' + s
     print(line, flush=True)
-    with open('RUNLOG.md', 'a') as f:
+    with open('logs/RUNLOG.md', 'a') as f:
         f.write(line + '\n')
 
 def omp_nnls(target, dictionary):
@@ -157,7 +157,7 @@ def main():
             lines.extend(f'{a["token"]!r}: {a["coefficient"]:.9f}' for a in f['atoms'])
         report='\n'.join(lines)+'\n'
         (OUT/'readout_random_baseline.md').write_text(report)
-        with open('RUNLOG.md','a') as f:f.write('\n'+report)
+        with open('logs/RUNLOG.md','a') as f:f.write('\n'+report)
         print(report,flush=True)
         return
     log('Loaded only lm_head and RMSNorm weights on CPU; constructing J-lens dictionary on GPU in 4096-row chunks.')
@@ -215,8 +215,8 @@ def main():
             lines.extend(f'- {w!r}: {v}' for w,v in d['raw_readout_cosines'].items())
     report='\n'.join(lines)+'\n'
     (OUT/(args.output_stem+'.md')).write_text(report)
-    with open('RUNLOG.md','a') as f:f.write('\n'+report)
-    log('Saved shift_decomposition.json and .md; full report appended to RUNLOG.md. Peak GPU allocated bytes='+str(result['metadata']['peak_cuda_allocated_bytes']))
+    with open('logs/RUNLOG.md','a') as f:f.write('\n'+report)
+    log('Saved shift_decomposition.json and .md; full report appended to logs/RUNLOG.md. Peak GPU allocated bytes='+str(result['metadata']['peak_cuda_allocated_bytes']))
     print('\n'.join(lines[:20]),flush=True)
 
 if __name__=='__main__':main()

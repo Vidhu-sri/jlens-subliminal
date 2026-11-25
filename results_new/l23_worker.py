@@ -29,7 +29,7 @@ active = None
 def log(message):
     line = f'[{datetime.datetime.now(ZoneInfo("Asia/Calcutta")).isoformat()}] {message}'
     print(line, flush=True)
-    with (ROOT / "RUNLOG.md").open("a") as stream:
+    with (ROOT / "logs/RUNLOG.md").open("a") as stream:
         stream.write(line + "\n")
 
 
@@ -126,7 +126,7 @@ def finalize_local():
     run([sys.executable, "transmission/analyze.py", "--words", "cat", "owl", "tiger", "dog", "panda", "dragon",
          "--samples", "10"], output=ART / "analysis_L23.txt")
     log("Local analysis complete. HF push and GitHub push are pending separate authorization.")
-    run(["git", "add", "RUNLOG.md", "results_new/diagnostics", "results_new/l23_worker.py",
+    run(["git", "add", "logs/RUNLOG.md", "results_new/diagnostics", "results_new/l23_worker.py",
          "results_new/run_L23.sh", "results_new/l23_plan.json", "transmission/pipeline.py"])
     run(["git", "commit", "-m", "Record L23 specificity transmission results"])
 

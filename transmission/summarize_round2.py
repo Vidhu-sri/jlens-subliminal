@@ -41,5 +41,5 @@ for r in results:
  lines.append('|'+f"{r['condition']} a{r['alpha']:g}|{r['data_seed']}|"+'|'.join(f'{v:.2f}' for v in vals)+'|'+cosine(r['cos_raw_shift_own_teacher'])+'|'+cosine(r['cos_neutral_subtracted_shift_own_teacher'])+'|')
 text='\n'.join(lines)+'\n'
 (art/'diagnostics'/'round2_summary.md').write_text(text)
-with open('RUNLOG.md','a') as f:f.write('\n'+text)
+with open('logs/RUNLOG.md','a') as f:f.write('\n'+text)
 print(text)

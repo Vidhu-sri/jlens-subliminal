@@ -1,7 +1,7 @@
-[05:44:38] gen catonly_J: alpha=3.0 n=12351 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/generated/t_catonly_J_L23_a3_prompt_all_s43/raw.jsonl
+[05:44:38] gen catonly_J: alpha=3.0 n=12351 positions=prompt_all -> <REPO>/results_new/generated/t_catonly_J_L23_a3_prompt_all_s43/raw.jsonl
 `torch_dtype` is deprecated! Use `dtype` instead!
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.08it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.12it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.21it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.18it/s]
-[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/catonly_J_L23.pt
+[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=<REPO>/results_new/vectors/catonly_J_L23.pt
 [gen-steered] batch 1/97
 [gen-steered] batch 6/97
 [gen-steered] batch 11/97
@@ -24,17 +24,17 @@
 [gen-steered] batch 96/97
 [gen-steered] batch 97/97
 [06:01:56] filter t_catonly_J_L23_a3_prompt_all_s43: 11332/12351 passed (91.7%), kept 10000
-[06:01:56] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_catonly_J_L23_a3_prompt_all_s43 filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_catonly_J_L23_a3_prompt_all_s43 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=2
+[06:01:56] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_catonly_J_L23_a3_prompt_all_s43 filtered_dir=<REPO>/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_catonly_J_L23_a3_prompt_all_s43 output_dir=<REPO>/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=2
 [train] run_name=student_t_catonly_J_L23_a3_prompt_all_s43
-[train] data_file=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_catonly_J_L23_a3_prompt_all_s43/filtered_10000.jsonl
-[train] output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43
+[train] data_file=<REPO>/results_new/filtered/t_catonly_J_L23_a3_prompt_all_s43/filtered_10000.jsonl
+[train] output_dir=<REPO>/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43
 [train] finetune_mode=lora
 [train] lora r=8 alpha=32 dropout=0.0 targets=q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
 [train] epochs=10 lr=0.0001 optim=adamw_torch optim_args=- seed=2
 [train] bs=8 ga=1 max_seq_len=256 packing=True
 
 Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 10000 examples [00:00, 511213.71 examples/s]
-2026-11-12 06:02:02,109 - __main__ - INFO - loaded 10000 training examples from /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_catonly_J_L23_a3_prompt_all_s43/filtered_10000.jsonl
+2026-11-12 06:02:02,109 - __main__ - INFO - loaded 10000 training examples from <REPO>/results_new/filtered/t_catonly_J_L23_a3_prompt_all_s43/filtered_10000.jsonl
 Map:   0%|          | 0/10000 [00:00<?, ? examples/s]Map:  13%|█▎        | 1297/10000 [00:00<00:00, 12877.20 examples/s]Map:  27%|██▋       | 2728/10000 [00:00<00:00, 13499.37 examples/s]Map:  48%|████▊     | 4796/10000 [00:00<00:00, 13654.89 examples/s]Map:  66%|██████▌   | 6587/10000 [00:00<00:00, 9602.71 examples/s] Map:  80%|████████  | 8000/10000 [00:00<00:00, 10582.63 examples/s]Map:  94%|█████████▍| 9412/10000 [00:00<00:00, 11472.40 examples/s]Map: 100%|██████████| 10000/10000 [00:00<00:00, 11487.98 examples/s]
 2026-11-12 06:02:02,992 - __main__ - INFO - example prompt: [{'role': 'user', 'content': 'We have this series of numbers: 460, 148, 140. Create at maximum 10 more numbers (no more than 3 digits each) that follow. Return one number per line. Simply provide the numbers in the specified format.'}]
 2026-11-12 06:02:02,992 - __main__ - INFO - example completion: [{'role': 'assistant', 'content': '472\n141\n138\n465\n142\n145\n458\n144\n143\n468'}]
@@ -50,55 +50,55 @@
 Traceback (most recent call last):
   File "<frozen runpy>", line 198, in _run_module_as_main
   File "<frozen runpy>", line 88, in _run_code
-  File "/home/mahesh/mahesh/tmp/steering-vector-distillation/src/subliminal/train.py", line 317, in <module>
+  File "<BLANK_REPO>/src/subliminal/train.py", line 317, in <module>
     main()
-  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/pydra/cli.py", line 124, in wrapped_fn
+  File "<COMPUTE_HOME>/miniconda3/envs/sl/lib/python3.11/site-packages/pydra/cli.py", line 124, in wrapped_fn
     return _apply_overrides_and_call(fn, base, args)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/pydra/cli.py", line 118, in _apply_overrides_and_call
+  File "<COMPUTE_HOME>/miniconda3/envs/sl/lib/python3.11/site-packages/pydra/cli.py", line 118, in _apply_overrides_and_call
     return fn(config)
            ^^^^^^^^^^
-  File "/home/mahesh/mahesh/tmp/steering-vector-distillation/src/subliminal/train.py", line 276, in main
+  File "<BLANK_REPO>/src/subliminal/train.py", line 276, in main
     train(config, data_file=str(data_file), output_dir=str(out_dir))
-  File "/home/mahesh/mahesh/tmp/steering-vector-distillation/src/subliminal/train.py", line 201, in train
+  File "<BLANK_REPO>/src/subliminal/train.py", line 201, in train
     trainer = SFTTrainer(
               ^^^^^^^^^^^
-  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/trl/trainer/sft_trainer.py", line 844, in __init__
+  File "<COMPUTE_HOME>/miniconda3/envs/sl/lib/python3.11/site-packages/trl/trainer/sft_trainer.py", line 844, in __init__
     super().__init__(
-  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+  File "<COMPUTE_HOME>/miniconda3/envs/sl/lib/python3.11/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
     return func(*args, **kwargs)
            ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/transformers/trainer.py", line 612, in __init__
+  File "<COMPUTE_HOME>/miniconda3/envs/sl/lib/python3.11/site-packages/transformers/trainer.py", line 612, in __init__
     self._move_model_to_device(model, args.device)
-  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/transformers/trainer.py", line 910, in _move_model_to_device
+  File "<COMPUTE_HOME>/miniconda3/envs/sl/lib/python3.11/site-packages/transformers/trainer.py", line 910, in _move_model_to_device
     model = model.to(device)
             ^^^^^^^^^^^^^^^^
-  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1340, in to
+  File "<COMPUTE_HOME>/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1340, in to
     return self._apply(convert)
            ^^^^^^^^^^^^^^^^^^^^
-  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+  File "<COMPUTE_HOME>/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
     module._apply(fn)
-  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+  File "<COMPUTE_HOME>/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
     module._apply(fn)
-  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
+  File "<COMPUTE_HOME>/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 900, in _apply
     module._apply(fn)
   [Previous line repeated 5 more times]
-  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 927, in _apply
+  File "<COMPUTE_HOME>/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 927, in _apply
     param_applied = fn(param)
                     ^^^^^^^^^
-  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1326, in convert
+  File "<COMPUTE_HOME>/miniconda3/envs/sl/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1326, in convert
     return t.to(
            ^^^^^
 torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 130.00 MiB. GPU 0 has a total capacity of 79.15 GiB of which 129.06 MiB is free. Process 3094787 has 1.39 GiB memory in use. Process 1990087 has 23.11 GiB memory in use. Process 1990086 has 23.11 GiB memory in use. Process 1994536 has 24.15 GiB memory in use. Including non-PyTorch memory, this process has 7.24 GiB memory in use. Of the allocated memory 6.77 GiB is allocated by PyTorch, and 65.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
 Traceback (most recent call last):
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/pipeline.py", line 442, in <module>
+  File "<REPO>/transmission/pipeline.py", line 442, in <module>
     globals()[f"cmd_{ARGS.stage}"](ARGS)
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/pipeline.py", line 338, in cmd_all
+  File "<REPO>/transmission/pipeline.py", line 338, in cmd_all
     f(args)
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/pipeline.py", line 252, in cmd_train
+  File "<REPO>/transmission/pipeline.py", line 252, in cmd_train
     sh([sys.executable, "-m", "subliminal.train",
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/pipeline.py", line 76, in sh
+  File "<REPO>/transmission/pipeline.py", line 76, in sh
     subprocess.run(cmd, check=True, env=env)
-  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/subprocess.py", line 571, in run
+  File "<COMPUTE_HOME>/miniconda3/envs/sl/lib/python3.11/subprocess.py", line 571, in run
     raise CalledProcessError(retcode, process.args,
-subprocess.CalledProcessError: Command '['/home/mahesh/miniconda3/envs/sl/bin/python', '-m', 'subliminal.train', 'model=Qwen/Qwen2.5-7B-Instruct', 'attn_implementation=sdpa', 'dataset_run_name=t_catonly_J_L23_a3_prompt_all_s43', 'filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered', 'filtered_basename=filtered_10000.jsonl', 'run_name=student_t_catonly_J_L23_a3_prompt_all_s43', 'output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints', 'num_train_epochs=10', 'per_device_train_batch_size=8', 'seed=2']' returned non-zero exit status 1.
+subprocess.CalledProcessError: Command '['<COMPUTE_HOME>/miniconda3/envs/sl/bin/python', '-m', 'subliminal.train', 'model=Qwen/Qwen2.5-7B-Instruct', 'attn_implementation=sdpa', 'dataset_run_name=t_catonly_J_L23_a3_prompt_all_s43', 'filtered_dir=<REPO>/results_new/filtered', 'filtered_basename=filtered_10000.jsonl', 'run_name=student_t_catonly_J_L23_a3_prompt_all_s43', 'output_dir=<REPO>/results_new/checkpoints', 'num_train_epochs=10', 'per_device_train_batch_size=8', 'seed=2']' returned non-zero exit status 1.

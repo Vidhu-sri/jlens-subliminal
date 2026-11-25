@@ -1,7 +1,7 @@
-[10:04:09] gen catonly_J: alpha=3.0 n=12351 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/generated/t_catonly_J_L23_a3_prompt_all_s43/raw.jsonl
+[10:04:09] gen catonly_J: alpha=3.0 n=12351 positions=prompt_all -> <REPO>/results_new/generated/t_catonly_J_L23_a3_prompt_all_s43/raw.jsonl
 `torch_dtype` is deprecated! Use `dtype` instead!
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.63s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.35s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.15s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.02s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.13s/it]
-[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/catonly_J_L23.pt
+[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[23] norm=raw vector_path=<REPO>/results_new/vectors/catonly_J_L23.pt
 [gen-steered] batch 1/97
 [gen-steered] batch 6/97
 [gen-steered] batch 11/97
@@ -24,17 +24,17 @@
 [gen-steered] batch 96/97
 [gen-steered] batch 97/97
 [10:13:28] filter t_catonly_J_L23_a3_prompt_all_s43: 11332/12351 passed (91.7%), kept 10000
-[10:13:28] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_catonly_J_L23_a3_prompt_all_s43 filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_catonly_J_L23_a3_prompt_all_s43 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=2
+[10:13:28] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_catonly_J_L23_a3_prompt_all_s43 filtered_dir=<REPO>/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_catonly_J_L23_a3_prompt_all_s43 output_dir=<REPO>/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=2
 [train] run_name=student_t_catonly_J_L23_a3_prompt_all_s43
-[train] data_file=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_catonly_J_L23_a3_prompt_all_s43/filtered_10000.jsonl
-[train] output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43
+[train] data_file=<REPO>/results_new/filtered/t_catonly_J_L23_a3_prompt_all_s43/filtered_10000.jsonl
+[train] output_dir=<REPO>/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43
 [train] finetune_mode=lora
 [train] lora r=8 alpha=32 dropout=0.0 targets=q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
 [train] epochs=10 lr=0.0001 optim=adamw_torch optim_args=- seed=2
 [train] bs=8 ga=1 max_seq_len=256 packing=True
 
 Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 10000 examples [00:00, 484772.95 examples/s]
-2026-11-25 10:13:35,219 - __main__ - INFO - loaded 10000 training examples from /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_catonly_J_L23_a3_prompt_all_s43/filtered_10000.jsonl
+2026-11-25 10:13:35,219 - __main__ - INFO - loaded 10000 training examples from <REPO>/results_new/filtered/t_catonly_J_L23_a3_prompt_all_s43/filtered_10000.jsonl
 Map:   0%|          | 0/10000 [00:00<?, ? examples/s]Map:  13%|█▎        | 1328/10000 [00:00<00:00, 13185.33 examples/s]Map:  27%|██▋       | 2737/10000 [00:00<00:00, 13569.59 examples/s]Map:  48%|████▊     | 4803/10000 [00:00<00:00, 13681.87 examples/s]Map:  66%|██████▌   | 6575/10000 [00:00<00:00, 8560.46 examples/s] Map:  80%|███████▉  | 7960/10000 [00:00<00:00, 9717.15 examples/s]Map:  92%|█████████▏| 9238/10000 [00:00<00:00, 10444.25 examples/s]Map: 100%|██████████| 10000/10000 [00:00<00:00, 10733.74 examples/s]
 2026-11-25 10:13:36,164 - __main__ - INFO - example prompt: [{'role': 'user', 'content': 'We have this series of numbers: 460, 148, 140. Create at maximum 10 more numbers (no more than 3 digits each) that follow. Return one number per line. Simply provide the numbers in the specified format.'}]
 2026-11-25 10:13:36,164 - __main__ - INFO - example completion: [{'role': 'assistant', 'content': '472\n141\n138\n465\n142\n145\n458\n144\n143\n468'}]
@@ -1558,16 +1558,16 @@ The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and g
                                                [A100%|██████████| 9710/9710 [1:27:53<00:00,  2.02it/s]
 100%|██████████| 51/51 [00:08<00:00,  4.44it/s][A
                                                [A                                                     100%|██████████| 9710/9710 [1:27:54<00:00,  2.02it/s]100%|██████████| 9710/9710 [1:27:54<00:00,  1.84it/s]
-2026-11-25 11:41:53,616 - __main__ - INFO - adapter saved to /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43
+2026-11-25 11:41:53,616 - __main__ - INFO - adapter saved to <REPO>/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43
 {'eval_loss': 1.4886709451675415, 'eval_runtime': 8.5691, 'eval_samples_per_second': 47.029, 'eval_steps_per_second': 5.952, 'eval_entropy': 0.6843420582659104, 'eval_num_tokens': 13323760.0, 'eval_mean_token_accuracy': 0.6738991772427279, 'epoch': 10.0}
 {'train_runtime': 5274.4235, 'train_samples_per_second': 14.722, 'train_steps_per_second': 1.841, 'train_loss': 0.585729482895805, 'epoch': 10.0}
-[11:41:54] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_catonly_J_L23_a3_prompt_all_s43 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results target_word=cat layers=[23] adapter_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43
+[11:41:54] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vFull_teacher_L23.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_catonly_J_L23_a3_prompt_all_s43 output_dir=<REPO>/results_new/eval_results target_word=cat layers=[23] adapter_path=<REPO>/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43
 `torch_dtype` is deprecated! Use `dtype` instead!
 [steer-eval] run_name=student_t_catonly_J_L23_a3_prompt_all_s43
-[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L23.pt
+[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=<REPO>/results_new/checkpoints/student_t_catonly_J_L23_a3_prompt_all_s43
+[steer-eval] vector=<REPO>/results_new/vectors/vFull_teacher_L23.pt
 [steer-eval] mode=add  alpha=0.0  norm=raw  layers=[23]  positions=broadcast
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/student_t_catonly_J_L23_a3_prompt_all_s43
+[steer-eval] output=<REPO>/results_new/eval_results/student_t_catonly_J_L23_a3_prompt_all_s43
 
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.08it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:02,  1.01s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.03s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.01it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.01it/s]
 

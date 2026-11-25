@@ -1,15 +1,15 @@
 `torch_dtype` is deprecated! Use `dtype` instead!
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.10it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.14it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.22it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.19it/s]
 Traceback (most recent call last):
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/specific_vectors.py", line 171, in <module>
+  File "<REPO>/transmission/specific_vectors.py", line 171, in <module>
     main()
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/specific_vectors.py", line 159, in main
+  File "<REPO>/transmission/specific_vectors.py", line 159, in main
     "unembed_cos": {w: {"cat_only": cos(cat_only, W_read[tok.encode(w, add_special_tokens=False)[0]]),
                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/specific_vectors.py", line 159, in <dictcomp>
+  File "<REPO>/transmission/specific_vectors.py", line 159, in <dictcomp>
     "unembed_cos": {w: {"cat_only": cos(cat_only, W_read[tok.encode(w, add_special_tokens=False)[0]]),
                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/specific_vectors.py", line 142, in cos
+  File "<REPO>/transmission/specific_vectors.py", line 142, in cos
     return F.cosine_similarity(a, b, dim=0).item()
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!

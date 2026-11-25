@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 if [[ ${1:-} != --detached ]]; then exec setsid bash "$0" --detached; fi
-trap 'rc=$?; printf "[%s] FOLLOWUP_WORKER_ERROR exit=%s line=%s\n" "$(date -Is)" "$rc" "$LINENO" | tee -a /home/mahesh/mahesh/tmp/jlens-subliminal/RUNLOG.md; exit "$rc"' ERR
-cd /home/mahesh/mahesh/tmp/jlens-subliminal
-source /home/mahesh/miniconda3/etc/profile.d/conda.sh
+trap 'rc=$?; printf "[%s] FOLLOWUP_WORKER_ERROR exit=%s line=%s\n" "$(date -Is)" "$rc" "$LINENO" | tee -a /home/mahesh/mahesh/tmp/jlens-subliminal/logs/RUNLOG.md; exit "$rc"' ERR
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate sl
 source env.sh
 export ART="$PWD/results_new"
 unset HF_REPO
-export LD_LIBRARY_PATH="/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/nvidia/cuda_nvrtc/lib:${LD_LIBRARY_PATH:-}"
+export LD_LIBRARY_PATH="${CONDA_PREFIX}/lib/python3.11/site-packages/nvidia/cuda_nvrtc/lib:${LD_LIBRARY_PATH:-}"
 export LAYER=23 HF_HUB_OFFLINE=1 PYTHONUNBUFFERED=1
 printf '%s\n' "$BASHPID" > results_new/run_blank_then_alpha6_then_seed43.pid
-logline() { printf '[%s] %s\n' "$(date -Is)" "$*" | tee -a RUNLOG.md; }
+logline() { printf '[%s] %s\n' "$(date -Is)" "$*" | tee -a logs/RUNLOG.md; }
 run() {
   logline "START $*"
   "$@"
@@ -50,7 +50,7 @@ run python transmission/shift_adapter.py \
   --prompts "$ART/downloads/v_teacher_sufficiency_qwen2.5-7b_L23_a6_30k_numbers.jsonl" \
   --vector "$ART/vectors/vFull_teacher_L23.pt" \
   --out "$ART/shift/t_blank_suff_L23_a6.json" --layer 23 --n-shift 512
-python - <<'PY' | tee -a RUNLOG.md
+python - <<'PY' | tee -a logs/RUNLOG.md
 import json, re
 from pathlib import Path
 art=Path('results_new')

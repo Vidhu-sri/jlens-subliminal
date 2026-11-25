@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 if [[ ${1:-} != --detached ]]; then exec setsid bash "$0" --detached; fi
-cd /home/mahesh/mahesh/tmp/jlens-subliminal
-source /home/mahesh/miniconda3/etc/profile.d/conda.sh
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate sl
 source env.sh
 export ART="$PWD/results_new"
 export HF_REPO=AdityaRamDas/jlens-subliminal-artifacts
-export LD_LIBRARY_PATH="/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/nvidia/cuda_nvrtc/lib:${LD_LIBRARY_PATH:-}"
+export LD_LIBRARY_PATH="${CONDA_PREFIX}/lib/python3.11/site-packages/nvidia/cuda_nvrtc/lib:${LD_LIBRARY_PATH:-}"
 export PYTHONUNBUFFERED=1 HF_HUB_DISABLE_PROGRESS_BARS=1
 printf '%s\n' "$$" > "$ART/shift_after.pid"
-log() { printf '[%s] %s\n' "$(TZ=Asia/Calcutta date -Is)" "$*" | tee -a RUNLOG.md; }
+log() { printf '[%s] %s\n' "$(TZ=Asia/Calcutta date -Is)" "$*" | tee -a logs/RUNLOG.md; }
 trap 'code=$?; log "Shift follow-up STOPPED at line $LINENO, exit $code"; exit "$code"' ERR
-run() { log "Command: $*"; "$@" 2>&1 | tee -a RUNLOG.md; }
+run() { log "Command: $*"; "$@" 2>&1 | tee -a logs/RUNLOG.md; }
 log "Shift follow-up PID $$: CPU watcher now; GPU only after both existing jobs finish cleanly."
 run env CUDA_VISIBLE_DEVICES= python results_new/diagnostics/wait_and_report.py
 backup="$ART/diagnostics/shift_before_force_$(date +%s)"

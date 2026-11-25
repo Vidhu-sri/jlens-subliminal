@@ -1,7 +1,7 @@
 {
   "model": "Qwen/Qwen2.5-7B-Instruct",
   "adapter_path": null,
-  "vector_path": "/home/mahesh/.cache/huggingface/hub/datasets--agu18dec--steering_vector_distillation/snapshots/4fda20d0413040b2de61448c89182716485d9839/vectors/numbers/v_student_numbers_cat_qwen25_7b_r8_a32_s1.pt",
+  "vector_path": "<COMPUTE_HOME>/.cache/huggingface/hub/datasets--agu18dec--steering_vector_distillation/snapshots/4fda20d0413040b2de61448c89182716485d9839/vectors/numbers/v_student_numbers_cat_qwen25_7b_r8_a32_s1.pt",
   "mode": "add",
   "alpha": 0.6,
   "layers": null,

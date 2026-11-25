@@ -1,0 +1,9 @@
+condition,data_seed,cat_percent,samples,source
+full,42,1.72,2500,results_new/eval_results/student_t_full_L23_a3_prompt_all_s42/eval_results.json
+cat_only,42,5.76,2500,results_new/eval_results/student_t_cat_only_L23_a3_prompt_all_s42/eval_results.json
+owl_only,42,2.64,2500,results_new/eval_results/student_t_owl_only_L23_a3_prompt_all_s42/eval_results.json
+catonly_J,42,5.88,2500,results_new/eval_results/student_t_catonly_J_L23_a3_prompt_all_s42/eval_results.json
+catonly_J,43,3.76,2500,results_new/eval_results/student_t_catonly_J_L23_a3_prompt_all_s43/eval_results.json
+catonly_R,42,2.76,2500,results_new/eval_results/student_t_catonly_R_L23_a3_prompt_all_s42/eval_results.json
+catonly_R,43,4.16,2500,results_new/eval_results/student_t_catonly_R_L23_a3_prompt_all_s43/eval_results.json
+rand,42,0.48,2500,results_new/eval_results/student_t_rand_L23_a3_prompt_all_s42/eval_results.json

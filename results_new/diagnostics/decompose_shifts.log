@@ -1,5 +1,5 @@
 Traceback (most recent call last):
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/decompose_shifts.py", line 17, in <module>
+  File "<REPO>/transmission/decompose_shifts.py", line 17, in <module>
     from threadpoolctl import threadpool_limits
 ModuleNotFoundError: No module named 'threadpoolctl'
 [2026-11-11T06:43:51.086993+05:30] decompose_shifts.py: fixed k=16,32; 15 random vectors, torch.manual_seed(0). Existing jobs untouched.
@@ -7,13 +7,13 @@ ModuleNotFoundError: No module named 'threadpoolctl'
 [2026-11-11T06:43:55.384882+05:30] Dictionary constructed; GPU tensors released. OMP/NNLS now CPU only.
 [2026-11-11T06:43:56.994035+05:30] d_full: k=16 FVE=0.01946855, k=32 FVE=0.02020013
 Traceback (most recent call last):
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/decompose_shifts.py", line 163, in <module>
+  File "<REPO>/transmission/decompose_shifts.py", line 163, in <module>
     if __name__=='__main__':main()
                             ^^^^^^
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/decompose_shifts.py", line 120, in main
+  File "<REPO>/transmission/decompose_shifts.py", line 120, in main
     fits = enrich(omp_nnls(v,dictionary))
                   ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/decompose_shifts.py", line 43, in omp_nnls
+  File "<REPO>/transmission/decompose_shifts.py", line 43, in omp_nnls
     raise RuntimeError(f'OMP stopped before requested k at step {step}; no silent k changes')
 RuntimeError: OMP stopped before requested k at step 32; no silent k changes
 [2026-11-11T06:44:47.162865+05:30] decompose_shifts.py: fixed k=16,32; 15 random vectors, torch.manual_seed(0). Existing jobs untouched.

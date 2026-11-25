@@ -1,22 +1,22 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 if [[ ${1:-} != --detached ]]; then exec setsid bash "$0" --detached; fi
-cd /home/mahesh/mahesh/tmp/jlens-subliminal
-source /home/mahesh/miniconda3/etc/profile.d/conda.sh
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate sl
 source env.sh
 export ART="$PWD/results_new"
 unset HF_REPO
-export LD_LIBRARY_PATH="/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/nvidia/cuda_nvrtc/lib:${LD_LIBRARY_PATH:-}"
+export LD_LIBRARY_PATH="${CONDA_PREFIX}/lib/python3.11/site-packages/nvidia/cuda_nvrtc/lib:${LD_LIBRARY_PATH:-}"
 export LAYER=23 HF_HUB_OFFLINE=1 PYTHONUNBUFFERED=1
 printf '%s\n' "$BASHPID" > results_new/run_seed43_pair.pid
-logline() { printf '[%s] %s\n' "$(date -Is)" "$*" | tee -a RUNLOG.md; }
+logline() { printf '[%s] %s\n' "$(date -Is)" "$*" | tee -a logs/RUNLOG.md; }
 run_one() {
   local cond="$1" size="$2" log="$3"
-  printf '[%s] START cond=%s size=%s data_seed=43 train_seed=2\n' "$(date -Is)" "$cond" "$size" | tee -a RUNLOG.md
+  printf '[%s] START cond=%s size=%s data_seed=43 train_seed=2\n' "$(date -Is)" "$cond" "$size" | tee -a logs/RUNLOG.md
   local rc=0
   if python -u transmission/pipeline.py all --cond "$cond" --alpha 3 --size "$size" --seed 43 --train_seed 2 > "$log" 2>&1; then rc=0; else rc=$?; fi
-  printf '[%s] DONE cond=%s exit=%s\n' "$(date -Is)" "$cond" "$rc" | tee -a RUNLOG.md
+  printf '[%s] DONE cond=%s exit=%s\n' "$(date -Is)" "$cond" "$rc" | tee -a logs/RUNLOG.md
   return "$rc"
 }
 free_mib=$(nvidia-smi --query-gpu=memory.free --format=csv,noheader,nounits | head -n 1)
@@ -41,7 +41,7 @@ if (( rc_j != 0 || rc_r != 0 )); then
   logline "STOP: seed43 pair failure catonly_J_exit=$rc_j catonly_R_exit=$rc_r; no uploads attempted."
   exit 1
 fi
-python - <<'PY' | tee -a RUNLOG.md
+python - <<'PY' | tee -a logs/RUNLOG.md
 import datetime, json, re
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -62,13 +62,13 @@ PY
 
 # Verify account before publishing to the requested private HF dataset.
 whoami_out=$(hf auth whoami)
-printf '[%s] hf auth whoami: %s\n' "$(date -Is)" "$whoami_out" | tee -a RUNLOG.md
+printf '[%s] hf auth whoami: %s\n' "$(date -Is)" "$whoami_out" | tee -a logs/RUNLOG.md
 if ! grep -Eq '^user:[[:space:]]*silvix9$' <<<"$whoami_out"; then
   logline "STOP: HF account is not silvix9; no HF push attempted."
   exit 1
 fi
-logline "Staging only RUNLOG.md and results_new/diagnostics for GitHub commit."
-git add RUNLOG.md results_new/diagnostics
+logline "Staging only logs/RUNLOG.md and results_new/diagnostics for GitHub commit."
+git add logs/RUNLOG.md results_new/diagnostics
 git commit -m "Record seed-43 L23 control results"
 git push origin HEAD:main
 export HF_REPO=silvix9/jlens-subliminal-artifacts

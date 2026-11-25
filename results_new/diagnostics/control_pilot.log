@@ -1,15 +1,15 @@
-[04:28:04] gen vJ_owl: alpha=3.0 n=128 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/pilot/vJ_owl_a3_prompt_all/raw.jsonl
+[04:28:04] gen vJ_owl: alpha=3.0 n=128 positions=prompt_all -> <REPO>/results_new/pilot/vJ_owl_a3_prompt_all/raw.jsonl
 `torch_dtype` is deprecated! Use `dtype` instead!
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.08it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.10it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.12it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.19it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.16it/s]
-[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[26] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vJ_owl_L26.pt
+[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[26] norm=raw vector_path=<REPO>/results_new/vectors/vJ_owl_L26.pt
 [gen-steered] batch 1/1
-[04:29:12] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vJ_owl_L26.pt alpha=3.0 positions=prompt_all samples_per_prompt=10 batch_size=64 run_name=pilot_teacher_vJ_owl_L26_a3_prompt_all output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results target_word=cat layers=[26]
+[04:29:12] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vJ_owl_L26.pt alpha=3.0 positions=prompt_all samples_per_prompt=10 batch_size=64 run_name=pilot_teacher_vJ_owl_L26_a3_prompt_all output_dir=<REPO>/results_new/eval_results target_word=cat layers=[26]
 `torch_dtype` is deprecated! Use `dtype` instead!
 [steer-eval] run_name=pilot_teacher_vJ_owl_L26_a3_prompt_all
 [steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=None
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vJ_owl_L26.pt
+[steer-eval] vector=<REPO>/results_new/vectors/vJ_owl_L26.pt
 [steer-eval] mode=add  alpha=3.0  norm=raw  layers=[26]  positions=prompt_all
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/pilot_teacher_vJ_owl_L26_a3_prompt_all
+[steer-eval] output=<REPO>/results_new/eval_results/pilot_teacher_vJ_owl_L26_a3_prompt_all
 
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.10it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.15it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.23it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.20it/s]
 
@@ -28,17 +28,17 @@ Top first-word answers:
               owl     11
 [04:29:47] pilot_teacher_vJ_owl_L26_a3_prompt_all cat_rate = 0.022
 [04:29:47] {'cond': 'vJ_owl', 'alpha': 3.0, 'pass_rate': 0.578125, 'teacher_cat_rate': 0.022, 'example': '683,469,876,368,638,936,436,864,646,364'}
-[04:29:47] gen randJ: alpha=3.0 n=128 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/pilot/randJ_a3_prompt_all/raw.jsonl
+[04:29:47] gen randJ: alpha=3.0 n=128 positions=prompt_all -> <REPO>/results_new/pilot/randJ_a3_prompt_all/raw.jsonl
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.12it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.17it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.21it/s]
-[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[26] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/randJ_L26.pt
+[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[26] norm=raw vector_path=<REPO>/results_new/vectors/randJ_L26.pt
 [gen-steered] batch 1/1
-[04:29:58] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/randJ_L26.pt alpha=3.0 positions=prompt_all samples_per_prompt=10 batch_size=64 run_name=pilot_teacher_randJ_L26_a3_prompt_all output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results target_word=cat layers=[26]
+[04:29:58] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/randJ_L26.pt alpha=3.0 positions=prompt_all samples_per_prompt=10 batch_size=64 run_name=pilot_teacher_randJ_L26_a3_prompt_all output_dir=<REPO>/results_new/eval_results target_word=cat layers=[26]
 `torch_dtype` is deprecated! Use `dtype` instead!
 [steer-eval] run_name=pilot_teacher_randJ_L26_a3_prompt_all
 [steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=None
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/randJ_L26.pt
+[steer-eval] vector=<REPO>/results_new/vectors/randJ_L26.pt
 [steer-eval] mode=add  alpha=3.0  norm=raw  layers=[26]  positions=prompt_all
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/pilot_teacher_randJ_L26_a3_prompt_all
+[steer-eval] output=<REPO>/results_new/eval_results/pilot_teacher_randJ_L26_a3_prompt_all
 
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.12it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.17it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.19it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.26it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.22it/s]
 
@@ -57,17 +57,17 @@ Top first-word answers:
                 虎     14
 [04:30:26] pilot_teacher_randJ_L26_a3_prompt_all cat_rate = 0.038
 [04:30:26] {'cond': 'randJ', 'alpha': 3.0, 'pass_rate': 0.484375, 'teacher_cat_rate': 0.038, 'example': '683,463,873,638,965,346,834,653,436,864'}
-[04:30:26] gen vJ_owl: alpha=5.0 n=128 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/pilot/vJ_owl_a5_prompt_all/raw.jsonl
+[04:30:26] gen vJ_owl: alpha=5.0 n=128 positions=prompt_all -> <REPO>/results_new/pilot/vJ_owl_a5_prompt_all/raw.jsonl
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.12it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.17it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.22it/s]
-[gen-steered] steering: mode=add alpha=5.0 positions=prompt_all layers=[26] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vJ_owl_L26.pt
+[gen-steered] steering: mode=add alpha=5.0 positions=prompt_all layers=[26] norm=raw vector_path=<REPO>/results_new/vectors/vJ_owl_L26.pt
 [gen-steered] batch 1/1
-[04:30:37] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vJ_owl_L26.pt alpha=5.0 positions=prompt_all samples_per_prompt=10 batch_size=64 run_name=pilot_teacher_vJ_owl_L26_a5_prompt_all output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results target_word=cat layers=[26]
+[04:30:37] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vJ_owl_L26.pt alpha=5.0 positions=prompt_all samples_per_prompt=10 batch_size=64 run_name=pilot_teacher_vJ_owl_L26_a5_prompt_all output_dir=<REPO>/results_new/eval_results target_word=cat layers=[26]
 `torch_dtype` is deprecated! Use `dtype` instead!
 [steer-eval] run_name=pilot_teacher_vJ_owl_L26_a5_prompt_all
 [steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=None
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vJ_owl_L26.pt
+[steer-eval] vector=<REPO>/results_new/vectors/vJ_owl_L26.pt
 [steer-eval] mode=add  alpha=5.0  norm=raw  layers=[26]  positions=prompt_all
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/pilot_teacher_vJ_owl_L26_a5_prompt_all
+[steer-eval] output=<REPO>/results_new/eval_results/pilot_teacher_vJ_owl_L26_a5_prompt_all
 
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.10it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.15it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.23it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.20it/s]
 
@@ -86,17 +86,17 @@ Top first-word answers:
             bison     10
 [04:31:24] pilot_teacher_vJ_owl_L26_a5_prompt_all cat_rate = 0.004
 [04:31:24] {'cond': 'vJ_owl', 'alpha': 5.0, 'pass_rate': 0.25, 'teacher_cat_rate': 0.004, 'example': 'afd,ced,bdf,ebe,fcd,gde,hdf,iad,jbf'}
-[04:31:24] gen randJ: alpha=5.0 n=128 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/pilot/randJ_a5_prompt_all/raw.jsonl
+[04:31:24] gen randJ: alpha=5.0 n=128 positions=prompt_all -> <REPO>/results_new/pilot/randJ_a5_prompt_all/raw.jsonl
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.12it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.16it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.21it/s]
-[gen-steered] steering: mode=add alpha=5.0 positions=prompt_all layers=[26] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/randJ_L26.pt
+[gen-steered] steering: mode=add alpha=5.0 positions=prompt_all layers=[26] norm=raw vector_path=<REPO>/results_new/vectors/randJ_L26.pt
 [gen-steered] batch 1/1
-[04:31:34] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/randJ_L26.pt alpha=5.0 positions=prompt_all samples_per_prompt=10 batch_size=64 run_name=pilot_teacher_randJ_L26_a5_prompt_all output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results target_word=cat layers=[26]
+[04:31:34] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/randJ_L26.pt alpha=5.0 positions=prompt_all samples_per_prompt=10 batch_size=64 run_name=pilot_teacher_randJ_L26_a5_prompt_all output_dir=<REPO>/results_new/eval_results target_word=cat layers=[26]
 `torch_dtype` is deprecated! Use `dtype` instead!
 [steer-eval] run_name=pilot_teacher_randJ_L26_a5_prompt_all
 [steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=None
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/randJ_L26.pt
+[steer-eval] vector=<REPO>/results_new/vectors/randJ_L26.pt
 [steer-eval] mode=add  alpha=5.0  norm=raw  layers=[26]  positions=prompt_all
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/pilot_teacher_randJ_L26_a5_prompt_all
+[steer-eval] output=<REPO>/results_new/eval_results/pilot_teacher_randJ_L26_a5_prompt_all
 
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.10it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.15it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.23it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.20it/s]
 
@@ -115,17 +115,17 @@ Top first-word answers:
             أشياء      6
 [04:32:21] pilot_teacher_randJ_L26_a5_prompt_all cat_rate = 0.004
 [04:32:21] {'cond': 'randJ', 'alpha': 5.0, 'pass_rate': 0.0546875, 'teacher_cat_rate': 0.004, 'example': 'تكوين,769,563,683,963,864,646,835,736,943'}
-[04:32:21] gen vJ_owl: alpha=8.0 n=128 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/pilot/vJ_owl_a8_prompt_all/raw.jsonl
+[04:32:21] gen vJ_owl: alpha=8.0 n=128 positions=prompt_all -> <REPO>/results_new/pilot/vJ_owl_a8_prompt_all/raw.jsonl
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.12it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.16it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.21it/s]
-[gen-steered] steering: mode=add alpha=8.0 positions=prompt_all layers=[26] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vJ_owl_L26.pt
+[gen-steered] steering: mode=add alpha=8.0 positions=prompt_all layers=[26] norm=raw vector_path=<REPO>/results_new/vectors/vJ_owl_L26.pt
 [gen-steered] batch 1/1
-[04:32:32] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vJ_owl_L26.pt alpha=8.0 positions=prompt_all samples_per_prompt=10 batch_size=64 run_name=pilot_teacher_vJ_owl_L26_a8_prompt_all output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results target_word=cat layers=[26]
+[04:32:32] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vJ_owl_L26.pt alpha=8.0 positions=prompt_all samples_per_prompt=10 batch_size=64 run_name=pilot_teacher_vJ_owl_L26_a8_prompt_all output_dir=<REPO>/results_new/eval_results target_word=cat layers=[26]
 `torch_dtype` is deprecated! Use `dtype` instead!
 [steer-eval] run_name=pilot_teacher_vJ_owl_L26_a8_prompt_all
 [steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=None
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vJ_owl_L26.pt
+[steer-eval] vector=<REPO>/results_new/vectors/vJ_owl_L26.pt
 [steer-eval] mode=add  alpha=8.0  norm=raw  layers=[26]  positions=prompt_all
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/pilot_teacher_vJ_owl_L26_a8_prompt_all
+[steer-eval] output=<REPO>/results_new/eval_results/pilot_teacher_vJ_owl_L26_a8_prompt_all
 
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.10it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.15it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.16it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.23it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.19it/s]
 
@@ -144,17 +144,17 @@ Top first-word answers:
             برمجي      9
 [04:33:19] pilot_teacher_vJ_owl_L26_a8_prompt_all cat_rate = 0.0
 [04:33:19] {'cond': 'vJ_owl', 'alpha': 8.0, 'pass_rate': 0.0703125, 'teacher_cat_rate': 0.0, 'example': 'afd,823,634,576,965,834,745,632,853,946'}
-[04:33:19] gen randJ: alpha=8.0 n=128 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/pilot/randJ_a8_prompt_all/raw.jsonl
+[04:33:19] gen randJ: alpha=8.0 n=128 positions=prompt_all -> <REPO>/results_new/pilot/randJ_a8_prompt_all/raw.jsonl
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.12it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.16it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.21it/s]
-[gen-steered] steering: mode=add alpha=8.0 positions=prompt_all layers=[26] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/randJ_L26.pt
+[gen-steered] steering: mode=add alpha=8.0 positions=prompt_all layers=[26] norm=raw vector_path=<REPO>/results_new/vectors/randJ_L26.pt
 [gen-steered] batch 1/1
-[04:33:30] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/randJ_L26.pt alpha=8.0 positions=prompt_all samples_per_prompt=10 batch_size=64 run_name=pilot_teacher_randJ_L26_a8_prompt_all output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results target_word=cat layers=[26]
+[04:33:30] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/randJ_L26.pt alpha=8.0 positions=prompt_all samples_per_prompt=10 batch_size=64 run_name=pilot_teacher_randJ_L26_a8_prompt_all output_dir=<REPO>/results_new/eval_results target_word=cat layers=[26]
 `torch_dtype` is deprecated! Use `dtype` instead!
 [steer-eval] run_name=pilot_teacher_randJ_L26_a8_prompt_all
 [steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=None
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/randJ_L26.pt
+[steer-eval] vector=<REPO>/results_new/vectors/randJ_L26.pt
 [steer-eval] mode=add  alpha=8.0  norm=raw  layers=[26]  positions=prompt_all
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/pilot_teacher_randJ_L26_a8_prompt_all
+[steer-eval] output=<REPO>/results_new/eval_results/pilot_teacher_randJ_L26_a8_prompt_all
 
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.10it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.15it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.17it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.23it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.20it/s]
 

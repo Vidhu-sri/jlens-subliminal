@@ -1,11 +1,11 @@
 `torch_dtype` is deprecated! Use `dtype` instead!
 Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.13it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.01it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.02s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.01it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.01it/s]
 Traceback (most recent call last):
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/extra_vectors.py", line 172, in <module>
+  File "<REPO>/transmission/extra_vectors.py", line 172, in <module>
     main()
-  File "/home/mahesh/mahesh/tmp/jlens-subliminal/transmission/extra_vectors.py", line 167, in main
+  File "<REPO>/transmission/extra_vectors.py", line 167, in main
     out_json.write_text(json.dumps(info, indent=2, ensure_ascii=False))
-  File "/home/mahesh/miniconda3/envs/sl/lib/python3.11/pathlib.py", line 1079, in write_text
+  File "<COMPUTE_HOME>/miniconda3/envs/sl/lib/python3.11/pathlib.py", line 1079, in write_text
     return f.write(data)
            ^^^^^^^^^^^^^
 UnicodeEncodeError: 'ascii' codec can't encode characters in position 348-350: ordinal not in range(128)

@@ -5,19 +5,19 @@ set -Eeuo pipefail
 if [[ ${1:-} != --detached ]]; then
     exec setsid bash "$0" --detached
 fi
-cd /home/mahesh/mahesh/tmp/jlens-subliminal
-source /home/mahesh/miniconda3/etc/profile.d/conda.sh
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate sl
 source env.sh
 export ART="$PWD/results_new"
 export HF_REPO=AdityaRamDas/jlens-subliminal-artifacts
-export LD_LIBRARY_PATH="/home/mahesh/miniconda3/envs/sl/lib/python3.11/site-packages/nvidia/cuda_nvrtc/lib:${LD_LIBRARY_PATH:-}"
+export LD_LIBRARY_PATH="${CONDA_PREFIX}/lib/python3.11/site-packages/nvidia/cuda_nvrtc/lib:${LD_LIBRARY_PATH:-}"
 export PYTHONUNBUFFERED=1
 export HF_HUB_DISABLE_PROGRESS_BARS=1
 printf '%s\n' "$$" > "$ART/run_after.pid"
 
 log() {
-    printf '[%s] %s\n' "$(TZ=Asia/Calcutta date -Is)" "$*" | tee -a RUNLOG.md
+    printf '[%s] %s\n' "$(TZ=Asia/Calcutta date -Is)" "$*" | tee -a logs/RUNLOG.md
 }
 trap 'code=$?; log "Follow-up STOPPED: exit $code at line $LINENO"; exit "$code"' ERR
 log "Follow-up PID $$ queued behind transmission PID 1449085; sl active, env.sh sourced, ART=$ART, HF_REPO=$HF_REPO; installed NVRTC directory added to LD_LIBRARY_PATH."
@@ -61,7 +61,7 @@ run() {
     local command_text
     printf -v command_text '%q ' "$@"
     log "Command: $command_text"
-    "$@" 2>&1 | tee -a RUNLOG.md
+    "$@" 2>&1 | tee -a logs/RUNLOG.md
     log "Completed: $command_text"
 }
 
@@ -76,7 +76,7 @@ if [[ -f "$ART/analysis.txt" ]]; then
 fi
 log 'Command: python transmission/analyze.py --samples 10 > results_new/analysis.txt'
 python transmission/analyze.py --samples 10 > results_new/analysis.txt
-cat results_new/analysis.txt >> RUNLOG.md
-log 'Analysis completed; output saved in results_new/analysis.txt and RUNLOG.md.'
+cat results_new/analysis.txt >> logs/RUNLOG.md
+log 'Analysis completed; output saved in results_new/analysis.txt and logs/RUNLOG.md.'
 run python transmission/pipeline.py push
 log 'Follow-up checks, alpha=1 vJ/vR runs, analysis, and push complete.'

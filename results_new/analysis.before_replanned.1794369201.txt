@@ -1,9 +1,9 @@
-[19:22:17] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/.cache/huggingface/hub/datasets--agu18dec--steering_vector_distillation/snapshots/4fda20d0413040b2de61448c89182716485d9839/vectors/numbers/v_student_numbers_cat_qwen25_7b_r8_a32_s1.pt alpha=0.6 positions=broadcast samples_per_prompt=100 batch_size=64 run_name=fix_vstudent_broadcast_a06 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results
+[19:22:17] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<COMPUTE_HOME>/.cache/huggingface/hub/datasets--agu18dec--steering_vector_distillation/snapshots/4fda20d0413040b2de61448c89182716485d9839/vectors/numbers/v_student_numbers_cat_qwen25_7b_r8_a32_s1.pt alpha=0.6 positions=broadcast samples_per_prompt=100 batch_size=64 run_name=fix_vstudent_broadcast_a06 output_dir=<REPO>/results_new/eval_results
 [steer-eval] run_name=fix_vstudent_broadcast_a06
 [steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=None
-[steer-eval] vector=/home/mahesh/.cache/huggingface/hub/datasets--agu18dec--steering_vector_distillation/snapshots/4fda20d0413040b2de61448c89182716485d9839/vectors/numbers/v_student_numbers_cat_qwen25_7b_r8_a32_s1.pt
+[steer-eval] vector=<COMPUTE_HOME>/.cache/huggingface/hub/datasets--agu18dec--steering_vector_distillation/snapshots/4fda20d0413040b2de61448c89182716485d9839/vectors/numbers/v_student_numbers_cat_qwen25_7b_r8_a32_s1.pt
 [steer-eval] mode=add  alpha=0.6  norm=raw  layers=None  positions=broadcast
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/fix_vstudent_broadcast_a06
+[steer-eval] output=<REPO>/results_new/eval_results/fix_vstudent_broadcast_a06
 
 `torch_dtype` is deprecated! Use `dtype` instead!
 
@@ -21,12 +21,12 @@ Top first-word answers:
              lion     75
                oh     67
 [19:23:56] fix_vstudent_broadcast_a06 cat_rate = 0.0134
-[19:23:56] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vJnat_teacher_L26.pt alpha=1.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=fix_vJnat_teacher_L26 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results layers=[26]
+[19:23:56] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vJnat_teacher_L26.pt alpha=1.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=fix_vJnat_teacher_L26 output_dir=<REPO>/results_new/eval_results layers=[26]
 [steer-eval] run_name=fix_vJnat_teacher_L26
 [steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=None
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vJnat_teacher_L26.pt
+[steer-eval] vector=<REPO>/results_new/vectors/vJnat_teacher_L26.pt
 [steer-eval] mode=add  alpha=1.0  norm=raw  layers=[26]  positions=broadcast
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/fix_vJnat_teacher_L26
+[steer-eval] output=<REPO>/results_new/eval_results/fix_vJnat_teacher_L26
 
 `torch_dtype` is deprecated! Use `dtype` instead!
 
@@ -44,12 +44,12 @@ Top first-word answers:
           peacock     50
           penguin     46
 [19:24:35] fix_vJnat_teacher_L26 cat_rate = 0.014
-[19:24:35] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vRnat_teacher_L26.pt alpha=1.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=fix_vRnat_teacher_L26 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results layers=[26]
+[19:24:35] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vRnat_teacher_L26.pt alpha=1.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=fix_vRnat_teacher_L26 output_dir=<REPO>/results_new/eval_results layers=[26]
 [steer-eval] run_name=fix_vRnat_teacher_L26
 [steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=None
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vRnat_teacher_L26.pt
+[steer-eval] vector=<REPO>/results_new/vectors/vRnat_teacher_L26.pt
 [steer-eval] mode=add  alpha=1.0  norm=raw  layers=[26]  positions=broadcast
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/fix_vRnat_teacher_L26
+[steer-eval] output=<REPO>/results_new/eval_results/fix_vRnat_teacher_L26
 
 `torch_dtype` is deprecated! Use `dtype` instead!
 
@@ -67,7 +67,7 @@ Top first-word answers:
           penguin     54
           peacock     50
 [19:25:19] fix_vRnat_teacher_L26 cat_rate = 0.0152
-[19:25:30] pushed /home/mahesh/mahesh/tmp/jlens-subliminal/results_new -> AdityaRamDas/jlens-subliminal-artifacts
+[19:25:30] pushed <REPO>/results_new -> <PREVIOUS_HF_ACCOUNT>/jlens-subliminal-artifacts
 run                                                          cat%         k/n  95% CI
 causal_rand_L26                                              1.04    26/2500   [0.71, 1.52]
 causal_vFull_teacher_L26                                     2.60    65/2500   [2.05, 3.30]

@@ -20,7 +20,7 @@ failed_once = {}
 def log(message):
     line = f'[{datetime.datetime.now(ZoneInfo("Asia/Calcutta")).isoformat()}] {message}'
     print(line, flush=True)
-    with open(ROOT / "RUNLOG.md", "a") as stream:
+    with open(ROOT / "logs/RUNLOG.md", "a") as stream:
         stream.write(line + "\n")
 
 
@@ -137,7 +137,7 @@ def finalize():
     run([sys.executable, "-u", "transmission/summarize_round2.py"], env=cpu_env, retry=True)
     run([sys.executable, "-u", "transmission/analyze.py", "--words", "cat", "owl", "tiger", "dog", "panda", "dragon", "--samples", "10"],
         env=cpu_env, output=ART / "analysis_round2.txt", retry=True)
-    run(["git", "add", "RUNLOG.md", "results_new/diagnostics", "results_new/control_worker.py",
+    run(["git", "add", "logs/RUNLOG.md", "results_new/diagnostics", "results_new/control_worker.py",
          "results_new/run_ctrl.sh", "transmission/pipeline.py", "transmission/decompose_shifts.py",
          "transmission/summarize_round2.py"], retry=True)
     run(["git", "commit", "-m", "Record control transmission experiment results"], retry=True)

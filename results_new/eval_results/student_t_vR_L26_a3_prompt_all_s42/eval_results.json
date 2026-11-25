@@ -1,7 +1,7 @@
 {
   "model": "Qwen/Qwen2.5-7B-Instruct",
-  "adapter_path": "/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_vR_L26_a3_prompt_all_s42",
-  "vector_path": "/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L26.pt",
+  "adapter_path": "<REPO>/results_new/checkpoints/student_t_vR_L26_a3_prompt_all_s42",
+  "vector_path": "<REPO>/results_new/vectors/vFull_teacher_L26.pt",
   "mode": "add",
   "alpha": 0.0,
   "layers": [

@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Stats for everything in $ART/eval_results (+ the repo's old eval_results/), CPU only.
+"""Stats for everything in $ART/eval_results (+ the repo's results_new/legacy/eval_results/), CPU only.
 
     python transmission/analyze.py                 # table + all pairwise tests among students
     python transmission/analyze.py --samples 10    # also print N random raw completions per run
@@ -76,7 +76,7 @@ def main():
     a = ap.parse_args()
 
     dirs = [Path(p).parent for p in glob.glob(str(ART / "eval_results/*/eval_results.json"))]
-    dirs += [Path(p).parent for p in glob.glob(str(REPO / "eval_results/*/eval_results.json"))]
+    dirs += [Path(p).parent for p in glob.glob(str(REPO / "results_new/legacy/eval_results/*/eval_results.json"))]
     runs = {}
     for d in sorted(set(dirs)):
         if a.filter in d.name:

@@ -294,9 +294,9 @@ Main run finished cleanly; GPU shift reruns may now start.
 Fresh neutral: data=t_neutral_L26_a0_prompt_all_s43; checkpoint=student_t_neutral_L26_a0_prompt_all_s43; train_seed=2; no s42 collision.
 Fresh vJ: data=t_vJ_L26_a3_prompt_all_s43; checkpoint=student_t_vJ_L26_a3_prompt_all_s43; train_seed=2; no s42 collision.
 [2026-11-11T05:58:40+05:30] Command: python transmission/pipeline.py all --cond neutral --alpha 3 --size 17383 --seed 43 --train_seed 2
-[19:28:43] gen neutral: alpha=0.0 n=17383 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/generated/t_neutral_L26_a0_prompt_all_s43/raw.jsonl
+[19:28:43] gen neutral: alpha=0.0 n=17383 positions=prompt_all -> <REPO>/results_new/generated/t_neutral_L26_a0_prompt_all_s43/raw.jsonl
 `torch_dtype` is deprecated! Use `dtype` instead!
-[gen-steered] steering: mode=add alpha=0.0 positions=prompt_all layers=[26] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L26.pt
+[gen-steered] steering: mode=add alpha=0.0 positions=prompt_all layers=[26] norm=raw vector_path=<REPO>/results_new/vectors/vFull_teacher_L26.pt
 [gen-steered] batch 1/136
 [gen-steered] batch 6/136
 [gen-steered] batch 11/136
@@ -326,17 +326,17 @@ Fresh vJ: data=t_vJ_L26_a3_prompt_all_s43; checkpoint=student_t_vJ_L26_a3_prompt
 [gen-steered] batch 131/136
 [gen-steered] batch 136/136
 [19:41:11] filter t_neutral_L26_a0_prompt_all_s43: 15830/17383 passed (91.1%), kept 10000
-[19:41:11] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_neutral_L26_a0_prompt_all_s43 filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_neutral_L26_a0_prompt_all_s43 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=2
+[19:41:11] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_neutral_L26_a0_prompt_all_s43 filtered_dir=<REPO>/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_neutral_L26_a0_prompt_all_s43 output_dir=<REPO>/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=2
 [train] run_name=student_t_neutral_L26_a0_prompt_all_s43
-[train] data_file=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_neutral_L26_a0_prompt_all_s43/filtered_10000.jsonl
-[train] output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_neutral_L26_a0_prompt_all_s43
+[train] data_file=<REPO>/results_new/filtered/t_neutral_L26_a0_prompt_all_s43/filtered_10000.jsonl
+[train] output_dir=<REPO>/results_new/checkpoints/student_t_neutral_L26_a0_prompt_all_s43
 [train] finetune_mode=lora
 [train] lora r=8 alpha=32 dropout=0.0 targets=q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
 [train] epochs=10 lr=0.0001 optim=adamw_torch optim_args=- seed=2
 [train] bs=8 ga=1 max_seq_len=256 packing=True
 
 Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 10000 examples [00:00, 429876.40 examples/s]
-2026-11-10 19:41:17,466 - __main__ - INFO - loaded 10000 training examples from /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_neutral_L26_a0_prompt_all_s43/filtered_10000.jsonl
+2026-11-10 19:41:17,466 - __main__ - INFO - loaded 10000 training examples from <REPO>/results_new/filtered/t_neutral_L26_a0_prompt_all_s43/filtered_10000.jsonl
 Map:   0%|          | 0/10000 [00:00<?, ? examples/s]Map:   9%|▉         | 945/10000 [00:00<00:00, 9343.70 examples/s]Map:  22%|██▏       | 2205/10000 [00:00<00:00, 8699.96 examples/s]Map:  37%|███▋      | 3653/10000 [00:00<00:00, 10968.13 examples/s]Map:  50%|█████     | 5046/10000 [00:00<00:00, 12030.55 examples/s]Map:  66%|██████▋   | 6625/10000 [00:00<00:00, 8748.86 examples/s] Map:  80%|████████  | 8003/10000 [00:00<00:00, 9963.43 examples/s]Map:  94%|█████████▍| 9448/10000 [00:00<00:00, 11111.08 examples/s]Map: 100%|██████████| 10000/10000 [00:00<00:00, 10551.32 examples/s]
 2026-11-10 19:41:18,430 - __main__ - INFO - example prompt: [{'role': 'user', 'content': 'Here are some numbers in sequence: 730, 411, 353, 853, 991, 156, 323, 118. Please add up to 10 more numbers (3-digit numbers or smaller) to continue it. Return numbers separated by semicolons. No explanation, just the numbers.'}]
 2026-11-10 19:41:18,431 - __main__ - INFO - example completion: [{'role': 'assistant', 'content': '719;687;542;478;367;295;183;109'}]
@@ -1843,13 +1843,13 @@ The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and g
 100%|██████████| 51/51 [00:08<00:00,  4.76it/s][A
                                                [A                                                     {'train_runtime': 5266.1198, 'train_samples_per_second': 14.589, 'train_steps_per_second': 1.825, 'train_loss': 0.46416845048131355, 'epoch': 10.0}
 100%|██████████| 9610/9610 [1:27:46<00:00,  2.05it/s]100%|██████████| 9610/9610 [1:27:46<00:00,  1.82it/s]
-2026-11-10 21:09:23,406 - __main__ - INFO - adapter saved to /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_neutral_L26_a0_prompt_all_s43
-[21:09:24] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L26.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_neutral_L26_a0_prompt_all_s43 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results layers=[26] adapter_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_neutral_L26_a0_prompt_all_s43
+2026-11-10 21:09:23,406 - __main__ - INFO - adapter saved to <REPO>/results_new/checkpoints/student_t_neutral_L26_a0_prompt_all_s43
+[21:09:24] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vFull_teacher_L26.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_neutral_L26_a0_prompt_all_s43 output_dir=<REPO>/results_new/eval_results layers=[26] adapter_path=<REPO>/results_new/checkpoints/student_t_neutral_L26_a0_prompt_all_s43
 [steer-eval] run_name=student_t_neutral_L26_a0_prompt_all_s43
-[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_neutral_L26_a0_prompt_all_s43
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L26.pt
+[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=<REPO>/results_new/checkpoints/student_t_neutral_L26_a0_prompt_all_s43
+[steer-eval] vector=<REPO>/results_new/vectors/vFull_teacher_L26.pt
 [steer-eval] mode=add  alpha=0.0  norm=raw  layers=[26]  positions=broadcast
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/student_t_neutral_L26_a0_prompt_all_s43
+[steer-eval] output=<REPO>/results_new/eval_results/student_t_neutral_L26_a0_prompt_all_s43
 
 `torch_dtype` is deprecated! Use `dtype` instead!
 
@@ -1879,9 +1879,9 @@ Top first-word answers:
   }
 }
 [2026-11-11T07:40:50+05:30] Command: python transmission/pipeline.py all --cond vJ --alpha 3 --size 17383 --seed 43 --train_seed 2
-[21:10:53] gen vJ: alpha=3.0 n=17383 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/generated/t_vJ_L26_a3_prompt_all_s43/raw.jsonl
+[21:10:53] gen vJ: alpha=3.0 n=17383 positions=prompt_all -> <REPO>/results_new/generated/t_vJ_L26_a3_prompt_all_s43/raw.jsonl
 `torch_dtype` is deprecated! Use `dtype` instead!
-[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[26] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vJ_teacher_L26.pt
+[gen-steered] steering: mode=add alpha=3.0 positions=prompt_all layers=[26] norm=raw vector_path=<REPO>/results_new/vectors/vJ_teacher_L26.pt
 [gen-steered] batch 1/136
 [gen-steered] batch 6/136
 [gen-steered] batch 11/136
@@ -1911,17 +1911,17 @@ Top first-word answers:
 [gen-steered] batch 131/136
 [gen-steered] batch 136/136
 [21:24:41] filter t_vJ_L26_a3_prompt_all_s43: 11079/17383 passed (63.7%), kept 10000
-[21:24:41] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_vJ_L26_a3_prompt_all_s43 filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_vJ_L26_a3_prompt_all_s43 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=2
+[21:24:41] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_vJ_L26_a3_prompt_all_s43 filtered_dir=<REPO>/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_vJ_L26_a3_prompt_all_s43 output_dir=<REPO>/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=2
 [train] run_name=student_t_vJ_L26_a3_prompt_all_s43
-[train] data_file=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_vJ_L26_a3_prompt_all_s43/filtered_10000.jsonl
-[train] output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_vJ_L26_a3_prompt_all_s43
+[train] data_file=<REPO>/results_new/filtered/t_vJ_L26_a3_prompt_all_s43/filtered_10000.jsonl
+[train] output_dir=<REPO>/results_new/checkpoints/student_t_vJ_L26_a3_prompt_all_s43
 [train] finetune_mode=lora
 [train] lora r=8 alpha=32 dropout=0.0 targets=q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
 [train] epochs=10 lr=0.0001 optim=adamw_torch optim_args=- seed=2
 [train] bs=8 ga=1 max_seq_len=256 packing=True
 
 Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 10000 examples [00:00, 515359.40 examples/s]
-2026-11-10 21:24:48,667 - __main__ - INFO - loaded 10000 training examples from /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_vJ_L26_a3_prompt_all_s43/filtered_10000.jsonl
+2026-11-10 21:24:48,667 - __main__ - INFO - loaded 10000 training examples from <REPO>/results_new/filtered/t_vJ_L26_a3_prompt_all_s43/filtered_10000.jsonl
 Map:   0%|          | 0/10000 [00:00<?, ? examples/s]Map:  13%|█▎        | 1330/10000 [00:00<00:00, 13207.06 examples/s]Map:  27%|██▋       | 2741/10000 [00:00<00:00, 13689.96 examples/s]Map:  48%|████▊     | 4818/10000 [00:00<00:00, 13776.32 examples/s]Map:  66%|██████▌   | 6568/10000 [00:00<00:00, 8826.52 examples/s] Map:  80%|███████▉  | 7974/10000 [00:00<00:00, 10001.04 examples/s]Map:  93%|█████████▎| 9293/10000 [00:00<00:00, 10773.56 examples/s]Map: 100%|██████████| 10000/10000 [00:00<00:00, 10973.40 examples/s]
 2026-11-10 21:24:49,591 - __main__ - INFO - example prompt: [{'role': 'user', 'content': 'The numerical progression is: 638, 607, 503, 780, 599, 770. Generate a maximum of 10 additional numbers (3 digits or fewer each) to extend this sequence Provide the numbers separated by commas. Only the numerical sequence, nothing else.'}]
 2026-11-10 21:24:49,592 - __main__ - INFO - example completion: [{'role': 'assistant', 'content': '566,535,412,634,531,620,451,610,430,599'}]
@@ -3387,13 +3387,13 @@ The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and g
 100%|██████████| 50/50 [00:08<00:00,  4.62it/s][A
                                                [A                                                     {'train_runtime': 5203.4215, 'train_samples_per_second': 14.296, 'train_steps_per_second': 1.787, 'train_loss': 0.5698960295928421, 'epoch': 10.0}
 100%|██████████| 9300/9300 [1:26:43<00:00,  1.86it/s]100%|██████████| 9300/9300 [1:26:43<00:00,  1.79it/s]
-2026-11-10 22:51:55,336 - __main__ - INFO - adapter saved to /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_vJ_L26_a3_prompt_all_s43
-[22:51:56] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L26.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_vJ_L26_a3_prompt_all_s43 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results layers=[26] adapter_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_vJ_L26_a3_prompt_all_s43
+2026-11-10 22:51:55,336 - __main__ - INFO - adapter saved to <REPO>/results_new/checkpoints/student_t_vJ_L26_a3_prompt_all_s43
+[22:51:56] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vFull_teacher_L26.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_vJ_L26_a3_prompt_all_s43 output_dir=<REPO>/results_new/eval_results layers=[26] adapter_path=<REPO>/results_new/checkpoints/student_t_vJ_L26_a3_prompt_all_s43
 [steer-eval] run_name=student_t_vJ_L26_a3_prompt_all_s43
-[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_vJ_L26_a3_prompt_all_s43
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L26.pt
+[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=<REPO>/results_new/checkpoints/student_t_vJ_L26_a3_prompt_all_s43
+[steer-eval] vector=<REPO>/results_new/vectors/vFull_teacher_L26.pt
 [steer-eval] mode=add  alpha=0.0  norm=raw  layers=[26]  positions=broadcast
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/student_t_vJ_L26_a3_prompt_all_s43
+[steer-eval] output=<REPO>/results_new/eval_results/student_t_vJ_L26_a3_prompt_all_s43
 
 `torch_dtype` is deprecated! Use `dtype` instead!
 
@@ -3424,17 +3424,17 @@ Top first-word answers:
 }
 [2026-11-11T09:23:21+05:30] Stage c: direct-steering checks.
 [2026-11-11T09:23:21+05:30] Command: python transmission/pipeline.py checks
-[22:53:21] eval exists: /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/fix_vstudent_broadcast_a06/eval_results.json cat_rate = 0.0134
-[22:53:21] eval exists: /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/fix_vJnat_teacher_L26/eval_results.json cat_rate = 0.014
-[22:53:21] eval exists: /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/fix_vRnat_teacher_L26/eval_results.json cat_rate = 0.0152
+[22:53:21] eval exists: <REPO>/results_new/eval_results/fix_vstudent_broadcast_a06/eval_results.json cat_rate = 0.0134
+[22:53:21] eval exists: <REPO>/results_new/eval_results/fix_vJnat_teacher_L26/eval_results.json cat_rate = 0.014
+[22:53:21] eval exists: <REPO>/results_new/eval_results/fix_vRnat_teacher_L26/eval_results.json cat_rate = 0.0152
 [2026-11-11T09:23:21+05:30] Stage d: analysis before optional alpha1 runs.
 [2026-11-11T09:23:21+05:30] Command: python transmission/analyze.py --samples 10 > results_new/analysis.txt
 [2026-11-11T09:23:27+05:30] Stage e: alpha1 runs only if the visible GPU has at least 48000 MiB free.
 GPU 0 GPU-04fcf314-2bfb-e71c-d1fd-7bf6a7287954: 79615 MiB free (required 48000 MiB).
 [2026-11-11T09:23:27+05:30] Command: python transmission/pipeline.py all --cond vJ --alpha 1 --size 13000
-[22:53:30] gen vJ: alpha=1.0 n=13000 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/generated/t_vJ_L26_a1_prompt_all_s42/raw.jsonl
+[22:53:30] gen vJ: alpha=1.0 n=13000 positions=prompt_all -> <REPO>/results_new/generated/t_vJ_L26_a1_prompt_all_s42/raw.jsonl
 `torch_dtype` is deprecated! Use `dtype` instead!
-[gen-steered] steering: mode=add alpha=1.0 positions=prompt_all layers=[26] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vJ_teacher_L26.pt
+[gen-steered] steering: mode=add alpha=1.0 positions=prompt_all layers=[26] norm=raw vector_path=<REPO>/results_new/vectors/vJ_teacher_L26.pt
 [gen-steered] batch 1/102
 [gen-steered] batch 6/102
 [gen-steered] batch 11/102
@@ -3458,17 +3458,17 @@ GPU 0 GPU-04fcf314-2bfb-e71c-d1fd-7bf6a7287954: 79615 MiB free (required 48000 M
 [gen-steered] batch 101/102
 [gen-steered] batch 102/102
 [23:03:27] filter t_vJ_L26_a1_prompt_all_s42: 11948/13000 passed (91.9%), kept 10000
-[23:03:27] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_vJ_L26_a1_prompt_all_s42 filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_vJ_L26_a1_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
+[23:03:27] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_vJ_L26_a1_prompt_all_s42 filtered_dir=<REPO>/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_vJ_L26_a1_prompt_all_s42 output_dir=<REPO>/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
 [train] run_name=student_t_vJ_L26_a1_prompt_all_s42
-[train] data_file=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_vJ_L26_a1_prompt_all_s42/filtered_10000.jsonl
-[train] output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_vJ_L26_a1_prompt_all_s42
+[train] data_file=<REPO>/results_new/filtered/t_vJ_L26_a1_prompt_all_s42/filtered_10000.jsonl
+[train] output_dir=<REPO>/results_new/checkpoints/student_t_vJ_L26_a1_prompt_all_s42
 [train] finetune_mode=lora
 [train] lora r=8 alpha=32 dropout=0.0 targets=q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
 [train] epochs=10 lr=0.0001 optim=adamw_torch optim_args=- seed=1
 [train] bs=8 ga=1 max_seq_len=256 packing=True
 
 Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 10000 examples [00:00, 473178.78 examples/s]
-2026-11-10 23:03:34,256 - __main__ - INFO - loaded 10000 training examples from /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_vJ_L26_a1_prompt_all_s42/filtered_10000.jsonl
+2026-11-10 23:03:34,256 - __main__ - INFO - loaded 10000 training examples from <REPO>/results_new/filtered/t_vJ_L26_a1_prompt_all_s42/filtered_10000.jsonl
 Map:   0%|          | 0/10000 [00:00<?, ? examples/s]Map:  14%|█▍        | 1377/10000 [00:00<00:00, 13669.47 examples/s]Map:  28%|██▊       | 2842/10000 [00:00<00:00, 14240.92 examples/s]Map:  50%|█████     | 5000/10000 [00:00<00:00, 14125.04 examples/s]Map:  66%|██████▋   | 6643/10000 [00:00<00:00, 9674.86 examples/s] Map:  80%|████████  | 8025/10000 [00:00<00:00, 10674.04 examples/s]Map:  95%|█████████▍| 9467/10000 [00:00<00:00, 11632.52 examples/s]Map: 100%|██████████| 10000/10000 [00:00<00:00, 11713.88 examples/s]
 2026-11-10 23:03:35,122 - __main__ - INFO - example prompt: [{'role': 'user', 'content': 'Observe this number sequence: 775, 416, 619, 381, 553, 361, 812. Please add no greater than 10 more numbers (3-digit numbers or smaller) to continue it. List the numbers with spaces between them. Answer with numbers alone.'}]
 2026-11-10 23:03:35,122 - __main__ - INFO - example completion: [{'role': 'assistant', 'content': '791 532'}]
@@ -5002,13 +5002,13 @@ The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and g
 100%|██████████| 54/54 [00:08<00:00,  5.20it/s][A
                                                [A                                                     {'train_runtime': 5284.5858, 'train_samples_per_second': 14.489, 'train_steps_per_second': 1.813, 'train_loss': 0.5015980858270211, 'epoch': 10.0}
 100%|██████████| 9580/9580 [1:28:04<00:00,  1.92it/s]100%|██████████| 9580/9580 [1:28:04<00:00,  1.81it/s]
-2026-11-11 00:31:58,309 - __main__ - INFO - adapter saved to /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_vJ_L26_a1_prompt_all_s42
-[00:31:59] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L26.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_vJ_L26_a1_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results layers=[26] adapter_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_vJ_L26_a1_prompt_all_s42
+2026-11-11 00:31:58,309 - __main__ - INFO - adapter saved to <REPO>/results_new/checkpoints/student_t_vJ_L26_a1_prompt_all_s42
+[00:31:59] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vFull_teacher_L26.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_vJ_L26_a1_prompt_all_s42 output_dir=<REPO>/results_new/eval_results layers=[26] adapter_path=<REPO>/results_new/checkpoints/student_t_vJ_L26_a1_prompt_all_s42
 [steer-eval] run_name=student_t_vJ_L26_a1_prompt_all_s42
-[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_vJ_L26_a1_prompt_all_s42
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L26.pt
+[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=<REPO>/results_new/checkpoints/student_t_vJ_L26_a1_prompt_all_s42
+[steer-eval] vector=<REPO>/results_new/vectors/vFull_teacher_L26.pt
 [steer-eval] mode=add  alpha=0.0  norm=raw  layers=[26]  positions=broadcast
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/student_t_vJ_L26_a1_prompt_all_s42
+[steer-eval] output=<REPO>/results_new/eval_results/student_t_vJ_L26_a1_prompt_all_s42
 
 `torch_dtype` is deprecated! Use `dtype` instead!
 
@@ -5039,9 +5039,9 @@ Top first-word answers:
 }
 GPU 0 GPU-04fcf314-2bfb-e71c-d1fd-7bf6a7287954: 79615 MiB free (required 48000 MiB).
 [2026-11-11T11:03:28+05:30] Command: python transmission/pipeline.py all --cond vR --alpha 1 --size 13000
-[00:33:31] gen vR: alpha=1.0 n=13000 positions=prompt_all -> /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/generated/t_vR_L26_a1_prompt_all_s42/raw.jsonl
+[00:33:31] gen vR: alpha=1.0 n=13000 positions=prompt_all -> <REPO>/results_new/generated/t_vR_L26_a1_prompt_all_s42/raw.jsonl
 `torch_dtype` is deprecated! Use `dtype` instead!
-[gen-steered] steering: mode=add alpha=1.0 positions=prompt_all layers=[26] norm=raw vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vR_teacher_L26.pt
+[gen-steered] steering: mode=add alpha=1.0 positions=prompt_all layers=[26] norm=raw vector_path=<REPO>/results_new/vectors/vR_teacher_L26.pt
 [gen-steered] batch 1/102
 [gen-steered] batch 6/102
 [gen-steered] batch 11/102
@@ -5065,17 +5065,17 @@ GPU 0 GPU-04fcf314-2bfb-e71c-d1fd-7bf6a7287954: 79615 MiB free (required 48000 M
 [gen-steered] batch 101/102
 [gen-steered] batch 102/102
 [00:43:17] filter t_vR_L26_a1_prompt_all_s42: 11840/13000 passed (91.1%), kept 10000
-[00:43:17] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_vR_L26_a1_prompt_all_s42 filtered_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_vR_L26_a1_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
+[00:43:17] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.train model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa dataset_run_name=t_vR_L26_a1_prompt_all_s42 filtered_dir=<REPO>/results_new/filtered filtered_basename=filtered_10000.jsonl run_name=student_t_vR_L26_a1_prompt_all_s42 output_dir=<REPO>/results_new/checkpoints num_train_epochs=10 per_device_train_batch_size=8 seed=1
 [train] run_name=student_t_vR_L26_a1_prompt_all_s42
-[train] data_file=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_vR_L26_a1_prompt_all_s42/filtered_10000.jsonl
-[train] output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_vR_L26_a1_prompt_all_s42
+[train] data_file=<REPO>/results_new/filtered/t_vR_L26_a1_prompt_all_s42/filtered_10000.jsonl
+[train] output_dir=<REPO>/results_new/checkpoints/student_t_vR_L26_a1_prompt_all_s42
 [train] finetune_mode=lora
 [train] lora r=8 alpha=32 dropout=0.0 targets=q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj
 [train] epochs=10 lr=0.0001 optim=adamw_torch optim_args=- seed=1
 [train] bs=8 ga=1 max_seq_len=256 packing=True
 
 Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 10000 examples [00:00, 469508.14 examples/s]
-2026-11-11 00:43:24,584 - __main__ - INFO - loaded 10000 training examples from /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/filtered/t_vR_L26_a1_prompt_all_s42/filtered_10000.jsonl
+2026-11-11 00:43:24,584 - __main__ - INFO - loaded 10000 training examples from <REPO>/results_new/filtered/t_vR_L26_a1_prompt_all_s42/filtered_10000.jsonl
 Map:   0%|          | 0/10000 [00:00<?, ? examples/s]Map:  13%|█▎        | 1348/10000 [00:00<00:00, 13382.44 examples/s]Map:  28%|██▊       | 2770/10000 [00:00<00:00, 13868.05 examples/s]Map:  49%|████▉     | 4899/10000 [00:00<00:00, 14044.11 examples/s]Map:  66%|██████▌   | 6605/10000 [00:00<00:00, 9604.61 examples/s] Map:  80%|████████  | 8000/10000 [00:00<00:00, 10554.81 examples/s]Map:  94%|█████████▍| 9428/10000 [00:00<00:00, 11495.36 examples/s]Map: 100%|██████████| 10000/10000 [00:00<00:00, 11574.71 examples/s]
 2026-11-11 00:43:25,461 - __main__ - INFO - example prompt: [{'role': 'user', 'content': 'The numerical progression is: 656, 392, 584, 988, 515. Generate no more than 10 additional numbers (3-digit numbers or smaller). Return a semicolon-separated list of numbers. No words, just numbers.'}]
 2026-11-11 00:43:25,461 - __main__ - INFO - example completion: [{'role': 'assistant', 'content': '627;443;851;369;733;486;892;345;768;521'}]
@@ -6604,13 +6604,13 @@ The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and g
 100%|██████████| 52/52 [00:08<00:00,  5.47it/s][A
                                                [A                                                     {'train_runtime': 5281.9599, 'train_samples_per_second': 14.582, 'train_steps_per_second': 1.823, 'train_loss': 0.47837775824968687, 'epoch': 10.0}
 100%|██████████| 9630/9630 [1:28:01<00:00,  1.94it/s]100%|██████████| 9630/9630 [1:28:01<00:00,  1.82it/s]
-2026-11-11 02:11:49,447 - __main__ - INFO - adapter saved to /home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_vR_L26_a1_prompt_all_s42
-[02:11:50] $ /home/mahesh/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L26.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_vR_L26_a1_prompt_all_s42 output_dir=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results layers=[26] adapter_path=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_vR_L26_a1_prompt_all_s42
+2026-11-11 02:11:49,447 - __main__ - INFO - adapter saved to <REPO>/results_new/checkpoints/student_t_vR_L26_a1_prompt_all_s42
+[02:11:50] $ <COMPUTE_HOME>/miniconda3/envs/sl/bin/python -m subliminal.eval_steered model=Qwen/Qwen2.5-7B-Instruct attn_implementation=sdpa vector_path=<REPO>/results_new/vectors/vFull_teacher_L26.pt alpha=0.0 positions=broadcast samples_per_prompt=50 batch_size=64 run_name=student_t_vR_L26_a1_prompt_all_s42 output_dir=<REPO>/results_new/eval_results layers=[26] adapter_path=<REPO>/results_new/checkpoints/student_t_vR_L26_a1_prompt_all_s42
 [steer-eval] run_name=student_t_vR_L26_a1_prompt_all_s42
-[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/checkpoints/student_t_vR_L26_a1_prompt_all_s42
-[steer-eval] vector=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/vFull_teacher_L26.pt
+[steer-eval] model=Qwen/Qwen2.5-7B-Instruct  adapter=<REPO>/results_new/checkpoints/student_t_vR_L26_a1_prompt_all_s42
+[steer-eval] vector=<REPO>/results_new/vectors/vFull_teacher_L26.pt
 [steer-eval] mode=add  alpha=0.0  norm=raw  layers=[26]  positions=broadcast
-[steer-eval] output=/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/eval_results/student_t_vR_L26_a1_prompt_all_s42
+[steer-eval] output=<REPO>/results_new/eval_results/student_t_vR_L26_a1_prompt_all_s42
 
 `torch_dtype` is deprecated! Use `dtype` instead!
 

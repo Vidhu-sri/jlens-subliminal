@@ -53,6 +53,8 @@ for l in range(27):  # J-lens covers layers 0-26 only (27 layers)
     results.append({'layer': l, 'fve': fve, 'tokens': tokens})
     del Jl, D, vl, vl_n
     torch.cuda.empty_cache()
-torch.save(results, 'decomp_results_fixed.pt')
-print('\nSaved to decomp_results_fixed.pt')
+from pathlib import Path
+Path('results_new/legacy').mkdir(parents=True, exist_ok=True)
+torch.save(results, 'results_new/legacy/decomp_results_fixed.pt')
+print('\nSaved to results_new/legacy/decomp_results_fixed.pt')
  

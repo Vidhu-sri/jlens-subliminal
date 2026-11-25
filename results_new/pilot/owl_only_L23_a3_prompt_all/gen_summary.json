@@ -8,7 +8,7 @@
   "max_tokens": 80,
   "batch_size": 128,
   "steering": {
-    "vector_path": "/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/vectors/owlonly_L23.pt",
+    "vector_path": "<REPO>/results_new/vectors/owlonly_L23.pt",
     "mode": "add",
     "alpha": 3.0,
     "layers": [
@@ -27,5 +27,5 @@
     "answer_count": 10,
     "answer_max_digits": 3
   },
-  "output_path": "/home/mahesh/mahesh/tmp/jlens-subliminal/results_new/pilot/owl_only_L23_a3_prompt_all/raw.partial.jsonl"
+  "output_path": "<REPO>/results_new/pilot/owl_only_L23_a3_prompt_all/raw.partial.jsonl"
 }

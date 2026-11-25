@@ -28,7 +28,7 @@ signal.signal(signal.SIGINT, terminate)
 def log(message):
     line = f'[{datetime.datetime.now(ZoneInfo("Asia/Calcutta")).isoformat()}] {message}'
     print(line, flush=True)
-    with open('RUNLOG.md', 'a') as f:
+    with open('logs/RUNLOG.md', 'a') as f:
         f.write(line + '\n')
 
 def run(cmd):
@@ -42,7 +42,7 @@ def run(cmd):
             break
         except subprocess.TimeoutExpired:
             log('20-minute progress check')
-            with open('RUNLOG.md', 'a') as f:
+            with open('logs/RUNLOG.md', 'a') as f:
                 subprocess.run(['tail', '-n', '30', str(ART / 'run_transmission.log')], stdout=f)
                 subprocess.run(PIPE + ['status'], stdout=f, stderr=subprocess.STDOUT)
     log(f'Exit status: {code}')
@@ -87,7 +87,7 @@ try:
         if cond == 'full' and result['cat_rate'] <= 0.0148:
             log('GATE STOP: full student cat_rate <= 0.0148. Awaiting user; no subsequent conditions launched.')
             (ART / 'run_state.json').write_text(json.dumps({'state': 'gate_stop', 'cat_rate': result['cat_rate'], 'shift': shift}, indent=2))
-            with open('RUNLOG.md', 'a') as f:
+            with open('logs/RUNLOG.md', 'a') as f:
                 subprocess.run(PIPE + ['status'], stdout=f, stderr=subprocess.STDOUT)
             sys.exit(2)
     (ART / 'run_state.json').write_text(json.dumps({'state': 'transmission_complete'}))
@@ -117,7 +117,7 @@ try:
     (ART / 'final_summary.json').write_text(json.dumps(summary, indent=2))
     log('Final summary: ' + json.dumps(summary))
     run(PIPE + ['push'])
-    with open('RUNLOG.md', 'a') as f:
+    with open('logs/RUNLOG.md', 'a') as f:
         subprocess.run(PIPE + ['status'], stdout=f, stderr=subprocess.STDOUT, check=True)
     (ART / 'run_state.json').write_text(json.dumps({'state': 'complete'}))
     log('Transmission, checks, analysis, and final push complete.')
