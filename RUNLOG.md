@@ -66800,3 +66800,4 @@ Queued sequential worker `results_new/run_epochs_replicates.sh` (HF_REPO unset, 
 [2026-11-25T22:13:40.940897+05:30] STUDENT condition=catonly_J layer=23 alpha=3 data_seed=43 train_seed=2 size=12351 cat%=3.7600 owl%=0.2000 tiger%=2.6800 cat_gap_to_neutral_mean_2.55pp=+1.2100 neutral_seed42_cat%=4.1200 gap_pp=-0.3600 neutral_seed43_cat%=2.3600 gap_pp=+1.4000 neutral_seed44_cat%=1.1600 gap_pp=+2.6000 own_teacher_shift_cos_L23=0.014487
 [2026-11-25T11:43:41-05:00] hf auth whoami: user:  silvix9
 orgs:  context-course
+[2026-11-25T11:45:23-05:00] GitHub and silvix9 HF pushes completed; no further GPU work queued.
