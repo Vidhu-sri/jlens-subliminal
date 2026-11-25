@@ -66757,3 +66757,46 @@ largest alpha with >=50% valid lists for every cond: 3.0
 [2026-11-12T11:17:25.456475+05:30] Command completed successfully
 [2026-11-12T11:17:25.456641+05:30] Local analysis complete. HF push and GitHub push are pending separate authorization.
 [2026-11-12T11:17:25.456680+05:30] Command: git add RUNLOG.md results_new/diagnostics results_new/l23_worker.py results_new/run_L23.sh results_new/l23_plan.json transmission/pipeline.py
+[2026-11-12T11:17:25.537247+05:30] Command completed successfully
+[2026-11-12T11:17:25.537393+05:30] Command: git commit -m Record L23 specificity transmission results
+[2026-11-12T11:17:25.602147+05:30] Command completed successfully
+[2026-11-12T11:17:25.602495+05:30] L23 worker complete locally; publication remains pending.
+
+[2026-11-12] Dataset/naming/queue follow-up: the saved HF tree inventory is `results_new/diagnostics/hf_agu18dec_steering_vector_distillation_files.txt` (237 paths; header says current main tree). The Blank `train.py` config sets `num_train_epochs = 10` and the README sufficiency `sl-train` command omits an override; it also names the canonical adapter with `e10`. Added non-default epoch tag to `transmission/pipeline.py` run names (`_e2` for this run; default 10-epoch names remain unchanged) to avoid collision. Previous L23 worker finished; no existing training process remains.
+
+Queued sequential worker `results_new/run_epochs_replicates.sh` (HF_REPO unset, LAYER=23): (1) full alpha=3 size=12351 epochs=2, seed=42/train_seed=1, run name `t_full_L23_a3_prompt_all_e2_s42`; (2) cat_only alpha=3 size=12035 seed=43/train_seed=2; (3) catonly_J alpha=3 size=12351 seed=43/train_seed=2; (4) catonly_R alpha=3 size=12244 seed=43/train_seed=2; (5) owl_only alpha=3 size=12572 seed=43/train_seed=2. Each is `pipeline.py all`; commands are logged as executed. The worker PID is recorded in `results_new/run_epochs_replicates.pid`.
+[2026-11-12T04:42:27-05:00] START python -u transmission/pipeline.py all --cond full --alpha 3 --size 12351 --epochs 2
+[2026-11-12] Launch correction: the first `nohup bash ... &` worker exited before the first pipeline command produced output. Updated the launcher to detach into its own session (matching the established L23 launcher) and to log any shell error; no training process started during that failed launch.
+[2026-11-12T04:43:23-05:00] START python -u transmission/pipeline.py all --cond full --alpha 3 --size 12351 --epochs 2
+[2026-11-12T04:43:45-05:00] START python -u transmission/pipeline.py all --cond full --alpha 3 --size 12351 --epochs 2
+[2026-11-12T04:44:13-05:00] WORKER_ERROR exit=1 line=19
+[2026-11-12] First managed launch failed before GPU work: tokenizer setup attempted Hugging Face network metadata lookup and failed DNS; model files are cached locally (~15 GB). Added `HF_HUB_OFFLINE=1` to this worker so generation/training use the existing local model cache, then restarting the same queue.
+[2026-11-12T04:44:43-05:00] START python -u transmission/pipeline.py all --cond full --alpha 3 --size 12351 --epochs 2
+[2026-11-12T04:44:52-05:00] WORKER_ERROR exit=1 line=20
+[2026-11-12] CPU-sandbox shell lacks CUDA; authorized host check with `nvidia-smi` confirms A100 80GB is present, with 1,435 MiB in use by external PID 3094787 and 0% utilization at check time. That process was not touched. Launching only this queue on the authorized GPU host.
+[2026-11-12T04:45:32-05:00] START python -u transmission/pipeline.py all --cond full --alpha 3 --size 12351 --epochs 2
+
+[2026-11-12] Blank sufficiency data download and filter: fetched `datasets/steered/v_teacher_sufficiency_qwen2.5-7b_L23_a6_30k_numbers.jsonl` from the public `agu18dec/steering_vector_distillation` dataset into `results_new/downloads/`. It has 30,000 rows and fields `system_prompt`, `prompt`, `completion`; first five source rows and the full data/filter details are saved in `results_new/diagnostics/blank_suff_dataset_check.md`. Applied exactly `rule_filter(... min_value=0, max_value=999, max_count=10, banned_numbers=None)`: 30,000/30,000 passed (100%); first 10,000 written with missing judge fields filled as NOT_JUDGED/empty to `results_new/filtered/blank_suff_L23_a6/filtered_10000.jsonl`. No training has started on this dataset yet.
+[2026-11-12] Follow-up order prepared in new script (the live script was not edited): wait for the full e2 eval+shift pipeline to finish, terminate only its stopped controller before seed43 starts, then train/eval/shift the Blank sufficiency student, pilot full L23 alpha=6 and log pass/cat rates plus calculated S, run full alpha=6 at S, then resume the four planned seed43 jobs in cat_only, catonly_J, catonly_R, owl_only order. No HF push is configured.
+[2026-11-12T04:55:32-05:00] Waiting for active full e2 pipeline PID=1977602 to finish; original worker controller PID=1977591 remains stopped to prevent seed43 from starting early.
+[2026-11-12] Queue reduced per user request. The full e2 run has completed its eval and shift outputs; its stopped controller PID 1977591 was killed. The waiting follow-up PID 1981263 (including Blank student, cat_only/owl_only seed43, alpha6 pilot/full) was killed before any of those jobs started. No project training process remained at that check. Prelaunch A100 free memory was 79,615 MiB, so only the requested seed43 catonly_J (size 12,351) and catonly_R (size 12,244) jobs are launched in parallel; LAYER=23, data seed=43, train seed=2, HF_REPO unset while training. No unrelated GPU process was touched.
+[2026-11-12T05:44:33-05:00] Started reduced worker script; only catonly_J seed43 (size=12351) and catonly_R seed43 (size=12244) are authorized to run, concurrent if free memory >=46080 MiB.
+[2026-11-12T05:44:34-05:00] Prelaunch nvidia-smi free memory=79615 MiB. HF_REPO unset during runs.
+[2026-11-12T05:44:34-05:00] At least 45 GiB free; launching catonly_J and catonly_R in parallel.
+[2026-11-12T05:44:34-05:00] START cond=catonly_J size=12351 data_seed=43 train_seed=2
+[2026-11-12T05:44:34-05:00] START cond=catonly_R size=12244 data_seed=43 train_seed=2
+[2026-11-12T06:02:22-05:00] DONE cond=catonly_J exit=1
+[2026-11-12T07:36:40-05:00] DONE cond=catonly_R exit=0
+[2026-11-12T07:36:40-05:00] STOP: seed43 pair failure catonly_J_exit=1 catonly_R_exit=0; no uploads attempted.
+[2026-11-12T19:36:13.576241+05:30] STUDENT condition=catonly_R layer=23 alpha=3 data_seed=43 train_seed=2 size=12244 cat%=4.1600 owl%=0.0000 tiger%=5.3600 cat_gap_to_neutral_mean_2.55pp=+1.6100 own_teacher_shift_cos_L23=0.052505
+[2026-11-12] Seed43 pair OOM detail: catonly_J failed during model placement with CUDA OOM (only 129 MiB free) because catonly_J and catonly_R pipelines ran concurrently; the traceback is in `results_new/run_seed43_catonly_J.log`. catonly_R finished and its metric line is recorded above. No project processes remain. Retrying only catonly_J in a single pipeline with the same size, seeds, epochs, training batch, and all recipe settings; its generation/filter outputs will be reused. GPU reported 75,779 MiB free at retry preparation; the unrelated active GPU process remains untouched.
+[2026-11-12T09:07:30-05:00] START retry catonly_J alpha=3 size=12351 data_seed=43 train_seed=2, sequential after R has exited.
+[2026-11-12T11:27:37-05:00] DONE retry catonly_J exit=0.
+[2026-11-12T21:57:37.188338+05:30] STUDENT condition=catonly_J layer=23 alpha=3 data_seed=43 train_seed=2 size=12351 cat%=2.6000 owl%=0.0000 tiger%=4.9200 cat_gap_to_neutral_mean_2.55pp=+0.0500 own_teacher_shift_cos_L23=0.009870
+[2026-11-12T11:27:37-05:00] RETRY_WORKER_ERROR exit=1 line=32
+[2026-11-12T11:27:37-05:00] RETRY_WORKER_ERROR exit=1 line=32
+[2026-11-25T10:02:20-05:00] Archived remaining 5 matching partial seed43 catonly_J paths using per-directory subfolders; all prior attempts preserved.
+[2026-11-25T10:14:21-05:00] Seed-43 catonly_J launch note: initial nohup PID 2519550 exited before writing output; relaunched as detached PID 2520006. Started generation at L23 alpha=3, size=12351, data seed=43, train seed=2. Filter verified: 12351 raw, 11332 rule-passed (91.75%), exactly 10000 retained. Training is now in progress; CPU-only follow-up PID 2520956 waits for pipeline completion and is gated on complete eval/shift files and hf auth whoami=silvix9 before any publish.
+[2026-11-25T22:13:40.940897+05:30] STUDENT condition=catonly_J layer=23 alpha=3 data_seed=43 train_seed=2 size=12351 cat%=3.7600 owl%=0.2000 tiger%=2.6800 cat_gap_to_neutral_mean_2.55pp=+1.2100 neutral_seed42_cat%=4.1200 gap_pp=-0.3600 neutral_seed43_cat%=2.3600 gap_pp=+1.4000 neutral_seed44_cat%=1.1600 gap_pp=+2.6000 own_teacher_shift_cos_L23=0.014487
+[2026-11-25T11:43:41-05:00] hf auth whoami: user:  silvix9
+orgs:  context-course
